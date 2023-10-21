@@ -934,6 +934,7 @@ GameObject:
   - component: {fileID: 1082849674}
   - component: {fileID: 1082849673}
   - component: {fileID: 1082849672}
+  - component: {fileID: 1082849676}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -982,7 +983,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2050313971, guid: dd767529366ed0044aaf6a814e7a33a4, type: 3}
+  m_Sprite: {fileID: 1535946936, guid: fc1b3983f99cd9b4eaba4da980a47d15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1022,6 +1023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1082849673}
+  anim: {fileID: 1082849676}
   groundCheck: {fileID: 1629318808}
   groundLayer:
     serializedVersion: 2
@@ -1043,7 +1045,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 4
   m_Material: {fileID: 0}
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -1060,11 +1062,11 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 1.13}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.7166667, y: 3.3315003}
+    pivot: {x: 0.51163, y: 0.16647305}
+    oldSize: {x: 2.7188, y: 3.323333}
     newSize: {x: 16.300001, y: 19.989002}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1085,10 +1087,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1853014c10a6eb46a8363fdc11758e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackObjectActiveState: 1
+  trackObjectActiveState: 0
   trackTransform: 1
   trackVelocity: 1
-  trackAnimator: 0
+  trackAnimator: 1
   trackAudio: 0
   trackParticles:
     enabled: 0
@@ -1096,6 +1098,26 @@ MonoBehaviour:
       particleTrackingLimit: 0
       particleRestartFrom: 0
       particleSystems: []
+--- !u!95 &1082849676
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082849669}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f70e83857818cfd478e5b599635385ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1382113873
 GameObject:
   m_ObjectHideFlags: 0

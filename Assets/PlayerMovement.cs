@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
 
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator anim;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     // Start is called before the first frame update
@@ -32,13 +33,20 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Flip();
+
+        if(rb.velocity.x != 0 && isGrounded())
+        {
+            anim.SetBool("Walking", true);
+        }
+        else
+        {
+            anim.SetBool("Walking" ,false);
+        }
     }
 
     private void FixedUpdate()
     {
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-
-        //WHY NO TIME.DELTA TIME?
+       rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
     private bool isGrounded()

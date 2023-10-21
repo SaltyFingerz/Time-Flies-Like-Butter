@@ -1,0 +1,532 @@
+fileFormatVersion: 2
+guid: fc1b3983f99cd9b4eaba4da980a47d15
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 12831
+        width: 1631
+        height: 1994
+      alignment: 9
+      pivot: {x: 0.51163, y: 0.16647305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1cd02173b28c1e4480eb624d640b81d
+      internalID: 1535946936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_1
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 12831
+        width: 1631
+        height: 1994
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1622989}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c959db78a282d484baa41aa47095e56a
+      internalID: 859458534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_2
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 12831
+        width: 1631
+        height: 2001
+      alignment: 9
+      pivot: {x: 0.49418524, y: 0.17295942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1ee353708db5943bd3522af1b6a1ea
+      internalID: -1072326366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_3
+      rect:
+        serializedVersion: 2
+        x: 6415
+        y: 12831
+        width: 1660
+        height: 2001
+      alignment: 9
+      pivot: {x: 0.5010089, y: 0.17296088}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b529e5df43d434883120fd4f92bea5
+      internalID: -1971467224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_4
+      rect:
+        serializedVersion: 2
+        x: 8673
+        y: 12831
+        width: 1713
+        height: 1994
+      alignment: 9
+      pivot: {x: 0.49040368, y: 0.17181231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0148da4dfac35a24998ddb615e67df03
+      internalID: 1395955335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_5
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 10365
+        width: 1669
+        height: 1994
+      alignment: 9
+      pivot: {x: 0.4969846, y: 0.17181231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766a219360202cd4daa9431cf798b953
+      internalID: -1299060645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_6
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 10365
+        width: 1631
+        height: 1994
+      alignment: 9
+      pivot: {x: 0.5116301, y: 0.17181133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf3e08e234ce9b48bbf5b938fa99074
+      internalID: 281546037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_7
+      rect:
+        serializedVersion: 2
+        x: 4916
+        y: 10365
+        width: 1631
+        height: 1994
+      alignment: 9
+      pivot: {x: 0.5058154, y: 0.17181133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b27a322774753e14a87e3d1de7708aee
+      internalID: 548715300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_8
+      rect:
+        serializedVersion: 2
+        x: 6983
+        y: 10365
+        width: 1631
+        height: 1994
+      alignment: 9
+      pivot: {x: 0.5000006, y: 0.16705488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00fbc233647a194dbbd0e5a3b5a661b
+      internalID: 1725598784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_9
+      rect:
+        serializedVersion: 2
+        x: 8659
+        y: 10616
+        width: 44
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3eb7d0cc893fca46a01a30e25768aee
+      internalID: 2132356291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_10
+      rect:
+        serializedVersion: 2
+        x: 8954
+        y: 10365
+        width: 1631
+        height: 1994
+      alignment: 9
+      pivot: {x: 0.5116307, y: 0.16705488}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f1b8e5b9566974cbcbb1d328b3beb5
+      internalID: 632194193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_11
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 7309
+        width: 2044
+        height: 2185
+      alignment: 9
+      pivot: {x: 0.4907201, y: 0.17011562}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b853d3b244453a24bb77fc2e360a878d
+      internalID: 467808391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_12
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 7309
+        width: 2488
+        height: 1824
+      alignment: 9
+      pivot: {x: 0.51393664, y: 0.27187574}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2fff6fdbdb1be4fb6a3778b40003ea
+      internalID: 1027957052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_13
+      rect:
+        serializedVersion: 2
+        x: 5758
+        y: 7309
+        width: 2827
+        height: 1440
+      alignment: 9
+      pivot: {x: 0.49386722, y: 0.29532233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08631bfce4908544b28952d1dd51eaa
+      internalID: 799230271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_15
+      rect:
+        serializedVersion: 2
+        x: 4436
+        y: 4607
+        width: 2975
+        height: 1602
+      alignment: 9
+      pivot: {x: 0.5174831, y: 0.33766538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4665bd01d5b304897426a939df8365
+      internalID: -442425538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_16
+      rect:
+        serializedVersion: 2
+        x: 4436
+        y: 2171
+        width: 3381
+        height: 1373
+      alignment: 9
+      pivot: {x: 0.5051279, y: 0.3737263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c265b9840e862d54e8af0e1c9d978d32
+      internalID: -1573224989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_17
+      rect:
+        serializedVersion: 2
+        x: 4436
+        y: 288
+        width: 3639
+        height: 1144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af7591907b07694689d4e8c96cf18f3
+      internalID: -246037521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_14
+      rect:
+        serializedVersion: 2
+        x: 9030
+        y: 4608
+        width: 2003
+        height: 1952
+      alignment: 9
+      pivot: {x: 0.5030779, y: 0.26256424}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725d793174a1d60409cb5f07d93eebdd
+      internalID: 1732466573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      caterpillar sprite sheet 2_3: -1971467224
+      caterpillar sprite sheet 2_7: 548715300
+      caterpillar sprite sheet 2_16: -1573224989
+      caterpillar sprite sheet 2_4: 1395955335
+      caterpillar sprite sheet 2_6: 281546037
+      caterpillar sprite sheet 2_14: 1732466573
+      caterpillar sprite sheet 2_2: -1072326366
+      caterpillar sprite sheet 2_8: 1725598784
+      caterpillar sprite sheet 2_5: -1299060645
+      caterpillar sprite sheet 2_1: 859458534
+      caterpillar sprite sheet 2_10: 632194193
+      caterpillar sprite sheet 2_9: 2132356291
+      caterpillar sprite sheet 2_12: 1027957052
+      caterpillar sprite sheet 2_17: -246037521
+      caterpillar sprite sheet 2_11: 467808391
+      caterpillar sprite sheet 2_13: 799230271
+      caterpillar sprite sheet 2_15: -442425538
+      caterpillar sprite sheet 2_0: 1535946936
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
