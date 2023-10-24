@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private bool canMorph = false;
 
+    [SerializeField] private AudioSource aS;
+    [SerializeField] private AudioClip morphSound;
+    [SerializeField] private AudioClip burstSound;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator anim;
     [SerializeField] private Transform groundCheck;
@@ -30,15 +34,6 @@ public class PlayerMovement : MonoBehaviour
         vertical = Input.GetAxisRaw("Vertical");
 
         StateCheck();
-
-      
-
-            
-           
-        
-
-        
-
 
 
             Flip();
@@ -128,12 +123,20 @@ public class PlayerMovement : MonoBehaviour
         if (canMorph)
         {
             anim.SetBool("Morph", true);
+            aS.PlayOneShot(morphSound);
         }
     }
+
+    public void BurstEvent()
+    {
+        aS.PlayOneShot(burstSound);
+    }    
 
     public void MorphEvent()
     {
         lifeStage = LifeStage.butterfly;
+      
+
     }
 
     private void Flip()
