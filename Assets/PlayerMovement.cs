@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
     //www.youtube.com/watch?v=K1xZ-rycYY8&t=42s
@@ -12,8 +13,11 @@ public class PlayerMovement : MonoBehaviour
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
     private bool canMorph = false;
+    public static bool rewindable = false;
 
     public LeafScript leaf;
+
+    public GenericRewind rewindScript;
 
     [SerializeField] private AudioSource aS;
     [SerializeField] private AudioClip morphSound;
@@ -24,8 +28,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+
+
     public enum LifeStage {caterpillar = 0, butterfly = 1, dead = 2};
     public LifeStage lifeStage = LifeStage.caterpillar;
+
+    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2}
+    public RewindMode rewindMode = RewindMode.environment; 
     // Start is called before the first frame update
 
 
@@ -141,6 +150,8 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+
+
     private void Flip()
     {
         if(isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f) 
@@ -158,6 +169,19 @@ public class PlayerMovement : MonoBehaviour
         {
             leaf.DropLeaf();
         }
+
+        if(collision.CompareTag("VoidPowerUp"))
+        {
+            collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+            rewindMode = RewindMode.voidtime;
+
+            rewindable = true;
+           
+        }
+
+
     }
 
 }
