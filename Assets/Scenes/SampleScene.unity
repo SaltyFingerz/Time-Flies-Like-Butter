@@ -1850,6 +1850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leaf: {fileID: 1219934851}
   rewindScript: {fileID: 1082849678}
+  rewindManager: {fileID: 1753901490}
   aS: {fileID: 1082849677}
   morphSound: {fileID: 8300000, guid: 3d87cd2ad348b154fb0c8e76b35f93e3, type: 3}
   burstSound: {fileID: 8300000, guid: a25e31a419c91cb44b9cbcdceb967990, type: 3}
@@ -2745,6 +2746,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1753901490 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4065960116027654745, guid: 0cbd4304daa3da84cb52d37985a1714f, type: 3}
+  m_PrefabInstance: {fileID: 1958809206}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64d270227f9e234d98e01d146ee25a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1954850490
 GameObject:
   m_ObjectHideFlags: 0

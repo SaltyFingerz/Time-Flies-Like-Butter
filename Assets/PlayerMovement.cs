@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     public LeafScript leaf;
 
     public GenericRewind rewindScript;
+    public RewindManager rewindManager;
 
     [SerializeField] private AudioSource aS;
     [SerializeField] private AudioClip morphSound;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+
 
 
 
@@ -154,11 +156,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip()
     {
-        if(isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f) 
+        if(isFacingRight && horizontal < 0f) 
         { 
             isFacingRight = !isFacingRight;
             Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
+            localScale.x = -1f;
+            transform.localScale = localScale;
+        }
+        else if (!isFacingRight && horizontal > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x = 1f;
             transform.localScale = localScale;
         }
     }
@@ -180,7 +189,8 @@ public class PlayerMovement : MonoBehaviour
             rewindable = true;
             rewindScript.EnableRewind();
 
-                
+            rewindManager.RestartTracking();
+            
 
 }
 

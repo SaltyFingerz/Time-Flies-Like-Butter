@@ -33,7 +33,7 @@ public class RewindManager : MonoBehaviour
     public bool TrackingEnabled { get; set; } = true;
 
 
-    float rewindSeconds = 0;
+    public static float rewindSeconds = 0f;
     List<RewindAbstract> _rewindedObjects;
 
     /// <summary>
@@ -103,6 +103,8 @@ public class RewindManager : MonoBehaviour
 
         HowManySecondsAvailableForRewind = 0;
         TrackingEnabled = true;
+
+        Debug.Log("restartTracking called, rewind seconds = " + rewindSeconds);
     }
     private void CheckReachingOutOfBounds(float seconds)
     {
@@ -148,6 +150,8 @@ public class RewindManager : MonoBehaviour
                 HowManySecondsAvailableForRewind = Mathf.Min(HowManySecondsAvailableForRewind + Time.fixedDeltaTime, HowManySecondsToTrack);
         }
     }
+
+ 
 
     /// <summary>
     /// This action is not meant to be used by users. CircularBuffers listens to it
