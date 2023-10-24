@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private bool canMorph = false;
 
+    public LeafScript leaf;
+
     [SerializeField] private AudioSource aS;
     [SerializeField] private AudioClip morphSound;
     [SerializeField] private AudioClip burstSound;
@@ -149,4 +151,13 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.name.Contains("TriggerLeaf1"))
+        {
+            leaf.DropLeaf();
+        }
+    }
+
 }
