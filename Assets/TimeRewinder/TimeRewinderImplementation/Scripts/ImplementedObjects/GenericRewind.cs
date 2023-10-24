@@ -3,20 +3,20 @@
 public class GenericRewind : RewindAbstract
 {
     [Tooltip("Tracking active state of the object that this script is attached to")]
-    public bool trackObjectActiveState;
+    [SerializeField] bool trackObjectActiveState;
     [Tooltip("Tracking Position,Rotation and Scale")]
-    public bool trackTransform;
-    public bool trackVelocity;
-    public bool trackAnimator;
-    public bool trackAudio;
+    [SerializeField] bool trackTransform;
+    [SerializeField] bool trackVelocity;
+    [SerializeField] bool trackAnimator;
+    [SerializeField] bool trackAudio;
 
     [Tooltip("Enable checkbox on right side to track particles")]
     [SerializeField] OptionalParticleSettings trackParticles;
 
     public override void Rewind(float seconds)
     {
-        if (PlayerMovement.rewindable)
-        {
+       // if (PlayerMovement.rewindable)
+      //  {
 
             if (trackObjectActiveState)
                 RestoreObjectActiveState(seconds);
@@ -30,8 +30,17 @@ public class GenericRewind : RewindAbstract
                 RestoreAudio(seconds);
             if (trackParticles.Enabled)
                 RestoreParticles(seconds);
-        }
+      //  }
         
+    }
+
+    public void EnableRewind()
+    {
+        trackObjectActiveState = false;
+        trackTransform = true;
+        trackVelocity = true;
+        trackAnimator = true;
+        trackAudio = true;
     }
 
     public override void Track()

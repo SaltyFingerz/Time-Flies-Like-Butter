@@ -178,8 +178,11 @@ public class PlayerMovement : MonoBehaviour
             rewindMode = RewindMode.voidtime;
 
             rewindable = true;
-           
-        }
+            rewindScript.EnableRewind();
+
+                
+
+}
 
 
     }
