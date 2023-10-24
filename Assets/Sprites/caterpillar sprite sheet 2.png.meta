@@ -126,8 +126,8 @@ TextureImporter:
         y: 12831
         width: 1631
         height: 1994
-      alignment: 9
-      pivot: {x: 0.51163, y: 0.16647305}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,8 +147,8 @@ TextureImporter:
         y: 12831
         width: 1631
         height: 1994
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1622989}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,8 +168,8 @@ TextureImporter:
         y: 12831
         width: 1631
         height: 2001
-      alignment: 9
-      pivot: {x: 0.49418524, y: 0.17295942}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,7 +190,7 @@ TextureImporter:
         width: 1660
         height: 2001
       alignment: 9
-      pivot: {x: 0.5010089, y: 0.17296088}
+      pivot: {x: 0.4880321, y: 0.00000048803724}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,7 +211,7 @@ TextureImporter:
         width: 1713
         height: 1994
       alignment: 9
-      pivot: {x: 0.49040368, y: 0.17181231}
+      pivot: {x: 0.48343208, y: 0.0000004897505}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,7 +232,7 @@ TextureImporter:
         width: 1669
         height: 1994
       alignment: 9
-      pivot: {x: 0.4969846, y: 0.17181231}
+      pivot: {x: 0.4895986, y: -0.00031246082}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,8 +252,8 @@ TextureImporter:
         y: 10365
         width: 1631
         height: 1994
-      alignment: 9
-      pivot: {x: 0.5116301, y: 0.17181133}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,8 +273,8 @@ TextureImporter:
         y: 10365
         width: 1631
         height: 1994
-      alignment: 9
-      pivot: {x: 0.5058154, y: 0.17181133}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,8 +294,8 @@ TextureImporter:
         y: 10365
         width: 1631
         height: 1994
-      alignment: 9
-      pivot: {x: 0.5000006, y: 0.16705488}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -315,8 +315,8 @@ TextureImporter:
         y: 10616
         width: 44
         height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -336,8 +336,8 @@ TextureImporter:
         y: 10365
         width: 1631
         height: 1994
-      alignment: 9
-      pivot: {x: 0.5116307, y: 0.16705488}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,8 +357,8 @@ TextureImporter:
         y: 7309
         width: 2044
         height: 2185
-      alignment: 9
-      pivot: {x: 0.4907201, y: 0.17011562}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,8 +378,8 @@ TextureImporter:
         y: 7309
         width: 2488
         height: 1824
-      alignment: 9
-      pivot: {x: 0.51393664, y: 0.27187574}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,8 +399,8 @@ TextureImporter:
         y: 7309
         width: 2827
         height: 1440
-      alignment: 9
-      pivot: {x: 0.49386722, y: 0.29532233}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,8 +420,8 @@ TextureImporter:
         y: 4607
         width: 2975
         height: 1602
-      alignment: 9
-      pivot: {x: 0.5174831, y: 0.33766538}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -437,12 +437,12 @@ TextureImporter:
       name: caterpillar sprite sheet 2_16
       rect:
         serializedVersion: 2
-        x: 4436
-        y: 2171
-        width: 3381
-        height: 1373
-      alignment: 9
-      pivot: {x: 0.5051279, y: 0.3737263}
+        x: 9028
+        y: 4607
+        width: 2007
+        height: 1949
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,11 +459,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4436
-        y: 288
-        width: 3639
-        height: 1144
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 2171
+        width: 3381
+        height: 1373
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -476,22 +476,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_14
+      name: caterpillar sprite sheet 2_18
       rect:
         serializedVersion: 2
-        x: 9030
-        y: 4608
-        width: 2003
-        height: 1952
-      alignment: 9
-      pivot: {x: 0.5030779, y: 0.26256424}
+        x: 4436
+        y: 288
+        width: 3639
+        height: 1144
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 725d793174a1d60409cb5f07d93eebdd
-      internalID: 1732466573
+      spriteID: d9fc83cfc8460ff499f4018d9991ff94
+      internalID: 99572433
       vertices: []
       indices: 
       edges: []
@@ -518,6 +518,7 @@ TextureImporter:
       caterpillar sprite sheet 2_5: -1299060645
       caterpillar sprite sheet 2_1: 859458534
       caterpillar sprite sheet 2_10: 632194193
+      caterpillar sprite sheet 2_18: 99572433
       caterpillar sprite sheet 2_9: 2132356291
       caterpillar sprite sheet 2_12: 1027957052
       caterpillar sprite sheet 2_17: -246037521

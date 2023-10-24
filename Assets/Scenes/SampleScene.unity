@@ -207,7 +207,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -510,7 +510,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -988,7 +988,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 16.300001, y: 19.989002}
+  m_Size: {x: 4.9591846, y: 2.6699998}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1028,6 +1028,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  lifeStage: 0
 --- !u!50 &1082849673
 Rigidbody2D:
   serializedVersion: 4
@@ -1065,15 +1066,15 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 1.13}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.51163, y: 0.16647305}
+    pivot: {x: 0.5, y: 0}
     oldSize: {x: 2.7188, y: 3.323333}
-    newSize: {x: 16.300001, y: 19.989002}
+    newSize: {x: 4.9591846, y: 2.6699998}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.56, y: 3.3315003}
+  m_Size: {x: 1.56, y: 1.61}
   m_EdgeRadius: 0
 --- !u!114 &1082849675
 MonoBehaviour:
