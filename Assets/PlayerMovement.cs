@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool hop1 = false;
     private bool hop2 = false;
+    private bool hop3 = false;  
 
     private SpriteRenderer sprite;
 
@@ -35,6 +36,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private GameObject slerpyLerp;
     [SerializeField] private GameObject HopAnim;
+    [SerializeField] private GameObject SlerpEnd;
+    [SerializeField] private GameObject SlerpCentre;
+    [SerializeField] private GameObject KeyClock;
+
 
 
 
@@ -71,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
         {
             case LifeStage.caterpillar:
 
-                if(slerpyLerp.activeSelf && Input.GetButtonDown("Jump") && isGrounded())
+                if(slerpyLerp.activeSelf && Input.GetButtonDown("Jump") && isGrounded() && Input.GetKey(KeyCode.LeftShift))
                 {
                     sprite.enabled = false;
 
@@ -219,27 +224,42 @@ public class PlayerMovement : MonoBehaviour
             rewindScript.EnableRewind();
 
             rewindManager.RestartTracking();
+
+            KeyClock.SetActive(false);  
         }
 
             else if (collision.name.Contains("Hop"))
             {
                 slerpyLerp.SetActive(true);
-                Debug.Log("YOYOYOY");
+               
 
             }
 
             if (collision.name.Contains("Hop1"))
             {
                 hop1 = true;
+                SlerpEnd.transform.position = new Vector3(16, 6.4f, 0);
+            SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
             }
 
             if (collision.name.Contains("Hop2"))
             {
                 hop2 = true;
-            }
+                SlerpEnd.transform.position = new Vector3(16, 6.4f, 0);
+            SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
+        }
 
+            else if (collision.name.Contains("Hop3"))
+            {
+            Debug.Log("Hop3");
+                hop3 = true;
+                SlerpEnd.transform.position = new Vector3(18.82f, 14.95f, 0);
+            SlerpCentre.transform.position = new Vector3(24.69f, 16.72f, 0);
 
         }
+
+
+    }
     
     private void OnTriggerExit2D(Collider2D collision)
     {

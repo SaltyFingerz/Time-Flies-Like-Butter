@@ -1444,7 +1444,7 @@ GameObject:
   - component: {fileID: 728853680}
   - component: {fileID: 728853679}
   - component: {fileID: 728853681}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FlowerPetals (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1920,7 +1920,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043476272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.69, y: 5.53, z: -0.016825974}
+  m_LocalPosition: {x: 16.76, y: 5.43, z: -0.016825974}
   m_LocalScale: {x: 1.7990625, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2035,7 +2035,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1535946936, guid: fc1b3983f99cd9b4eaba4da980a47d15, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2090,6 +2090,9 @@ MonoBehaviour:
     m_Bits: 8
   slerpyLerp: {fileID: 6760753736390562982}
   HopAnim: {fileID: 1539315878}
+  SlerpEnd: {fileID: 629415831881000196}
+  SlerpCentre: {fileID: 1783440126497754422}
+  KeyClock: {fileID: 1319847908}
   lifeStage: 0
   rewindMode: 0
 --- !u!50 &1082849673
@@ -2594,6 +2597,11 @@ MonoBehaviour:
       particleTrackingLimit: 0
       particleRestartFrom: 0
       particleSystems: []
+--- !u!1 &1319847908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4065960115365519549, guid: 0cbd4304daa3da84cb52d37985a1714f, type: 3}
+  m_PrefabInstance: {fileID: 1958809206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1382113873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2780,7 +2788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478845240}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.47, y: 0.4, z: -0.016825974}
+  m_LocalPosition: {x: 11.47, y: 0.3, z: -0.016825974}
   m_LocalScale: {x: 1.7990625, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3269,7 +3277,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4065960116027654745, guid: 0cbd4304daa3da84cb52d37985a1714f, type: 3}
   m_PrefabInstance: {fileID: 1958809206}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1319847908}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e64d270227f9e234d98e01d146ee25a5, type: 3}
@@ -8636,7 +8644,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629415831881000196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16, y: 6.14, z: 0}
+  m_LocalPosition: {x: 18.82, y: 14.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8651,7 +8659,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783440126497754422}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.87, y: 5.52, z: 0}
+  m_LocalPosition: {x: 24.69, y: 16.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

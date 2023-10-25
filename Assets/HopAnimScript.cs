@@ -17,8 +17,8 @@ public class HopAnimScript : MonoBehaviour
     {
         if (hopNo == 1 || hopNo == 2)
         {
-            Player.transform.position = new Vector3(16.3f, 5.68f ,0);
-            Debug.Log("Hop1");
+            Player.transform.position = new Vector3(16.3f, 5.7f ,0);
+            
         }
 
         
