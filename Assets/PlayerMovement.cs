@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     public GenericRewind rewindScript;
     public RewindManager rewindManager;
+    public CameraFollow cam;
 
     [SerializeField] private AudioSource aS;
     [SerializeField] private AudioClip morphSound;
@@ -233,7 +234,7 @@ public class PlayerMovement : MonoBehaviour
 
             rewindManager.RestartTracking();
 
-            KeyClock.SetActive(false);  
+            KeyClock.SetActive(false);
         }
 
 
@@ -257,35 +258,40 @@ public class PlayerMovement : MonoBehaviour
 
 
         else if (collision.name.Contains("Hop"))
-            {
-                slerpyLerp.SetActive(true);
-               
+        {
+            slerpyLerp.SetActive(true);
 
-            }
+
+
 
             if (collision.name.Contains("Hop1"))
             {
                 hop1 = true;
                 SlerpEnd.transform.position = new Vector3(16, 6.4f, 0);
-            SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
+                SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
             }
 
             if (collision.name.Contains("Hop2"))
             {
                 hop2 = true;
                 SlerpEnd.transform.position = new Vector3(16, 6.4f, 0);
-            SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
-        }
+                SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
+            }
 
             else if (collision.name.Contains("Hop3"))
             {
-            Debug.Log("Hop3");
+                Debug.Log("Hop3");
                 hop3 = true;
                 SlerpEnd.transform.position = new Vector3(18.82f, 14.95f, 0);
-            SlerpCentre.transform.position = new Vector3(24.69f, 16.72f, 0);
+                SlerpCentre.transform.position = new Vector3(24.69f, 16.72f, 0);
 
+            }
         }
 
+        else if (collision.name.Contains("HighPoint"))
+        {
+            cam.LookLower();
+        }
 
     }
     
