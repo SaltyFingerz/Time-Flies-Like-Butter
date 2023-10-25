@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private bool hop1 = false;
     private bool hop2 = false;
 
+    private SpriteRenderer sprite;
+
     public LeafScript leaf;
 
     public GenericRewind rewindScript;
@@ -32,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private GameObject slerpyLerp;
+    [SerializeField] private GameObject HopAnim;
+
 
 
 
@@ -40,10 +44,13 @@ public class PlayerMovement : MonoBehaviour
     public LifeStage lifeStage = LifeStage.caterpillar;
 
     public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2}
-    public RewindMode rewindMode = RewindMode.environment; 
+    public RewindMode rewindMode = RewindMode.environment;
     // Start is called before the first frame update
 
-
+    private void Start()
+    {
+        sprite = GetComponent<SpriteRenderer>();    
+    }
     // Update is called once per frame
     void Update()
     {
@@ -63,6 +70,17 @@ public class PlayerMovement : MonoBehaviour
         switch (lifeStage)
         {
             case LifeStage.caterpillar:
+
+                if(slerpyLerp.activeSelf && Input.GetButtonDown("Jump") && isGrounded())
+                {
+                    sprite.enabled = false;
+
+                    if(hop1)
+                    {
+                        HopAnim.GetComponent<SpriteRenderer>().enabled = true;
+                        HopAnim.GetComponent<Animator>().SetTrigger("Hop1");
+                    }
+                }
 
                 if (Input.GetButtonDown("Jump") && isGrounded())
                 {
@@ -234,4 +252,4 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-        }
+}
