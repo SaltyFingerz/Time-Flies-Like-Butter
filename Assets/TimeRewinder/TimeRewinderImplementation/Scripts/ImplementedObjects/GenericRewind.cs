@@ -36,7 +36,7 @@ public class GenericRewind : RewindAbstract
 
     public void EnableRewind()
     {
-        trackObjectActiveState = false;
+        trackObjectActiveState = true;
         trackTransform = true;
         trackVelocity = true;
         trackAnimator = true;

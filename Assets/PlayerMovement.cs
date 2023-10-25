@@ -143,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
 
                 {
                     Debug.Log("MorphingTime");
-                    canMorph = true;
+                  
                     Metamorphosis();
 
                 }
@@ -284,6 +284,13 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+        }
+
+        else if (collision.CompareTag("Food"))
+        {
+            collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            canMorph = true;
         }
 
 

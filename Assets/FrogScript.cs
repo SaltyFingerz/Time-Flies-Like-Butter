@@ -6,6 +6,7 @@ public class FrogScript : MonoBehaviour
 {
     [SerializeField] private GameObject Player;
     private Animator anim;
+    bool canEat = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,11 +17,29 @@ public class FrogScript : MonoBehaviour
 
     public void EatingEvent()
     {
-        Player.GetComponent<SpriteRenderer>().enabled = false;
+        if (canEat)
+        {
+            Player.SetActive(false);
+            canEat = false;
+            StartCoroutine(EatCooldown());
+        }
     }
 
+   
     public void StartEating()
     {
-        anim.SetTrigger("Eat");
+        if (canEat)
+        {
+            Debug.Log("ËAT");
+            anim.SetTrigger("Eat");
+            
+          
+        }
+    }
+
+    IEnumerator EatCooldown()
+    {
+        yield return new WaitForSeconds(3);
+        canEat = true;
     }
 }
