@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
     private bool canMorph = false;
+
+    private bool hop1 = false;
+    private bool hop2 = false;
     public static bool rewindable = false;
 
     public LeafScript leaf;
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private GameObject slerpyLerp;
 
 
 
@@ -60,14 +64,28 @@ public class PlayerMovement : MonoBehaviour
         {
             case LifeStage.caterpillar:
 
-                if (Input.GetButtonDown("Jump") && isGrounded())
+                if (hop1)
                 {
-                    rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+
+                    anim.SetTrigger("Hop1");
                 }
 
-                if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+                else if (hop2)
                 {
-                    rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                    anim.SetTrigger("Hop2");
+                }
+
+                else {
+
+                    if (Input.GetButtonDown("Jump") && isGrounded())
+                    {
+                        rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+                    }
+
+                    if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+                    {
+                        rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                    }
                 }
 
                 if (Input.GetKeyDown(KeyCode.Q))
@@ -192,9 +210,49 @@ public class PlayerMovement : MonoBehaviour
             rewindManager.RestartTracking();
             
 
-}
+        }
+
+        if(collision.name.Contains("Hop"))
+        {
+            slerpyLerp.SetActive(true);
+
+        }
+
+        if (collision.name.Contains("Hop1"))
+        {
+            hop1 = true;
+        }
+
+        if (collision.name.Contains("Hop2"))
+        {
+            hop2 = true;
+        }
 
 
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name.Contains("Hop"))
+        {
+            slerpyLerp.SetActive(false);
+        }
+
+        if (collision.name.Contains("Hop1"))
+        {
+            hop1 = false;
+        }
+
+        if (collision.name.Contains("Hop2"))
+        {
+            hop2 = false;
+        }
+
+    }
+
+   /* private bool Hop(int hopNo)
+    {
+        return ;
+    } */
+
 
 }
