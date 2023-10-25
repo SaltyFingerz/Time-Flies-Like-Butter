@@ -80,6 +80,13 @@ public class PlayerMovement : MonoBehaviour
                         HopAnim.GetComponent<SpriteRenderer>().enabled = true;
                         HopAnim.GetComponent<Animator>().SetTrigger("Hop1");
                     }
+
+                    else if(hop2)
+                    {
+                        HopAnim.GetComponent<SpriteRenderer>().enabled = true;
+                        HopAnim.GetComponent<Animator>().SetTrigger("Hop2");
+
+                    }
                 }
 
                 if (Input.GetButtonDown("Jump") && isGrounded())

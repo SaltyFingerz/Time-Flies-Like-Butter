@@ -15,11 +15,13 @@ public class HopAnimScript : MonoBehaviour
 
     public void EndHopEvent(int hopNo)
     {
-        if (hopNo == 1)
+        if (hopNo == 1 || hopNo == 2)
         {
             Player.transform.position = new Vector3(16.3f, 5.68f ,0);
             Debug.Log("Hop1");
         }
+
+        
         
             Player.transform.localScale = gameObject.transform.localScale;
         
