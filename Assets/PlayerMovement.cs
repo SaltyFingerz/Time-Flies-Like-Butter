@@ -245,11 +245,12 @@ public class PlayerMovement : MonoBehaviour
             rewindMode = RewindMode.enviroself;
 
             rewindable = true;
+
+            KeyClock.SetActive(true);
             rewindScript.EnableRewind();
 
             rewindManager.RestartTracking();
 
-            KeyClock.SetActive(true);
         }
 
 
