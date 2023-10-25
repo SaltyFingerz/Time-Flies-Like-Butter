@@ -92,6 +92,14 @@ public class PlayerMovement : MonoBehaviour
                         HopAnim.GetComponent<Animator>().SetTrigger("Hop2");
 
                     }
+
+                    else if (hop3)
+                    {
+                        HopAnim.GetComponent<SpriteRenderer>().enabled = true;
+                        HopAnim.GetComponent<Animator>().SetTrigger("Hop3");
+
+                    }
+
                 }
 
                 if (Input.GetButtonDown("Jump") && isGrounded())
@@ -228,7 +236,26 @@ public class PlayerMovement : MonoBehaviour
             KeyClock.SetActive(false);  
         }
 
-            else if (collision.name.Contains("Hop"))
+
+        else if (collision.CompareTag("PlayerRwPowerUp"))
+        {
+            collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+            rewindMode = RewindMode.enviroself;
+
+            rewindable = true;
+            rewindScript.EnableRewind();
+
+            rewindManager.RestartTracking();
+
+            KeyClock.SetActive(true);
+        }
+
+
+
+
+        else if (collision.name.Contains("Hop"))
             {
                 slerpyLerp.SetActive(true);
                

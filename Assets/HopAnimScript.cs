@@ -21,6 +21,11 @@ public class HopAnimScript : MonoBehaviour
             
         }
 
+        else if (hopNo == 3) 
+        {
+            Player.transform.position = new Vector3(18.76f, 14.2f, 0);
+        }
+
         
         
             Player.transform.localScale = gameObject.transform.localScale;
