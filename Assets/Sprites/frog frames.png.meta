@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +117,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: frog frames_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 11074
+        width: 1460
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b0d3ab287eb7b44e9fda9831fcf2105
+      internalID: -94517323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog frames_1
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 11074
+        width: 1454
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78693048ad94ef44ca22eda140016517
+      internalID: -1400934999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog frames_2
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 11074
+        width: 1454
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b24e9202c8a7b439bb910594ba1eb2
+      internalID: -1401510373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog frames_3
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 8910
+        width: 1454
+        height: 1367
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e08ac55379680640842ad7804063605
+      internalID: 1572895667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog frames_4
+      rect:
+        serializedVersion: 2
+        x: 3018
+        y: 7971
+        width: 2792
+        height: 2521
+      alignment: 9
+      pivot: {x: 0.7389519, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d7eb8452375494e91755b6ee45cbff
+      internalID: 2068419710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog frames_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4476
+        width: 2104
+        height: 1913
+      alignment: 9
+      pivot: {x: 0.66382915, y: 0.00000025524372}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d834845f0d05aa445809b7b7ce29c629
+      internalID: -243791028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog frames_6
+      rect:
+        serializedVersion: 2
+        x: 3957
+        y: 4482
+        width: 1552
+        height: 1730
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55c0c80228187a44bede8e567b7d42b
+      internalID: -217342461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog frames_7
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 2054
+        width: 1454
+        height: 1018
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f52506f51688bc449ab6d2ac32133cf
+      internalID: -1136006198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog frames_8
+      rect:
+        serializedVersion: 2
+        x: 3662
+        y: 2097
+        width: 1461
+        height: 1024
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820a442da0b98074ca87ad19f39804ee
+      internalID: 1012559617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +317,16 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      frog frames_3: 1572895667
+      frog frames_4: 2068419710
+      frog frames_7: -1136006198
+      frog frames_0: -94517323
+      frog frames_6: -217342461
+      frog frames_2: -1401510373
+      frog frames_8: 1012559617
+      frog frames_5: -243791028
+      frog frames_1: -1400934999
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     public GenericRewind rewindScript;
     public RewindManager rewindManager;
     public CameraFollow cam;
+    public FrogScript frog;
 
     [SerializeField] private AudioSource aS;
     [SerializeField] private AudioClip morphSound;
@@ -322,6 +323,12 @@ public class PlayerMovement : MonoBehaviour
         else if (collision.name.Contains("HighPoint"))
         {
             cam.LookLower();
+        }
+
+        else if (collision.name.Contains("EatZone"))
+        {
+            frog.StartEating();
+
         }
 
     }
