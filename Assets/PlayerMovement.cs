@@ -13,10 +13,13 @@ public class PlayerMovement : MonoBehaviour
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
     private bool canMorph = false;
+    public static bool rewindable = false;
 
     private bool hop1 = false;
     private bool hop2 = false;
-    public static bool rewindable = false;
+    private bool hop3 = false;  
+
+    private SpriteRenderer sprite;
 
     public LeafScript leaf;
 
@@ -32,6 +35,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private GameObject slerpyLerp;
+    [SerializeField] private GameObject HopAnim;
+    [SerializeField] private GameObject SlerpEnd;
+    [SerializeField] private GameObject SlerpCentre;
+    [SerializeField] private GameObject KeyClock;
+
+
 
 
 
@@ -40,10 +49,13 @@ public class PlayerMovement : MonoBehaviour
     public LifeStage lifeStage = LifeStage.caterpillar;
 
     public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2}
-    public RewindMode rewindMode = RewindMode.environment; 
+    public RewindMode rewindMode = RewindMode.environment;
     // Start is called before the first frame update
 
-
+    private void Start()
+    {
+        sprite = GetComponent<SpriteRenderer>();    
+    }
     // Update is called once per frame
     void Update()
     {
@@ -64,28 +76,40 @@ public class PlayerMovement : MonoBehaviour
         {
             case LifeStage.caterpillar:
 
-                if (hop1)
+                if(slerpyLerp.activeSelf && Input.GetButtonDown("Jump") && isGrounded() && Input.GetKey(KeyCode.LeftShift))
                 {
+                    sprite.enabled = false;
 
-                    anim.SetTrigger("Hop1");
-                }
-
-                else if (hop2)
-                {
-                    anim.SetTrigger("Hop2");
-                }
-
-                else {
-
-                    if (Input.GetButtonDown("Jump") && isGrounded())
+                    if(hop1)
                     {
-                        rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+                        HopAnim.GetComponent<SpriteRenderer>().enabled = true;
+                        HopAnim.GetComponent<Animator>().SetTrigger("Hop1");
                     }
 
-                    if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+                    else if(hop2)
                     {
-                        rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+                        HopAnim.GetComponent<SpriteRenderer>().enabled = true;
+                        HopAnim.GetComponent<Animator>().SetTrigger("Hop2");
+
                     }
+
+                    else if (hop3)
+                    {
+                        HopAnim.GetComponent<SpriteRenderer>().enabled = true;
+                        HopAnim.GetComponent<Animator>().SetTrigger("Hop3");
+
+                    }
+
+                }
+
+                if (Input.GetButtonDown("Jump") && isGrounded())
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+                }
+
+                if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
                 }
 
                 if (Input.GetKeyDown(KeyCode.Q))
@@ -192,12 +216,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name.Contains("TriggerLeaf1"))
+        if (collision.name.Contains("TriggerLeaf1"))
         {
             leaf.DropLeaf();
         }
 
-        if(collision.CompareTag("VoidPowerUp"))
+        if (collision.CompareTag("VoidPowerUp"))
         {
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
@@ -208,28 +232,63 @@ public class PlayerMovement : MonoBehaviour
             rewindScript.EnableRewind();
 
             rewindManager.RestartTracking();
-            
+
+            KeyClock.SetActive(false);  
+        }
+
+
+        else if (collision.CompareTag("PlayerRwPowerUp"))
+        {
+            collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+
+            rewindMode = RewindMode.enviroself;
+
+            rewindable = true;
+
+            KeyClock.SetActive(true);
+            rewindScript.EnableRewind();
+
+            rewindManager.RestartTracking();
 
         }
 
-        if(collision.name.Contains("Hop"))
-        {
-            slerpyLerp.SetActive(true);
 
+
+
+        else if (collision.name.Contains("Hop"))
+            {
+                slerpyLerp.SetActive(true);
+               
+
+            }
+
+            if (collision.name.Contains("Hop1"))
+            {
+                hop1 = true;
+                SlerpEnd.transform.position = new Vector3(16, 6.4f, 0);
+            SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
+            }
+
+            if (collision.name.Contains("Hop2"))
+            {
+                hop2 = true;
+                SlerpEnd.transform.position = new Vector3(16, 6.4f, 0);
+            SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
         }
 
-        if (collision.name.Contains("Hop1"))
-        {
-            hop1 = true;
-        }
+            else if (collision.name.Contains("Hop3"))
+            {
+            Debug.Log("Hop3");
+                hop3 = true;
+                SlerpEnd.transform.position = new Vector3(18.82f, 14.95f, 0);
+            SlerpCentre.transform.position = new Vector3(24.69f, 16.72f, 0);
 
-        if (collision.name.Contains("Hop2"))
-        {
-            hop2 = true;
         }
 
 
     }
+    
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.name.Contains("Hop"))
@@ -246,13 +305,6 @@ public class PlayerMovement : MonoBehaviour
         {
             hop2 = false;
         }
-
     }
-
-   /* private bool Hop(int hopNo)
-    {
-        return ;
-    } */
-
 
 }
