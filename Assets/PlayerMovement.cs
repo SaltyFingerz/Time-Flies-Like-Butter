@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     private bool canMorph = false;
     public static bool rewindable = false;
 
+    private bool hop1 = false;
+    private bool hop2 = false;
+
     public LeafScript leaf;
 
     public GenericRewind rewindScript;
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private GameObject slerpyLerp;
 
 
 
@@ -174,12 +178,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name.Contains("TriggerLeaf1"))
+        if (collision.name.Contains("TriggerLeaf1"))
         {
             leaf.DropLeaf();
         }
 
-        if(collision.CompareTag("VoidPowerUp"))
+        if (collision.CompareTag("VoidPowerUp"))
         {
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
@@ -190,11 +194,44 @@ public class PlayerMovement : MonoBehaviour
             rewindScript.EnableRewind();
 
             rewindManager.RestartTracking();
-            
+        }
 
-}
+            else if (collision.name.Contains("Hop"))
+            {
+                slerpyLerp.SetActive(true);
+                Debug.Log("YOYOYOY");
+
+            }
+
+            if (collision.name.Contains("Hop1"))
+            {
+                hop1 = true;
+            }
+
+            if (collision.name.Contains("Hop2"))
+            {
+                hop2 = true;
+            }
 
 
+        }
+    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name.Contains("Hop"))
+        {
+            slerpyLerp.SetActive(false);
+        }
+
+        if (collision.name.Contains("Hop1"))
+        {
+            hop1 = false;
+        }
+
+        if (collision.name.Contains("Hop2"))
+        {
+            hop2 = false;
+        }
     }
 
-}
+        }
