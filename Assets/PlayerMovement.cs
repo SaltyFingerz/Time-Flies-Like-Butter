@@ -65,11 +65,36 @@ public class PlayerMovement : MonoBehaviour
 
         StateCheck();
 
+        RewindState();
+
 
             Flip();
 
        
     }
+
+
+    void RewindState()
+    {
+        switch (rewindMode)
+        {
+            case RewindMode.environment:
+
+                break;
+
+            case RewindMode.enviroself:
+               
+
+                break;
+
+            case RewindMode.voidtime:
+              
+
+                break;
+
+        }
+    }
+
 
     void StateCheck()
     {
@@ -229,12 +254,15 @@ public class PlayerMovement : MonoBehaviour
 
             rewindMode = RewindMode.voidtime;
 
+            Debug.Log("voidTimeRewindMode");
             rewindable = true;
             rewindScript.EnableRewind();
 
             rewindManager.RestartTracking();
 
             KeyClock.SetActive(false);
+
+
         }
 
 
@@ -251,13 +279,16 @@ public class PlayerMovement : MonoBehaviour
             rewindScript.EnableRewind();
 
             rewindManager.RestartTracking();
+            Debug.Log("enviroeself rewind modë");
+
+
 
         }
 
 
 
 
-        else if (collision.name.Contains("Hop"))
+        else if (collision.name.Contains("Hop") && rewindMode == RewindMode.voidtime)
         {
             slerpyLerp.SetActive(true);
 
