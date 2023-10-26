@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 //www.youtube.com/watch?v=ZBj3LBA2vUY
 
 public class CameraFollow : MonoBehaviour
@@ -10,17 +11,23 @@ public class CameraFollow : MonoBehaviour
     public float smoothTime = 1f;
     private Vector3 velocity = Vector3.zero;
     [SerializeField] private Transform target;
+    private Camera cam;
 
 
 
     // OR
 
-  //  public float followSpeed = 2f;
+    //  public float followSpeed = 2f;
 
+    private void Start()
+    {
+        cam = GetComponent<Camera>();
+    }
     void Update()
     {
         Vector3 targetPosition = target.position + offset;
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+
        
 
         /*
@@ -36,6 +43,14 @@ public class CameraFollow : MonoBehaviour
     {
         offset = new Vector3(0f, 0f, -10f);
         smoothTime = 0.5f;
+    }
+
+    public void GreaterDistance()
+    {
+
+        offset = new Vector3(0f, 0f, -10f);
+        smoothTime = 0.5f;
+        cam.orthographicSize = 15f;
     }
 
 }

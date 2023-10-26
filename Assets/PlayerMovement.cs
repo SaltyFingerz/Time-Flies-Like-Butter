@@ -206,6 +206,7 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("Morph", true);
             aS.PlayOneShot(morphSound);
+            cam.GreaterDistance();
         }
     }
 
