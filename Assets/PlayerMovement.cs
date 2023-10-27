@@ -107,8 +107,14 @@ public class PlayerMovement : MonoBehaviour
 
         RewindState();
 
-
+        if (inputActions.Player.Rewind.ReadValue<float>() > 0)
+        {
+            ReverseFlip();
+        }
+        else
+        {
             Flip();
+        }
 
        
     }
@@ -283,6 +289,24 @@ public class PlayerMovement : MonoBehaviour
             isFacingRight = !isFacingRight;
             Vector3 localScale = transform.localScale;
             localScale.x = 1f;
+            transform.localScale = localScale;
+        }
+    }
+
+    private void ReverseFlip()
+    {
+        if (isFacingRight && horizontal < 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x = 1f;
+            transform.localScale = localScale;
+        }
+        else if (!isFacingRight && horizontal > 0f)
+        {
+            isFacingRight = !isFacingRight;
+            Vector3 localScale = transform.localScale;
+            localScale.x = -1f;
             transform.localScale = localScale;
         }
     }
