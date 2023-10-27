@@ -103,6 +103,11 @@ public class PlayerMovement : MonoBehaviour
             vertical = Input.GetAxisRaw("Vertical");
 
         }*/
+
+         if(Input.GetKeyDown(KeyCode.Q)) 
+        {
+            print("canMorph" + canMorph);
+                }
         StateCheck();
 
         RewindState();
@@ -186,12 +191,12 @@ public class PlayerMovement : MonoBehaviour
                     rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
                 }
 
-                if (Input.GetKeyDown(KeyCode.Q))
+                if (inputActions.Player.Rewind.ReadValue<float>() == 0 && canMorph)
 
                 {
                     Debug.Log("MorphingTime");
                   
-                    Metamorphosis();
+                    StartCoroutine(waitToMorph());
 
                 }
 
@@ -251,6 +256,13 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
+    IEnumerator waitToMorph()
+    {
+        yield return new WaitForSeconds(2);
+        if(inputActions.Player.Rewind.ReadValue<float>() == 0)
+        Metamorphosis();
+    }
+
     public void Metamorphosis()
     {
         if (canMorph)
@@ -258,6 +270,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("Morph", true);
             aS.PlayOneShot(morphSound);
             cam.GreaterDistance();
+            
         }
     }
 
