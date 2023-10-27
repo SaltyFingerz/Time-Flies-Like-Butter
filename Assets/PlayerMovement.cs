@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -17,7 +18,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool hop1 = false;
     private bool hop2 = false;
-    private bool hop3 = false;  
+    private bool hop3 = false;
+
+    private PlayerInput input;
 
     private SpriteRenderer sprite;
 
@@ -27,6 +30,8 @@ public class PlayerMovement : MonoBehaviour
     public RewindManager rewindManager;
     public CameraFollow cam;
     public FrogScript frog;
+    bool mobile = true;
+
 
     [SerializeField] private AudioSource aS;
     [SerializeField] private AudioClip morphSound;
@@ -44,7 +49,9 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-
+    Vector2 inputVector = Vector2.zero;
+    PlayerInput playerInput;
+    PlayerInputActions inputActions;
 
 
     public enum LifeStage {caterpillar = 0, butterfly = 1, dead = 2};
@@ -57,13 +64,44 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();    
+        input = GetComponent<PlayerInput>();
+        inputActions = new PlayerInputActions();
+        inputActions.Player.Enable();
+        inputActions.Player.Jump.performed += Jump;
+        
+    }
+
+   
+
+    public void Jump(InputAction.CallbackContext context)
+    {
+        if (lifeStage == LifeStage.caterpillar)
+        {
+            if (isGrounded())
+            {
+                if (context.performed)
+                {
+                    rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+                }
+               
+            }
+
+            if (context.canceled && rb.velocity.y > 0f) //not working why?
+            {
+                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+            }
+
+        }
     }
     // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
+        if (!mobile)
+        {
+            horizontal = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxisRaw("Vertical");
 
+        }
         StateCheck();
 
         RewindState();
@@ -129,6 +167,8 @@ public class PlayerMovement : MonoBehaviour
 
                 }
 
+                
+
                 if (Input.GetButtonDown("Jump") && isGrounded())
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
@@ -193,6 +233,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(horizontal * speed, vertical * speed);
         }
+
+        inputVector = inputActions.Player.Move.ReadValue<Vector2>();
+        horizontal = inputVector.x;
+        vertical = inputVector.y;
     }
 
     private bool isGrounded()
