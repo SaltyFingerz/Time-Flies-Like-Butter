@@ -5,6 +5,8 @@ using UnityEngine;
 public class SadElfScript : MonoBehaviour
 {
     Animator anim;
+    [SerializeField] private ParticleSystem tears;
+    [SerializeField] private GameObject splash;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +20,14 @@ public class SadElfScript : MonoBehaviour
         {
             anim.SetTrigger("Smile");
         }
+    }
+
+ 
+
+    IEnumerator StopTearsCoroutine()
+    {
+        tears.Stop();
+        yield return new WaitForSeconds(2f);
+        splash.SetActive(false);
     }
 }

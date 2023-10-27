@@ -50,7 +50,7 @@ public class CameraFollow : MonoBehaviour
 
         offset = new Vector3(0f, 0f, -10f);
         smoothTime = 0.5f;
-        cam.orthographicSize = 15f;
+        cam.orthographicSize = 12f;
     }
 
 }
