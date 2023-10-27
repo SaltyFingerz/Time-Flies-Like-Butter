@@ -257,12 +257,12 @@ public class PlayerMovement : MonoBehaviour
             rewindMode = RewindMode.voidtime;
 
             Debug.Log("voidTimeRewindMode");
-            rewindable = true;
-            rewindScript.EnableRewind();
+           // rewindable = true;
+            //rewindScript.EnableRewind();
 
-            rewindManager.RestartTracking();
+          //  rewindManager.RestartTracking();
 
-            KeyClock.SetActive(false);
+           // KeyClock.SetActive(false);
 
 
         }
