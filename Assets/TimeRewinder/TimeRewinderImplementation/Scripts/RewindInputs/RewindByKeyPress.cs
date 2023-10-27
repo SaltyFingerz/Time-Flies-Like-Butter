@@ -13,6 +13,7 @@ public class RewindByKeyPress : MonoBehaviour
 
     PlayerInputActions inputActions;
     private PlayerInput input;
+    bool canToggle;
 
     private void Start()
     {
@@ -21,9 +22,22 @@ public class RewindByKeyPress : MonoBehaviour
         inputActions.Player.Enable();
     }
 
+    private void Update()
+    {
+        if (inputActions.Player.Rewind.ReadValue<float>() > 0 && canToggle)
+        {
+            PlayerMovement.rewind = !PlayerMovement.rewind;
+            canToggle = false;
+        }
+
+        if (inputActions.Player.Rewind.ReadValue<float>() == 0)
+        {
+            canToggle = true;
+        }
+    }
     void FixedUpdate()
     {
-        if(inputActions.Player.Rewind.ReadValue<float>() > 0)                     //Change keycode for your own custom key if you want
+        if(PlayerMovement.rewind)                     //Change keycode for your own custom key if you want
         {
             rewindValue += rewindIntensity;                 //While holding the button, we will gradually rewind more and more time into the past
 

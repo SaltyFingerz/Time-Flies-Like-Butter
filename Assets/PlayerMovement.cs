@@ -47,7 +47,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject SlerpCentre;
     [SerializeField] private GameObject KeyClock;
 
-
+    public static bool rewind = false;
+    bool canToggle;
 
     Vector2 inputVector = Vector2.zero;
     PlayerInput playerInput;
@@ -104,15 +105,14 @@ public class PlayerMovement : MonoBehaviour
 
         }*/
 
-         if(Input.GetKeyDown(KeyCode.Q)) 
-        {
-            print("canMorph" + canMorph);
-                }
+       
+
+        
         StateCheck();
 
         RewindState();
 
-        if (inputActions.Player.Rewind.ReadValue<float>() > 0)
+        if (rewind)
         {
             ReverseFlip();
         }
@@ -153,7 +153,7 @@ public class PlayerMovement : MonoBehaviour
         {
             case LifeStage.caterpillar:
 
-                if(slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && inputActions.Player.Rewind.ReadValue<float>() > 0)
+                if(slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && rewind)
                 {
                     sprite.enabled = false;
 
@@ -354,6 +354,7 @@ public class PlayerMovement : MonoBehaviour
         {
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            rewind = false;
 
             rewindMode = RewindMode.enviroself;
 
