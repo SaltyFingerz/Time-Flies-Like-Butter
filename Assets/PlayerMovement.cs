@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public RewindManager rewindManager;
     public CameraFollow cam;
     public FrogScript frog;
-    bool mobile = true;
+  //  bool mobile = true;
 
 
     [SerializeField] private AudioSource aS;
@@ -67,13 +67,14 @@ public class PlayerMovement : MonoBehaviour
         input = GetComponent<PlayerInput>();
         inputActions = new PlayerInputActions();
         inputActions.Player.Enable();
-        inputActions.Player.Jump.performed += Jump;
-        
+       //inputActions.Player.Jump.performed += Jump;
+       // inputActions.Player.Rewind.performed += Rewind;
+
     }
 
    
 
-    public void Jump(InputAction.CallbackContext context)
+   /* public void Jump(InputAction.CallbackContext context)
     {
         if (lifeStage == LifeStage.caterpillar)
         {
@@ -92,16 +93,16 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
-    }
+    } */
     // Update is called once per frame
     void Update()
     {
-        if (!mobile)
+      /*  if (!mobile)
         {
             horizontal = Input.GetAxisRaw("Horizontal");
             vertical = Input.GetAxisRaw("Vertical");
 
-        }
+        }*/
         StateCheck();
 
         RewindState();
@@ -141,7 +142,7 @@ public class PlayerMovement : MonoBehaviour
         {
             case LifeStage.caterpillar:
 
-                if(slerpyLerp.activeSelf && Input.GetButtonDown("Jump") && isGrounded() && Input.GetKey(KeyCode.LeftShift))
+                if(slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && inputActions.Player.Rewind.ReadValue<float>() > 0)
                 {
                     sprite.enabled = false;
 
@@ -169,12 +170,12 @@ public class PlayerMovement : MonoBehaviour
 
                 
 
-                if (Input.GetButtonDown("Jump") && isGrounded())
+                if (inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded())
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                 }
 
-                if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
+                if (inputActions.Player.Jump.ReadValue<float>() == 0 && rb.velocity.y > 0f)
                 {
                     rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
                 }

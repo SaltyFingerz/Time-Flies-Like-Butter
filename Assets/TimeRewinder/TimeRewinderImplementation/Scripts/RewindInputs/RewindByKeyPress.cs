@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 /// <summary>
 ///  Example how to rewind time with key press
@@ -10,9 +11,19 @@ public class RewindByKeyPress : MonoBehaviour
     [SerializeField] AudioSource rewindSound;
     float rewindValue = 0;
 
+    PlayerInputActions inputActions;
+    private PlayerInput input;
+
+    private void Start()
+    {
+        input = GetComponent<PlayerInput>();
+        inputActions = new PlayerInputActions();
+        inputActions.Player.Enable();
+    }
+
     void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.LeftShift))                     //Change keycode for your own custom key if you want
+        if(inputActions.Player.Rewind.ReadValue<float>() > 0)                     //Change keycode for your own custom key if you want
         {
             rewindValue += rewindIntensity;                 //While holding the button, we will gradually rewind more and more time into the past
 
