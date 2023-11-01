@@ -268,10 +268,16 @@ public class PlayerMovement : MonoBehaviour
         if (canMorph)
         {
             anim.SetBool("Morph", true);
-            aS.PlayOneShot(morphSound);
-            cam.GreaterDistance();
+            
             
         }
+    }
+
+    public void MorphSoundEvent()
+    {
+        aS.PlayOneShot(morphSound);
+        cam.GreaterDistance();
+
     }
 
     public void BurstEvent()
