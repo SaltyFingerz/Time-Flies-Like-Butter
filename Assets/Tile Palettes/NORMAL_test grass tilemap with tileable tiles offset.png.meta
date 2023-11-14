@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: d7e94b344e7c42c46b1c575f12cdad37
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1119.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac8b705e02436ba4d881109db9d86eeb
+      internalID: -993454832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_1
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1119.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c836a441998c0db478fe766d28877367
+      internalID: -1416011636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1119.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de29130ca8aea544f944ec19cdf97937
+      internalID: 1866544644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_3
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1119.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7210c9890be65d1469a7bd431a721234
+      internalID: -109630812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843e8fa365958c14883d50f4b548b020
+      internalID: -1974445619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 840.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f424b368c80ccf41a9cff06c31ca6ea
+      internalID: -1991982781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 561.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0ad8124f099094d857e0df4b25e31c
+      internalID: -497144325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 561.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1bb5e343ee03744bb4c96e55ccbc44
+      internalID: 2063638212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_8
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 561.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5808edb41756b64282a5df895e7dc89
+      internalID: 1355239920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_9
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 561.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102ef1eee7b6b9840b2c9d0111af46ad
+      internalID: -1991025750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_10
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 282.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf9ff6ef22f499459e820177e763f57
+      internalID: 1145247773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_11
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 282.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d700641c73a9342448bedd98dc93596f
+      internalID: -1695246169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_12
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 282.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f592ccb0b5159b4b84d6a1bf8f1b21e
+      internalID: 2121892607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_13
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 3.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b926e53f54ed9e4a90d85e63092af2c
+      internalID: -1125746043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NORMAL_test grass tilemap with tileable tiles offset_14
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 3.25
+        width: 280.33334
+        height: 279.75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6811688bf274a41a27b5282de468dd
+      internalID: -1533772527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NORMAL_test grass tilemap with tileable tiles offset_14: -1533772527
+      NORMAL_test grass tilemap with tileable tiles offset_1: -1416011636
+      NORMAL_test grass tilemap with tileable tiles offset_8: 1355239920
+      NORMAL_test grass tilemap with tileable tiles offset_11: -1695246169
+      NORMAL_test grass tilemap with tileable tiles offset_7: 2063638212
+      NORMAL_test grass tilemap with tileable tiles offset_13: -1125746043
+      NORMAL_test grass tilemap with tileable tiles offset_4: -1974445619
+      NORMAL_test grass tilemap with tileable tiles offset_0: -993454832
+      NORMAL_test grass tilemap with tileable tiles offset_9: -1991025750
+      NORMAL_test grass tilemap with tileable tiles offset_10: 1145247773
+      NORMAL_test grass tilemap with tileable tiles offset_3: -109630812
+      NORMAL_test grass tilemap with tileable tiles offset_12: 2121892607
+      NORMAL_test grass tilemap with tileable tiles offset_6: -497144325
+      NORMAL_test grass tilemap with tileable tiles offset_5: -1991982781
+      NORMAL_test grass tilemap with tileable tiles offset_2: 1866544644
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
