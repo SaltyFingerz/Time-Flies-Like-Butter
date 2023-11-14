@@ -45,16 +45,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
         rewindResume.interactable = false;
     }
 
-    //to move the slider back when rewinding by toggle
-    public void MoveSliderBack()
-    {
-        slider.value -= 0.03f * Time.deltaTime; 
-    }
-
-    public void resetSlider()
-    {
-        slider.value = 0f;
-    }
+   
 
     public void PauseTracking()
     {

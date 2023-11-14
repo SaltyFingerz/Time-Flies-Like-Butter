@@ -6,7 +6,7 @@ using UnityEngine;
 public class RewindManager : MonoBehaviour
 {
 
-    public RewindBySlider rewindBySlider;
+
     
     /// <summary>
     /// Property defining how much into the past should be tracked. 
@@ -143,13 +143,14 @@ public class RewindManager : MonoBehaviour
         if (IsBeingRewinded)
         {
             _rewindedObjects.ForEach(x => x.Rewind(rewindSeconds));
-            rewindBySlider.MoveSliderBack();
+            
+            // rewindBySlider.MoveSliderBack();
             
         }
         else 
         {
             _rewindedObjects.ForEach(x => x.Track());
-            rewindBySlider.resetSlider();
+         //   rewindBySlider.resetSlider();
 
             if(TrackingEnabled)
                 HowManySecondsAvailableForRewind = Mathf.Min(HowManySecondsAvailableForRewind + Time.fixedDeltaTime, HowManySecondsToTrack);
