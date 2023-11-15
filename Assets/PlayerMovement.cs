@@ -106,6 +106,14 @@ public class PlayerMovement : MonoBehaviour
         }*/
 
        
+        if(transform.localScale.x == 1.00001f)
+        {
+            sprite.flipX = true;
+        }
+        else
+        {
+            sprite.flipX = false;
+        }
 
         
         StateCheck();
@@ -300,7 +308,7 @@ public class PlayerMovement : MonoBehaviour
         { 
             isFacingRight = !isFacingRight;
             Vector3 localScale = transform.localScale;
-            localScale.x = -1f;
+            localScale.x = 1.00001f;
             transform.localScale = localScale;
         }
         else if (!isFacingRight && horizontal > 0f)
@@ -325,7 +333,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isFacingRight = !isFacingRight;
             Vector3 localScale = transform.localScale;
-            localScale.x = -1f;
+            localScale.x = 1.00001f;
             transform.localScale = localScale;
         }
     }
