@@ -462,7 +462,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -94517323, guid: 0315f037ca72bfc4a9f72fe9e0409e9b, type: 3}
+  m_Sprite: {fileID: 116572104, guid: 96979980a0d688b41a107a55238c1934, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -481,8 +481,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105466957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.3003, y: -7.52, z: -0.22943552}
-  m_LocalScale: {x: 1.1651168, y: 1.1651168, z: 1.1651168}
+  m_LocalPosition: {x: 34.35, y: -7.39, z: -0.22943552}
+  m_LocalScale: {x: 0.95271605, y: 0.95271605, z: 0.95271605}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -11807,7 +11807,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 7.7352943
+  orthographic size: 8.088235
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -22713,7 +22713,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 76d9a05b043d1874ca8ac2b3692f68d1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.24528301, g: 0.18396226, b: 0.18396226, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -38808,7 +38808,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.285
   m_Color: {r: 0.4554252, g: 0.6431373, b: 0.3529412, a: 1}
-  m_Intensity: 10.33
+  m_Intensity: 9.09
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
