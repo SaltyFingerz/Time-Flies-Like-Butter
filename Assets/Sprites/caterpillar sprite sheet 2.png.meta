@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 600
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,10 +122,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_0
       rect:
         serializedVersion: 2
-        x: 192
-        y: 12831
-        width: 1631
-        height: 1994
+        x: 45
+        y: 3003
+        width: 383
+        height: 467
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +143,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_1
       rect:
         serializedVersion: 2
-        x: 2259
-        y: 12831
-        width: 1631
-        height: 1994
+        x: 525
+        y: 3003
+        width: 386
+        height: 467
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_2
       rect:
         serializedVersion: 2
-        x: 4230
-        y: 12831
-        width: 1631
-        height: 2001
+        x: 988
+        y: 3003
+        width: 384
+        height: 467
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,12 +185,12 @@ TextureImporter:
       name: caterpillar sprite sheet 2_3
       rect:
         serializedVersion: 2
-        x: 6415
-        y: 12831
-        width: 1660
-        height: 2001
+        x: 1500
+        y: 3003
+        width: 392
+        height: 467
       alignment: 9
-      pivot: {x: 0.4880321, y: 0.00000048803724}
+      pivot: {x: 0.4854369, y: 0.0003392875}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -206,12 +206,12 @@ TextureImporter:
       name: caterpillar sprite sheet 2_4
       rect:
         serializedVersion: 2
-        x: 8673
-        y: 12831
-        width: 1713
-        height: 1994
+        x: 2030
+        y: 3003
+        width: 403
+        height: 467
       alignment: 9
-      pivot: {x: 0.48343208, y: 0.0000004897505}
+      pivot: {x: 0.47009248, y: 0.00033510523}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -227,12 +227,12 @@ TextureImporter:
       name: caterpillar sprite sheet 2_5
       rect:
         serializedVersion: 2
-        x: 199
-        y: 10365
-        width: 1669
-        height: 1994
+        x: 47
+        y: 2426
+        width: 390
+        height: 468
       alignment: 9
-      pivot: {x: 0.4895986, y: -0.00031246082}
+      pivot: {x: 0.48422465, y: 0.0003208258}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -248,10 +248,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_6
       rect:
         serializedVersion: 2
-        x: 2591
-        y: 10365
-        width: 1631
-        height: 1994
+        x: 606
+        y: 2426
+        width: 382
+        height: 468
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_7
       rect:
         serializedVersion: 2
-        x: 4916
-        y: 10365
-        width: 1631
-        height: 1994
+        x: 1151
+        y: 2426
+        width: 382
+        height: 468
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_8
       rect:
         serializedVersion: 2
-        x: 6983
-        y: 10365
-        width: 1631
-        height: 1994
+        x: 1634
+        y: 2426
+        width: 382
+        height: 468
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,10 +311,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_9
       rect:
         serializedVersion: 2
-        x: 8659
-        y: 10616
-        width: 44
-        height: 52
+        x: 2027
+        y: 2485
+        width: 12
+        height: 12
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,10 +332,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_10
       rect:
         serializedVersion: 2
-        x: 8954
-        y: 10365
-        width: 1631
-        height: 1994
+        x: 2096
+        y: 2426
+        width: 382
+        height: 468
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +353,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_11
       rect:
         serializedVersion: 2
-        x: 170
-        y: 7309
-        width: 2044
-        height: 2185
+        x: 41
+        y: 1711
+        width: 477
+        height: 511
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,10 +374,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_12
       rect:
         serializedVersion: 2
-        x: 2539
-        y: 7309
-        width: 2488
-        height: 1824
+        x: 594
+        y: 1711
+        width: 583
+        height: 428
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,10 +395,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_13
       rect:
         serializedVersion: 2
-        x: 5758
-        y: 7309
-        width: 2827
-        height: 1440
+        x: 1348
+        y: 1711
+        width: 661
+        height: 338
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,10 +416,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_15
       rect:
         serializedVersion: 2
-        x: 4436
-        y: 4607
-        width: 2975
-        height: 1602
+        x: 1037
+        y: 1078
+        width: 698
+        height: 377
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,10 +437,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_16
       rect:
         serializedVersion: 2
-        x: 9028
-        y: 4607
-        width: 2007
-        height: 1949
+        x: 2113
+        y: 1078
+        width: 470
+        height: 456
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,10 +458,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_17
       rect:
         serializedVersion: 2
-        x: 4436
-        y: 2171
-        width: 3381
-        height: 1373
+        x: 1037
+        y: 508
+        width: 793
+        height: 321
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: caterpillar sprite sheet 2_18
       rect:
         serializedVersion: 2
-        x: 4436
-        y: 288
-        width: 3639
-        height: 1144
+        x: 1037
+        y: 67
+        width: 857
+        height: 268
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,6 +496,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1059
+        width: 738
+        height: 303
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322653716a0d17d498a25919bf6cd32c
+      internalID: 1732466573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -505,7 +526,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: c9bb6c6fd5342ee4397c3e0aa1f69b42, type: 3}
+      name: _NormalMap
     nameFileIdTable:
       caterpillar sprite sheet 2_3: -1971467224
       caterpillar sprite sheet 2_7: 548715300

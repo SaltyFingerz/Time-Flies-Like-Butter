@@ -481,8 +481,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105466957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 34.35, y: -7.39, z: -0.22943552}
-  m_LocalScale: {x: 0.95271605, y: 0.95271605, z: 0.95271605}
+  m_LocalPosition: {x: 34.35, y: -7.39, z: -0.2294355}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -11807,7 +11807,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.088235
+  orthographic size: 7.1960783
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -38294,7 +38294,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.9591846, y: 2.6699998}
+  m_Size: {x: 2.5438662, y: 3.1100001}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -38388,8 +38388,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.7188, y: 3.323333}
-    newSize: {x: 4.9591846, y: 2.6699998}
+    oldSize: {x: 2.5537453, y: 3.1133332}
+    newSize: {x: 2.5438662, y: 3.1100001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -39838,7 +39838,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.9591846, y: 2.6699998}
+  m_Size: {x: 2.5438662, y: 3.1100001}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
