@@ -255,7 +255,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         inputVector = inputActions.Player.Move.ReadValue<Vector2>();
-        horizontal = inputVector.x;
+        horizontal = SimpleInput.GetAxis("Horizontal");
         vertical = inputVector.y;
     }
 

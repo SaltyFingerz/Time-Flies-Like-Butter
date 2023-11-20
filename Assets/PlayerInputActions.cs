@@ -190,6 +190,17 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""ca8c6ccd-abc3-4d16-b15a-bc1f3beeed8b"",
+                    ""path"": ""<Gamepad>/dpad"",
+                    ""interactions"": ""Press(behavior=2)"",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""fddb9d2f-06ff-4f2c-848b-79d239f7ca65"",
                     ""path"": ""<Keyboard>/leftShift"",
                     ""interactions"": """",
