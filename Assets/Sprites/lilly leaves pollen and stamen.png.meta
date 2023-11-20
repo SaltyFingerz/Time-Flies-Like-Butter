@@ -1,0 +1,584 @@
+fileFormatVersion: 2
+guid: 4a0141368f70c9b4d936a9631c664b0d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_0
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 1415
+        width: 173
+        height: 207
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7ca124affcf9e4cb89c09f28bfec48
+      internalID: -1538424608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_4
+      rect:
+        serializedVersion: 2
+        x: 2396
+        y: 1441
+        width: 85
+        height: 305
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0bcae19185d10439ce8f3707dfbe29
+      internalID: 1009928604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_5
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 1356
+        width: 648
+        height: 188
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0335492cde45b345943a2d0a66bcdc5
+      internalID: 1385575716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_7
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 1498
+        width: 148
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768cdd1a99419af4e9d881b00f486e68
+      internalID: -1934925532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 950
+        width: 817
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f559a3cf8b170be4ba09f4a5379d988b
+      internalID: 1390420359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_11
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 839
+        width: 105
+        height: 291
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787eaf9e26ebe4f458a376e76e08d0b8
+      internalID: 290214790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_12
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 839
+        width: 182
+        height: 279
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d40bb1db98c43478e760c1e5cf6fbd
+      internalID: 915382347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_13
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 839
+        width: 204
+        height: 276
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aefbc3debf432414190b775b36bf8e62
+      internalID: -378607065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_14
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 839
+        width: 183
+        height: 285
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9472c86a4c999409313850565977bf
+      internalID: -421870245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_15
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 493
+        width: 629
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9e8216d1150b54e822fdc72a0ecfc2
+      internalID: 37400772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_16
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 456
+        width: 168
+        height: 292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f6f97646d184149bc5fc2be4b399ab
+      internalID: -264856471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_17
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 456
+        width: 163
+        height: 300
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea27a2a0518ebc458bee9bae89369d1
+      internalID: 1067185806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_18
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 441
+        width: 187
+        height: 319
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bcde5eaae917c42a484d9c31fd5ae9
+      internalID: -511220601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_19
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 432
+        width: 189
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1cb2b86733b684bb4503663c7694be
+      internalID: 1115199569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_20
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 437
+        width: 186
+        height: 336
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a85f4cb91b79545b3bf36d4f571445
+      internalID: 2129926314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_21
+      rect:
+        serializedVersion: 2
+        x: 2281
+        y: 432
+        width: 200
+        height: 338
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2972ad9d1a27d459c469cb48aab30d
+      internalID: -1534016788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 52
+        width: 201
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e09a2ee888c22e48967592999d96fda
+      internalID: -500703782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_23
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 63
+        width: 189
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab36abd4b1d5c5e49be971d44ad0bdd9
+      internalID: 1169941720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_24
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 62
+        width: 195
+        height: 324
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e12d1395534e2d4aa4e1cc326a2adb4
+      internalID: -1278960525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lilly leaves pollen and stamen_25
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 58
+        width: 195
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabbaa137d62f3f40ac1416815c6322b
+      internalID: 1742427967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 3ab9fa130b2492143954763156dc1423, type: 3}
+      name: _NormalMap
+    nameFileIdTable:
+      lilly leaves pollen and stamen_8: 282698649
+      lilly leaves pollen and stamen_12: 915382347
+      lilly leaves pollen and stamen_1: 874439301
+      lilly leaves pollen and stamen_16: -264856471
+      lilly leaves pollen and stamen_13: -378607065
+      lilly leaves pollen and stamen_20: 2129926314
+      lilly leaves pollen and stamen_14: -421870245
+      lilly leaves pollen and stamen_17: 1067185806
+      lilly leaves pollen and stamen_23: 1169941720
+      lilly leaves pollen and stamen_0: -1538424608
+      lilly leaves pollen and stamen_3: -1885466889
+      lilly leaves pollen and stamen_4: 1009928604
+      lilly leaves pollen and stamen_5: 1385575716
+      lilly leaves pollen and stamen_9: 1214986764
+      lilly leaves pollen and stamen_25: 1742427967
+      lilly leaves pollen and stamen_19: 1115199569
+      lilly leaves pollen and stamen_6: 181569091
+      lilly leaves pollen and stamen_10: 1390420359
+      lilly leaves pollen and stamen_21: -1534016788
+      lilly leaves pollen and stamen_2: 1998238966
+      lilly leaves pollen and stamen_22: -500703782
+      lilly leaves pollen and stamen_11: 290214790
+      lilly leaves pollen and stamen_18: -511220601
+      lilly leaves pollen and stamen_15: 37400772
+      lilly leaves pollen and stamen_24: -1278960525
+      lilly leaves pollen and stamen_7: -1934925532
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

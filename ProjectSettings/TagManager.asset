@@ -6,6 +6,8 @@ TagManager:
   tags:
   - VoidPowerUp
   - PlayerRwPowerUp
+  - Sad
+  - Food
   layers:
   - Default
   - TransparentFX
@@ -13,7 +15,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - cam
   - 
   - 
   - 
