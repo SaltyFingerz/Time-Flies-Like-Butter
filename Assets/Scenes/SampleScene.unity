@@ -38755,6 +38755,8 @@ MonoBehaviour:
   SlerpEnd: {fileID: 629415831881000196}
   SlerpCentre: {fileID: 1783440126497754422}
   KeyClock: {fileID: 1319847908}
+  UpButton: {fileID: 1566766431}
+  DownButton: {fileID: 1181887764}
   lifeStage: 0
   rewindMode: 0
 --- !u!50 &1082849673
@@ -39448,6 +39450,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153761257}
   m_CullTransparentMesh: 1
+--- !u!1 &1181887764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1978529516887816, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
+  m_PrefabInstance: {fileID: 1932817751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1203789683
 GameObject:
   m_ObjectHideFlags: 0
@@ -40928,6 +40935,11 @@ Transform:
   m_Father: {fileID: 469046478}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1566766431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1757920875146174, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
+  m_PrefabInstance: {fileID: 1932817751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1572830215
 GameObject:
   m_ObjectHideFlags: 0

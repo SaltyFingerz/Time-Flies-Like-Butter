@@ -47,6 +47,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject SlerpCentre;
     [SerializeField] private GameObject KeyClock;
 
+    [SerializeField] private GameObject UpButton;
+    [SerializeField] private GameObject DownButton;
+
     public static bool rewind = false;
     bool canToggle;
 
@@ -248,15 +251,19 @@ public class PlayerMovement : MonoBehaviour
         if (lifeStage == LifeStage.caterpillar)
         {
             rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+            UpButton.SetActive(false);
+            DownButton.SetActive(false);
         }
         if(lifeStage== LifeStage.butterfly)
         {
             rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+            UpButton.SetActive(true);
+            DownButton.SetActive(true);
         }
 
         inputVector = inputActions.Player.Move.ReadValue<Vector2>();
         horizontal = SimpleInput.GetAxis("Horizontal");
-        vertical = inputVector.y;
+        vertical = SimpleInput.GetAxis("Vertical");
     }
 
     private bool isGrounded()
