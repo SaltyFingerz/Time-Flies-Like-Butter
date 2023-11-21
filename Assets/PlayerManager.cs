@@ -9,7 +9,7 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] private RuntimeAnimatorController redAC;
 
-
+    public static bool openRed = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,6 +21,11 @@ public class PlayerManager : MonoBehaviour
         else if (collision.gameObject.name.Contains("BlueFlower"))
         {
             gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
+        }
+
+        else if (collision.gameObject.name.Contains("RedFlower") && gameObject.GetComponent<Animator>().runtimeAnimatorController == redAC)
+        {
+            openRed = true;
         }
     }
 
