@@ -7,9 +7,14 @@ public class StamenScript : MonoBehaviour
     // Start is called before the first frame update
 
     private Animator anim;
+    
+    [SerializeField] private Transform destination;
+    [SerializeField] private Animator animDestStamen;
+    private Collider2D triggerPortal;
     void Start()
     {
         anim = GetComponent<Animator>();
+        triggerPortal = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -19,5 +24,31 @@ public class StamenScript : MonoBehaviour
         {
             anim.SetBool("Portal", true);
         }
+
+       
     }
+
+
+    public void OpenPortalEvent()
+    {
+        if(gameObject.name.Contains("Red"))
+       
+
+        triggerPortal.enabled = true;
+
+    }
+
+    public Transform GetDestination()
+    {
+        print("destination yo");
+        return destination;
+       
+    }
+
+    public void OpenDestination()
+    {
+        animDestStamen.SetTrigger("Open");
+    }    
+
+
 }

@@ -11,6 +11,8 @@ public class PlayerManager : MonoBehaviour
 
     public static bool openRed = false;
 
+    private GameObject currentPortal;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Water"))
@@ -27,7 +29,37 @@ public class PlayerManager : MonoBehaviour
         {
             openRed = true;
         }
+
+        if (collision.gameObject.name.Contains("StamenRed"))
+        {
+            currentPortal = collision.gameObject;
+
+        }
     }
 
-    
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name.Contains("StamenRed"))
+        {
+            if (collision.gameObject == currentPortal)
+            {
+                currentPortal = null;
+           
+
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (currentPortal != null)
+        {
+            print("not null");
+            transform.position = currentPortal.GetComponent<StamenScript>().GetDestination().position;
+            currentPortal.GetComponent<StamenScript>().OpenDestination();
+        }
+    }
+
+   
+
 }
