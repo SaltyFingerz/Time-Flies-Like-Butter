@@ -308,27 +308,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2 with blue pollen_9
-      rect:
-        serializedVersion: 2
-        x: 2027
-        y: 2485
-        width: 12
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f669a5ec72b6c584688e2c23a7f9b4ed
-      internalID: -627364752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: caterpillar sprite sheet 2 with blue pollen_10
       rect:
         serializedVersion: 2
@@ -528,7 +507,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      caterpillar sprite sheet 2 with blue pollen_16: -186369524
+      caterpillar sprite sheet 2 with blue pollen_3: -1368420318
       caterpillar sprite sheet 2 with blue pollen_15: -270589771
       caterpillar sprite sheet 2 with blue pollen_17: 1559124337
       caterpillar sprite sheet 2 with blue pollen_5: 1207757807
@@ -546,7 +525,7 @@ TextureImporter:
       caterpillar sprite sheet 2 with blue pollen_12: -360133737
       caterpillar sprite sheet 2 with blue pollen_10: -1119891611
       caterpillar sprite sheet 2 with blue pollen_7: -1832240222
-      caterpillar sprite sheet 2 with blue pollen_3: -1368420318
+      caterpillar sprite sheet 2 with blue pollen_16: -186369524
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

@@ -20,7 +20,14 @@ public class StamenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(PlayerManager.openRed)
+        if(PlayerManager.openRed && gameObject.name.Contains("Red"))
+        {
+            
+                anim.SetBool("Portal", true);
+           
+        }
+
+        if(PlayerManager.openBlue && gameObject.name.Contains("Blue"))
         {
             anim.SetBool("Portal", true);
         }
@@ -31,10 +38,13 @@ public class StamenScript : MonoBehaviour
 
     public void OpenPortalEvent()
     {
-        if(gameObject.name.Contains("Red"))
+        
+
+            triggerPortal.enabled = true;
        
 
-        triggerPortal.enabled = true;
+     
+        
 
     }
 
