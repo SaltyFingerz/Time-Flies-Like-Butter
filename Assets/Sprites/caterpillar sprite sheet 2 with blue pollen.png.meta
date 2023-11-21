@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc1b3983f99cd9b4eaba4da980a47d15
+guid: 46b7d0e4ec55794478886e7cb31efb86
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_0
+      name: caterpillar sprite sheet 2 with blue pollen_0
       rect:
         serializedVersion: 2
         x: 45
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1cd02173b28c1e4480eb624d640b81d
-      internalID: 1535946936
+      spriteID: 83e58b2fdc5748b41ba061a9717d9b3a
+      internalID: -2108132425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_1
+      name: caterpillar sprite sheet 2 with blue pollen_1
       rect:
         serializedVersion: 2
         x: 525
@@ -154,14 +154,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c959db78a282d484baa41aa47095e56a
-      internalID: 859458534
+      spriteID: d7d95fa638a0e3a43bcc892d97ce5dea
+      internalID: -565734828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_2
+      name: caterpillar sprite sheet 2 with blue pollen_2
       rect:
         serializedVersion: 2
         x: 988
@@ -175,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c1ee353708db5943bd3522af1b6a1ea
-      internalID: -1072326366
+      spriteID: 12265a6bac5022e48957ae5132a09b15
+      internalID: 1324863972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_3
+      name: caterpillar sprite sheet 2 with blue pollen_3
       rect:
         serializedVersion: 2
         x: 1500
@@ -190,20 +190,20 @@ TextureImporter:
         width: 392
         height: 467
       alignment: 9
-      pivot: {x: 0.4854369, y: 0.0003392875}
+      pivot: {x: 0.49310833, y: 0.00000052278506}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0b529e5df43d434883120fd4f92bea5
-      internalID: -1971467224
+      spriteID: 69a50ff56087cd94f8c0722096ada18f
+      internalID: -1368420318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_4
+      name: caterpillar sprite sheet 2 with blue pollen_4
       rect:
         serializedVersion: 2
         x: 2030
@@ -211,20 +211,20 @@ TextureImporter:
         width: 403
         height: 467
       alignment: 9
-      pivot: {x: 0.47009248, y: 0.00033510523}
+      pivot: {x: 0.47627535, y: 0.00030164697}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0148da4dfac35a24998ddb615e67df03
-      internalID: 1395955335
+      spriteID: 6140cab5776aa8f459c8644d36f4a9a9
+      internalID: 1102997027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_5
+      name: caterpillar sprite sheet 2 with blue pollen_5
       rect:
         serializedVersion: 2
         x: 47
@@ -232,20 +232,20 @@ TextureImporter:
         width: 390
         height: 468
       alignment: 9
-      pivot: {x: 0.48422465, y: 0.0003208258}
+      pivot: {x: 0.4892123, y: -0.000000521668}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 766a219360202cd4daa9431cf798b953
-      internalID: -1299060645
+      spriteID: e380f89d00a29384f8fc05ca28eb7223
+      internalID: 1207757807
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_6
+      name: caterpillar sprite sheet 2 with blue pollen_6
       rect:
         serializedVersion: 2
         x: 606
@@ -259,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baf3e08e234ce9b48bbf5b938fa99074
-      internalID: 281546037
+      spriteID: fc928645adf832a46a396f0d960b26c3
+      internalID: 1064170542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_7
+      name: caterpillar sprite sheet 2 with blue pollen_7
       rect:
         serializedVersion: 2
         x: 1151
@@ -280,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b27a322774753e14a87e3d1de7708aee
-      internalID: 548715300
+      spriteID: 52bf909263855854ba0e57c42ea49057
+      internalID: -1832240222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_8
+      name: caterpillar sprite sheet 2 with blue pollen_8
       rect:
         serializedVersion: 2
         x: 1634
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d00fbc233647a194dbbd0e5a3b5a661b
-      internalID: 1725598784
+      spriteID: fc910b9ace4af7f4db4625d0eaa468d2
+      internalID: 1372658728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_9
+      name: caterpillar sprite sheet 2 with blue pollen_9
       rect:
         serializedVersion: 2
         x: 2027
@@ -322,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3eb7d0cc893fca46a01a30e25768aee
-      internalID: 2132356291
+      spriteID: f669a5ec72b6c584688e2c23a7f9b4ed
+      internalID: -627364752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_10
+      name: caterpillar sprite sheet 2 with blue pollen_10
       rect:
         serializedVersion: 2
         x: 2096
@@ -343,14 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44f1b8e5b9566974cbcbb1d328b3beb5
-      internalID: 632194193
+      spriteID: 75bec6bb3f7c1ed43b31a181aeca3ace
+      internalID: -1119891611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_11
+      name: caterpillar sprite sheet 2 with blue pollen_11
       rect:
         serializedVersion: 2
         x: 41
@@ -364,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b853d3b244453a24bb77fc2e360a878d
-      internalID: 467808391
+      spriteID: 660024832ac400c4f83c9ce073e1d16c
+      internalID: 1423719872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_12
+      name: caterpillar sprite sheet 2 with blue pollen_12
       rect:
         serializedVersion: 2
         x: 594
@@ -385,14 +385,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a2fff6fdbdb1be4fb6a3778b40003ea
-      internalID: 1027957052
+      spriteID: e1683b9899fbbb24287e7c79a4bdbaf2
+      internalID: -360133737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_13
+      name: caterpillar sprite sheet 2 with blue pollen_13
       rect:
         serializedVersion: 2
         x: 1348
@@ -406,98 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e08631bfce4908544b28952d1dd51eaa
-      internalID: 799230271
+      spriteID: 497e1ac30060351489f73f49ec24664d
+      internalID: -1653307406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet 2_15
-      rect:
-        serializedVersion: 2
-        x: 1037
-        y: 1078
-        width: 698
-        height: 377
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1c4665bd01d5b304897426a939df8365
-      internalID: -442425538
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: caterpillar sprite sheet 2_16
-      rect:
-        serializedVersion: 2
-        x: 2113
-        y: 1078
-        width: 470
-        height: 456
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c265b9840e862d54e8af0e1c9d978d32
-      internalID: -1573224989
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: caterpillar sprite sheet 2_17
-      rect:
-        serializedVersion: 2
-        x: 1037
-        y: 508
-        width: 793
-        height: 321
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8af7591907b07694689d4e8c96cf18f3
-      internalID: -246037521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: caterpillar sprite sheet 2_18
-      rect:
-        serializedVersion: 2
-        x: 1037
-        y: 67
-        width: 857
-        height: 268
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9fc83cfc8460ff499f4018d9991ff94
-      internalID: 99572433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: caterpillar sprite sheet 2_14
+      name: caterpillar sprite sheet 2 with blue pollen_14
       rect:
         serializedVersion: 2
         x: 76
@@ -511,8 +427,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 322653716a0d17d498a25919bf6cd32c
-      internalID: 1732466573
+      spriteID: 7d86a8941592421488d355ab3b7f81cd
+      internalID: 1238712961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2 with blue pollen_15
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 1078
+        width: 698
+        height: 377
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24789d3e66eedb2438bf5f8467cf4591
+      internalID: -270589771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2 with blue pollen_16
+      rect:
+        serializedVersion: 2
+        x: 2113
+        y: 1078
+        width: 470
+        height: 456
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c659141b5e702d48a8d04f63ca5d844
+      internalID: -186369524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2 with blue pollen_17
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 508
+        width: 793
+        height: 321
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4cfc7c371aba947be8a917269852ea
+      internalID: 1559124337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet 2 with blue pollen_18
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 67
+        width: 857
+        height: 268
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63a8e01d4ba43046b8a77794b00b46a
+      internalID: 50570085
       vertices: []
       indices: 
       edges: []
@@ -526,31 +526,27 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: c9bb6c6fd5342ee4397c3e0aa1f69b42, type: 3}
-      name: _NormalMap
-    - texture: {fileID: 2800000, guid: c161ce587192d3348a023df47eaabb40, type: 3}
-      name: _PollenLayer
+    secondaryTextures: []
     nameFileIdTable:
-      caterpillar sprite sheet 2_3: -1971467224
-      caterpillar sprite sheet 2_7: 548715300
-      caterpillar sprite sheet 2_16: -1573224989
-      caterpillar sprite sheet 2_4: 1395955335
-      caterpillar sprite sheet 2_6: 281546037
-      caterpillar sprite sheet 2_14: 1732466573
-      caterpillar sprite sheet 2_2: -1072326366
-      caterpillar sprite sheet 2_8: 1725598784
-      caterpillar sprite sheet 2_5: -1299060645
-      caterpillar sprite sheet 2_1: 859458534
-      caterpillar sprite sheet 2_10: 632194193
-      caterpillar sprite sheet 2_18: 99572433
-      caterpillar sprite sheet 2_9: 2132356291
-      caterpillar sprite sheet 2_12: 1027957052
-      caterpillar sprite sheet 2_17: -246037521
-      caterpillar sprite sheet 2_11: 467808391
-      caterpillar sprite sheet 2_13: 799230271
-      caterpillar sprite sheet 2_15: -442425538
-      caterpillar sprite sheet 2_0: 1535946936
+      caterpillar sprite sheet 2 with blue pollen_16: -186369524
+      caterpillar sprite sheet 2 with blue pollen_15: -270589771
+      caterpillar sprite sheet 2 with blue pollen_17: 1559124337
+      caterpillar sprite sheet 2 with blue pollen_5: 1207757807
+      caterpillar sprite sheet 2 with blue pollen_13: -1653307406
+      caterpillar sprite sheet 2 with blue pollen_1: -565734828
+      caterpillar sprite sheet 2 with blue pollen_9: -627364752
+      caterpillar sprite sheet 2 with blue pollen_6: 1064170542
+      caterpillar sprite sheet 2 with blue pollen_14: 1238712961
+      caterpillar sprite sheet 2 with blue pollen_0: -2108132425
+      caterpillar sprite sheet 2 with blue pollen_18: 50570085
+      caterpillar sprite sheet 2 with blue pollen_2: 1324863972
+      caterpillar sprite sheet 2 with blue pollen_8: 1372658728
+      caterpillar sprite sheet 2 with blue pollen_4: 1102997027
+      caterpillar sprite sheet 2 with blue pollen_11: 1423719872
+      caterpillar sprite sheet 2 with blue pollen_12: -360133737
+      caterpillar sprite sheet 2 with blue pollen_10: -1119891611
+      caterpillar sprite sheet 2 with blue pollen_7: -1832240222
+      caterpillar sprite sheet 2 with blue pollen_3: -1368420318
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
