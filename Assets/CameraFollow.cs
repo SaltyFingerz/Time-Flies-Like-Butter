@@ -11,6 +11,7 @@ public class CameraFollow : MonoBehaviour
     public float smoothTime = 1f;
     private Vector3 velocity = Vector3.zero;
     [SerializeField] private Transform target;
+    [SerializeField] private Transform targetRew;
     private Camera cam;
 
   
@@ -54,6 +55,11 @@ public class CameraFollow : MonoBehaviour
         smoothTime = 0.5f;
         cam.orthographicSize = 12f;
         GetComponent<UnityEngine.Experimental.Rendering.Universal.PixelPerfectCamera>().assetsPPU = 11;
+    }
+
+    public void LookAtRewindablePlayer()
+    {
+        target = targetRew;
     }
 
 }

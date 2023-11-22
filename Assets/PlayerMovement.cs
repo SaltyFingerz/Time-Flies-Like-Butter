@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerInput input;
 
     private SpriteRenderer sprite;
+    private Collider2D collider;
 
     public LeafScript leaf;
 
@@ -30,12 +31,17 @@ public class PlayerMovement : MonoBehaviour
     public RewindManager rewindManager;
     public CameraFollow cam;
     public FrogScript frog;
-  //  bool mobile = true;
+    
+    //  bool mobile = true;
+
+    [SerializeField] private GameObject rewindChild;
 
 
     [SerializeField] private AudioSource aS;
     [SerializeField] private AudioClip morphSound;
     [SerializeField] private AudioClip burstSound;
+
+
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator anim;
@@ -67,7 +73,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();    
+        sprite = GetComponent<SpriteRenderer>();
+        collider = GetComponent<Collider2D>();
         input = GetComponent<PlayerInput>();
         inputActions = new PlayerInputActions();
         inputActions.Player.Enable();
@@ -382,7 +389,17 @@ public class PlayerMovement : MonoBehaviour
             rewindable = true;
 
             KeyClock.SetActive(true);
-            rewindScript.EnableRewind();
+            // rewindScript.EnableRewind();
+            
+            if (!gameObject.name.Contains("Rewindable"))
+            {
+                cam.LookAtRewindablePlayer();
+                sprite.enabled = false;
+                collider.enabled = false;
+                rewindChild.GetComponent<SpriteRenderer>().enabled = true;
+                rewindChild.GetComponent<Collider2D>().enabled = true;
+                
+            }
 
             rewindManager.RestartTracking();
             Debug.Log("enviroeself rewind modë");
