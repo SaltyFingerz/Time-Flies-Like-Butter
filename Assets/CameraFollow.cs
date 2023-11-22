@@ -13,6 +13,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform target;
     private Camera cam;
 
+  
+
 
 
     // OR
@@ -48,9 +50,10 @@ public class CameraFollow : MonoBehaviour
     public void GreaterDistance()
     {
 
-        offset = new Vector3(0f, 0f, -10f);
+        offset = new Vector3(0f, 2f, -10f);
         smoothTime = 0.5f;
         cam.orthographicSize = 12f;
+        GetComponent<UnityEngine.Experimental.Rendering.Universal.PixelPerfectCamera>().assetsPPU = 11;
     }
 
 }
