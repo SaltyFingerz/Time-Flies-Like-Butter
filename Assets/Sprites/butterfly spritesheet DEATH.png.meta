@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 7ded73f9f4fce90478aa4fd2cab48f8f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_0
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 1677
+        width: 670
+        height: 539
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d207deb09597845be3fe2e06d0b0e9
+      internalID: 986940862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_1
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1757
+        width: 608
+        height: 442
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa3130952be75f499f5d64ff838f8b9
+      internalID: -16710892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_2
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 1764
+        width: 605
+        height: 379
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd7c56b2c9da5b42bb29ed14ccf57c8
+      internalID: -1595249686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_3
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 1785
+        width: 471
+        height: 306
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcae2b24f56be8d4cbaae8313431af73
+      internalID: 1240816275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_4
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1000
+        width: 472
+        height: 305
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1792abcf9a43ab64f882455193dd674e
+      internalID: 1024063286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_5
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1036
+        width: 414
+        height: 261
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa21177560999549a87f86b1cec9df8
+      internalID: -1755915258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_6
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 1036
+        width: 277
+        height: 187
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77120015ce44b1a47be5c3e9e42a63b7
+      internalID: 2138529490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_7
+      rect:
+        serializedVersion: 2
+        x: 2924
+        y: 1029
+        width: 175
+        height: 180
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b0638c45bdced4a85ea842cd5549f8
+      internalID: -2047829091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_8
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 355
+        width: 175
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc3ea3c12d0d4b47a396b70f043fadf
+      internalID: 333988516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_9
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 334
+        width: 175
+        height: 180
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874193c81a923864abc58010193d3381
+      internalID: -609945662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_10
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 334
+        width: 151
+        height: 175
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cbf2bb392483d439d13821d39e22f0
+      internalID: -2133598078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_16
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 334
+        width: 175
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb0fb2f8264b6743b261aa81767c17e
+      internalID: 252989410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_11
+      rect:
+        serializedVersion: 2
+        x: 2583
+        y: 332
+        width: 223
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b561d2fcc2e714db5e1ef6911645d3
+      internalID: -647787577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_12
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 323
+        width: 221
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3161f20616c7b0468ad50b74c6025eb
+      internalID: -1400955789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH_13
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 322
+        width: 231
+        height: 127
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486ae607ea2b7a84688ceaf8465ff3fa
+      internalID: 845657504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      butterfly spritesheet DEATH_32: 1168591275
+      butterfly spritesheet DEATH_44: 2129609580
+      butterfly spritesheet DEATH_51: -855802405
+      butterfly spritesheet DEATH_49: 2115161293
+      butterfly spritesheet DEATH_24: -1620719955
+      butterfly spritesheet DEATH_20: 1032408945
+      butterfly spritesheet DEATH_48: 1937291553
+      butterfly spritesheet DEATH_17: -809240813
+      butterfly spritesheet DEATH_30: 2128789398
+      butterfly spritesheet DEATH_2: -1595249686
+      butterfly spritesheet DEATH_45: 1671430120
+      butterfly spritesheet DEATH_38: -1857168377
+      butterfly spritesheet DEATH_26: 353261812
+      butterfly spritesheet DEATH_41: 1314705469
+      butterfly spritesheet DEATH_8: 333988516
+      butterfly spritesheet DEATH_40: 1359058672
+      butterfly spritesheet DEATH_23: -1725501437
+      butterfly spritesheet DEATH_10: -2133598078
+      butterfly spritesheet DEATH_21: -1898618955
+      butterfly spritesheet DEATH_31: 1231524896
+      butterfly spritesheet DEATH_52: 118751780
+      butterfly spritesheet DEATH_36: 1754264175
+      butterfly spritesheet DEATH_1: -16710892
+      butterfly spritesheet DEATH_7: -2047829091
+      butterfly spritesheet DEATH_6: 2138529490
+      butterfly spritesheet DEATH_39: 1615885984
+      butterfly spritesheet DEATH_12: -1400955789
+      butterfly spritesheet DEATH_33: 1462804896
+      butterfly spritesheet DEATH_27: 1735136584
+      butterfly spritesheet DEATH_50: 729227688
+      butterfly spritesheet DEATH_9: -609945662
+      butterfly spritesheet DEATH_16: 252989410
+      butterfly spritesheet DEATH_14: 1492014849
+      butterfly spritesheet DEATH_22: -1684769891
+      butterfly spritesheet DEATH_46: -1053056149
+      butterfly spritesheet DEATH_13: 845657504
+      butterfly spritesheet DEATH_34: -1156981598
+      butterfly spritesheet DEATH_3: 1240816275
+      butterfly spritesheet DEATH_4: 1024063286
+      butterfly spritesheet DEATH_29: -1562965733
+      butterfly spritesheet DEATH_43: -249963711
+      butterfly spritesheet DEATH_15: -187824088
+      butterfly spritesheet DEATH_54: 130841210
+      butterfly spritesheet DEATH_5: -1755915258
+      butterfly spritesheet DEATH_35: -1738483342
+      butterfly spritesheet DEATH_28: -706144567
+      butterfly spritesheet DEATH_55: -1345350468
+      butterfly spritesheet DEATH_19: 944610896
+      butterfly spritesheet DEATH_47: 1227977127
+      butterfly spritesheet DEATH_42: -1749692870
+      butterfly spritesheet DEATH_37: -1918724116
+      butterfly spritesheet DEATH_53: -1361886092
+      butterfly spritesheet DEATH_18: -2122928054
+      butterfly spritesheet DEATH_0: 986940862
+      butterfly spritesheet DEATH_25: -1554476276
+      butterfly spritesheet DEATH_11: -647787577
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

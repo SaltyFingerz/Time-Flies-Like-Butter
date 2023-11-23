@@ -389,9 +389,9 @@ public class PlayerMovement : MonoBehaviour
             rewindable = true;
 
             KeyClock.SetActive(true);
-            // rewindScript.EnableRewind();
+             rewindScript.EnableRewind();
             
-            if (!gameObject.name.Contains("Rewindable"))
+          /*  if (!gameObject.name.Contains("Rewindable"))
             {
                 cam.LookAtRewindablePlayer();
                 sprite.enabled = false;
@@ -399,7 +399,7 @@ public class PlayerMovement : MonoBehaviour
                 rewindChild.GetComponent<SpriteRenderer>().enabled = true;
                 rewindChild.GetComponent<Collider2D>().enabled = true;
                 
-            }
+            }*/
 
             rewindManager.RestartTracking();
             Debug.Log("enviroeself rewind modë");
