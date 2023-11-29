@@ -21,5 +21,11 @@ public class TimedEvents : MonoBehaviour
            player.GetComponent<PlayerMovement>().enabled = false;
             player.GetComponent<Rigidbody2D>().gravityScale = 10;
         }
+
+        if(collision.CompareTag("Rain"))
+        {
+            print("RAIN");
+            RainManager.raining = true;
+        }
     }
 }

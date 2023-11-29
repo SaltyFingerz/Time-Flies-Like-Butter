@@ -8,7 +8,7 @@ public class RainManager : MonoBehaviour
     [SerializeField] private Animator rain;
     [SerializeField] private GameObject rainObj;
     [SerializeField] private GameObject drops;
-    public  bool raining = false; 
+    public static bool raining = false; 
 
     void Update()
     {
