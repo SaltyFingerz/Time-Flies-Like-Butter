@@ -6,18 +6,27 @@ using UnityEngine;
 public class AnimatorSpeedRandomizer : MonoBehaviour
 {
     private Animator anim;
-    private AnimatorStateTransition animState; 
+    
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
-        animState = GetComponent<AnimatorStateTransition>();
+     
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    public void SetRandomSpeed()
     {
-        anim.speed = Random.Range(0.1f, 2f);
-        animState.exitTime = Random.Range(0, 5);
+      
+            anim.speed = Random.Range(1f, 3f);
+            print("splash");
+        
+    }
+
+    public void SetRandomWait()
+    {
+        print("nosplash");
+        anim.speed = Random.Range(0.01f, 0.05f);
     }
 }
