@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 
 public class PlayerMovement : MonoBehaviour
@@ -78,8 +79,24 @@ public class PlayerMovement : MonoBehaviour
         input = GetComponent<PlayerInput>();
         inputActions = new PlayerInputActions();
         inputActions.Player.Enable();
-       //inputActions.Player.Jump.performed += Jump;
-       // inputActions.Player.Rewind.performed += Rewind;
+        //inputActions.Player.Jump.performed += Jump;
+        // inputActions.Player.Rewind.performed += Rewind;
+
+        if (SceneManager.GetActiveScene().name == "TeleportLevel")
+        {
+            print("rewindenviroself");
+            rewindMode = RewindMode.enviroself;
+
+
+            rewindable = true;
+
+            KeyClock.SetActive(true);
+            rewindScript.EnableRewind();
+
+
+
+            rewindManager.RestartTracking();
+        }
 
     }
 
@@ -116,7 +133,10 @@ public class PlayerMovement : MonoBehaviour
         }*/
 
        
-        if(transform.localScale.x == 1.00001f)
+
+
+
+        if (transform.localScale.x == 1.00001f)
         {
             sprite.flipX = true;
         }

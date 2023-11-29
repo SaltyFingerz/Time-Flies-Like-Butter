@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DemoScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/TeleportLevel.unity
+    guid: 207809b2f1d363247b06603eb64f6cee
   m_configObjects: {}
