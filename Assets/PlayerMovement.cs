@@ -60,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
     public static bool rewind = false;
     bool canToggle;
 
+
+
     Vector2 inputVector = Vector2.zero;
     PlayerInput playerInput;
     PlayerInputActions inputActions;
@@ -132,9 +134,7 @@ public class PlayerMovement : MonoBehaviour
 
         }*/
 
-       
-
-
+  
 
         if (transform.localScale.x == 1.00001f)
         {
@@ -163,6 +163,10 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+
+  
+
+    
     void RewindState()
     {
         switch (rewindMode)
@@ -191,7 +195,9 @@ public class PlayerMovement : MonoBehaviour
         {
             case LifeStage.caterpillar:
 
-                if(slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && rewind)
+                rb.gravityScale = 4f;
+
+                if (slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && rewind)
                 {
                     sprite.enabled = false;
 
@@ -265,7 +271,10 @@ public class PlayerMovement : MonoBehaviour
                 break;
 
             case LifeStage.dead:
-             
+                print("ded");
+                rb.gravityScale = 10f;
+                rb.velocity = new Vector2(0, rb.velocity.y);
+
                 break;
 
             default:
@@ -319,18 +328,36 @@ public class PlayerMovement : MonoBehaviour
     {
         aS.PlayOneShot(morphSound);
         cam.GreaterDistance();
+ 
+       
 
+    }
+
+    public void DeathEvent()
+    {
+        lifeStage = LifeStage.dead;
+    }
+
+    public void BeginMorphEvent()
+    {
+        lifeStage = LifeStage.dead;
+        print("beingmorhpstopmovingalready");
     }
 
     public void BurstEvent()
     {
         aS.PlayOneShot(burstSound);
+        
     }    
+
+    public void CaterpillarEvent()
+    {
+        lifeStage = LifeStage.caterpillar;
+    }
 
     public void MorphEvent()
     {
         lifeStage = LifeStage.butterfly;
-      
 
     }
 
