@@ -18,15 +18,20 @@ public class AnimatorSpeedRandomizer : MonoBehaviour
 
     public void SetRandomSpeed()
     {
-      
+        if (anim != null)
+        {
             anim.speed = Random.Range(1f, 3f);
-            print("splash");
+       
+        }
         
     }
 
     public void SetRandomWait()
     {
-        print("nosplash");
-        anim.speed = Random.Range(0.01f, 0.05f);
+        if (anim != null)
+        {
+      
+            anim.speed = Random.Range(0.01f, 0.05f);
+        }
     }
 }
