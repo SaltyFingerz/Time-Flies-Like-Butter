@@ -819,7 +819,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
-  m_TargetTexture: {fileID: 8400000, guid: f0264235bc503c645966f8de88919967, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: fa9348530ae90bc458279d9311d38724, type: 2}
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
@@ -12504,7 +12504,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 6.5686274
+  orthographic size: 10.909091
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12564,7 +12564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ComponentVersion: 1
-  m_AssetsPPU: 17
+  m_AssetsPPU: 11
   m_RefResolutionX: 320
   m_RefResolutionY: 180
   m_CropFrame: 0
