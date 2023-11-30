@@ -6,7 +6,7 @@ using UnityEngine;
 public class AnimatorSpeedRandomizer : MonoBehaviour
 {
     private Animator anim;
-    
+    public bool randomize = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class AnimatorSpeedRandomizer : MonoBehaviour
 
     public void SetRandomSpeed()
     {
-        if (anim != null)
+        if (anim != null && randomize)
         {
             anim.speed = Random.Range(1f, 3f);
        
@@ -28,7 +28,7 @@ public class AnimatorSpeedRandomizer : MonoBehaviour
 
     public void SetRandomWait()
     {
-        if (anim != null)
+        if (anim != null && randomize)
         {
       
             anim.speed = Random.Range(0.01f, 0.05f);

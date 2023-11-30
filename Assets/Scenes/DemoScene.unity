@@ -12504,7 +12504,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 7.7058825
+  orthographic size: 6.5686274
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -23658,6 +23658,8 @@ MonoBehaviour:
   SlerpEnd: {fileID: 629415831881000196}
   SlerpCentre: {fileID: 1783440126497754422}
   KeyClock: {fileID: 1319847908}
+  SliderRewind: {fileID: 0}
+  RewindButton: {fileID: 0}
   UpButton: {fileID: 1566766431}
   DownButton: {fileID: 1181887764}
   lifeStage: 0
@@ -34850,6 +34852,8 @@ MonoBehaviour:
   SlerpEnd: {fileID: 629415831881000196}
   SlerpCentre: {fileID: 1783440126497754422}
   KeyClock: {fileID: 1319847908}
+  SliderRewind: {fileID: 2086116175}
+  RewindButton: {fileID: 2121254584}
   UpButton: {fileID: 1566766431}
   DownButton: {fileID: 1181887764}
   lifeStage: 0
@@ -35698,7 +35702,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 156, y: -136.1}
+  m_AnchoredPosition: {x: 328.99994, y: -136.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1212312289
@@ -36963,6 +36967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1082849669}
+  pMovement: {fileID: 1082849672}
 --- !u!212 &1539315880
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37060,6 +37065,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8194404013162845157, guid: 3217a2edfcf20a64b9d8ada6d4577067, type: 3}
   m_PrefabInstance: {fileID: 8194404013766372954}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1544502720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544502716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19cf095f740e3d44bb1fd38293e34074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  randomize: 0
 --- !u!1 &1566766431 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1757920875146174, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
@@ -42741,7 +42759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 317, y: -136.1}
+  m_AnchoredPosition: {x: 565, y: -136.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1668481573
@@ -58932,6 +58950,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &2086116175 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4065960115365519549, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
+  m_PrefabInstance: {fileID: 1625936033}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2104912075
 GameObject:
   m_ObjectHideFlags: 0

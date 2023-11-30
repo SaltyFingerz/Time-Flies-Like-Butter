@@ -53,7 +53,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject SlerpEnd;
     [SerializeField] private GameObject SlerpCentre;
     [SerializeField] private GameObject KeyClock;
-
+    [SerializeField] private GameObject SliderRewind;
+    [SerializeField] private GameObject RewindButton;
     [SerializeField] private GameObject UpButton;
     [SerializeField] private GameObject DownButton;
 
@@ -98,6 +99,14 @@ public class PlayerMovement : MonoBehaviour
 
 
             rewindManager.RestartTracking();
+
+            RewindButton.SetActive(false);
+        }
+
+        else if (SceneManager.GetActiveScene().name == "DemoScene")
+        {
+            SliderRewind.SetActive(false);
+            RewindButton.SetActive(true);
         }
 
     }
@@ -172,17 +181,19 @@ public class PlayerMovement : MonoBehaviour
         switch (rewindMode)
         {
             case RewindMode.environment:
-
+                RewindButton.SetActive(true);
                 break;
 
             case RewindMode.enviroself:
-               
+                SliderRewind.SetActive(true);
+                RewindButton.SetActive(false);
+
 
                 break;
 
             case RewindMode.voidtime:
-              
 
+                RewindButton.SetActive(true);
                 break;
 
         }
@@ -196,6 +207,10 @@ public class PlayerMovement : MonoBehaviour
             case LifeStage.caterpillar:
 
                 rb.gravityScale = 4f;
+
+                rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+                UpButton.SetActive(false);
+                DownButton.SetActive(false);
 
                 if (slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && rewind)
                 {
@@ -258,6 +273,9 @@ public class PlayerMovement : MonoBehaviour
             case LifeStage.butterfly:
 
                 rb.gravityScale = 0f;
+                rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+                UpButton.SetActive(true);
+                DownButton.SetActive(true);
 
                 /*if (rb.velocity.x != 0 || rb.velocity.y != 0)
                 {
@@ -272,6 +290,8 @@ public class PlayerMovement : MonoBehaviour
 
             case LifeStage.dead:
                 print("ded");
+            
+
                 rb.gravityScale = 10f;
                 rb.velocity = new Vector2(0, rb.velocity.y);
 
@@ -286,15 +306,16 @@ public class PlayerMovement : MonoBehaviour
     {
         if (lifeStage == LifeStage.caterpillar)
         {
-            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-            UpButton.SetActive(false);
-            DownButton.SetActive(false);
+            
         }
         if(lifeStage== LifeStage.butterfly)
         {
-            rb.velocity = new Vector2(horizontal * speed, vertical * speed);
-            UpButton.SetActive(true);
-            DownButton.SetActive(true);
+           
+        }
+        if(lifeStage == LifeStage.dead)
+        {
+            
+
         }
 
         inputVector = inputActions.Player.Move.ReadValue<Vector2>();
@@ -324,12 +345,18 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void ButterflyEvent()
+    {
+        lifeStage = LifeStage.butterfly;
+    }
+
     public void MorphSoundEvent()
     {
         aS.PlayOneShot(morphSound);
         cam.GreaterDistance();
- 
-       
+
+        lifeStage = LifeStage.dead;
+        print("beingmorhpstopmovingalready");
 
     }
 
@@ -352,6 +379,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void CaterpillarEvent()
     {
+        print("CATERPILLAR EVENT");
         lifeStage = LifeStage.caterpillar;
     }
 
@@ -467,7 +495,10 @@ public class PlayerMovement : MonoBehaviour
 
         else if (collision.name.Contains("Hop") && rewindMode == RewindMode.voidtime)
         {
-            slerpyLerp.SetActive(true);
+            if (rewind)
+            {
+                slerpyLerp.SetActive(true);
+            }
 
 
 

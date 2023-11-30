@@ -6,6 +6,7 @@ public class HopAnimScript : MonoBehaviour
 {
     [SerializeField] private GameObject Player;
     private SpriteRenderer sprite;
+    public PlayerMovement pMovement; 
     // Start is called before the first frame update
 
     private void Start()
@@ -33,5 +34,10 @@ public class HopAnimScript : MonoBehaviour
         sprite.enabled = false;
         Player.GetComponent<SpriteRenderer>().enabled = true;
 
+    }
+
+    public void CaterpillarEvent()
+    {
+        pMovement.CaterpillarEvent();
     }
 }
