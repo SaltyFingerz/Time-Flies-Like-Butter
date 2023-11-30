@@ -57,6 +57,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject RewindButton;
     [SerializeField] private GameObject UpButton;
     [SerializeField] private GameObject DownButton;
+    [SerializeField] private GameObject JumpButton;
 
     public static bool rewind = false;
     bool canToggle;
@@ -276,6 +277,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = new Vector2(horizontal * speed, vertical * speed);
                 UpButton.SetActive(true);
                 DownButton.SetActive(true);
+                JumpButton.SetActive(false);
 
                 /*if (rb.velocity.x != 0 || rb.velocity.y != 0)
                 {
@@ -294,6 +296,7 @@ public class PlayerMovement : MonoBehaviour
 
                 rb.gravityScale = 10f;
                 rb.velocity = new Vector2(0, rb.velocity.y);
+               
 
                 break;
 
@@ -539,7 +542,41 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-    
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.name.Contains("Hop") && rewindMode == RewindMode.voidtime)
+        {
+            if (rewind)
+            {
+                slerpyLerp.SetActive(true);
+            }
+
+            if (collision.name.Contains("Hop1"))
+            {
+                hop1 = true;
+                SlerpEnd.transform.position = new Vector3(16, 6.4f, 0);
+                SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
+            }
+
+            if (collision.name.Contains("Hop2"))
+            {
+                hop2 = true;
+                SlerpEnd.transform.position = new Vector3(16, 6.4f, 0);
+                SlerpCentre.transform.position = new Vector3(15.87f, 5.52f, 0);
+            }
+
+            else if (collision.name.Contains("Hop3"))
+            {
+                Debug.Log("Hop3");
+                hop3 = true;
+                SlerpEnd.transform.position = new Vector3(18.82f, 14.95f, 0);
+                SlerpCentre.transform.position = new Vector3(24.69f, 16.72f, 0);
+
+            }
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.name.Contains("Hop"))
