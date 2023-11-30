@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StamenScript : MonoBehaviour
 {
@@ -51,6 +52,7 @@ public class StamenScript : MonoBehaviour
     public Transform GetDestination()
     {
         print("destination yo");
+
         return destination;
        
     }
@@ -59,6 +61,16 @@ public class StamenScript : MonoBehaviour
     {
         animDestStamen.SetTrigger("Open");
     }    
+
+    public void LoadNextLevel()
+    {
+        if (triggerPortal.enabled)
+        {
+            print("GOOOOO");
+            SceneManager.LoadScene("DemoScene");
+        }
+
+    }
 
 
 }

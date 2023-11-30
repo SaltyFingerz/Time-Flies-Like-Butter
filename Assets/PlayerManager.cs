@@ -42,7 +42,7 @@ public class PlayerManager : MonoBehaviour
             openBlue = true;
         }
 
-        if (collision.gameObject.name.Contains("StamenRed"))
+        if (collision.gameObject.name.Contains("StamenRed") || collision.gameObject.name.Contains("StamenBlue"))
         {
             currentPortal = collision.gameObject;
 
@@ -66,9 +66,18 @@ public class PlayerManager : MonoBehaviour
     {
         if (currentPortal != null)
         {
+
+            if(currentPortal.CompareTag("Goal") )
+            {
+                currentPortal.GetComponent<StamenScript>().LoadNextLevel();
+              
+            }
             print("not null");
-            transform.position = currentPortal.GetComponent<StamenScript>().GetDestination().position;
-            currentPortal.GetComponent<StamenScript>().OpenDestination();
+            if (!currentPortal.CompareTag("Goal"))
+            {
+                transform.position = currentPortal.GetComponent<StamenScript>().GetDestination().position;
+                currentPortal.GetComponent<StamenScript>().OpenDestination();
+            }
         }
     }
 
