@@ -8,17 +8,9 @@ public class RainManager : MonoBehaviour
     [SerializeField] private Animator rain;
     [SerializeField] private GameObject rainObj;
     [SerializeField] private GameObject drops;
-    public static bool raining = false; 
-
-    void Update()
-    {
-        if(raining)
-        {
-            StartCoroutine(StartRaining());
  
-        }
-        
-    }
+
+  
 
     IEnumerator StartRaining()
     {
@@ -33,5 +25,11 @@ public class RainManager : MonoBehaviour
         water.SetBool("Rise", true);
         rain.SetBool("Rise", true);
 
+    }
+
+    public void RainNow()
+    {
+
+        StartCoroutine(StartRaining());
     }
 }

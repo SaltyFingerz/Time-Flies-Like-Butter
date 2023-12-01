@@ -5,6 +5,7 @@ using UnityEngine;
 public class TimedEvents : MonoBehaviour
 {
     [SerializeField] private GameObject player;
+    public RainManager rainManager;
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -24,7 +25,8 @@ public class TimedEvents : MonoBehaviour
         if(collision.CompareTag("Rain"))
         {
             print("RAIN");
-            RainManager.raining = true;
+            rainManager.RainNow();
+            //RainManager.raining = true;
         }
     }
 
