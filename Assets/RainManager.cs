@@ -5,7 +5,7 @@ using UnityEngine;
 public class RainManager : MonoBehaviour
 {
     [SerializeField] private Animator water;
-    [SerializeField] private Animator rain;
+    //[SerializeField] private Animator rain;
     [SerializeField] private GameObject rainObj;
     [SerializeField] private GameObject drops;
  
@@ -23,7 +23,7 @@ public class RainManager : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         water.SetBool("Rise", true);
-        rain.SetBool("Rise", true);
+       // rain.SetBool("Rise", true);
 
     }
 

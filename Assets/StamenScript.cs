@@ -12,6 +12,9 @@ public class StamenScript : MonoBehaviour
     [SerializeField] private Transform destination;
     [SerializeField] private Animator animDestStamen;
     private Collider2D triggerPortal;
+
+    public enum PortalState { closed = 0, open = 1};
+    public PortalState portalState = PortalState.closed;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -33,11 +36,30 @@ public class StamenScript : MonoBehaviour
             anim.SetBool("Portal", true);
         }
 
-       
+        PortalStateFunction();
+    }
+    void PortalStateFunction()
+    {
+        switch (portalState)
+        {
+            case PortalState.closed:
+                anim.SetBool("Portal", false);
+
+                break;
+
+            case PortalState.open:
+                anim.SetBool("Portal", true);
+
+
+                break;
+
+           
+
+        }
     }
 
 
-    public void OpenPortalEvent()
+public void OpenPortalEvent()
     {
         
 
@@ -66,8 +88,16 @@ public class StamenScript : MonoBehaviour
     {
         if (triggerPortal.enabled)
         {
-            print("GOOOOO");
-            SceneManager.LoadScene("DemoScene");
+        
+            if (SceneManager.GetActiveScene().name == "TeleportLevel")
+            {
+                SceneManager.LoadScene("RisingWaterLevel");
+            }
+
+            else if (SceneManager.GetActiveScene().name == "RisingWaterLevel")
+            {
+                SceneManager.LoadScene("RisingWaterLevel2");
+            }
         }
 
     }
