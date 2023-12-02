@@ -11,7 +11,8 @@ public class RainManager : MonoBehaviour
 
     private bool rain = false;
 
-    public GameObject[] rainDrops; 
+    public GameObject[] rainDrops;
+    public GameObject[] splashes;
   
 
     IEnumerator StartRaining()
@@ -24,8 +25,12 @@ public class RainManager : MonoBehaviour
         }
 
 
-        yield return new WaitForSeconds(2);
-      //  drops.SetActive(true);
+        yield return new WaitForSeconds(1);
+      
+        for (int i = 0; i < splashes.Length; i++)
+        {
+            splashes[i].GetComponent<Animator>().SetBool("Splash", true);
+        }
 
         yield return new WaitForSeconds(2);
 
@@ -38,5 +43,22 @@ public class RainManager : MonoBehaviour
     {
       
         StartCoroutine(StartRaining());
+    }
+
+    public void CancelRain()
+    {
+        water.SetBool("Rise", false);
+
+        for (int i = 0; i < splashes.Length; i++)
+        {
+            splashes[i].GetComponent<Animator>().SetBool("Splash", false);
+        }
+
+        for (int i = 0; i < rainDrops.Length; i++)
+        {
+            rainDrops[i].GetComponent<RainDrops>().StartDropping();
+        }
+
+        rainObj.GetComponent<DeactivateRain>().StopRain();
     }
 }

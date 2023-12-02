@@ -16,4 +16,9 @@ public class DeactivateRain : MonoBehaviour
         gameObject.SetActive(false);
     }
 
+    public void StopRain()
+    {
+        gameObject.SetActive(false);
+    }
+
 }
