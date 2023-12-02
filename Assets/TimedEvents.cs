@@ -24,7 +24,7 @@ public class TimedEvents : MonoBehaviour
 
         if(collision.CompareTag("Rain"))
         {
-            print("RAIN");
+            
             rainManager.RainNow();
             //RainManager.raining = true;
         }
