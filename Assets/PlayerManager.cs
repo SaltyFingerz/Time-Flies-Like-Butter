@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] private RuntimeAnimatorController redAC;
     [SerializeField] private RuntimeAnimatorController blueAC;
+    [SerializeField] private GameObject levelScript;
 
     public static bool openRed = false;
     public static bool openBlue = false;
@@ -56,6 +57,7 @@ public class PlayerManager : MonoBehaviour
         if(collision.gameObject.name.Contains("Fan"))
         {
             collision.gameObject.GetComponent<Animator>().SetBool("Start", true);
+            levelScript.GetComponent<FanLevelManager>().BlowLeaf();
         }
     }
 
