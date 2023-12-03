@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
     public enum LifeStage {caterpillar = 0, butterfly = 1, dead = 2};
     public LifeStage lifeStage = LifeStage.caterpillar;
 
-    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2}
+    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3}
     public RewindMode rewindMode = RewindMode.environment;
     // Start is called before the first frame update
 
@@ -126,7 +126,20 @@ public class PlayerMovement : MonoBehaviour
 
             RewindButton.SetActive(false);
         }
+        else if (SceneManager.GetActiveScene().name == "SimpleTpLevel")
+        {
+            rewindMode = RewindMode.none;
 
+
+            rewindable = false;
+
+            KeyClock.SetActive(false);
+           
+
+
+
+            RewindButton.SetActive(false);
+        }
 
     }
 
@@ -213,6 +226,12 @@ public class PlayerMovement : MonoBehaviour
             case RewindMode.voidtime:
 
                 RewindButton.SetActive(true);
+                break;
+
+            case RewindMode.none:
+                RewindButton.SetActive(false);
+                SliderRewind.SetActive(false);
+
                 break;
 
         }
