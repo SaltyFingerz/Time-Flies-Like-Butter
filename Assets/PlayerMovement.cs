@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
             RewindButton.SetActive(false);
         }
-        else if (SceneManager.GetActiveScene().name == "SimpleTpLevel")
+        else if (SceneManager.GetActiveScene().name == "SimpleTpLevel" || SceneManager.GetActiveScene().name == "FanLevel")
         {
             rewindMode = RewindMode.none;
 
@@ -140,6 +140,8 @@ public class PlayerMovement : MonoBehaviour
 
             RewindButton.SetActive(false);
         }
+
+    
 
     }
 
@@ -226,6 +228,8 @@ public class PlayerMovement : MonoBehaviour
             case RewindMode.voidtime:
 
                 RewindButton.SetActive(true);
+                KeyClock.SetActive(true);
+
                 break;
 
             case RewindMode.none:
