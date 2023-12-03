@@ -26,14 +26,14 @@ public class StamenScript : MonoBehaviour
     {
         if(PlayerManager.openRed && gameObject.name.Contains("Red"))
         {
-            
-                anim.SetBool("Portal", true);
+
+            portalState = PortalState.open;
            
         }
 
         if(PlayerManager.openBlue && gameObject.name.Contains("Blue"))
         {
-            anim.SetBool("Portal", true);
+            portalState = PortalState.open;
         }
 
         PortalStateFunction();

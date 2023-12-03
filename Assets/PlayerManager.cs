@@ -15,6 +15,11 @@ public class PlayerManager : MonoBehaviour
 
     private GameObject currentPortal;
 
+    private void Awake()
+    {
+        openRed = false;
+        openBlue = false;
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Water"))
@@ -22,7 +27,7 @@ public class PlayerManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
-        else if (collision.gameObject.name.Contains("BlueFlower") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC)
+        else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC)
         {
             gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
         }

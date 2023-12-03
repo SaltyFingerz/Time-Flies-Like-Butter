@@ -110,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
             RewindButton.SetActive(true);
         }
 
-        else if (SceneManager.GetActiveScene().name == "RisingWaterLevel")
+        else if (SceneManager.GetActiveScene().name == "RisingWaterLevel" || SceneManager.GetActiveScene().name == "RisingWaterLevel2")
         {
             rewindMode = RewindMode.enviroself;
 
@@ -126,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
             RewindButton.SetActive(false);
         }
+
 
     }
 
