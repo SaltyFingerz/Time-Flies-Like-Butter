@@ -52,6 +52,11 @@ public class PlayerManager : MonoBehaviour
             currentPortal = collision.gameObject;
 
         }
+
+        if(collision.gameObject.name.Contains("Fan"))
+        {
+            collision.gameObject.GetComponent<Animator>().SetBool("Start", true);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
