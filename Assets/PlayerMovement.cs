@@ -416,6 +416,11 @@ public class PlayerMovement : MonoBehaviour
         lifeStage = LifeStage.dead;
     }
 
+    public void DeadEvent()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
     public void BeginMorphEvent()
     {
         lifeStage = LifeStage.dead;
