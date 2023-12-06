@@ -13,6 +13,8 @@ public class PlayerManager : MonoBehaviour
 
     public static bool openRed = false;
     public static bool openBlue = false;
+    public static bool closeBlind = false;
+    public static bool love = false;
 
     private GameObject currentPortal;
 
@@ -58,6 +60,16 @@ public class PlayerManager : MonoBehaviour
         {
             collision.gameObject.GetComponent<Animator>().SetBool("Start", true);
             levelScript.GetComponent<FanLevelManager>().BlowLeaf();
+        }
+
+        if(collision.gameObject.name.Contains("Handle"))
+        {
+            closeBlind = true;
+        }
+
+        if(collision.gameObject.name.Contains("Grasshopper") && !PlayerMovement.rewind)
+        {
+            love = true;
         }
     }
 

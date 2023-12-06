@@ -11,8 +11,13 @@ public class BlownLeaf : MonoBehaviour
         {
             if(PlayerMovement.rewind)
             {
-                print("HIPPITYHOPPITYNOW");
+                
                 grassHopper.GetComponent<Animator>().SetTrigger("ReverseJump");
+            }
+
+            else
+            {
+                grassHopper.GetComponent<Animator>().ResetTrigger("ReverseJump");
             }
         }
     }

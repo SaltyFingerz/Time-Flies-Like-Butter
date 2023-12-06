@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private bool hop1 = false;
     private bool hop2 = false;
     private bool hop3 = false;
+    private bool hop4 = false;
 
     private PlayerInput input;
 
@@ -276,6 +277,12 @@ public class PlayerMovement : MonoBehaviour
                         HopAnim.GetComponent<SpriteRenderer>().enabled = true;
                         HopAnim.GetComponent<Animator>().SetTrigger("Hop3");
 
+                    }
+
+                    else if (hop4)
+                    {
+                        HopAnim.GetComponent<SpriteRenderer>().enabled = true;
+                        HopAnim.GetComponent<Animator>().SetTrigger("Hop4");
                     }
 
                 }
@@ -569,6 +576,13 @@ public class PlayerMovement : MonoBehaviour
                 SlerpCentre.transform.position = new Vector3(24.69f, 16.72f, 0);
 
             }
+
+            else if (collision.name.Contains("Hop4"))
+            {
+                hop4 = true;
+                SlerpEnd.transform.position = new Vector3(17.34f, -1.74f, 0);
+                SlerpCentre.transform.position = new Vector3(17.47f, -3.4f, 0);
+            }
         }
 
         else if (collision.name.Contains("HighPoint"))
@@ -614,6 +628,13 @@ public class PlayerMovement : MonoBehaviour
                 SlerpEnd.transform.position = new Vector3(18.82f, 14.95f, 0);
                 SlerpCentre.transform.position = new Vector3(24.69f, 16.72f, 0);
 
+            }
+
+            else if (collision.name.Contains("Hop4"))
+            {
+                hop4 = true;
+                SlerpEnd.transform.position = new Vector3(17.34f, -1.74f, 0);
+                SlerpCentre.transform.position = new Vector3(17.47f, -3.4f, 0);
             }
         }
     }
