@@ -9,7 +9,7 @@ public class FanLevelManager : MonoBehaviour
     [SerializeField] private GameObject Leaf;
     [SerializeField] private GameObject Hopper;
     [SerializeField] private GameObject Love;
-  
+    [SerializeField] private GameObject Thoughts;
 
     // Start is called before the first frame update
     void Start()
@@ -26,11 +26,21 @@ public class FanLevelManager : MonoBehaviour
             Hopper.GetComponent<Animator>().SetBool("Jump", false);
             Hopper.GetComponent<Animator>().SetBool("Hit", false);
 
+            if (Hopper.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleHopperFloor"))
+            {
+                Thoughts.SetActive(true);
+            }
+            else
+            {
+                Thoughts.SetActive(false);
+            }
+
         }
 
         else
         {
             Hopper.GetComponent<Animator>().ResetTrigger("ReverseJump");
+            Thoughts.SetActive(false);
 
             if (!PlayerManager.closeBlind)
             {

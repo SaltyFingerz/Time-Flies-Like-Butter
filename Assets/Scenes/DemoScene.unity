@@ -35165,6 +35165,7 @@ GameObject:
   - component: {fileID: 1082849676}
   - component: {fileID: 1082849677}
   - component: {fileID: 1082849678}
+  - component: {fileID: 1082849679}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -35466,6 +35467,21 @@ MonoBehaviour:
       particleTrackingLimit: 0
       particleRestartFrom: 0
       particleSystems: []
+--- !u!114 &1082849679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082849669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ad1cc184d75c154b8199fdf5bc19187, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redAC: {fileID: 0}
+  blueAC: {fileID: 0}
+  levelScript: {fileID: 0}
 --- !u!1 &1092515876
 GameObject:
   m_ObjectHideFlags: 0
