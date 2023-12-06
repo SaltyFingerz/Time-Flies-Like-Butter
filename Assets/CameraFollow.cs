@@ -54,7 +54,7 @@ public class CameraFollow : MonoBehaviour
         offset = new Vector3(0f, 2f, -10f);
         smoothTime = 0.5f;
         cam.orthographicSize = 12f;
-        GetComponent<UnityEngine.Experimental.Rendering.Universal.PixelPerfectCamera>().assetsPPU = 11;
+        GetComponent<UnityEngine.Experimental.Rendering.Universal.PixelPerfectCamera>().assetsPPU = 8;
     }
 
     public void LookAtRewindablePlayer()

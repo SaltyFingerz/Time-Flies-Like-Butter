@@ -13626,7 +13626,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 12.296296
+  orthographic size: 11.361111
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -27114,7 +27114,7 @@ GameObject:
   - component: {fileID: 881188827}
   - component: {fileID: 881188826}
   - component: {fileID: 881188828}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: lilly leaves pollen and stamen_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38099,6 +38099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redAC: {fileID: 9100000, guid: ef052c459d486b647a83be1aa19fd3df, type: 2}
   blueAC: {fileID: 9100000, guid: af016a9455004ea4e937e3ea63c3e692, type: 2}
+  levelScript: {fileID: 0}
 --- !u!1 &1092515876
 GameObject:
   m_ObjectHideFlags: 0
