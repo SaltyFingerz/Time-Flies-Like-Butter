@@ -6,21 +6,24 @@ public class DeathManager : MonoBehaviour
 {
 
     public PlayerMovement pMovement;
-    [SerializeField] private GameObject deathOfAge;
+    [SerializeField] private GameObject death;
+    [SerializeField] private GameObject age;
     // Start is called before the first frame update
-    
+
 
     // Update is called once per frame
     void Update()
     {
         if(pMovement.lifeStage == PlayerMovement.LifeStage.butterfly)
         {
-            deathOfAge.SetActive(true);
+            death.SetActive(true);
+            age.SetActive(true);
         }
 
         else
         {
-            deathOfAge.SetActive(false);
+            death.SetActive(false);
+            age.SetActive(false);
         }
     }
 }

@@ -595,7 +595,7 @@ public class PlayerMovement : MonoBehaviour
             cam.LookLower();
         }
 
-        else if (collision.name.Contains("EatZone"))
+        else if (collision.name.Contains("EatZone") && lifeStage== LifeStage.caterpillar)
         {
             frog.StartEating();
 
