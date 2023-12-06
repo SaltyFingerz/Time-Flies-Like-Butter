@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class FanLevelManager : MonoBehaviour
 {
 
@@ -47,8 +47,15 @@ public class FanLevelManager : MonoBehaviour
         if(PlayerManager.love)
         {
             Hopper.GetComponent<Animator>().SetBool("Blush", true);
-            Love.SetActive(true);   
+            Love.SetActive(true);
+            StartCoroutine(waitToLoadLevel());
         }
+    }
+
+    IEnumerator waitToLoadLevel()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("LevelMenu");
     }
 
     public void BlowLeaf()

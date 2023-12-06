@@ -30,8 +30,8 @@ public class SadElfScript : MonoBehaviour
         tears.Stop();
         yield return new WaitForSeconds(1f);
         splash.SetActive(false);
-        yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("TeleportLevel");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("LevelMenu");
 
     }
 }

@@ -88,16 +88,20 @@ public void OpenPortalEvent()
     {
         if (triggerPortal.enabled)
         {
-        
-            if (SceneManager.GetActiveScene().name == "TeleportLevel")
-            {
-                SceneManager.LoadScene("RisingWaterLevel");
-            }
+            /*
+                if (SceneManager.GetActiveScene().name == "TeleportLevel")
+                {
+                    SceneManager.LoadScene("RisingWaterLevel");
+                }
 
-            else if (SceneManager.GetActiveScene().name == "RisingWaterLevel")
-            {
-                SceneManager.LoadScene("RisingWaterLevel2");
-            }
+                else if (SceneManager.GetActiveScene().name == "RisingWaterLevel")
+                {
+                    SceneManager.LoadScene("RisingWaterLevel2");
+                }
+            */
+
+            SceneManager.LoadScene("LevelMenu");
+
         }
 
     }

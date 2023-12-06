@@ -15,10 +15,21 @@ public class BlownLeaf : MonoBehaviour
                 grassHopper.GetComponent<Animator>().SetTrigger("ReverseJump");
             }
 
-            else
+           
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Hop"))
+        {
+            if (PlayerMovement.rewind)
             {
-                grassHopper.GetComponent<Animator>().ResetTrigger("ReverseJump");
+
+                grassHopper.GetComponent<Animator>().SetTrigger("ReverseJump");
             }
+
+
         }
     }
 
