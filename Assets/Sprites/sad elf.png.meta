@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,10 +122,10 @@ TextureImporter:
       name: sad elf_0
       rect:
         serializedVersion: 2
-        x: 31
-        y: 3997
-        width: 1518
-        height: 1160
+        x: 10
+        y: 1168
+        width: 443
+        height: 339
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +143,10 @@ TextureImporter:
       name: sad elf_1
       rect:
         serializedVersion: 2
-        x: 1841
-        y: 3997
-        width: 1515
-        height: 1160
+        x: 538
+        y: 1168
+        width: 443
+        height: 339
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +164,10 @@ TextureImporter:
       name: sad elf_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 2771
-        width: 1516
-        height: 1157
+        x: 10
+        y: 810
+        width: 443
+        height: 339
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,10 +185,10 @@ TextureImporter:
       name: sad elf_3
       rect:
         serializedVersion: 2
-        x: 1843
-        y: 2771
-        width: 1516
-        height: 1157
+        x: 539
+        y: 810
+        width: 443
+        height: 339
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: sad elf_4
       rect:
         serializedVersion: 2
-        x: 67
-        y: 1362
-        width: 1515
-        height: 1160
+        x: 19
+        y: 398
+        width: 444
+        height: 339
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: sad elf_5
       rect:
         serializedVersion: 2
-        x: 1871
-        y: 1357
-        width: 1513
-        height: 1160
+        x: 547
+        y: 397
+        width: 442
+        height: 339
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: sad elf_6
       rect:
         serializedVersion: 2
-        x: 77
-        y: 110
-        width: 1518
-        height: 1160
+        x: 23
+        y: 33
+        width: 443
+        height: 338
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,7 +274,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: ee9820c98675cd54e8ab1440e15432e7, type: 3}
+      name: _NormalMap
     nameFileIdTable:
       sad elf_4: 932950754
       sad elf_3: -1866808023
