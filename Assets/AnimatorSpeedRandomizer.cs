@@ -19,9 +19,10 @@ public class AnimatorSpeedRandomizer : MonoBehaviour
     {
         if (anim != null && randomize)
         {
-            anim.speed = Random.Range(1f, 3f);
-       
+            anim.speed = Random.Range(1f, 10f);
+            print("random speed");
         }
+        else print("not randomizing");
         
     }
 
@@ -30,7 +31,10 @@ public class AnimatorSpeedRandomizer : MonoBehaviour
         if (anim != null && randomize)
         {
       
-            anim.speed = Random.Range(0.01f, 0.05f);
+            anim.speed = Random.Range(0.01f, 20f);
+            print("random wait");
         }
+
+        else print("not randomizing");
     }
 }

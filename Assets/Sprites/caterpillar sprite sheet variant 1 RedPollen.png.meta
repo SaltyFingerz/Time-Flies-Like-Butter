@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7b08fb44bac938647a05023916b6f4f7
+guid: 42f41b9e2f34ad94cb322e0c058d775d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_0
+      name: caterpillar sprite sheet variant 1 RedPollen_0
       rect:
         serializedVersion: 2
         x: 45
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8684d34b7d2415a4ba98e937db72ca4e
-      internalID: -244230811
+      spriteID: feb47b2f1cadf6c48a7bdac377182353
+      internalID: -780579491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_1
+      name: caterpillar sprite sheet variant 1 RedPollen_1
       rect:
         serializedVersion: 2
         x: 530
@@ -154,14 +154,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0a88a87e1631384eb7e0fd0ca7e8e55
-      internalID: -508570094
+      spriteID: d9f47476ca107714caa7157b647555c1
+      internalID: 1984871455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_2
+      name: caterpillar sprite sheet variant 1 RedPollen_2
       rect:
         serializedVersion: 2
         x: 990
@@ -175,14 +175,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: feca1dc28058f614681d49c2ad8cd700
-      internalID: -1585736753
+      spriteID: 8657180e40deaab4eb4e75dbf728002d
+      internalID: 559853957
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_3
+      name: caterpillar sprite sheet variant 1 RedPollen_3
       rect:
         serializedVersion: 2
         x: 1501
@@ -196,14 +196,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 391e36b259ee0464299c8451f8257f61
-      internalID: -579348537
+      spriteID: 8c59e54f0b99dd94188a5db296f47818
+      internalID: 118084108
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_4
+      name: caterpillar sprite sheet variant 1 RedPollen_4
       rect:
         serializedVersion: 2
         x: 2030
@@ -211,20 +211,20 @@ TextureImporter:
         width: 423
         height: 400
       alignment: 9
-      pivot: {x: 0.4892353, y: -0.00000061035155}
+      pivot: {x: 0.48693877, y: -0.00000061035155}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7867bf7cd447e0d49b698ac8f2566669
-      internalID: -43996972
+      spriteID: dea6122f087715d469526a3d0985adc6
+      internalID: 319948567
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_5
+      name: caterpillar sprite sheet variant 1 RedPollen_5
       rect:
         serializedVersion: 2
         x: 48
@@ -238,14 +238,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1ecfc5b2488067489f90e64251d2e75
-      internalID: 662712979
+      spriteID: e0e3a4955b2da02429af0ffc300cbcfe
+      internalID: 1086445874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_6
+      name: caterpillar sprite sheet variant 1 RedPollen_6
       rect:
         serializedVersion: 2
         x: 606
@@ -259,14 +259,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0053af956ac49a84e9ab712ffead162c
-      internalID: 1986236127
+      spriteID: 7a4c5eace4dbe12419bc2b257b4b2df7
+      internalID: 1612601623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_7
+      name: caterpillar sprite sheet variant 1 RedPollen_7
       rect:
         serializedVersion: 2
         x: 1152
@@ -280,14 +280,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fd7e762a86c3b54095aeb452650b65f
-      internalID: 1697924277
+      spriteID: f82ba44cc465d754c881cb0df3267bcc
+      internalID: 1123792572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_8
+      name: caterpillar sprite sheet variant 1 RedPollen_8
       rect:
         serializedVersion: 2
         x: 1634
@@ -301,14 +301,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 514ce40197241f145ab040e742e308b0
-      internalID: 1018241325
+      spriteID: 895028a04f0c90f41a72bb73d4131e03
+      internalID: 481603220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_9
+      name: caterpillar sprite sheet variant 1 RedPollen_9
       rect:
         serializedVersion: 2
         x: 2096
@@ -322,14 +322,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed344534d21a80041b061912d9943841
-      internalID: -2016073381
+      spriteID: d2cac7e6615d69746895c7827c9218fa
+      internalID: -1621500394
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_10
+      name: caterpillar sprite sheet variant 1 RedPollen_10
       rect:
         serializedVersion: 2
         x: 41
@@ -343,14 +343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b143d594c7fba144abf0ee244c57eb35
-      internalID: 1467482909
+      spriteID: 0c190ca1ea0c88f4f91bf279690669b3
+      internalID: 148267619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_11
+      name: caterpillar sprite sheet variant 1 RedPollen_11
       rect:
         serializedVersion: 2
         x: 594
@@ -364,14 +364,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a377465bf80ab7f4cb2215e7b558fbd2
-      internalID: -1719155974
+      spriteID: 4eb4048bee590884c9188ac41804080e
+      internalID: 819912791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_12
+      name: caterpillar sprite sheet variant 1 RedPollen_12
       rect:
         serializedVersion: 2
         x: 1348
@@ -385,14 +385,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 791c2ef1bcf839a439048a5306f5764d
-      internalID: 970068151
+      spriteID: 8441c2777b9f73841baf98011acbc577
+      internalID: -1131765861
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_13
+      name: caterpillar sprite sheet variant 1 RedPollen_13
       rect:
         serializedVersion: 2
         x: 76
@@ -406,14 +406,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2adc1cf59f810943893353b03fe7998
-      internalID: 1607636179
+      spriteID: 491db0ce3df49fb43a2860b992797693
+      internalID: -388960383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_14
+      name: caterpillar sprite sheet variant 1 RedPollen_14
       rect:
         serializedVersion: 2
         x: 1037
@@ -427,19 +427,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef1117790bea4a748b814c337817f6d0
-      internalID: -1702566871
+      spriteID: 0001277427a89514381e9dfccab6d0c1
+      internalID: -215329895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_15
+      name: caterpillar sprite sheet variant 1 RedPollen_15
       rect:
         serializedVersion: 2
         x: 2113
         y: 1082
-        width: 425
+        width: 427
         height: 452
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -448,14 +448,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8c6cfc7d5948764d99b67c49c25bbf2
-      internalID: 2106814102
+      spriteID: 0b04ad66ac751424faad6c051c22d7f1
+      internalID: -860060424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_16
+      name: caterpillar sprite sheet variant 1 RedPollen_16
       rect:
         serializedVersion: 2
         x: 1037
@@ -469,14 +469,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d04e3c7dddd6f524d895ee40c504c06a
-      internalID: -140516599
+      spriteID: e65654692ba94fa4797d77b65c566d05
+      internalID: 792652578
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: caterpillar sprite sheet variant 1_17
+      name: caterpillar sprite sheet variant 1 RedPollen_17
       rect:
         serializedVersion: 2
         x: 1037
@@ -490,8 +490,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11cfac3a981f62e4081fcc7e322230c3
-      internalID: -930963113
+      spriteID: 7870db5e359fc47418f428f2f5eab1b2
+      internalID: -737968886
       vertices: []
       indices: 
       edges: []
@@ -507,24 +507,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      caterpillar sprite sheet variant 1_6: 1986236127
-      caterpillar sprite sheet variant 1_11: -1719155974
-      caterpillar sprite sheet variant 1_17: -930963113
-      caterpillar sprite sheet variant 1_12: 970068151
-      caterpillar sprite sheet variant 1_7: 1697924277
-      caterpillar sprite sheet variant 1_1: -508570094
-      caterpillar sprite sheet variant 1_8: 1018241325
-      caterpillar sprite sheet variant 1_9: -2016073381
-      caterpillar sprite sheet variant 1_13: 1607636179
-      caterpillar sprite sheet variant 1_4: -43996972
-      caterpillar sprite sheet variant 1_5: 662712979
-      caterpillar sprite sheet variant 1_14: -1702566871
-      caterpillar sprite sheet variant 1_3: -579348537
-      caterpillar sprite sheet variant 1_10: 1467482909
-      caterpillar sprite sheet variant 1_0: -244230811
-      caterpillar sprite sheet variant 1_15: 2106814102
-      caterpillar sprite sheet variant 1_2: -1585736753
-      caterpillar sprite sheet variant 1_16: -140516599
+      caterpillar sprite sheet variant 1 RedPollen_2: 559853957
+      caterpillar sprite sheet variant 1 RedPollen_11: 819912791
+      caterpillar sprite sheet variant 1 RedPollen_12: -1131765861
+      caterpillar sprite sheet variant 1 RedPollen_14: -215329895
+      caterpillar sprite sheet variant 1 RedPollen_16: 792652578
+      caterpillar sprite sheet variant 1 RedPollen_17: -737968886
+      caterpillar sprite sheet variant 1 RedPollen_4: 319948567
+      caterpillar sprite sheet variant 1 RedPollen_3: 118084108
+      caterpillar sprite sheet variant 1 RedPollen_1: 1984871455
+      caterpillar sprite sheet variant 1 RedPollen_15: -860060424
+      caterpillar sprite sheet variant 1 RedPollen_10: 148267619
+      caterpillar sprite sheet variant 1 RedPollen_9: -1621500394
+      caterpillar sprite sheet variant 1 RedPollen_0: -780579491
+      caterpillar sprite sheet variant 1 RedPollen_13: -388960383
+      caterpillar sprite sheet variant 1 RedPollen_5: 1086445874
+      caterpillar sprite sheet variant 1 RedPollen_7: 1123792572
+      caterpillar sprite sheet variant 1 RedPollen_8: 481603220
+      caterpillar sprite sheet variant 1 RedPollen_6: 1612601623
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

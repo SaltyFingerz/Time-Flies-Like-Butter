@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NoSplash
+  m_Name: Splash_tears 2
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -20,14 +20,22 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 2253a254039e19b45963ed9b530c20bb, type: 3}
-    - time: 0.5
-      value: {fileID: 21300000, guid: 2253a254039e19b45963ed9b530c20bb, type: 3}
+      value: {fileID: -584098521, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - time: 0.2
+      value: {fileID: 1422498332, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - time: 0.4
+      value: {fileID: 912882707, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - time: 0.6
+      value: {fileID: 1452578965, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - time: 0.8
+      value: {fileID: 1342520989, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - time: 1
+      value: {fileID: 1136142402, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 10
+  m_SampleRate: 5
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -43,14 +51,18 @@ AnimationClip:
       isPPtrCurve: 1
       isIntCurve: 0
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 2253a254039e19b45963ed9b530c20bb, type: 3}
-    - {fileID: 21300000, guid: 2253a254039e19b45963ed9b530c20bb, type: 3}
+    - {fileID: -584098521, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - {fileID: 1422498332, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - {fileID: 912882707, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - {fileID: 1452578965, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - {fileID: 1342520989, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
+    - {fileID: 1136142402, guid: bb5ce599caba99f43b1b701f5c693621, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6
+    m_StopTime: 1.2
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -71,7 +83,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: SetRandomWait
+    functionName: SetRandomSpeed
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

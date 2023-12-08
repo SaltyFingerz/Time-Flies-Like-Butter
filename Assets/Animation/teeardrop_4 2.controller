@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 30615013d9d642f46a0454e8dfa33054, type: 2}
+  m_Motion: {fileID: 7400000, guid: b9d1abbb98f025148968b580fbbb3ee3, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -62,7 +62,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0ef7329e1740e4d4e8b857ced6c55b69, type: 2}
+  m_Motion: {fileID: 7400000, guid: ff839d9016f21e34686798608fc578d7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -96,7 +96,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: teeardrop_4
+  m_Name: teeardrop_4 2
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Splash
