@@ -12654,7 +12654,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 11.818182
+  orthographic size: 10.590909
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -37843,7 +37843,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544502716}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 19cf095f740e3d44bb1fd38293e34074, type: 3}
   m_Name: 
@@ -60721,6 +60721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: teeardrop_4
       objectReference: {fileID: 0}
+    - target: {fileID: 8194404013162845159, guid: 3217a2edfcf20a64b9d8ada6d4577067, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b3e9f87f807ae624087e111f790aaca7, type: 2}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 3217a2edfcf20a64b9d8ada6d4577067, type: 3}
