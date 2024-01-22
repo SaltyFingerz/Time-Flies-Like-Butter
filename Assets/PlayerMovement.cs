@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private float vertical;
     private float speed = 8f;
     private float jumpingPower = 16f;
-    private bool isFacingRight = true;
+    public bool isFacingRight = true;
     private bool canMorph = false;
     public static bool rewindable = false;
 
@@ -33,8 +33,10 @@ public class PlayerMovement : MonoBehaviour
     public RewindManager rewindManager;
     public CameraFollow cam;
     public FrogScript frog;
-    
+    private CameraFollowObject camFollowOb;
+
     //  bool mobile = true;
+    [SerializeField] private GameObject pMovementObject;
 
     [SerializeField] private GameObject rewindChild;
 
@@ -84,6 +86,8 @@ public class PlayerMovement : MonoBehaviour
         input = GetComponent<PlayerInput>();
         inputActions = new PlayerInputActions();
         inputActions.Player.Enable();
+
+        camFollowOb = pMovementObject.GetComponent<CameraFollowObject>();
         //inputActions.Player.Jump.performed += Jump;
         // inputActions.Player.Rewind.performed += Rewind;
 
@@ -195,14 +199,7 @@ public class PlayerMovement : MonoBehaviour
 
         RewindState();
 
-        if (rewind)
-        {
-            ReverseFlip();
-        }
-        else
-        {
-            Flip();
-        }
+      
 
        
     }
@@ -356,6 +353,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        if (rewind)
+        {
+            ReverseFlip();
+        }
+        else
+        {
+            Flip();
+        }
+
+
         if (lifeStage == LifeStage.caterpillar)
         {
             
@@ -456,6 +464,9 @@ public class PlayerMovement : MonoBehaviour
             Quaternion localRotation = transform.localRotation;
             localRotation.y = 180;
             transform.localRotation = localRotation;
+
+            camFollowOb.CallTurn();
+
         }
         else if (!isFacingRight && horizontal > 0f)
         {
@@ -463,7 +474,11 @@ public class PlayerMovement : MonoBehaviour
             Quaternion localRotation = transform.localRotation;
             localRotation.y = 0;
             transform.localRotation = localRotation;
+
+            camFollowOb.CallTurn(); 
         }
+
+        
     }
 
     private void ReverseFlip()
@@ -474,6 +489,8 @@ public class PlayerMovement : MonoBehaviour
             Quaternion localRotation = transform.localRotation;
             localRotation.y = 0;
             transform.localRotation = localRotation;
+
+         //   camFollowOb.CallTurn();
         }
         else if (!isFacingRight && horizontal > 0f)
         {
@@ -481,6 +498,8 @@ public class PlayerMovement : MonoBehaviour
             Quaternion localRotation = transform.localRotation;
             localRotation.y = 180;
             transform.localRotation = localRotation;
+
+          //  camFollowOb.CallTurn();
         }
     }
 
