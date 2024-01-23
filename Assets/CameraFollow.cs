@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private Transform targetRew;
     private Camera cam;
+    public bool follow = false;
 
   
 
@@ -28,8 +29,12 @@ public class CameraFollow : MonoBehaviour
     }
     void Update()
     {
-        Vector3 targetPosition = target.position + offset;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+
+        if (follow)
+        {
+            Vector3 targetPosition = target.position + offset;
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        }
 
        
 
