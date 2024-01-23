@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private bool canMorph = false;
     public static bool rewindable = false;
 
+    private float fallSpeedYDampingChangeThreshold;
+
     private bool hop1 = false;
     private bool hop2 = false;
     private bool hop3 = false;
@@ -81,6 +83,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        fallSpeedYDampingChangeThreshold = CameraManager.instance.fallSpeedDampingChangeThreshold;
+
         sprite = GetComponent<SpriteRenderer>();
         collider = GetComponent<Collider2D>();
         input = GetComponent<PlayerInput>();
@@ -200,7 +204,20 @@ public class PlayerMovement : MonoBehaviour
         RewindState();
 
       
+        //if falling past a certain speed threshold
+        if(rb.velocity.y < fallSpeedYDampingChangeThreshold && !CameraManager.instance.isLerpingYDamping && !CameraManager.instance.LerpedFromPlayerFalling)
+        {
+            CameraManager.instance.LerpYDamping(true);
+            print("1");
+        }
 
+        //if standing still or moving up
+        if(rb.velocity.y >= 0f && !CameraManager.instance.isLerpingYDamping && CameraManager.instance.LerpedFromPlayerFalling)
+        {
+            CameraManager.instance.LerpedFromPlayerFalling = false; 
+            CameraManager.instance.LerpYDamping(false);
+            print("2"); 
+        }
        
     }
 
