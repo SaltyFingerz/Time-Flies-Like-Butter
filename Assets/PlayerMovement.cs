@@ -179,7 +179,7 @@ public class PlayerMovement : MonoBehaviour
         }*/
 
   
-
+        /*
         if (transform.localScale.x == 1.00001f)
         {
             sprite.flipX = true;
@@ -188,6 +188,7 @@ public class PlayerMovement : MonoBehaviour
         {
             sprite.flipX = false;
         }
+        */
 
         
         StateCheck();
@@ -203,12 +204,19 @@ public class PlayerMovement : MonoBehaviour
             Flip();
         }
 
+        AdjustCameraSmoothTime();
        
     }
 
 
 
-  
+  void AdjustCameraSmoothTime()
+    {
+        if(rb.velocity.y < -10)
+        cam.GetComponent<CameraFollow>().ReduceSmoothTime();
+        else
+        cam.GetComponent<CameraFollow>().RestoreSmoothTime();
+    }
 
     
     void RewindState()
@@ -452,16 +460,19 @@ public class PlayerMovement : MonoBehaviour
         if(isFacingRight && horizontal < 0f) 
         { 
             isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x = 1.00001f;
-            transform.localScale = localScale;
+           
+            Quaternion localRotation = transform.localRotation;
+            localRotation.y = 180;
+            transform.localRotation = localRotation;
         }
         else if (!isFacingRight && horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x = 1f;
-            transform.localScale = localScale;
+
+
+            Quaternion localRotation = transform.localRotation;
+            localRotation.y = 0;
+            transform.localRotation = localRotation;
         }
     }
 
@@ -470,16 +481,17 @@ public class PlayerMovement : MonoBehaviour
         if (isFacingRight && horizontal < 0f)
         {
             isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x = 1f;
-            transform.localScale = localScale;
+
+            Quaternion localRotation = transform.localRotation;
+            localRotation.y = 180;
+            transform.localRotation = localRotation;
         }
         else if (!isFacingRight && horizontal > 0f)
         {
             isFacingRight = !isFacingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x = 1.00001f;
-            transform.localScale = localScale;
+            Quaternion localRotation = transform.localRotation;
+            localRotation.y = 0;
+            transform.localRotation = localRotation;
         }
     }
 

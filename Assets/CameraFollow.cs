@@ -14,6 +14,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform targetRew;
     private Camera cam;
 
+    public Vector3 minValues, maxValues;
   
 
 
@@ -29,7 +30,13 @@ public class CameraFollow : MonoBehaviour
     void Update()
     {
         Vector3 targetPosition = target.position + offset;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+
+        Vector3 boundPosition = new Vector3(
+            Mathf.Clamp(targetPosition.x, minValues.x, maxValues.x),
+            Mathf.Clamp(targetPosition.y, minValues.y, maxValues.y),
+            Mathf.Clamp(targetPosition.z, minValues.z, maxValues.z));
+
+        transform.position = Vector3.SmoothDamp(transform.position, boundPosition, ref velocity, smoothTime);
 
        
 
@@ -41,6 +48,15 @@ public class CameraFollow : MonoBehaviour
         
     }
 
+    public void ReduceSmoothTime()
+    {
+        smoothTime = 0.25f;
+    }
+
+    public void RestoreSmoothTime()
+    {
+        smoothTime = 0.5f;
+    }
 
     public void LookLower()
     {
@@ -53,8 +69,18 @@ public class CameraFollow : MonoBehaviour
 
         offset = new Vector3(0f, 2f, -10f);
         smoothTime = 0.5f;
-        cam.orthographicSize = 12f;
-        GetComponent<UnityEngine.Experimental.Rendering.Universal.PixelPerfectCamera>().assetsPPU = 8;
+        StartCoroutine(ZoomOut());
+       
+    }
+
+    IEnumerator ZoomOut()
+    {
+        while (cam.orthographicSize < 12f)
+        {
+            cam.orthographicSize += 0.1f;
+            yield return null;
+        }
+       
     }
 
     public void LookAtRewindablePlayer()
