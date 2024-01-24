@@ -566,6 +566,7 @@ public class PlayerMovement : MonoBehaviour
             if (rewind)
             {
                 slerpyLerp.SetActive(true);
+              //  slerpyLerp.GetComponent<SlerpySlerp>().ShowTrajectory();
             }
 
 
@@ -622,6 +623,10 @@ public class PlayerMovement : MonoBehaviour
             if (rewind)
             {
                 slerpyLerp.SetActive(true);
+                if (rb.velocity.x == 0)
+                    slerpyLerp.GetComponent<SlerpySlerp>().ShowTrajectory();
+                else
+                    slerpyLerp.GetComponent<SlerpySlerp>().DestroyDots();
             }
 
             if (collision.name.Contains("Hop1"))
@@ -660,6 +665,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.name.Contains("Hop"))
         {
+            slerpyLerp.GetComponent<SlerpySlerp>().DestroyDots();
             slerpyLerp.SetActive(false);
         }
 
