@@ -623,10 +623,10 @@ public class PlayerMovement : MonoBehaviour
             if (rewind)
             {
                 slerpyLerp.SetActive(true);
-                if (rb.velocity.x == 0)
+              //  if (rb.velocity.x == 0)
                     slerpyLerp.GetComponent<SlerpySlerp>().ShowTrajectory();
-                else
-                    slerpyLerp.GetComponent<SlerpySlerp>().DestroyDots();
+              //  else
+               //     slerpyLerp.GetComponent<SlerpySlerp>().DestroyDots();
             }
 
             if (collision.name.Contains("Hop1"))
