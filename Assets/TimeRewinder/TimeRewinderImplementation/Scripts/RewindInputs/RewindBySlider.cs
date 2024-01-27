@@ -20,6 +20,9 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
     [SerializeField] Button rewindResume;
 
     Animator sliderAnimator;
+
+    public WobbleEffectCam _wobbleEffect;
+
     private int howManyFingersTouching = 0;
     bool isRewindPaused = false;
 
@@ -28,6 +31,9 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
         sliderAnimator = slider.GetComponent<Animator>();
         SetNormalSpeed();
     }
+
+
+
     #region Additional controls
     public void RestartTracking()
     {
@@ -115,7 +121,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
                     SetNormalSpeed();
 
             }
-
+            _wobbleEffect.StopWobble();
             rewindSound.Stop();
         }
     }
@@ -127,6 +133,8 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
                 RewindManager.Instance.StartRewindTimeBySeconds(-slider.value*RewindManager.Instance.HowManySecondsToTrack);       //Start rewind preview (note that slider have negative values, that is why it is passed with minus sign)                                               
             
             SliderAnimationPause();
+            //
+            _wobbleEffect.StartWobble();
             rewindSound.Play();
         }
     }

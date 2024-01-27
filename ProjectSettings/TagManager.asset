@@ -8,6 +8,13 @@ TagManager:
   - PlayerRwPowerUp
   - Sad
   - Food
+  - Death
+  - Old
+  - Dot
+  - Handle
+  - Goal
+  - PreRain
+  - Rain
   layers:
   - Default
   - TransparentFX
@@ -16,8 +23,8 @@ TagManager:
   - Water
   - UI
   - cam
-  - 
-  - 
+  - Screen
+  - Player
   - 
   - 
   - 
