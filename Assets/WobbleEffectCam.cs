@@ -50,6 +50,7 @@ public class WobbleEffectCam : MonoBehaviour
         if (!_wobbleActive)
         {
             _wobbleActive = true;
+            _blitRenderFeature.SetActive(true);
             StartCoroutine(WobbleCoroutine());
         }
 
@@ -128,6 +129,8 @@ public class WobbleEffectCam : MonoBehaviour
             _shift = 0f;
             SetAmplitude(_amplitude);
             SetShift(_shift);
+            _blitRenderFeature.SetActive(false);
+
         }
 
         

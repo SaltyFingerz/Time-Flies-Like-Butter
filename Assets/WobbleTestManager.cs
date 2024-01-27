@@ -16,7 +16,7 @@ public class WobbleTestManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_keyboard.aKey.wasPressedThisFrame)
+        if(_keyboard.vKey.wasPressedThisFrame)
         {
             WobbleOn();
         }

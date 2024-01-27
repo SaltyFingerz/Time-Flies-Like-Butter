@@ -104,8 +104,8 @@ public class Blit : ScriptableRendererFeature
 
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
     {
-        var src = renderer.cameraColorTarget;
-        var dest = (settings.destination == Target.Color) ? RenderTargetHandle.CameraTarget : m_RenderTextureHandle;
+        
+        
 
         if (settings.blitMaterial == null)
         {
@@ -113,6 +113,14 @@ public class Blit : ScriptableRendererFeature
             return;
         }
 
+      
+    }
+
+    public override void SetupRenderPasses(ScriptableRenderer renderer, in RenderingData renderingData)
+
+    {
+        var dest = (settings.destination == Target.Color) ? RenderTargetHandle.CameraTarget : m_RenderTextureHandle;
+        var src = renderer.cameraColorTarget;
         blitPass.Setup(src, dest);
         renderer.EnqueuePass(blitPass);
     }
