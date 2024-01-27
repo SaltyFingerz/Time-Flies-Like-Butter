@@ -3,6 +3,9 @@ Shader "Unlit/WobbleEffecgt"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _frequency("frequency",float) = 1
+        _shift("shift", float) = 0
+        _amplitude("amplitude", float) = 0
     }
     SubShader
     {
@@ -35,6 +38,10 @@ Shader "Unlit/WobbleEffecgt"
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
+            float _frequency;
+            float _shift;
+            float _amplitude;
+
             v2f vert (appdata v)
             {
                 v2f o;
@@ -44,8 +51,14 @@ Shader "Unlit/WobbleEffecgt"
                 return o;
             }
 
-            fixed4 frag (v2f i) : SV_Target
+            fixed4 frag(v2f i) : SV_Target
             {
+                const float pi = 3.14159; 
+
+            //horizontal waves
+                float y_new = i.uv.y + sin(_frequency * 2 * pi * i.uv.x + _shift) * _amplitude;
+                i.uv.y = y_new; 
+
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
                 // apply fog
