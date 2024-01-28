@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class updateRewindButton : MonoBehaviour
 {
-    private Transform rewindText;
-    private Transform forwardText;
+    public Sprite[] buttonSprites;
+    private Button button;
     // Start is called before the first frame update
     void Start()
     {
-        rewindText = this.gameObject.transform.GetChild(0);
-        forwardText = this.gameObject.transform.GetChild(1);
+        button = GetComponent<Button>();    
+        
     }
 
     // Update is called once per frame
@@ -18,13 +19,12 @@ public class updateRewindButton : MonoBehaviour
     {
         if(PlayerMovement.rewind)
         {
-            forwardText.gameObject.SetActive(true);
-            rewindText.gameObject.SetActive(false);
+            button.GetComponent<Image>().sprite = buttonSprites[1];
+            
         }
         else
         {
-            forwardText.gameObject.SetActive(false);
-            rewindText.gameObject.SetActive(true);
+            button.GetComponent<Image>().sprite = buttonSprites[0];
         }
     }
 }
