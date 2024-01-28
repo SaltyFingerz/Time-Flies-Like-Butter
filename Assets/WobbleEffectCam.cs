@@ -9,12 +9,12 @@ public class WobbleEffectCam : MonoBehaviour
     public ScriptableRendererFeature _blitRenderFeature;
 
     private bool _wobbleActive = false;
-    private float _frequency = 3f;
+    private float _frequency = 6f;
     private float _shift = 0f;
     private float _amplitude = 0f;
-    private float _maxAmplitude = 0.03f;
+    private float _maxAmplitude = 0.007f;
     private float _amplitudeSpeed = 0.025f;
-    private float _shiftSpeed = 5f;
+    private float _shiftSpeed = 4f;
     // Start is called before the first frame update
     void Start()
     {

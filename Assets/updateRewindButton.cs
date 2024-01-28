@@ -1,16 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+
 
 public class updateRewindButton : MonoBehaviour
 {
     public Sprite[] buttonSprites;
-    private Button button;
+    private UnityEngine.UI.Button button;
+    private int howManyFingersTouching = 0;
+
+    [SerializeField] AudioSource rewindSound;
+
+    public WobbleEffectCam _wobbleEffect;
     // Start is called before the first frame update
     void Start()
     {
-        button = GetComponent<Button>();    
+        button = GetComponent<UnityEngine.UI.Button>();    
         
     }
 
@@ -19,12 +27,58 @@ public class updateRewindButton : MonoBehaviour
     {
         if(PlayerMovement.rewind)
         {
-            button.GetComponent<Image>().sprite = buttonSprites[1];
-            
+            button.GetComponent<UnityEngine.UI.Image>().sprite = buttonSprites[1];
+            _wobbleEffect.StartWobble();
+            rewindSound.Play();
+
         }
         else
         {
-            button.GetComponent<Image>().sprite = buttonSprites[0];
+            button.GetComponent<UnityEngine.UI.Image>().sprite = buttonSprites[0];
+            _wobbleEffect.StopWobble();
+            rewindSound.Stop();
+        }
+
+        
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        howManyFingersTouching++;
+
+        if (howManyFingersTouching == 1)
+            OnButtonDown();
+    }
+
+    public void OnButtonDown()
+    {
+        if (button.interactable)
+        {
+           
+           
+            _wobbleEffect.StartWobble();
+            rewindSound.Play();
         }
     }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        howManyFingersTouching--;
+
+        if (howManyFingersTouching == 0)
+            OnButtonUp();
+    }
+
+    public void OnButtonUp()
+    {
+        if (button.interactable)
+        {
+           
+            _wobbleEffect.StopWobble();
+            rewindSound.Stop();
+        }
+    }
+
+
+
 }
