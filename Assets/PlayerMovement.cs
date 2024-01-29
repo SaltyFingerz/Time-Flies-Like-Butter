@@ -171,6 +171,16 @@ public class PlayerMovement : MonoBehaviour
 
         }
     } */
+
+    IEnumerator SquashDetection()
+    {
+       
+     yield return new WaitForSeconds(0.01f);
+            if (isGrounded())
+            {
+                anim.SetTrigger("Squash");
+            }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -193,12 +203,12 @@ public class PlayerMovement : MonoBehaviour
         }
         */
 
-        prevGrounded = isGrounded();
-
-        if(isGrounded() && !prevGrounded)
+       if(!isGrounded())
         {
-          //  anim.SetTrigger("Squash");
+            StartCoroutine(SquashDetection());
         }
+
+        
         
         StateCheck();
 
