@@ -22,6 +22,8 @@ public class PlayerMovement : MonoBehaviour
     private bool hop3 = false;
     private bool hop4 = false;
 
+    private bool prevGrounded = false;
+
     private PlayerInput input;
 
     private SpriteRenderer sprite;
@@ -33,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
     public RewindManager rewindManager;
     public CameraFollow cam;
     public FrogScript frog;
+
     
     //  bool mobile = true;
 
@@ -171,14 +174,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      /*  if (!mobile)
-        {
-            horizontal = Input.GetAxisRaw("Horizontal");
-            vertical = Input.GetAxisRaw("Vertical");
+        /*  if (!mobile)
+          {
+              horizontal = Input.GetAxisRaw("Horizontal");
+              vertical = Input.GetAxisRaw("Vertical");
 
-        }*/
+          }*/
 
-  
+
         /*
         if (transform.localScale.x == 1.00001f)
         {
@@ -190,6 +193,12 @@ public class PlayerMovement : MonoBehaviour
         }
         */
 
+        prevGrounded = isGrounded();
+
+        if(isGrounded() && !prevGrounded)
+        {
+          //  anim.SetTrigger("Squash");
+        }
         
         StateCheck();
 
@@ -300,6 +309,7 @@ public class PlayerMovement : MonoBehaviour
                 if (inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded())
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+                    anim.SetTrigger("Stretch");
                 }
 
                 if (inputActions.Player.Jump.ReadValue<float>() == 0 && rb.velocity.y > 0f)
