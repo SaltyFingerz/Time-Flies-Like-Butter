@@ -52,3 +52,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: New Layer 2
+    uniqueID: 1727900067
+    locked: 0
+  - name: stem
+    uniqueID: 4021608147
+    locked: 0

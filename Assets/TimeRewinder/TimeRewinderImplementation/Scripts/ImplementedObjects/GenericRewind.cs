@@ -43,6 +43,15 @@ public class GenericRewind : RewindAbstract
         trackAudio = true;
     }
 
+    public void EnableRewindAntiAging()
+    {
+        trackObjectActiveState = true;
+        trackTransform = false;
+        trackVelocity = false;
+        trackAnimator = true;
+        trackAudio = true;
+    }
+
     public override void Track()
     {
         if (trackObjectActiveState)

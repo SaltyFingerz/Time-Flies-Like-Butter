@@ -28,6 +28,10 @@ public class TimedEvents : MonoBehaviour
             rainManager.RainNow();
             //RainManager.raining = true;
         }
+        if(collision.CompareTag("Morph"))
+        {
+            player.GetComponent<Animator>().SetBool("Morph", true) ; 
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -35,6 +39,11 @@ public class TimedEvents : MonoBehaviour
         if(collision.CompareTag("Old"))
         {
             player.GetComponent<Animator>().SetBool("Old", false);
+        }
+
+        if (collision.CompareTag("Morph"))
+        {
+            player.GetComponent<Animator>().SetBool("Morph", false);
         }
 
 
@@ -53,6 +62,11 @@ public class TimedEvents : MonoBehaviour
         {
             
             rainManager.CancelRain();
+        }
+
+        if(collision.CompareTag("PreMorph"))
+        {
+            player.GetComponent<PlayerMovement>().lifeStage = PlayerMovement.LifeStage.caterpillar;
         }
     }
 }

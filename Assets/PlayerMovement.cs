@@ -76,10 +76,11 @@ public class PlayerMovement : MonoBehaviour
     public enum LifeStage {caterpillar = 0, butterfly = 1, dead = 2};
     public LifeStage lifeStage = LifeStage.caterpillar;
 
-    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3}
+    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3, antiaging = 4}
     public RewindMode rewindMode = RewindMode.environment;
     // Start is called before the first frame update
 
+ 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -112,6 +113,24 @@ public class PlayerMovement : MonoBehaviour
         {
             SliderRewind.SetActive(false);
             RewindButton.SetActive(true);
+        }
+
+        else if (SceneManager.GetActiveScene().name == "AntiAgingLevel")
+        {
+            SliderRewind.SetActive(true);
+            RewindButton.SetActive(false);
+            rewindMode = RewindMode.antiaging;
+
+            
+            rewind = false;
+
+          
+
+            rewindable = true;
+
+            rewindScript.EnableRewindAntiAging();
+
+            rewindManager.RestartTracking();
         }
 
         else if (SceneManager.GetActiveScene().name == "RisingWaterLevel" || SceneManager.GetActiveScene().name == "RisingWaterLevel2")
@@ -266,6 +285,11 @@ public class PlayerMovement : MonoBehaviour
 
                 break;
 
+            case RewindMode.antiaging:
+                RewindButton.SetActive(false);
+                SliderRewind.SetActive(true);
+                break;
+
         }
     }
 
@@ -385,11 +409,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (lifeStage == LifeStage.caterpillar)
         {
-            
+            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.56f, 1.61f);
         }
         if(lifeStage== LifeStage.butterfly)
         {
-           
+            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
         }
         if(lifeStage == LifeStage.dead)
         {
@@ -569,6 +593,22 @@ public class PlayerMovement : MonoBehaviour
 
 
 
+        }
+
+        else if (collision.CompareTag("Aaging"))
+        {
+            collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            rewind = false;
+
+            rewindMode = RewindMode.antiaging;
+
+            rewindable = true;
+
+            KeyClock.SetActive(true);
+            rewindScript.EnableRewindAntiAging();
+
+            rewindManager.RestartTracking();
         }
 
         else if (collision.CompareTag("Food"))
