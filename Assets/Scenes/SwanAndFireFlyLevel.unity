@@ -46406,6 +46406,7 @@ GameObject:
   - component: {fileID: 1579322011}
   - component: {fileID: 1579322010}
   - component: {fileID: 1579322009}
+  - component: {fileID: 1579322012}
   m_Layer: 0
   m_Name: FireFly
   m_TagString: Untagged
@@ -46501,6 +46502,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 72
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1579322012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579322008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 401ff5d8d5e31954b8c28ec2c9d71a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  farLeft: -1
+  farRight: 3
+  speed: 2
 --- !u!1 &1579653119
 GameObject:
   m_ObjectHideFlags: 0
