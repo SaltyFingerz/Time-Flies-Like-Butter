@@ -36,7 +36,7 @@ public class LeafScript : MonoBehaviour
         }
     }
     public void DropLeaf()
-    {
+    {if(rb != null)
         rb.WakeUp();
     }
 }

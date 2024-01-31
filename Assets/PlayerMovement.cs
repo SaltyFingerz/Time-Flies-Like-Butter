@@ -479,6 +479,11 @@ public class PlayerMovement : MonoBehaviour
         print("beingmorhpstopmovingalready");
     }
 
+    public void ReverseIntoCaterpillar()
+    {
+        lifeStage = LifeStage.caterpillar;
+    }
+
     public void BurstEvent()
     {
         aS.PlayOneShot(burstSound);

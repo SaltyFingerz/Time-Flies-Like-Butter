@@ -25,6 +25,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
 
     private int howManyFingersTouching = 0;
     bool isRewindPaused = false;
+    public static bool isRewindRunning = false;
 
     void Start()
     {
@@ -33,7 +34,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
     }
 
 
-
+    
     #region Additional controls
     public void RestartTracking()
     {
@@ -97,14 +98,14 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
     public void OnPointerDown(PointerEventData eventData)
     {
         howManyFingersTouching++;
-
+        isRewindRunning = true;
         if (howManyFingersTouching == 1)
             OnSliderDown();
     }
     public void OnPointerUp(PointerEventData eventData)
     {
         howManyFingersTouching--;
-
+        isRewindRunning = false;
         if (howManyFingersTouching == 0)
             OnSliderUp();
     }

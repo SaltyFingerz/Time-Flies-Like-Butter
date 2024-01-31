@@ -43543,7 +43543,7 @@ PrefabInstance:
       objectReference: {fileID: 1697761284}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999695
+      value: 11.999634
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -49074,7 +49074,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082849669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.4, y: -2.3, z: 0}
+  m_LocalPosition: {x: -2.9, y: -7.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -49322,7 +49322,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redAC: {fileID: 9100000, guid: ef052c459d486b647a83be1aa19fd3df, type: 2}
   blueAC: {fileID: 9100000, guid: af016a9455004ea4e937e3ea63c3e692, type: 2}
+  redButterflyAC: {fileID: 9100000, guid: a75418a9a15f0e343a273f5f6ff6d930, type: 2}
   levelScript: {fileID: 0}
+  pollenColor: 0
 --- !u!1 &1089814638
 GameObject:
   m_ObjectHideFlags: 0
@@ -58783,6 +58785,10 @@ PrefabInstance:
       propertyPath: pMovement
       value: 
       objectReference: {fileID: 1082849672}
+    - target: {fileID: 1691558967, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -136.09998
+      objectReference: {fileID: 0}
     - target: {fileID: 1851596685, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
       propertyPath: player
       value: 

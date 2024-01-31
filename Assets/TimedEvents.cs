@@ -28,10 +28,11 @@ public class TimedEvents : MonoBehaviour
             rainManager.RainNow();
             //RainManager.raining = true;
         }
-        if(collision.CompareTag("Morph"))
+        if(collision.CompareTag("Morph") && !RewindBySlider.isRewindRunning)
         {
             player.GetComponent<Animator>().SetBool("Morph", true) ; 
         }
+       
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -64,9 +65,14 @@ public class TimedEvents : MonoBehaviour
             rainManager.CancelRain();
         }
 
-        if(collision.CompareTag("PreMorph"))
+        if (collision.CompareTag("PreMorph"))
         {
+            if(player.GetComponent<PlayerMovement>().lifeStage != PlayerMovement.LifeStage.dead)
             player.GetComponent<PlayerMovement>().lifeStage = PlayerMovement.LifeStage.caterpillar;
+           // if (player.GetComponent<PlayerManager>().pollenColor == PlayerManager.PollenColor.Red)
+          //  {
+           //     player.GetComponent<PlayerManager>().RedCatterpillar();
+          //  }
         }
     }
 }

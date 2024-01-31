@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class DelayTriggerActivation : MonoBehaviour
 {
-    private Collider2D col;
+    private BoxCollider2D col;
     // Start is called before the first frame update
     void Start()
     {
-        col = GetComponent<Collider2D>();
+        col = GetComponent<BoxCollider2D>();
     }
 
     private void Awake()
