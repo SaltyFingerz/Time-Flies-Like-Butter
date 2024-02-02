@@ -6,14 +6,29 @@ public class FrogScript : MonoBehaviour
 {
     [SerializeField] private GameObject Player;
     private Animator anim;
+    public bool sleepable = false;
     bool canEat = true;
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
+       
     }
 
+    private void Update()
+    {
+        if(sleepable)
+        { if (SingingSwan.loud)
+            {
+                anim.SetBool("Awake", true);
+            }
+            else 
+            { 
+                anim.SetBool("Awake", false); 
+            }
 
+        }
+    }
 
     public void EatingEvent()
     {
@@ -30,11 +45,27 @@ public class FrogScript : MonoBehaviour
     {
         if (canEat)
         {
-            Debug.Log("ËAT");
-            anim.SetTrigger("Eat");
+            if (sleepable)
+            {
+                if (!anim.GetBool("Awake") || StealthScript.inLight)
+                    anim.SetBool("Gobble", true);
+                StartCoroutine(EatCooldown());
+            }
+
+            else
+            {
+                
+                anim.SetTrigger("Eat");
+
+            }
             
           
         }
+    }
+
+    public void NoMoreGobble()
+    {
+        anim.SetBool("Gobble", false);
     }
 
     IEnumerator EatCooldown()

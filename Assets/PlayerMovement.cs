@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private bool canMorph = false;
     public static bool rewindable = false;
+    
 
     private bool hop1 = false;
     private bool hop2 = false;
@@ -723,6 +724,12 @@ public class PlayerMovement : MonoBehaviour
                 SlerpEnd.transform.position = new Vector3(17.34f, -1.74f, 0);
                 SlerpCentre.transform.position = new Vector3(17.47f, -3.4f, 0);
             }
+        }
+
+        else if (collision.name.Contains("EatZone") && lifeStage == LifeStage.caterpillar)
+        {
+            frog.StartEating();
+
         }
     }
 
