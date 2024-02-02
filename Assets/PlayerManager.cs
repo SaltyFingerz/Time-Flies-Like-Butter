@@ -17,6 +17,8 @@ public class PlayerManager : MonoBehaviour
     public static bool closeBlind = false;
     public static bool love = false;
 
+    public bool flexiPollen = false;
+
     private GameObject currentPortal;
 
     public enum PollenColor { None = 0, Red =1, Blue = 2 }
@@ -73,8 +75,10 @@ public class PlayerManager : MonoBehaviour
 
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
-          //  gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
+           if(flexiPollen)
             pollenColor = PollenColor.Red;
+           else
+                gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
         }
 
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly)
@@ -90,7 +94,7 @@ public class PlayerManager : MonoBehaviour
             pollenColor = PollenColor.Blue;
         }
 
-        else if (collision.gameObject.name.Contains("RedFlower") && gameObject.GetComponent<Animator>().runtimeAnimatorController == redAC )
+        else if (collision.gameObject.name.Contains("RedFlower") && (gameObject.GetComponent<Animator>().runtimeAnimatorController == redAC || pollenColor == PollenColor.Red))
         {
             openRed = true;
         }

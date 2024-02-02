@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         //inputActions.Player.Jump.performed += Jump;
         // inputActions.Player.Rewind.performed += Rewind;
 
-        if (SceneManager.GetActiveScene().name == "TeleportLevel")
+        if (SceneManager.GetActiveScene().name == "TeleportLevel" || SceneManager.GetActiveScene().name == "SwanAndFireFlyLevel")
         {
             print("rewindenviroself");
             rewindMode = RewindMode.enviroself;

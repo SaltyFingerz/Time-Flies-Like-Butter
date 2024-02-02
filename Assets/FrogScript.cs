@@ -8,24 +8,36 @@ public class FrogScript : MonoBehaviour
     private Animator anim;
     public bool sleepable = false;
     bool canEat = true;
+    private Rigidbody2D rb;
+    bool inLight = false;
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
+        rb = gameObject.GetComponent<Rigidbody2D>();
        
     }
 
     private void Update()
     {
         if(sleepable)
-        { if (SingingSwan.loud)
+        {
+            if (RewindBySlider.isRewindRunning)
+            {
+                anim.SetBool("Awake", false);
+
+            }
+
+            else if (!RewindBySlider.isRewindRunning && (SingingSwan.loud || inLight))
             {
                 anim.SetBool("Awake", true);
             }
-            else 
+            else if(!RewindBySlider.isRewindRunning && !SingingSwan.loud && !inLight)
             { 
                 anim.SetBool("Awake", false); 
             }
+
+         
 
         }
     }
@@ -47,9 +59,12 @@ public class FrogScript : MonoBehaviour
         {
             if (sleepable)
             {
-                if (!anim.GetBool("Awake") || StealthScript.inLight)
+                //if (!anim.GetBool("Awake") || StealthScript.inLight)
+                if (anim.GetBool("Awake"))
+                {
                     anim.SetBool("Gobble", true);
-                StartCoroutine(EatCooldown());
+                    StartCoroutine(EatCooldown());
+                }
             }
 
             else
@@ -73,4 +88,31 @@ public class FrogScript : MonoBehaviour
         yield return new WaitForSeconds(3);
         canEat = true;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Light"))
+        {
+            inLight = true;
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Light"))
+        {
+            inLight = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Light"))
+        {
+
+            inLight = false;
+        }
+    }
+
+
 }

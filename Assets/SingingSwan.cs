@@ -54,7 +54,7 @@ public class SingingSwan : MonoBehaviour
             clipLoudness /= sampleDataLength; //clipLoudness is what you are looking for
         }
 
-        if(clipLoudness <0.0009f)
+        if(clipLoudness <0.001f)
         {
             loud = false;
           
