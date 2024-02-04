@@ -17,6 +17,8 @@ public class PlayerManager : MonoBehaviour
     public static bool closeBlind = false;
     public static bool love = false;
 
+    private bool fanOn = false;
+
     public bool flexiPollen = false;
 
     private GameObject currentPortal;
@@ -110,13 +112,27 @@ public class PlayerManager : MonoBehaviour
 
         }
 
-        if(collision.gameObject.name.Contains("Fan"))
+        if(collision.gameObject.name.Contains("Fan") && !fanOn)
         {
             collision.gameObject.GetComponent<Animator>().SetBool("Start", true);
+            if(SceneManager.GetActiveScene().name == "FanLevel")
             levelScript.GetComponent<FanLevelManager>().BlowLeaf();
+            else if(SceneManager.GetActiveScene().name == "CardsLevel")
+                levelScript.GetComponent<CardLevelScript>().FanOn();
+            fanOn = true;
         }
 
-        if(collision.gameObject.name.Contains("Handle"))
+        else if (collision.gameObject.name.Contains("Fan") && fanOn)
+        {
+            collision.gameObject.GetComponent<Animator>().SetBool("Start", false);
+            //   if (SceneManager.GetActiveScene().name == "FanLevel")
+            //    levelScript.GetComponent<FanLevelManager>().BlowLeaf();
+             if (SceneManager.GetActiveScene().name == "CardsLevel")
+                levelScript.GetComponent<CardLevelScript>().FanOff();
+            fanOn = false;
+        }
+
+            if (collision.gameObject.name.Contains("Handle"))
         {
             closeBlind = true;
         }
@@ -134,10 +150,10 @@ public class PlayerManager : MonoBehaviour
             if (collision.gameObject == currentPortal)
             {
                 currentPortal = null;
-           
-
             }
         }
+
+        
     }
 
     private void Update()

@@ -110,7 +110,7 @@ public class PlayerMovement : MonoBehaviour
             RewindButton.SetActive(false);
         }
 
-        else if (SceneManager.GetActiveScene().name == "DemoScene")
+        else if (SceneManager.GetActiveScene().name == "DemoScene" || SceneManager.GetActiveScene().name == "CardsLevel")
         {
             SliderRewind.SetActive(false);
             RewindButton.SetActive(true);

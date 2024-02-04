@@ -1,0 +1,394 @@
+fileFormatVersion: 2
+guid: e36d8f70d2e7fcc41a9edb9af95dc00b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: card pyramid spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1716
+        width: 1027
+        height: 1082
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed82c8d6fd76f8a44a53f8f4b033e529
+      internalID: 1704429286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card pyramid spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 1716
+        width: 1027
+        height: 1063
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3144361277b2644b79637d1f91fa9f
+      internalID: -104188471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card pyramid spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2791
+        y: 1722
+        width: 1058
+        height: 1211
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cc8c89ed480914e839f9d27e2382c7
+      internalID: -400787120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card pyramid spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 4132
+        y: 1728
+        width: 1162
+        height: 1352
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21cc2255b1b907429adab84404df8ac
+      internalID: -767103519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card pyramid spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 123
+        width: 1568
+        height: 1292
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d8ce17b37b2db4da982346fccc5883
+      internalID: 67789026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card pyramid spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 123
+        width: 1846
+        height: 1263
+      alignment: 9
+      pivot: {x: 0.4239756, y: 0.0015616579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1f8c30c3b4be542b28d46b2b31b56f
+      internalID: -44357879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card pyramid spritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 4175
+        y: 123
+        width: 2313
+        height: 940
+      alignment: 9
+      pivot: {x: 0.34128156, y: -0.002487483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea68136ff403184e97565e224cf81ba
+      internalID: -1116853216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card pyramid spritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 6603
+        y: 123
+        width: 2716
+        height: 463
+      alignment: 9
+      pivot: {x: 0.2888872, y: 0.0057332017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2a9f113ad0c334589003454b12b77d
+      internalID: 1543772826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card pyramid spritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 9432
+        y: 123
+        width: 3000
+        height: 314
+      alignment: 9
+      pivot: {x: 0.2602819, y: 0.00000024297435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dc9fcc8615667b48a86f8c08f0dec71
+      internalID: 960353283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      card pyramid spritesheet_8: -186187005
+      card pyramid spritesheet_18: -649588410
+      card pyramid spritesheet_42: 1308829295
+      card pyramid spritesheet_22: -203246213
+      card pyramid spritesheet_4: -1988034168
+      card pyramid spritesheet_44: -1629500114
+      card pyramid spritesheet_33: 141526184
+      card pyramid spritesheet_1: -104188471
+      card pyramid spritesheet_11: -1867192555
+      card pyramid spritesheet_5: -767103519
+      card pyramid spritesheet_9: 533341193
+      card pyramid spritesheet_58: -261222747
+      card pyramid spritesheet_46: 1832601058
+      card pyramid spritesheet_60: -188148011
+      card pyramid spritesheet_24: -1155652734
+      card pyramid spritesheet_36: 1715991465
+      card pyramid spritesheet_48: -879713025
+      card pyramid spritesheet_59: -519415368
+      card pyramid spritesheet_62: -1116853216
+      card pyramid spritesheet_27: -611931915
+      card pyramid spritesheet_28: -1864813061
+      card pyramid spritesheet_45: -225188775
+      card pyramid spritesheet_23: 269637137
+      card pyramid spritesheet_43: 842006388
+      card pyramid spritesheet_65: 941226787
+      card pyramid spritesheet_38: -738291973
+      card pyramid spritesheet_61: -1685494500
+      card pyramid spritesheet_68: -368881783
+      card pyramid spritesheet_57: 35089676
+      card pyramid spritesheet_32: -474492512
+      card pyramid spritesheet_3: -1126989390
+      card pyramid spritesheet_49: -1523837054
+      card pyramid spritesheet_2: -400787120
+      card pyramid spritesheet_37: 1008081130
+      card pyramid spritesheet_40: -1254133563
+      card pyramid spritesheet_51: 1423478339
+      card pyramid spritesheet_35: 1476234196
+      card pyramid spritesheet_16: -232529708
+      card pyramid spritesheet_19: -707115373
+      card pyramid spritesheet_10: 1423002932
+      card pyramid spritesheet_56: 7047367
+      card pyramid spritesheet_63: 1927242780
+      card pyramid spritesheet_13: -2001879894
+      card pyramid spritesheet_47: 765296326
+      card pyramid spritesheet_55: -512135934
+      card pyramid spritesheet_17: -1158713348
+      card pyramid spritesheet_41: -1500480338
+      card pyramid spritesheet_52: -44357879
+      card pyramid spritesheet_64: -1078494625
+      card pyramid spritesheet_30: -1426936137
+      card pyramid spritesheet_21: -1367590028
+      card pyramid spritesheet_54: 1732510236
+      card pyramid spritesheet_0: 1704429286
+      card pyramid spritesheet_39: -2138343629
+      card pyramid spritesheet_31: -2141901139
+      card pyramid spritesheet_25: 67789026
+      card pyramid spritesheet_53: 818850665
+      card pyramid spritesheet_20: -1699314308
+      card pyramid spritesheet_12: -218272584
+      card pyramid spritesheet_6: 2109595596
+      card pyramid spritesheet_26: 1790210021
+      card pyramid spritesheet_29: 1058795092
+      card pyramid spritesheet_34: -1326929989
+      card pyramid spritesheet_50: -652989990
+      card pyramid spritesheet_66: 1543772826
+      card pyramid spritesheet_15: -1268671212
+      card pyramid spritesheet_7: 176175733
+      card pyramid spritesheet_67: 960353283
+      card pyramid spritesheet_14: 856582906
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
