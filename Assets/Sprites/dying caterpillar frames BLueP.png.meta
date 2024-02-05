@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +117,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: dying caterpillar frames BLueP_0
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 475
+        width: 382
+        height: 467
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d725e3d696907349ace042deb626cea
+      internalID: 2076019845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dying caterpillar frames BLueP_1
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 478
+        width: 412
+        height: 405
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0b4a069b55ca44d81fb3b2da4e2ac6
+      internalID: -836495490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dying caterpillar frames BLueP_2
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 496
+        width: 431
+        height: 374
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1deba09d59f2043ab975871ef4df98
+      internalID: 1287764178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dying caterpillar frames BLueP_3
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 520
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8a7d595505afb42844e6a24324fa53
+      internalID: 1943059768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dying caterpillar frames BLueP_4
+      rect:
+        serializedVersion: 2
+        x: 2062
+        y: 556
+        width: 481
+        height: 223
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254577d4db5f7cc498e5f15aa2c5d2d6
+      internalID: 1524507920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dying caterpillar frames BLueP_5
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 570
+        width: 416
+        height: 208
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e2fae8966fa5a4690afa7397aadebe
+      internalID: 701652333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dying caterpillar frames BLueP_6
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 69
+        width: 355
+        height: 193
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4ba5705f522b640b7fdaec67807b24
+      internalID: -1540706589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +275,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      dying caterpillar frames BLueP_5: 701652333
+      dying caterpillar frames BLueP_2: 1287764178
+      dying caterpillar frames BLueP_4: 1524507920
+      dying caterpillar frames BLueP_3: 1943059768
+      dying caterpillar frames BLueP_6: -1540706589
+      dying caterpillar frames BLueP_0: 2076019845
+      dying caterpillar frames BLueP_1: -836495490
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

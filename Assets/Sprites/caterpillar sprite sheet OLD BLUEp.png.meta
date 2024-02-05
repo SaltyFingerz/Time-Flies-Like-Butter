@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,7 +117,406 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 3000
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc38fd3a14650b4eaef6834b1c09497
+      internalID: 459941297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_1
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 3000
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ffb56199ce71554da43a2900c27e7e0
+      internalID: 706518612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_2
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 3000
+        width: 420
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e515acbc5237e2498b980a60e93ad02
+      internalID: -2084447868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_3
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 3000
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40addaa10c15e954ea09c9795e272d4a
+      internalID: 1545051815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_4
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 3000
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689820822f1610048b2db6de9b97448c
+      internalID: -919016803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2428
+        width: 420
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188495494606e79419d5a744a8cea04e
+      internalID: 595173630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_6
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 2428
+        width: 420
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7246088da827ed34383f859133ef6569
+      internalID: -1850838507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_7
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 2428
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29fc52d511630094f85c2b2e664cd33a
+      internalID: 1214021142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_8
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 2428
+        width: 425
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a15d37d4e7b31409816f64f4b748eb
+      internalID: 1685603145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_9
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 2428
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a57b7c43af862294491b0b32497b2267
+      internalID: 1177019576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_10
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1704
+        width: 403
+        height: 383
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b896527d0c55bf6428a6ec454f17fb0c
+      internalID: 927302521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_11
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1704
+        width: 406
+        height: 364
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6022bd5ed710eee4ca43c1f6cc631ead
+      internalID: -1566495693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_12
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1702
+        width: 508
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bad92d1a07d1b4f9424851348a067f
+      internalID: -2092981079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_13
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1071
+        width: 587
+        height: 324
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d74d4fdeda22e8f42b9a151719e16535
+      internalID: 1740406479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_14
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1106
+        width: 724
+        height: 282
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8eb078001c9654a8518415b9114d0e
+      internalID: -597352404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_15
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1106
+        width: 726
+        height: 416
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fba188638bd8874ab6fa5cf1f97680f
+      internalID: -890964671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 518
+        width: 562
+        height: 431
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6d64fcdaf3e68468dfc7f6f4e21f9f
+      internalID: -1191168452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_17
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 536
+        width: 816
+        height: 259
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9524ac3aca7ed2498415d7f9e8ed2c0
+      internalID: 734598482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD BLUEp_18
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 83
+        width: 850
+        height: 214
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d352910aa864824f8956ba24c0a23ec
+      internalID: 94705460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +527,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      caterpillar sprite sheet OLD BLUEp_5: 595173630
+      caterpillar sprite sheet OLD BLUEp_6: -1850838507
+      caterpillar sprite sheet OLD BLUEp_3: 1545051815
+      caterpillar sprite sheet OLD BLUEp_8: 1685603145
+      caterpillar sprite sheet OLD BLUEp_16: -1191168452
+      caterpillar sprite sheet OLD BLUEp_9: 1177019576
+      caterpillar sprite sheet OLD BLUEp_10: 927302521
+      caterpillar sprite sheet OLD BLUEp_14: -597352404
+      caterpillar sprite sheet OLD BLUEp_12: -2092981079
+      caterpillar sprite sheet OLD BLUEp_11: -1566495693
+      caterpillar sprite sheet OLD BLUEp_7: 1214021142
+      caterpillar sprite sheet OLD BLUEp_17: 734598482
+      caterpillar sprite sheet OLD BLUEp_1: 706518612
+      caterpillar sprite sheet OLD BLUEp_15: -890964671
+      caterpillar sprite sheet OLD BLUEp_0: 459941297
+      caterpillar sprite sheet OLD BLUEp_18: 94705460
+      caterpillar sprite sheet OLD BLUEp_4: -919016803
+      caterpillar sprite sheet OLD BLUEp_13: 1740406479
+      caterpillar sprite sheet OLD BLUEp_2: -2084447868
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

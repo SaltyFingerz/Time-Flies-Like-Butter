@@ -79,13 +79,14 @@ public class PlayerManager : MonoBehaviour
         {
             if (flexiPollen)
                 pollenColor = PollenColor.Red;
-            else if(gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleOld"))
+            else if(gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StandOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StartWalkOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("WalkOld"))
             {
                 gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
-                gameObject.GetComponent<Animator>().SetBool("Old", true);
+                gameObject.GetComponent<Animator>().SetTrigger("Oldie");
+               
 
             }
-            else
+            else if (!flexiPollen)
             {
                 gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
 
@@ -101,8 +102,19 @@ public class PlayerManager : MonoBehaviour
         }
         else if (collision.gameObject.name.Contains("GreenFlower") && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
-            gameObject.GetComponent<Animator>().runtimeAnimatorController = blueAC;
-            pollenColor = PollenColor.Blue;
+
+            if (flexiPollen)
+                pollenColor = PollenColor.Blue;
+            else if (gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StandOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StartWalkOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("WalkOld"))
+            {
+                gameObject.GetComponent<Animator>().runtimeAnimatorController = blueAC;
+                gameObject.GetComponent<Animator>().SetTrigger("Oldie");
+            }
+            else if(!flexiPollen)
+            {
+                gameObject.GetComponent<Animator>().runtimeAnimatorController = blueAC;
+
+            }
         }
 
         else if (collision.gameObject.name.Contains("RedFlower") && (gameObject.GetComponent<Animator>().runtimeAnimatorController == redAC || pollenColor == PollenColor.Red))
