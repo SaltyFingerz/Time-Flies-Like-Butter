@@ -636,6 +636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1082849669}
+  sleepable: 0
 --- !u!95 &105466960
 Animator:
   serializedVersion: 4
@@ -8059,7 +8060,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &434750342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37333,7 +37334,7 @@ PrefabInstance:
       objectReference: {fileID: 1697761284}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999695
+      value: 11.999573
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -43112,7 +43113,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redAC: {fileID: 9100000, guid: ef052c459d486b647a83be1aa19fd3df, type: 2}
   blueAC: {fileID: 9100000, guid: af016a9455004ea4e937e3ea63c3e692, type: 2}
+  redButterflyAC: {fileID: 0}
   levelScript: {fileID: 0}
+  flexiPollen: 0
+  pollenColor: 0
 --- !u!1 &1092515876
 GameObject:
   m_ObjectHideFlags: 0
@@ -52262,6 +52266,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1082849669}
+    - target: {fileID: 1910893483, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1923849193941672073, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
       propertyPath: _wobbleEffect
       value: 
@@ -52326,7 +52334,8 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1985134978}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1625936036, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
 --- !u!1001 &1758076933
