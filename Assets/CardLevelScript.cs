@@ -5,11 +5,13 @@ using UnityEngine;
 public class CardLevelScript : MonoBehaviour
 {
     [SerializeField] private GameObject cards;
-    private Animator anim; 
+    private Animator anim;
+    public GameObject obsElf;
     // Start is called before the first frame update
     void Start()
     {
         anim = cards.GetComponent<Animator>();
+        obsElf = GameObject.Find("ObsElf");
         
     }
 
@@ -24,6 +26,12 @@ public class CardLevelScript : MonoBehaviour
         {
             Forward();
         }
+
+        if(CardPyramidEvent.formed)
+        {
+            ShockElf();
+        }
+       
     }
 
     public void FanOn()
@@ -44,5 +52,10 @@ public class CardLevelScript : MonoBehaviour
     public void Forward()
     {
         anim.SetBool("Rewind", false);
+    }
+
+    public void ShockElf()
+    {
+        obsElf.GetComponent<Animator>().SetTrigger("Formed");
     }
 }

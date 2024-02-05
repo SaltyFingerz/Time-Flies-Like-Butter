@@ -17,7 +17,7 @@ public class PlayerManager : MonoBehaviour
     public static bool closeBlind = false;
     public static bool love = false;
 
-    private bool fanOn = false;
+    public static bool fanOn = false;
 
     public bool flexiPollen = false;
 

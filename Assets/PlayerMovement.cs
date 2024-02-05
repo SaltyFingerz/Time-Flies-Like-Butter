@@ -116,6 +116,11 @@ public class PlayerMovement : MonoBehaviour
             RewindButton.SetActive(true);
         }
 
+        if(SceneManager.GetActiveScene().name == "CardsLevel")
+        {
+            cam.GreaterDistanceWalk();
+        }
+
         else if (SceneManager.GetActiveScene().name == "AntiAgingLevel")
         {
             SliderRewind.SetActive(true);

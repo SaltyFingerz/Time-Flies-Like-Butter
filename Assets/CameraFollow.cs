@@ -73,6 +73,15 @@ public class CameraFollow : MonoBehaviour
        
     }
 
+    public void GreaterDistanceWalk()
+    {
+
+        offset = new Vector3(0f, 5f, -10f);
+        smoothTime = 0.5f;
+        StartCoroutine(ZoomOut());
+
+    }
+
     IEnumerator ZoomOut()
     {
         while (cam.orthographicSize < 12f)
