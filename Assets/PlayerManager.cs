@@ -77,10 +77,19 @@ public class PlayerManager : MonoBehaviour
 
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
-           if(flexiPollen)
-            pollenColor = PollenColor.Red;
-           else
+            if (flexiPollen)
+                pollenColor = PollenColor.Red;
+            else if(gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleOld"))
+            {
                 gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
+                gameObject.GetComponent<Animator>().SetBool("Old", true);
+
+            }
+            else
+            {
+                gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
+
+            }
         }
 
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly)

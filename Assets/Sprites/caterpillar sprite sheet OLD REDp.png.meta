@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: 7a9c94ac1c03f5d41869d8b3165d9d80
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 3000
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279b25f4457896049b8c8c8499cf8080
+      internalID: -872403030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_1
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 3000
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efae777b80af10147b0ef913adef55b0
+      internalID: 164901239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_2
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 3000
+        width: 420
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15611ccd63bbc51459b6fbdbe3d8157b
+      internalID: -1174767796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_3
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 3000
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab6613242db4a043bc9b00192636cb5
+      internalID: -623051756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_4
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 3000
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8206b9b04a579ad418f85ef5f66ccc5a
+      internalID: 2120588022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2428
+        width: 420
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c301338d1f1e649874da820d203f9b
+      internalID: 835431485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_6
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 2428
+        width: 420
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5ef46f013f1b44591da72575153b9e
+      internalID: -652245427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_7
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 2428
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc8fbfdd0b7a034f8c4566ff061ed1f
+      internalID: -719623986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_8
+      rect:
+        serializedVersion: 2
+        x: 1531
+        y: 2428
+        width: 425
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a14598d157fe844c8abfb3396e382c7
+      internalID: -723655183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_9
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 2428
+        width: 427
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd50c5891a920f4ba887384371db2f3
+      internalID: -365722529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_10
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1704
+        width: 403
+        height: 383
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea00c2b659cd84541ac3b9e6627567fc
+      internalID: -1794796632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_11
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 1704
+        width: 406
+        height: 364
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155e4ac97d8260348b9ed5f0fe4a7066
+      internalID: -607426851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_12
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 1702
+        width: 508
+        height: 325
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84880a4f2ff0e8a498d7148573cb6afb
+      internalID: 816591848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_13
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1071
+        width: 587
+        height: 324
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ee6b8b7536dcb43aabe6a663b80eb4
+      internalID: -35144121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_14
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 1106
+        width: 724
+        height: 282
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df51e82dfd7ba04797c638ca780b922
+      internalID: 540199984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_15
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 1106
+        width: 726
+        height: 416
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a36bcc54fdc7944c927ec52e4623b4c
+      internalID: -221245898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 518
+        width: 562
+        height: 431
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3bc2a54f9e3071448f275bf6a2ff19f
+      internalID: -427893007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_17
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 536
+        width: 816
+        height: 259
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8725e9201768741b2c2e2e6b7301ed
+      internalID: -90026612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet OLD REDp_18
+      rect:
+        serializedVersion: 2
+        x: 1059
+        y: 83
+        width: 850
+        height: 214
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af3f9f67a6227044ac69d67760db7ae
+      internalID: 1320117552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      caterpillar sprite sheet OLD REDp_17: -90026612
+      caterpillar sprite sheet OLD REDp_1: 164901239
+      caterpillar sprite sheet OLD REDp_2: -1174767796
+      caterpillar sprite sheet OLD REDp_12: 816591848
+      caterpillar sprite sheet OLD REDp_18: 1320117552
+      caterpillar sprite sheet OLD REDp_7: -719623986
+      caterpillar sprite sheet OLD REDp_13: -35144121
+      caterpillar sprite sheet OLD REDp_3: -623051756
+      caterpillar sprite sheet OLD REDp_16: -427893007
+      caterpillar sprite sheet OLD REDp_6: -652245427
+      caterpillar sprite sheet OLD REDp_9: -365722529
+      caterpillar sprite sheet OLD REDp_5: 835431485
+      caterpillar sprite sheet OLD REDp_10: -1794796632
+      caterpillar sprite sheet OLD REDp_15: -221245898
+      caterpillar sprite sheet OLD REDp_4: 2120588022
+      caterpillar sprite sheet OLD REDp_0: -872403030
+      caterpillar sprite sheet OLD REDp_14: 540199984
+      caterpillar sprite sheet OLD REDp_8: -723655183
+      caterpillar sprite sheet OLD REDp_11: -607426851
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
