@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SimpleTpLevel.unity
     guid: 70c2225ec0642f74ea4e6338ca205d6f
+  - enabled: 1
+    path: Assets/Scenes/WeedingLevel1.unity
+    guid: 2a8a32e895123bc479d1f3b4461fe21a
   m_configObjects: {}

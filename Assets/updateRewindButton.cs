@@ -44,6 +44,7 @@ public class updateRewindButton : MonoBehaviour
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        print("rewind button down");
         howManyFingersTouching++;
 
         if (howManyFingersTouching == 1)
@@ -58,6 +59,7 @@ public class updateRewindButton : MonoBehaviour
            
             _wobbleEffect.StartWobble();
             rewindSound.Play();
+            print("wobble");
         }
     }
 

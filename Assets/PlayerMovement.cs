@@ -110,10 +110,14 @@ public class PlayerMovement : MonoBehaviour
             RewindButton.SetActive(false);
         }
 
-        else if (SceneManager.GetActiveScene().name == "DemoScene" || SceneManager.GetActiveScene().name == "CardsLevel")
+        else if (SceneManager.GetActiveScene().name == "DemoScene" || SceneManager.GetActiveScene().name == "CardsLevel" || SceneManager.GetActiveScene().name == "WeedingLevel")
         {
+            rewindable = true;
+            rewindMode = RewindMode.environment;
             SliderRewind.SetActive(false);
             RewindButton.SetActive(true);
+            print("bo");
+            print(rewindMode.ToString());
         }
 
         if(SceneManager.GetActiveScene().name == "CardsLevel")

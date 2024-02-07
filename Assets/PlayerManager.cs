@@ -196,6 +196,14 @@ public class PlayerManager : MonoBehaviour
         }
 
         PollenState();
+
+        if(SceneManager.GetActiveScene().name == "WeedingLevel")
+        {
+           if(PlayerMovement.rewind)
+            {
+                levelScript.GetComponent<WeedingLevelManager>().RewindFlowers();
+            }
+        }
     }
 
    
