@@ -1,0 +1,554 @@
+fileFormatVersion: 2
+guid: f4f6cd258da0cf840bf7bc785ce94537
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: growing weeds_0
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 407
+        width: 35
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce54d5c2c025e34da6113f72923b0c6
+      internalID: -495635418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_1
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 406
+        width: 35
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e1080595e90e04590755acf3a09e59
+      internalID: -62518785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_2
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 402
+        width: 53
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ad0865667c8a743aead157763e84bc
+      internalID: -509336022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_3
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 394
+        width: 98
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44409516b31349d47bbc4a5c1a494637
+      internalID: 1679703301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_4
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 386
+        width: 99
+        height: 139
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21cecbc1c799db429efeba541b6f5bc
+      internalID: 707472113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_5
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 386
+        width: 133
+        height: 160
+      alignment: 9
+      pivot: {x: 0.4671071, y: 0.0054681776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a237411e67fa694d863c212fcb4ae8e
+      internalID: -1109337488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_6
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 380
+        width: 158
+        height: 162
+      alignment: 9
+      pivot: {x: 0.55537665, y: 0.010801716}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93622721fe880164191cf75bd906b6c8
+      internalID: -1109726102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_7
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 383
+        width: 192
+        height: 179
+      alignment: 9
+      pivot: {x: 0.5216567, y: 0.005807205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17442aa8089fe14d900daebde5cd926
+      internalID: -621208499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_8
+      rect:
+        serializedVersion: 2
+        x: 1848
+        y: 377
+        width: 210
+        height: 219
+      alignment: 9
+      pivot: {x: 0.5346505, y: -0.00000013934967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c72a7d90ee38f4a9f933350cfd7d17
+      internalID: -1845835404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_9
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 381
+        width: 257
+        height: 270
+      alignment: 9
+      pivot: {x: 0.52831364, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d495fa10218caef438ce8629ee16d72f
+      internalID: -1936362782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_10
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 107
+        width: 34
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7e1929c09fcf64ebbf14c5099fd538
+      internalID: -298778513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_11
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 102
+        width: 41
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2249eed1e174140aac2cc5fef0bbe4
+      internalID: -513830779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_12
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 95
+        width: 61
+        height: 95
+      alignment: 9
+      pivot: {x: 0.35302234, y: 0.018875282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf05ce3778d58e04eb144b31ce8e68f9
+      internalID: -140414910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_13
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 87
+        width: 87
+        height: 132
+      alignment: 9
+      pivot: {x: 0.23206338, y: 0.0067924154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc8a8b5aa2ecea4f8d98cf74a1d2289
+      internalID: -940416708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_14
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 82
+        width: 101
+        height: 164
+      alignment: 9
+      pivot: {x: 0.16268106, y: 0.010933806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b730dc433ccebf94ea4cbfa197e32904
+      internalID: -882760445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_15
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 79
+        width: 125
+        height: 175
+      alignment: 9
+      pivot: {x: 0.31285742, y: 0.008624268}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246d723632cba524d8dc15b12f251d69
+      internalID: 435492602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_16
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 61
+        width: 165
+        height: 188
+      alignment: 9
+      pivot: {x: 0.47713363, y: 0.0040140557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6512e7c228fe9d548887d060e6bef4de
+      internalID: 1625659194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_17
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 48
+        width: 229
+        height: 240
+      alignment: 9
+      pivot: {x: 0.5659057, y: 0.0031443913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb909abba5af7fd40ac109ed7546ee23
+      internalID: 1383148593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: growing weeds_18
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 52
+        width: 276
+        height: 289
+      alignment: 9
+      pivot: {x: 0.5656199, y: 0.002611233}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b31f1aba0fd414f9a39122f1955160
+      internalID: -1788630343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      growing weeds_6: -1109726102
+      growing weeds_8: -1845835404
+      growing weeds_4: 707472113
+      growing weeds_7: -621208499
+      growing weeds_3: 1679703301
+      growing weeds_2: -509336022
+      growing weeds_1: -62518785
+      growing weeds_0: -495635418
+      growing weeds_17: 1383148593
+      growing weeds_10: -298778513
+      growing weeds_12: -140414910
+      growing weeds_9: -1936362782
+      growing weeds_5: -1109337488
+      growing weeds_18: -1788630343
+      growing weeds_14: -882760445
+      growing weeds_13: -940416708
+      growing weeds_15: 435492602
+      growing weeds_11: -513830779
+      growing weeds_16: 1625659194
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
