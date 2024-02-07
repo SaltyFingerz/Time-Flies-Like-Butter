@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class WeedScript : MonoBehaviour
 {
+    [SerializeField] private GameObject flowerVictim;
     // Start is called before the first frame update
-    void Start()
+    public void KillFlower()
     {
-        
+        flowerVictim.GetComponent<Animator>().SetBool("Dying", true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void NotKillingFlower()
     {
-        
+        flowerVictim.GetComponent<Animator>().SetBool("Dying", true);
     }
 }

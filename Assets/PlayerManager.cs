@@ -203,6 +203,10 @@ public class PlayerManager : MonoBehaviour
             {
                 levelScript.GetComponent<WeedingLevelManager>().RewindFlowers();
             }
+           else
+            {
+                levelScript.GetComponent<WeedingLevelManager>().ForwardFlowers();
+            }
         }
     }
 
