@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RevivingFlowerScript : MonoBehaviour
 {
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,11 @@ public class RevivingFlowerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         
     }
+
+   
+
+   
 }

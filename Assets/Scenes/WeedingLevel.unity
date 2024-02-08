@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 32026527}
   - component: {fileID: 32026526}
   - component: {fileID: 32026525}
+  - component: {fileID: 32026528}
   m_Layer: 0
   m_Name: FlowerRight
   m_TagString: Untagged
@@ -228,6 +229,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &32026528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32026524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83edb8153673f6448522a35384c0517, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &54433722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1415,6 +1428,7 @@ GameObject:
   - component: {fileID: 422286435}
   - component: {fileID: 422286434}
   - component: {fileID: 422286433}
+  - component: {fileID: 422286436}
   m_Layer: 0
   m_Name: WeedRight
   m_TagString: Untagged
@@ -1509,6 +1523,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &422286436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422286432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe992b2e867d4947910e2570158bc92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flowerVictim: {fileID: 32026524}
 --- !u!1 &435041772
 GameObject:
   m_ObjectHideFlags: 0
@@ -10708,6 +10735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbe992b2e867d4947910e2570158bc92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flowerVictim: {fileID: 130496227}
 --- !u!212 &1794754100
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21455,7 +21483,7 @@ PrefabInstance:
       objectReference: {fileID: 519420036}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999878
+      value: 11.999847
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

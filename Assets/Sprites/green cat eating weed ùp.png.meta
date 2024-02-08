@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,406 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_0"
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1857
+        width: 479
+        height: 514
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dca6bc8f49d88c4f8467bbec87eded4
+      internalID: 2083632229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_1"
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1857
+        width: 582
+        height: 428
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9947a393682f54a95d5a55436b8be6
+      internalID: -839322836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_2"
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 1857
+        width: 664
+        height: 340
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 530732c290a8d824caae3a297c5a9706
+      internalID: -1467428317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_3"
+      rect:
+        serializedVersion: 2
+        x: 3023
+        y: 2046
+        width: 53
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a734d9aca7cd5474baa4484a73754754
+      internalID: -1521763696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_4"
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1284
+        width: 699
+        height: 378
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf1d88c67f3ae742bdba5177fe54f0c
+      internalID: -2116240327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_5"
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1264
+        width: 794
+        height: 320
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24443539cf455624d969c86a8b39fe60
+      internalID: -1177897361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_6"
+      rect:
+        serializedVersion: 2
+        x: 2617
+        y: 1309
+        width: 855
+        height: 295
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4dc0dfc54e1f348b96f818e6948054
+      internalID: 2024597077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_7"
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 653
+        width: 479
+        height: 515
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b5c15e7c648f94ab550f24e5b999ac
+      internalID: 144317579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_8"
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 653
+        width: 583
+        height: 429
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ac1868f36a73c4c9667e25d21ed0d0
+      internalID: 1699890237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_9"
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 653
+        width: 661
+        height: 346
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c32ed9f66b4f47428f0ad969f5ece47
+      internalID: 710741276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_10"
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 648
+        width: 391
+        height: 467
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1bf2971dccc7ef41aa9b2ef259d6290
+      internalID: -703899176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_11"
+      rect:
+        serializedVersion: 2
+        x: 2990
+        y: 631
+        width: 412
+        height: 469
+      alignment: 9
+      pivot: {x: 0.46091676, y: 0.00022279784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a90a1881925d140bf0507068468383
+      internalID: 2143410703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_12"
+      rect:
+        serializedVersion: 2
+        x: 3702
+        y: 623
+        width: 391
+        height: 469
+      alignment: 9
+      pivot: {x: 0.48344526, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d19b2a85a672af44834a3a8ec651fc6
+      internalID: 1759158449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_13"
+      rect:
+        serializedVersion: 2
+        x: 4338
+        y: 631
+        width: 383
+        height: 469
+      alignment: 9
+      pivot: {x: 0.49151182, y: -0.00000013013893}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166292db9e7594c409df4f8d315893db
+      internalID: 1645648071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_14"
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 81
+        width: 699
+        height: 378
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c789765a3153e354ba611eb0f2a78042
+      internalID: 1470961847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_15"
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 58
+        width: 795
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce25876231af5a14492dd6a69d6a0036
+      internalID: -312685422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_16"
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 83
+        width: 406
+        height: 469
+      alignment: 9
+      pivot: {x: 0.4666676, y: -0.00000009760419}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db49dd18faddb694fbd8176146913bc8
+      internalID: 1094387305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_17"
+      rect:
+        serializedVersion: 2
+        x: 3026
+        y: 40
+        width: 406
+        height: 470
+      alignment: 9
+      pivot: {x: 0.4707344, y: -0.000000073047396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4514b2ffc73866498a987ac6a604ce0
+      internalID: -1240133824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "green cat eating weed \xF9p_18"
+      rect:
+        serializedVersion: 2
+        x: 3714
+        y: 40
+        width: 384
+        height: 470
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c93478160fbf6141bff1de640d834f9
+      internalID: -269244873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +527,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "green cat eating weed \xF9p_9": 710741276
+      "green cat eating weed \xF9p_12": 1759158449
+      "green cat eating weed \xF9p_16": 1094387305
+      "green cat eating weed \xF9p_2": -1467428317
+      "green cat eating weed \xF9p_18": -269244873
+      "green cat eating weed \xF9p_8": 1699890237
+      "green cat eating weed \xF9p_4": -2116240327
+      "green cat eating weed \xF9p_11": 2143410703
+      "green cat eating weed \xF9p_0": 2083632229
+      "green cat eating weed \xF9p_3": -1521763696
+      "green cat eating weed \xF9p_7": 144317579
+      "green cat eating weed \xF9p_10": -703899176
+      "green cat eating weed \xF9p_17": -1240133824
+      "green cat eating weed \xF9p_6": 2024597077
+      "green cat eating weed \xF9p_5": -1177897361
+      "green cat eating weed \xF9p_15": -312685422
+      "green cat eating weed \xF9p_13": 1645648071
+      "green cat eating weed \xF9p_14": 1470961847
+      "green cat eating weed \xF9p_1": -839322836
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
