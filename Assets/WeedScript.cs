@@ -11,6 +11,7 @@ public class WeedScript : MonoBehaviour
     private void Start()
     {
         anim = GetComponent<Animator>();
+        anim.ResetTrigger("Eaten");
     }
     // Start is called before the first frame update
     public void KillFlower()

@@ -176,8 +176,16 @@ public class PlayerManager : MonoBehaviour
                 currentWeed = collision.gameObject;
                 eating = true;
             }
-           
-            
+
+            else if (collision.gameObject.CompareTag("WeedDown") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
+            {
+
+                gameObject.GetComponent<Animator>().SetTrigger("EatDown");
+                currentWeed = collision.gameObject;
+                eating = true;
+            }
+
+
         }
 
 
@@ -193,14 +201,24 @@ public class PlayerManager : MonoBehaviour
                 gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
             }
 
+           
+
+
+            else if (collision.gameObject.CompareTag("WeedDown") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
+            {
+                gameObject.transform.position = collision.gameObject.transform.position - new Vector3(2, 0, 0);
+                gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
+            }
+
             else if (collision.gameObject.GetComponent<WeedScript>().Eaten())
             {
                 currentWeed = null;
                 eating = false;
-                print("pop");
-                gameObject.transform.position = gameObject.transform.position;
-                gameObject.transform.rotation = gameObject.transform.rotation;
+                /* print("pop");
+                  gameObject.transform.position = gameObject.transform.position;
+                  gameObject.transform.rotation = gameObject.transform.rotation; */
             }
+
         }
     }
 
