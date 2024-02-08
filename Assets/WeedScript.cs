@@ -20,7 +20,7 @@ public class WeedScript : MonoBehaviour
 
     public void NotKillingFlower()
     {
-        flowerVictim.GetComponent<Animator>().SetBool("Dying", true);
+        flowerVictim.GetComponent<Animator>().SetBool("Dying", false);
     }
 
     public void EatenEvent()
