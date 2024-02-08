@@ -15,6 +15,7 @@ TagManager:
   - Goal
   - PreRain
   - Rain
+  - WeedUp
   layers:
   - Default
   - TransparentFX

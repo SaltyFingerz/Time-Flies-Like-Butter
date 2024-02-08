@@ -12,12 +12,16 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController redButterflyAC;
     [SerializeField] private GameObject levelScript;
 
+
+    public GameObject currentWeed = null;
     public static bool openRed = false;
     public static bool openBlue = false;
     public static bool closeBlind = false;
     public static bool love = false;
 
     public static bool fanOn = false;
+
+    bool eating = false;
 
     public bool flexiPollen = false;
 
@@ -79,11 +83,11 @@ public class PlayerManager : MonoBehaviour
         {
             if (flexiPollen)
                 pollenColor = PollenColor.Red;
-            else if(gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StandOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StartWalkOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("WalkOld"))
+            else if (gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StandOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StartWalkOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("WalkOld"))
             {
                 gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
                 gameObject.GetComponent<Animator>().SetTrigger("Oldie");
-               
+
 
             }
             else if (!flexiPollen)
@@ -110,7 +114,7 @@ public class PlayerManager : MonoBehaviour
                 gameObject.GetComponent<Animator>().runtimeAnimatorController = blueAC;
                 gameObject.GetComponent<Animator>().SetTrigger("Oldie");
             }
-            else if(!flexiPollen)
+            else if (!flexiPollen)
             {
                 gameObject.GetComponent<Animator>().runtimeAnimatorController = blueAC;
 
@@ -122,7 +126,7 @@ public class PlayerManager : MonoBehaviour
             openRed = true;
         }
 
-        else if(collision.gameObject.name.Contains("BlueFlower") && gameObject.GetComponent<Animator>().runtimeAnimatorController == blueAC)
+        else if (collision.gameObject.name.Contains("BlueFlower") && gameObject.GetComponent<Animator>().runtimeAnimatorController == blueAC)
         {
             openBlue = true;
         }
@@ -133,12 +137,12 @@ public class PlayerManager : MonoBehaviour
 
         }
 
-        if(collision.gameObject.name.Contains("Fan") && !fanOn)
+        if (collision.gameObject.name.Contains("Fan") && !fanOn)
         {
             collision.gameObject.GetComponent<Animator>().SetBool("Start", true);
-            if(SceneManager.GetActiveScene().name == "FanLevel")
-            levelScript.GetComponent<FanLevelManager>().BlowLeaf();
-            else if(SceneManager.GetActiveScene().name == "CardsLevel")
+            if (SceneManager.GetActiveScene().name == "FanLevel")
+                levelScript.GetComponent<FanLevelManager>().BlowLeaf();
+            else if (SceneManager.GetActiveScene().name == "CardsLevel")
                 levelScript.GetComponent<CardLevelScript>().FanOn();
             fanOn = true;
         }
@@ -148,20 +152,62 @@ public class PlayerManager : MonoBehaviour
             collision.gameObject.GetComponent<Animator>().SetBool("Start", false);
             //   if (SceneManager.GetActiveScene().name == "FanLevel")
             //    levelScript.GetComponent<FanLevelManager>().BlowLeaf();
-             if (SceneManager.GetActiveScene().name == "CardsLevel")
+            if (SceneManager.GetActiveScene().name == "CardsLevel")
                 levelScript.GetComponent<CardLevelScript>().FanOff();
             fanOn = false;
         }
 
-            if (collision.gameObject.name.Contains("Handle"))
+        if (collision.gameObject.name.Contains("Handle"))
         {
             closeBlind = true;
         }
 
-        if(collision.gameObject.name.Contains("Grasshopper") && !PlayerMovement.rewind)
+        if (collision.gameObject.name.Contains("Grasshopper") && !PlayerMovement.rewind)
         {
             love = true;
         }
+
+        if (SceneManager.GetActiveScene().name == "WeedingLevel")
+        {
+            if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
+            {
+               
+                gameObject.GetComponent<Animator>().SetTrigger("EatUp");
+                currentWeed = collision.gameObject;
+                eating = true;
+            }
+           
+            
+        }
+
+
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (SceneManager.GetActiveScene().name == "WeedingLevel")
+        {
+            if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
+            {
+                gameObject.transform.position = collision.gameObject.transform.position - new Vector3(2, 0, 0);
+                gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
+            }
+
+            else if (collision.gameObject.GetComponent<WeedScript>().Eaten())
+            {
+                currentWeed = null;
+                eating = false;
+                print("pop");
+                gameObject.transform.position = gameObject.transform.position;
+                gameObject.transform.rotation = gameObject.transform.rotation;
+            }
+        }
+    }
+
+
+    public void DestroyWeed(GameObject collision)
+    {
+       currentWeed.GetComponent<Animator>().SetTrigger("Eaten");
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -207,6 +253,8 @@ public class PlayerManager : MonoBehaviour
             {
                 levelScript.GetComponent<WeedingLevelManager>().ForwardFlowers();
             }
+
+
         }
     }
 

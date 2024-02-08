@@ -8907,6 +8907,7 @@ MonoBehaviour:
   blueAC: {fileID: 0}
   redButterflyAC: {fileID: 0}
   levelScript: {fileID: 1504002196}
+  currentWeed: {fileID: 0}
   flexiPollen: 0
   pollenColor: 0
 --- !u!1001 &1083889164
@@ -9715,6 +9716,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1082849669}
+    - target: {fileID: 1691558967, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -136.1001
+      objectReference: {fileID: 0}
     - target: {fileID: 2031874675, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
       propertyPath: pMovement
       value: 
@@ -10696,9 +10701,10 @@ GameObject:
   - component: {fileID: 1794754100}
   - component: {fileID: 1794754099}
   - component: {fileID: 1794754098}
+  - component: {fileID: 1794754102}
   m_Layer: 0
   m_Name: WeedLeft
-  m_TagString: Untagged
+  m_TagString: WeedUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10803,6 +10809,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1794754102
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794754097}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04851514, y: 0.9000001}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.52831364, y: 0}
+    oldSize: {x: 1.7134813, y: 1.8000001}
+    newSize: {x: 0.2333535, y: 0.23333335}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.4, y: 1.8000002}
+  m_EdgeRadius: 0
 --- !u!1 &1795483351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1795483351, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
@@ -21483,7 +21515,7 @@ PrefabInstance:
       objectReference: {fileID: 519420036}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999847
+      value: 11.999756
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
