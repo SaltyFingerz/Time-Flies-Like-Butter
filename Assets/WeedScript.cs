@@ -13,6 +13,35 @@ public class WeedScript : MonoBehaviour
         anim = GetComponent<Animator>();
         anim.ResetTrigger("Eaten");
     }
+
+    private void Update()
+    {
+        if(flowerVictim.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleLivingFlower") && PlayerMovement.rewind)
+        {
+            StartCoroutine(ShrinkWeed());
+        }
+
+        else
+        {
+            StartCoroutine(GrowWeed());
+
+        }
+    }
+
+    IEnumerator ShrinkWeed()
+    {
+        yield return new WaitForSeconds(1);
+        anim.SetBool("Grow", false);
+        anim.SetBool("Rewind", true);
+    }
+
+    IEnumerator GrowWeed()
+    {
+        yield return new WaitForSeconds(1);
+        anim.SetBool("Grow", true);
+        anim.SetBool("Rewind", false);
+    }
+
     // Start is called before the first frame update
     public void KillFlower()
     {
