@@ -81,7 +81,25 @@ public class PlayerMovement : MonoBehaviour
     public RewindMode rewindMode = RewindMode.environment;
     // Start is called before the first frame update
 
- 
+    IEnumerator NoRewind()
+    {
+        yield return new WaitForSeconds(0.5f);
+        if(SceneManager.GetActiveScene().name == "Onboarding")
+        {
+            rewindMode = RewindMode.none;
+
+
+            rewindable = false;
+
+            KeyClock.SetActive(false);
+
+
+
+
+            RewindButton.SetActive(false);
+        }
+    }
+
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -89,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
         input = GetComponent<PlayerInput>();
         inputActions = new PlayerInputActions();
         inputActions.Player.Enable();
+        
         //inputActions.Player.Jump.performed += Jump;
         // inputActions.Player.Rewind.performed += Rewind;
 
@@ -159,24 +178,25 @@ public class PlayerMovement : MonoBehaviour
 
             RewindButton.SetActive(false);
         }
-        else if (SceneManager.GetActiveScene().name == "SimpleTpLevel" || SceneManager.GetActiveScene().name == "FanLevel")
+        else if (SceneManager.GetActiveScene().name == "SimpleTpLevel" || SceneManager.GetActiveScene().name == "FanLevel" || SceneManager.GetActiveScene().name == "Onboarding")
         {
             rewindMode = RewindMode.none;
 
 
-            rewindable = false;
+           // rewindable = false;
 
-            KeyClock.SetActive(false);
+          //  KeyClock.SetActive(false);
            
 
 
 
-            RewindButton.SetActive(false);
+          //  RewindButton.SetActive(false);
         }
 
     
 
     }
+
 
    
 
@@ -575,6 +595,21 @@ public class PlayerMovement : MonoBehaviour
           //  rewindManager.RestartTracking();
 
            // KeyClock.SetActive(false);
+
+
+        }
+
+        else if (collision.CompareTag("EnviroRwPowerUp"))
+        {
+            collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            rewindable = true;
+            rewindMode = RewindMode.environment;
+            SliderRewind.SetActive(false);
+            RewindButton.SetActive(true);
+
+
+          
 
 
         }

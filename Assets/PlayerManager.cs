@@ -126,6 +126,11 @@ public class PlayerManager : MonoBehaviour
             openRed = true;
         }
 
+        else if (collision.gameObject.name.Contains("RedFFruit") && (gameObject.GetComponent<Animator>().runtimeAnimatorController == redAC || pollenColor == PollenColor.Red))
+        {
+            collision.gameObject.GetComponent<Animator>().SetBool("Pollinated", true);
+        }
+
         else if (collision.gameObject.name.Contains("BlueFlower") && gameObject.GetComponent<Animator>().runtimeAnimatorController == blueAC)
         {
             openBlue = true;
@@ -188,11 +193,27 @@ public class PlayerManager : MonoBehaviour
 
         }
 
+        if(SceneManager.GetActiveScene().name == "Onboarding")
+        {
+            if(collision.gameObject.CompareTag("Branch") && !PlayerMovement.rewind)
+            {
+                levelScript.GetComponent<OnBoardingLevel>().FallBranch();
+            }
+        }
+
 
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
+        if (SceneManager.GetActiveScene().name == "Onboarding")
+        {
+            if (collision.gameObject.CompareTag("Branch") && !PlayerMovement.rewind)
+            {
+                levelScript.GetComponent<OnBoardingLevel>().FallBranch();
+            }
+        }
+
         if (SceneManager.GetActiveScene().name == "WeedingLevel")
         {
             if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
@@ -273,6 +294,15 @@ public class PlayerManager : MonoBehaviour
             }
 
 
+        }
+
+        else if (SceneManager.GetActiveScene().name == "Onboarding")
+        {
+            if(PlayerMovement.rewind)
+            {
+                levelScript.GetComponent<OnBoardingLevel>().RewindBranch();
+            }
+            
         }
     }
 
