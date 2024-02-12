@@ -139,6 +139,25 @@ public class PlayerMovement : MonoBehaviour
             print(rewindMode.ToString());
         }
 
+        else if (SceneManager.GetActiveScene().name == "GhostTraffickControl")
+        {
+            anim.SetBool("Ghost", true);
+            rewindMode = RewindMode.enviroself;
+
+
+            rewindable = true;
+
+            KeyClock.SetActive(true);
+            rewindScript.EnableRewind();
+
+
+
+            rewindManager.RestartTracking();
+
+            RewindButton.SetActive(false);
+
+        }
+
         if(SceneManager.GetActiveScene().name == "CardsLevel")
         {
             cam.GreaterDistanceWalk();
@@ -499,14 +518,14 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void DeadEvent()
-    {
+    {if(!anim.GetBool("Ghost"))
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void BeginMorphEvent()
     {
         lifeStage = LifeStage.dead;
-        print("beingmorhpstopmovingalready");
+       
     }
 
     public void ReverseIntoCaterpillar()

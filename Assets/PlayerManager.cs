@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController blueAC;
     [SerializeField] private RuntimeAnimatorController redButterflyAC;
     [SerializeField] private GameObject levelScript;
+    private Animator anim;
 
 
     public GameObject currentWeed = null;
@@ -34,6 +35,7 @@ public class PlayerManager : MonoBehaviour
     {
         openRed = false;
         openBlue = false;
+        anim = GetComponent<Animator>();
     }
     
     private void PollenState()
@@ -278,6 +280,11 @@ public class PlayerManager : MonoBehaviour
                 transform.position = currentPortal.GetComponent<StamenScript>().GetDestination().position;
                 currentPortal.GetComponent<StamenScript>().OpenDestination();
             }
+        }
+
+        if(anim.GetCurrentAnimatorStateInfo(0).IsName("ghostFly"))
+        {
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
 
         PollenState();

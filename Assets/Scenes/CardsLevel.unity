@@ -10138,6 +10138,7 @@ MonoBehaviour:
   blueAC: {fileID: 0}
   redButterflyAC: {fileID: 0}
   levelScript: {fileID: 267096541}
+  currentWeed: {fileID: 0}
   flexiPollen: 0
   pollenColor: 0
 --- !u!1 &1098526917
@@ -23211,7 +23212,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a3bc1f23b3b90a94c9a6160d6eea9187, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -23647,7 +23648,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a3bc1f23b3b90a94c9a6160d6eea9187, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

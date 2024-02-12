@@ -64310,14 +64310,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2612630746639749429, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d3dfc41db38c3a246aab4876207cd09a, type: 3}
-    - target: {fileID: 2612651165098810217, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6a12d2873e2d3fb41a55295d24158a25, type: 3}
     - target: {fileID: 2725382219651208757, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_IsActive
       value: 0
