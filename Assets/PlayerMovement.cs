@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerInputActions inputActions;
 
 
-    public enum LifeStage {caterpillar = 0, butterfly = 1, dead = 2};
+    public enum LifeStage {caterpillar = 0, butterfly = 1, dead = 2, ghostButterfly = 3};
     public LifeStage lifeStage = LifeStage.caterpillar;
 
     public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3, antiaging = 4}
@@ -295,7 +295,10 @@ public class PlayerMovement : MonoBehaviour
        
     }
 
-
+    public void SetToGhost()
+    {
+        lifeStage = LifeStage.ghostButterfly;
+    }
 
   void AdjustCameraSmoothTime()
     {
@@ -348,6 +351,7 @@ public class PlayerMovement : MonoBehaviour
         switch (lifeStage)
         {
             case LifeStage.caterpillar:
+                gameObject.layer = LayerMask.NameToLayer("Player");
 
                 rb.gravityScale = 4f;
 
@@ -427,6 +431,7 @@ public class PlayerMovement : MonoBehaviour
                 UpButton.SetActive(true);
                 DownButton.SetActive(true);
                 JumpButton.SetActive(false);
+                gameObject.layer = LayerMask.NameToLayer("Player");
 
                 /*if (rb.velocity.x != 0 || rb.velocity.y != 0)
                 {
@@ -439,13 +444,25 @@ public class PlayerMovement : MonoBehaviour
 
                 break;
 
+            case LifeStage.ghostButterfly:
+
+                rb.gravityScale = 0f;
+                rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+                UpButton.SetActive(true);
+                DownButton.SetActive(true);
+                JumpButton.SetActive(false);
+                gameObject.layer = LayerMask.NameToLayer("GhostButterfly");
+
+                break;
+
             case LifeStage.dead:
                 print("ded");
             
 
-                rb.gravityScale = 10f;
+              
                 rb.velocity = new Vector2(0, rb.velocity.y);
-               
+                gameObject.layer = LayerMask.NameToLayer("Player");
+
 
                 break;
 
@@ -514,7 +531,14 @@ public class PlayerMovement : MonoBehaviour
 
     public void DeathEvent()
     {
+        rb.gravityScale = 10f;
         lifeStage = LifeStage.dead;
+    }
+
+    public void PreGhostEvent()
+    {
+        rb.gravityScale = 0f;
+        gameObject.transform.position += new Vector3(0, 2, 0);
     }
 
     public void DeadEvent()

@@ -16,6 +16,8 @@ TagManager:
   - PreRain
   - Rain
   - WeedUp
+  - PreMorph
+  - Morph
   layers:
   - Default
   - TransparentFX
@@ -27,8 +29,8 @@ TagManager:
   - Screen
   - Player
   - WorldUI
-  - 
-  - 
+  - GhostButterfly
+  - Boundary
   - 
   - 
   - 

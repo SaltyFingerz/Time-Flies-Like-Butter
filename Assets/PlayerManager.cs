@@ -282,10 +282,7 @@ public class PlayerManager : MonoBehaviour
             }
         }
 
-        if(anim.GetCurrentAnimatorStateInfo(0).IsName("ghostFly"))
-        {
-            gameObject.GetComponent<BoxCollider2D>().enabled = false;
-        }
+       
 
         PollenState();
 
