@@ -16,7 +16,10 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private bool canMorph = false;
     public static bool rewindable = false;
-    
+
+    public bool foodToSeeButterOnHud = false;
+    [SerializeField] private GameObject ButterflyHUD;
+    [SerializeField] private GameObject Slider;
 
     private bool hop1 = false;
     private bool hop2 = false;
@@ -141,8 +144,9 @@ public class PlayerMovement : MonoBehaviour
 
         else if (SceneManager.GetActiveScene().name == "GhostTraffickControl")
         {
-            anim.SetBool("Ghost", true);
+            
             rewindMode = RewindMode.enviroself;
+            cam.GreaterDistance();
 
 
             rewindable = true;
@@ -646,15 +650,20 @@ public class PlayerMovement : MonoBehaviour
         {
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             rewindable = true;
             rewindMode = RewindMode.environment;
             SliderRewind.SetActive(false);
             RewindButton.SetActive(true);
 
+        }
 
-          
-
-
+        else if (collision.CompareTag("Ghost"))
+        {
+            collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
+            collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false; 
+            anim.SetBool("Ghost", true);
         }
 
 
@@ -662,6 +671,7 @@ public class PlayerMovement : MonoBehaviour
         {
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             rewind = false;
 
             rewindMode = RewindMode.enviroself;
@@ -692,6 +702,7 @@ public class PlayerMovement : MonoBehaviour
         {
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             rewind = false;
 
             rewindMode = RewindMode.antiaging;
@@ -708,7 +719,17 @@ public class PlayerMovement : MonoBehaviour
         {
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            canMorph = true;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+            if (!foodToSeeButterOnHud)
+            {
+                canMorph = true;
+            }
+            else
+            {
+                ButterflyHUD.SetActive(true);
+                ButterflyHUD.transform.position = Slider.transform.position + new Vector3(2, 0, 0);
+            }
         }
 
 

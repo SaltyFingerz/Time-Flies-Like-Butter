@@ -81,6 +81,11 @@ public class PlayerManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
+        if(collision.gameObject.name.Contains("AirTraffickController"))
+        {
+            collision.GetComponent<Animator>().SetBool("Alert", true);
+        }
+
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
             if (flexiPollen)
