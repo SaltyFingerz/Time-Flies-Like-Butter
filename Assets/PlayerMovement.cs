@@ -546,8 +546,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public void DeadEvent()
-    {if(!anim.GetBool("Ghost"))
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    {
+        print("dead Event");
+        if (!anim.GetBool("Ghost"))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            print("notGhost so reloading");
+        }
     }
 
     public void BeginMorphEvent()
