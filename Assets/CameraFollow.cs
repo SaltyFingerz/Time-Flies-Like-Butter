@@ -60,7 +60,13 @@ public class CameraFollow : MonoBehaviour
 
     public void LookLower()
     {
-        offset = new Vector3(0f, 0f, -12f);
+        offset = new Vector3(0f, -5f, -12f);
+        smoothTime = 0.5f;
+    }
+
+    public void LookHigher()
+    {
+        offset = new Vector3(0f, 5f, -12f);
         smoothTime = 0.5f;
     }
 

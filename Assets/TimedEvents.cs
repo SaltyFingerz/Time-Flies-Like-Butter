@@ -32,6 +32,22 @@ public class TimedEvents : MonoBehaviour
         {
             player.GetComponent<Animator>().SetBool("Morph", true) ; 
         }
+
+        if(collision.CompareTag("Plane") && !RewindBySlider.isRewindRunning)
+        {
+            if (!GameObject.Find("AirTraffickController").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Alert"))
+            {
+                GameObject.Find("PlanesCrashManager").GetComponent<Animator>().SetBool("Crash", true);
+                GameObject.Find("PlanesCrashManager").GetComponent<Animator>().SetBool("Evade", false);
+
+            }
+            else
+            {
+                GameObject.Find("PlanesCrashManager").GetComponent<Animator>().SetBool("Crash", false);
+                GameObject.Find("PlanesCrashManager").GetComponent<Animator>().SetBool("Evade", true);
+
+            }
+        }
        
     }
 
@@ -54,6 +70,12 @@ public class TimedEvents : MonoBehaviour
             player.GetComponent<Animator>().SetBool("Dead", false);
             
            
+        }
+
+        if (collision.CompareTag("Plane"))
+        {
+            GameObject.Find("PlanesCrashManager").GetComponent<Animator>().SetBool("Crash", false);
+            GameObject.Find("PlanesCrashManager").GetComponent<Animator>().SetBool("Evade", false);
         }
     }
 

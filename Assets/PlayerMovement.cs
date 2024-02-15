@@ -641,12 +641,12 @@ public class PlayerMovement : MonoBehaviour
             rewindMode = RewindMode.voidtime;
 
             Debug.Log("voidTimeRewindMode");
-           // rewindable = true;
+            // rewindable = true;
             //rewindScript.EnableRewind();
 
-          //  rewindManager.RestartTracking();
+            //  rewindManager.RestartTracking();
 
-           // KeyClock.SetActive(false);
+            // KeyClock.SetActive(false);
 
 
         }
@@ -667,7 +667,7 @@ public class PlayerMovement : MonoBehaviour
         {
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false; 
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             anim.SetBool("Ghost", true);
         }
 
@@ -684,17 +684,17 @@ public class PlayerMovement : MonoBehaviour
             rewindable = true;
 
             KeyClock.SetActive(true);
-             rewindScript.EnableRewind();
-            
-          /*  if (!gameObject.name.Contains("Rewindable"))
-            {
-                cam.LookAtRewindablePlayer();
-                sprite.enabled = false;
-                collider.enabled = false;
-                rewindChild.GetComponent<SpriteRenderer>().enabled = true;
-                rewindChild.GetComponent<Collider2D>().enabled = true;
-                
-            }*/
+            rewindScript.EnableRewind();
+
+            /*  if (!gameObject.name.Contains("Rewindable"))
+              {
+                  cam.LookAtRewindablePlayer();
+                  sprite.enabled = false;
+                  collider.enabled = false;
+                  rewindChild.GetComponent<SpriteRenderer>().enabled = true;
+                  rewindChild.GetComponent<Collider2D>().enabled = true;
+
+              }*/
 
             rewindManager.RestartTracking();
             Debug.Log("enviroeself rewind modë");
@@ -745,7 +745,7 @@ public class PlayerMovement : MonoBehaviour
             if (rewind)
             {
                 slerpyLerp.SetActive(true);
-              //  slerpyLerp.GetComponent<SlerpySlerp>().ShowTrajectory();
+                //  slerpyLerp.GetComponent<SlerpySlerp>().ShowTrajectory();
             }
 
 
@@ -787,7 +787,10 @@ public class PlayerMovement : MonoBehaviour
             cam.LookLower();
         }
 
-        else if (collision.name.Contains("EatZone") && lifeStage== LifeStage.caterpillar)
+        else if (collision.name.Contains("LowPoint"))
+        { cam.LookHigher(); }
+
+        else if (collision.name.Contains("EatZone") && lifeStage == LifeStage.caterpillar)
         {
             frog.StartEating();
 
