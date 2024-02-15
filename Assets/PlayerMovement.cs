@@ -538,6 +538,9 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.gravityScale = 10f;
         lifeStage = LifeStage.dead;
+       
+        GameObject.Find("Global Volume").GetComponent<PostProcessControls>().IncreaseVignette();
+        GameObject.Find("Global Volume").GetComponent<PostProcessControls>().DecreaseSaturation();
     }
 
     public void GraveRIP()
