@@ -50,6 +50,11 @@ public class PlaneCrashManager : MonoBehaviour
       
     }
 
+    public void LevelComplete()
+    {
+        print("GhostTrafficControllerLevelComplete!");
+    }
+
     public void ShakeCam()
     {
         StartCoroutine(camShake.Shake(0.15f, 0.4f));
