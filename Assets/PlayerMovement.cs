@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
     private bool canMorph = false;
     public static bool rewindable = false;
+    public GameObject GraveStone;
 
     public bool foodToSeeButterOnHud = false;
     [SerializeField] private GameObject ButterflyHUD;
@@ -537,6 +538,11 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.gravityScale = 10f;
         lifeStage = LifeStage.dead;
+    }
+
+    public void GraveRIP()
+    {
+        Instantiate(GraveStone, new Vector3 (transform.position.x, -6.27f, transform.position.z), Quaternion.identity);
     }
 
     public void PreGhostEvent()
