@@ -14,6 +14,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform targetRew;
     private Camera cam;
 
+    [SerializeField] private float InitialZoomDistance = 10;
+
     public Vector3 minValues, maxValues;
   
 
@@ -26,6 +28,7 @@ public class CameraFollow : MonoBehaviour
     private void Start()
     {
         cam = GetComponent<Camera>();
+       // cam.orthographicSize = InitialZoomDistance; 
     }
     void Update()
     {
