@@ -17,6 +17,7 @@ public class RamMovement : MonoBehaviour
     public bool idleWalking = false;
    public static bool chase = false;
     public static bool chaseRight = false;
+    public static bool chaseLeft = false;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     [SerializeField] private GameObject SeaSaw;
@@ -173,8 +174,8 @@ public class RamMovement : MonoBehaviour
         chase = true;
         print("CHASE");
         speed = sprintSpeed;
-      
-
+        lookingLeft = false;
+        lookingRight = true;
         if (player.transform.position.x > (gameObject.transform.position.x + padding))
         {
             movingRight = true;
@@ -188,6 +189,28 @@ public class RamMovement : MonoBehaviour
             movingLeft = false;
             movingRight = false;
         }
+    }
+
+    public void ChaseLeft()
+    {
+        chase = true;
+        print("CHASE");
+        speed = sprintSpeed;
+        lookingRight = false;
+        lookingLeft = true;
+
+        if (player.transform.position.x < (gameObject.transform.position.x - padding + 2))
+        {
+            movingLeft = true;
+            movingRight = false;
+        }
+
+        if (player.transform.position.x < (gameObject.transform.position.x + padding) && player.transform.position.x > (gameObject.transform.position.x - padding))
+        {
+            movingLeft = false;
+            movingRight = false;
+        }
+
     }
 
     public void StopChaseFunc()
@@ -204,24 +227,57 @@ public class RamMovement : MonoBehaviour
         if(collision.name.Contains("LeftSide") && ramState == RamState.hungry)
         {
             stand = true;
+            movingLeft = false;
+            movingRight = false;
             lookingLeft = false;
             lookingRight = true;
             SeaSaw.GetComponent<BoxCollider2D>().enabled = true;
             rb.velocity = new Vector2 (0, 0);
-            movingLeft = false;
-            movingRight=false;
-           
+
+            chaseLeft = false;
             chaseRight = true;
+         
          
             gameObject.transform.position = collision.transform.position;
 
         }
 
-        else if (collision.name.Contains("MidRightPoint") && ramState == RamState.hungry && !seasawReady)
+        else if (collision.name.Contains("RightSide") && ramState == RamState.hungry)
+            {
+                stand = true;
+            lookingLeft = true; ;
+                lookingRight = false;
+             
+                rb.velocity = new Vector2(0, 0);
+                movingLeft = false;
+                movingRight = false;
+
+                chaseRight = false;
+                chaseLeft = true;
+
+                gameObject.transform.position = collision.transform.position;
+
+            }
+
+            else if (collision.name.Contains("MidRightPoint") && ramState == RamState.hungry && !seasawReady && lookingRight)
         {
             SeaSaw.GetComponent<Animator>().SetTrigger("RightDown");
             chaseRight = false;
            
+            rb.velocity = new Vector2(0, 0);
+            movingLeft = false;
+            movingRight = false;
+            stand = true;
+            print("entermidpoint");
+
+        }
+
+        else if (collision.name.Contains("MidLeftPoint") && ramState == RamState.hungry && lookingLeft)
+        {
+            print("leftDown");
+            SeaSaw.GetComponent<Animator>().SetTrigger("LeftDown");
+            chaseRight = false;
+
             rb.velocity = new Vector2(0, 0);
             movingLeft = false;
             movingRight = false;

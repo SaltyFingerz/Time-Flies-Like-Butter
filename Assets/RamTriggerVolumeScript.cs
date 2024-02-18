@@ -30,6 +30,11 @@ public class RamTriggerVolumeScript : MonoBehaviour
             ramMovement.ChaseRight();
         }
 
+        if (collision.CompareTag("Player") && collision.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly && RamMovement.chaseLeft)
+        {
+            ramMovement.ChaseLeft();
+        }
+
 
 
     }
