@@ -21,9 +21,13 @@ public class RamMovement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     [SerializeField] private GameObject SeaSaw;
-    public static bool stand = false;
+    private bool stand = false;
     public GameObject player;
     bool seasawReady = false;
+    public static bool Goal = false;
+    public static bool HungryOnRight;
+    public GameObject RamHungry;
+  
 
 
     public enum RamState {healthy = 0, hungry = 1, obese = 2};
@@ -69,6 +73,11 @@ public class RamMovement : MonoBehaviour
     void Update()
     {
         StateCheck();
+
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            print(HungryOnRight);
+        }
 
         if(stand)
         {
@@ -137,7 +146,7 @@ public class RamMovement : MonoBehaviour
         chase = true;
         print("CHASE");
         speed = sprintSpeed;
-        if (player.transform.position.x < (gameObject.transform.position.x - padding + 2))
+        if (player.transform.position.x < (gameObject.transform.position.x - padding +2))
         {
             movingLeft = true;
             movingRight = false;
@@ -150,7 +159,7 @@ public class RamMovement : MonoBehaviour
         }
 
 
-        if (player.transform.position.x > (gameObject.transform.position.x + padding))
+        if (player.transform.position.x > (gameObject.transform.position.x + padding -2))
         {
             movingRight = true;
             movingLeft = false;
@@ -226,6 +235,7 @@ public class RamMovement : MonoBehaviour
     {
         if(collision.name.Contains("LeftSide") && ramState == RamState.hungry)
         {
+            print("leftside");
             stand = true;
             movingLeft = false;
             movingRight = false;
@@ -242,8 +252,31 @@ public class RamMovement : MonoBehaviour
 
         }
 
+        if (collision.name.Contains("LeftSide") && ramState == RamState.obese && HungryOnRight)
+        {
+            print("leftsideobese");
+            stand = true;
+            movingLeft = false;
+            movingRight = false;
+            lookingLeft = false;
+            lookingRight = true;
+            SeaSaw.GetComponent<BoxCollider2D>().enabled = true;
+            rb.velocity = new Vector2(0, 0);
+
+            chaseLeft = false;
+            chaseRight = true;
+
+
+            gameObject.transform.position = collision.transform.position;
+
+            SeaSaw.GetComponent<Animator>().SetTrigger("LeftDown");
+            StartCoroutine(GoalActions());
+
+        }
+
         else if (collision.name.Contains("RightSide") && ramState == RamState.hungry)
             {
+            print("rightside");
                 stand = true;
             lookingLeft = true; ;
                 lookingRight = false;
@@ -256,6 +289,8 @@ public class RamMovement : MonoBehaviour
                 chaseLeft = true;
 
                 gameObject.transform.position = collision.transform.position;
+
+            HungryOnRight = true;
 
             }
 
@@ -285,7 +320,18 @@ public class RamMovement : MonoBehaviour
             print("entermidpoint");
 
         }
+
+        if(collision.name.Contains("EatZone") && ramState == RamState.hungry) 
+        {
+            anim.SetTrigger("Consume");
+            stand = true;
+            print("eatzone");
+
+        }
+
+       
     }
+
 
 
 
@@ -303,6 +349,12 @@ public class RamMovement : MonoBehaviour
 
         }
 
+        if (collision.name.Contains("RightSide") && ramState == RamState.hungry)
+        {
+            HungryOnRight = false;
+        }
+
+
 
     }
 
@@ -311,6 +363,41 @@ public class RamMovement : MonoBehaviour
         chaseRight = true;
         movingRight = true;
     }
+
+    public void Stand()
+    {
+        stand = true;
+    }
+
+    public void StopStanding()
+    {
+        stand = false;
+    }
+    public bool isStanding()
+    {
+        return stand;
+    }
+
+    public void WalkRight()
+    {
+        stand = false;
+        movingRight = true;
+    }
+
+    IEnumerator GoalActions()
+    {
+        stand = true;
+        Goal = true;
+        RamHungry.GetComponent<RamMovement>().Stand();
+       
+       
+
+
+
+
+        yield return null;
+    }
+
 
 
 }
