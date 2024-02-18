@@ -15,12 +15,14 @@ public class RamMovement : MonoBehaviour
     public bool movingRight = false;
     public float padding = 3f;
     public bool idleWalking = false;
-    bool chase = false;
+   public static bool chase = false;
+    public static bool chaseRight = false;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     [SerializeField] private GameObject SeaSaw;
-    private bool stand = false;
-
+    public static bool stand = false;
+    public GameObject player;
+    bool seasawReady = false;
 
 
     public enum RamState {healthy = 0, hungry = 1, obese = 2};
@@ -60,6 +62,8 @@ public class RamMovement : MonoBehaviour
                 break;
         }
     }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -68,7 +72,10 @@ public class RamMovement : MonoBehaviour
         if(stand)
         {
             //rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y);
-           
+            anim.SetBool("Walking", false);
+            rb.velocity = new Vector2(0, rb.velocity.y);
+
+
         }
 
         if (!chase && idleWalking)
@@ -122,72 +129,132 @@ public class RamMovement : MonoBehaviour
        
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+  
+
+    public void ChaseFunc()
     {
-        if(collision.CompareTag("Player") && collision.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly)
+        chase = true;
+        print("CHASE");
+        speed = sprintSpeed;
+        if (player.transform.position.x < (gameObject.transform.position.x - padding + 2))
         {
-            chase = true;
-            print("CHASE");
-            speed = sprintSpeed;
-            if(collision.transform.position.x < (gameObject.transform.position.x - padding + 2))
-            {
-                movingLeft = true;
-                movingRight = false;
-            }
+            movingLeft = true;
+            movingRight = false;
+        }
 
-            if (collision.transform.position.x < (gameObject.transform.position.x))
-            {
-                lookingLeft = true;
-                lookingRight = false;
-            }
-
-
-             if(collision.transform.position.x > (gameObject.transform.position.x + padding))
-            {
-                movingRight = true;
-                movingLeft = false;
-            }
-
-            if (collision.transform.position.x > (gameObject.transform.position.x))
-            {
-                lookingLeft = false;
-                lookingRight = true;
-            }
-
-             if (collision.transform.position.x < (gameObject.transform.position.x + padding) && collision.transform.position.x > (gameObject.transform.position.x - padding))
-            {
-                movingLeft = false;
-                movingRight = false;
-            }
+        if (player.transform.position.x < (gameObject.transform.position.x))
+        {
+            lookingLeft = true;
+            lookingRight = false;
         }
 
 
+        if (player.transform.position.x > (gameObject.transform.position.x + padding))
+        {
+            movingRight = true;
+            movingLeft = false;
+        }
+
+        if (player.transform.position.x > (gameObject.transform.position.x))
+        {
+            lookingLeft = false;
+            lookingRight = true;
+        }
+
+        if (player.transform.position.x < (gameObject.transform.position.x + padding) && player.transform.position.x > (gameObject.transform.position.x - padding))
+        {
+            movingLeft = false;
+            movingRight = false;
+        }
     }
+
+    public void ChaseRight()
+    {
+        chase = true;
+        print("CHASE");
+        speed = sprintSpeed;
+      
+
+        if (player.transform.position.x > (gameObject.transform.position.x + padding))
+        {
+            movingRight = true;
+            movingLeft = false;
+        }
+
+       
+
+        if (player.transform.position.x < (gameObject.transform.position.x + padding) && player.transform.position.x > (gameObject.transform.position.x - padding))
+        {
+            movingLeft = false;
+            movingRight = false;
+        }
+    }
+
+    public void StopChaseFunc()
+    {
+        chase = false;
+        movingLeft = false;
+        movingRight = false;
+
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name.Contains("Side"))
+        if(collision.name.Contains("LeftSide") && ramState == RamState.hungry)
         {
-           
+            stand = true;
+            lookingLeft = false;
+            lookingRight = true;
             SeaSaw.GetComponent<BoxCollider2D>().enabled = true;
             rb.velocity = new Vector2 (0, 0);
             movingLeft = false;
             movingRight=false;
-            stand = true;
-            lookingRight = true;
+           
+            chaseRight = true;
+         
             gameObject.transform.position = collision.transform.position;
 
         }
-    }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.CompareTag("Player"))
+        else if (collision.name.Contains("MidRightPoint") && ramState == RamState.hungry && !seasawReady)
         {
-            chase = false;
+            SeaSaw.GetComponent<Animator>().SetTrigger("RightDown");
+            chaseRight = false;
+           
+            rb.velocity = new Vector2(0, 0);
+            movingLeft = false;
+            movingRight = false;
+            stand = true;
+            print("entermidpoint");
+
         }
     }
 
+
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name.Contains("LeftSide") && ramState == RamState.hungry)
+        {
+            stand = false;
+
+        }
+
+        else if (collision.name.Contains("MidRightPoint") && ramState == RamState.hungry && !seasawReady)
+        {
+            chaseRight = false;
+
+        }
+
+
+    }
+
+    public void WalkToRightSide()
+    {
+        chaseRight = true;
+        movingRight = true;
+    }
 
 
 }
