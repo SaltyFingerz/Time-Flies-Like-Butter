@@ -29,6 +29,8 @@ public class SeasawScript : MonoBehaviour
             RamThirsty.transform.position = new Vector3(-6.5f, -7.72f, 0.05f);
             RamHungry.transform.position = new Vector3(49.3f, 25.3f, 0.05f);
             RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
+            RamHungry.GetComponent<Animator>().SetTrigger("Consume");
+            RamThirsty.GetComponent<Animator>().SetTrigger("Consume");
             print("transform position");
         }
       
