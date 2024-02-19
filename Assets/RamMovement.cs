@@ -230,6 +230,26 @@ public class RamMovement : MonoBehaviour
 
     }
 
+    IEnumerator LerpRamOntoSeasaw(Transform endPos)
+    {
+        if (!Goal && !RewindBySlider.isRewindRunning)
+        {
+            Vector3 startPos = transform.position;
+            float elapsedTime = 0;
+            float lerpDuration = 0.5f;
+            // float lerpPercentage = 0f;
+
+            while (transform.position != endPos.position)
+            {
+
+                elapsedTime += Time.deltaTime;
+                float lerpPercentage = (elapsedTime / lerpDuration);
+                transform.position = Vector3.Lerp(startPos, endPos.position, lerpPercentage);
+
+                yield return null;
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -248,7 +268,8 @@ public class RamMovement : MonoBehaviour
             chaseRight = true;
          
          
-            gameObject.transform.position = collision.transform.position;
+           // gameObject.transform.position = collision.transform.position;
+           StartCoroutine(LerpRamOntoSeasaw(collision.transform));
 
         }
 
@@ -260,14 +281,14 @@ public class RamMovement : MonoBehaviour
             movingRight = false;
             lookingLeft = false;
             lookingRight = true;
-            SeaSaw.GetComponent<BoxCollider2D>().enabled = true;
+           // SeaSaw.GetComponent<BoxCollider2D>().enabled = true;
             rb.velocity = new Vector2(0, 0);
 
             chaseLeft = false;
             chaseRight = true;
 
 
-            gameObject.transform.position = collision.transform.position;
+            StartCoroutine(LerpRamOntoSeasaw(collision.transform));
 
             SeaSaw.GetComponent<Animator>().SetTrigger("LeftDown");
             StartCoroutine(GoalActions());
@@ -288,7 +309,7 @@ public class RamMovement : MonoBehaviour
                 chaseRight = false;
                 chaseLeft = true;
 
-                gameObject.transform.position = collision.transform.position;
+            StartCoroutine(LerpRamOntoSeasaw(collision.transform));
 
             HungryOnRight = true;
 
