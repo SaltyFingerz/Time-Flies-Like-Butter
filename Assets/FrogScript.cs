@@ -10,12 +10,30 @@ public class FrogScript : MonoBehaviour
     bool canEat = true;
     private Rigidbody2D rb;
     bool inLight = false;
+    [SerializeField] private ParticleSystem sleep;
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         rb = gameObject.GetComponent<Rigidbody2D>();
        
+    }
+
+    public void StopSleep()
+    {
+      
+
+        var em = sleep.emission;
+
+        em.enabled = false;
+    }
+
+    public void StartSleep()
+    {
+        var em = sleep.emission;
+
+        em.enabled = true;
+
     }
 
     private void Update()
