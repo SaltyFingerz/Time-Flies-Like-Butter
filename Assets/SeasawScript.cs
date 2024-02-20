@@ -13,8 +13,8 @@ public class SeasawScript : MonoBehaviour
     public Transform RightSide;
     private float lerpDuration = 1f;
     private float elapsedTime;
-    private Vector3 thirstyEndPos = new Vector3(-6.5f, -7.72f, 0.05f);
-    private Vector3 hungryEndPos = new Vector3(49.3f, 25.3f, 0.05f);
+    private Vector3 thirstyEndPos = new Vector3(-6.5f, -7.7f, 0.05f);
+    private Vector3 hungryEndPos = new Vector3(49.3f, 21.3f, 0.05f);
     bool LerpNow = false;
     public void DownRight()
     {
@@ -54,16 +54,17 @@ public class SeasawScript : MonoBehaviour
             float lerpDuration = 0.5f;
             // float lerpPercentage = 0f;
 
-            while (transform.position != endPos)
+            while (ram.transform.position != endPos)
             {
 
                 elapsedTime += Time.deltaTime;
                 float lerpPercentage = (elapsedTime / lerpDuration);
                 ram.transform.position = Vector3.Lerp(startPos, endPos, lerpPercentage);
-
-                yield return null;
+            RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
+            yield return null;
             }
-        
+        RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
+
     }
 
     private void Update()
