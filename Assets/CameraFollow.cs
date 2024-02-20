@@ -41,6 +41,11 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = Vector3.SmoothDamp(transform.position, boundPosition, ref velocity, smoothTime);
 
+       if(RewindBySlider.isRewindRunning)
+        {
+            smoothTime = 0.1f;
+         
+        }
        
 
         /*
@@ -53,12 +58,14 @@ public class CameraFollow : MonoBehaviour
 
     public void ReduceSmoothTime()
     {
+        if(!RewindBySlider.isRewindRunning)
         smoothTime = 0.25f;
     }
 
     public void RestoreSmoothTime()
     {
-        smoothTime = 0.5f;
+        if (!RewindBySlider.isRewindRunning)
+            smoothTime = 0.5f;
     }
 
     public void LookLower()
