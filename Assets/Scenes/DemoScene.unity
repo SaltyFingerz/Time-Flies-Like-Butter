@@ -461,6 +461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 1082849669}
   sleepable: 0
+  sleep: {fileID: 0}
 --- !u!95 &105466960
 Animator:
   serializedVersion: 4
@@ -23579,7 +23580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813188439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.89747, y: -0.86, z: 0}
+  m_LocalPosition: {x: 27.75, y: -1.32, z: 0}
   m_LocalScale: {x: 0.8409, y: 0.8409, z: 0.8409}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35135,7 +35136,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.9680171, g: 1, b: 0.2783019, a: 1}
   m_FlipX: 0
@@ -35155,7 +35156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1092515876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.28, y: 14.85, z: 0}
+  m_LocalPosition: {x: 19.44, y: 14.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35817,7 +35818,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bc5fc1c486b8697429c830778442dc87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -35837,7 +35838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400893603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.498497, y: 13.791993, z: 0}
+  m_LocalPosition: {x: 19.39, y: 13.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -58475,7 +58476,7 @@ PrefabInstance:
       objectReference: {fileID: 519420036}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999863
+      value: 11.999878
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

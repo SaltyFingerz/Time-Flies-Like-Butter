@@ -81,7 +81,7 @@ public class PlayerMovement : MonoBehaviour
     public enum LifeStage {caterpillar = 0, butterfly = 1, dead = 2, ghostButterfly = 3};
     public LifeStage lifeStage = LifeStage.caterpillar;
 
-    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3, antiaging = 4}
+    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3, antiaging = 4, enviromentSlider = 5}
     public RewindMode rewindMode = RewindMode.environment;
     // Start is called before the first frame update
 
@@ -114,6 +114,26 @@ public class PlayerMovement : MonoBehaviour
         
         //inputActions.Player.Jump.performed += Jump;
         // inputActions.Player.Rewind.performed += Rewind;
+
+
+        if(SceneManager.GetActiveScene().name == "RamSeasaw")
+        {
+
+            anim.SetTrigger("Butterfly");
+            rewindMode = RewindMode.enviromentSlider;
+
+
+            rewindable = true;
+
+            KeyClock.SetActive(true);
+           
+
+            RewindButton.SetActive(false);
+
+            SliderRewind.SetActive(true);
+            RewindButton.SetActive(false);
+           
+        }
 
         if (SceneManager.GetActiveScene().name == "TeleportLevel" || SceneManager.GetActiveScene().name == "SwanAndFireFlyLevel")
         {
@@ -320,6 +340,11 @@ public class PlayerMovement : MonoBehaviour
         {
             case RewindMode.environment:
                 RewindButton.SetActive(true);
+                break;
+
+            case RewindMode.enviromentSlider:
+                SliderRewind.SetActive(true);
+                RewindButton.SetActive(false);
                 break;
 
             case RewindMode.enviroself:
