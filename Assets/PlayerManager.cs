@@ -88,6 +88,13 @@ public class PlayerManager : MonoBehaviour
 
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
+           
+            if(collision.GetComponent<Animator>() != null)
+            {
+                print("wiggle"); 
+                collision.GetComponent<Animator>().SetTrigger("Jiggle");
+            }
+
             if (flexiPollen)
                 pollenColor = PollenColor.Red;
             else if (gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StandOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("StartWalkOld") || gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("WalkOld"))
@@ -107,12 +114,20 @@ public class PlayerManager : MonoBehaviour
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly)
 
         {
+            if (collision.GetComponent<Animator>() != null)
+            {
+                collision.GetComponent<Animator>().SetTrigger("Jiggle");
+            }
             // gameObject.GetComponent<Animator>().runtimeAnimatorController = redButterflyAC;
             gameObject.GetComponent<Animator>().SetTrigger("RedFly");
             pollenColor = PollenColor.Red;
         }
-        else if (collision.gameObject.name.Contains("GreenFlower") && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
+        else if (collision.gameObject.name.Contains("BlueGamet") && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
+            if (collision.GetComponent<Animator>() != null)
+            {
+                collision.GetComponent<Animator>().SetTrigger("Jiggle");
+            }
 
             if (flexiPollen)
                 pollenColor = PollenColor.Blue;

@@ -805,6 +805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1082849669}
+  sleepable: 0
 --- !u!95 &105466960
 Animator:
   serializedVersion: 4
@@ -2431,7 +2432,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31593a527ccfbe241abb73f75035b973, type: 2}
+  - {fileID: 2100000, guid: f377d875c99594a4fa278dfa5fb017c8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14096,6 +14097,7 @@ MonoBehaviour:
   smoothTime: 0.1
   target: {fileID: 1082849671}
   targetRew: {fileID: 0}
+  InitialZoomDistance: 10
   minValues: {x: 0, y: 0, z: 0}
   maxValues: {x: 0, y: 0, z: 0}
 --- !u!114 &519420034
@@ -43630,6 +43632,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4197449c8e640fa4ca10e83daa5a629c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GraveStone: {fileID: 0}
+  foodToSeeButterOnHud: 0
+  ButterflyHUD: {fileID: 0}
+  Slider: {fileID: 0}
   leaf: {fileID: 1219934851}
   rewindScript: {fileID: 1082849678}
   rewindManager: {fileID: 1753901490}
@@ -43857,7 +43863,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redAC: {fileID: 9100000, guid: ef052c459d486b647a83be1aa19fd3df, type: 2}
   blueAC: {fileID: 9100000, guid: 859c36f97cf7a7d4f899ba4130218f6d, type: 2}
+  redButterflyAC: {fileID: 0}
   levelScript: {fileID: 0}
+  currentWeed: {fileID: 0}
+  flexiPollen: 0
+  pollenColor: 0
 --- !u!1001 &1086004993
 PrefabInstance:
   m_ObjectHideFlags: 0
