@@ -14,7 +14,7 @@ public class SeasawScript : MonoBehaviour
     private float lerpDuration = 1f;
     private float elapsedTime;
     private Vector3 thirstyEndPos = new Vector3(-6.5f, -7.7f, 0.05f);
-    private Vector3 hungryEndPos = new Vector3(49.3f, 21.3f, 0.05f);
+    private Vector3 hungryEndPos = new Vector3(50f, 21.3f, 0.05f);
     bool LerpNow = false;
     public void DownRight()
     {
