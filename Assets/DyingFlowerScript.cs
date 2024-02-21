@@ -5,11 +5,13 @@ using UnityEngine;
 public class DyingFlowerScript : MonoBehaviour
 {
     [SerializeField] private GameObject Stamen;
+    [SerializeField] private GameObject Leaf;
 
    private Vector3 startSize = Vector3.zero;
     private Vector3 endSize = Vector3.one;
     private float duration = 1f;
     private float elapsedTime = 0f;
+
 
 
     private void Start()
@@ -61,5 +63,9 @@ public class DyingFlowerScript : MonoBehaviour
 
     }
 
+    public void ActivateLeaf()
+    {
+        Leaf.SetActive(true);
+    }
 
 }
