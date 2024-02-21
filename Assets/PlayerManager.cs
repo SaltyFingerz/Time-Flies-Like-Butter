@@ -148,7 +148,7 @@ public class PlayerManager : MonoBehaviour
             openRed = true;
         }
 
-        else if (collision.gameObject.name.Contains("RedFFruit") && (gameObject.GetComponent<Animator>().runtimeAnimatorController == redAC || pollenColor == PollenColor.Red))
+        else if (collision.gameObject.name.Contains("RedFFruit") && (gameObject.GetComponent<Animator>().runtimeAnimatorController == redAC || pollenColor == PollenColor.Red) && !PlayerMovement.rewind)
         {
             collision.gameObject.GetComponent<Animator>().SetBool("Pollinated", true);
         }

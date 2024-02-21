@@ -7,13 +7,14 @@ public class DyingFlowerScript : MonoBehaviour
     [SerializeField] private GameObject Stamen;
     [SerializeField] private GameObject Leaf;
     [SerializeField] private GameObject FruitingFlower;
+    [SerializeField] private GameObject newLeaf;
 
    private Vector3 startSize = Vector3.zero;
     private Vector3 endSize = Vector3.one;
     private float duration = 1f;
     private float elapsedTime = 0f;
     public bool redFruiting = false;
-
+ 
 
 
     private void Start()
@@ -22,6 +23,8 @@ public class DyingFlowerScript : MonoBehaviour
             Stamen.transform.localScale = startSize;
         
     }
+
+
     public void HideStamen()
     {
         
@@ -50,6 +53,9 @@ public class DyingFlowerScript : MonoBehaviour
         {
             FruitingFlower.SetActive(true);
             gameObject.SetActive(false);
+            newLeaf.SetActive(true) ;
+           
+           
         }
 
     }
