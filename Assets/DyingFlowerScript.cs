@@ -6,11 +6,13 @@ public class DyingFlowerScript : MonoBehaviour
 {
     [SerializeField] private GameObject Stamen;
     [SerializeField] private GameObject Leaf;
+    [SerializeField] private GameObject FruitingFlower;
 
    private Vector3 startSize = Vector3.zero;
     private Vector3 endSize = Vector3.one;
     private float duration = 1f;
     private float elapsedTime = 0f;
+    public bool redFruiting = false;
 
 
 
@@ -43,6 +45,11 @@ public class DyingFlowerScript : MonoBehaviour
             float percentageTime = elapsedTime / duration;
             Stamen.transform.localScale = Vector3.Lerp(startSize, endSize, percentageTime);
             yield return null;
+        }
+        if(redFruiting)
+        {
+            FruitingFlower.SetActive(true);
+            gameObject.SetActive(false);
         }
 
     }

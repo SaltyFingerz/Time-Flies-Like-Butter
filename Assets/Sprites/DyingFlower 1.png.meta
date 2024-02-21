@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: 38b5fc3f86789de4baa8d3ee788fd1b5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DyingFlower_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 970
+        width: 454
+        height: 484
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bb60d0c71de9b4f8f51732915416d3
+      internalID: 1240662081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DyingFlower_1
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 969
+        width: 423
+        height: 477
+      alignment: 9
+      pivot: {x: 0.48988086, y: 0.0000001279563}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd9a9ce0a093064aab057aa633a0ded
+      internalID: -1482014868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DyingFlower_3
+      rect:
+        serializedVersion: 2
+        x: 1882
+        y: 986
+        width: 384
+        height: 444
+      alignment: 9
+      pivot: {x: 0.4916401, y: 0.0024102014}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c764002e6fd47478df81807ecfe142
+      internalID: -1679025289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DyingFlower_4
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 986
+        width: 435
+        height: 436
+      alignment: 9
+      pivot: {x: 0.48524016, y: 0.00000013998888}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bc9e405b4a1084fb2453e4b53ee364
+      internalID: 867869262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DyingFlower_5
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 262
+        width: 312
+        height: 374
+      alignment: 9
+      pivot: {x: 0.435037, y: 0.00000016319561}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0b377d4e2527b4dba85c33b4dc513d
+      internalID: 2007464421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DyingFlower_6
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 265
+        width: 266
+        height: 383
+      alignment: 9
+      pivot: {x: 0.2831873, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e192e8788e2055c4690fbe07e73faba8
+      internalID: -1274009474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DyingFlower_7
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 271
+        width: 341
+        height: 345
+      alignment: 9
+      pivot: {x: 0.17516482, y: 0.014520617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0d8303f407b8b148bbcb4f01c26ea1a
+      internalID: 156142795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DyingFlower_10
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 261
+        width: 431
+        height: 284
+      alignment: 9
+      pivot: {x: 0.20643449, y: 0.047491692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5c87ed441978f4099879e4419d93b0
+      internalID: 729453826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DyingFlower_13
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 293
+        width: 422
+        height: 113
+      alignment: 9
+      pivot: {x: 0.26064616, y: 0.15391202}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5961e0d4bb1598340977053f880c1334
+      internalID: -1611294462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DyingFlower_13: -1611294462
+      DyingFlower_8: -1595624135
+      DyingFlower_7: 156142795
+      DyingFlower_2: -146863016
+      DyingFlower_5: 2007464421
+      DyingFlower_1: -1482014868
+      DyingFlower_6: -1274009474
+      DyingFlower_10: 729453826
+      DyingFlower_9: -954024323
+      DyingFlower_3: -1679025289
+      DyingFlower_0: 1240662081
+      DyingFlower_11: -148867952
+      DyingFlower_4: 867869262
+      DyingFlower_12: 433620921
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
