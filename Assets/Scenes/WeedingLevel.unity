@@ -1530,8 +1530,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283597733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.24, y: -5.3945, z: 0}
-  m_LocalScale: {x: 0.49634197, y: 0.65005314, z: 0.45023766}
+  m_LocalPosition: {x: 26.94, y: -4.59, z: 0}
+  m_LocalScale: {x: 0.76396954, y: 1.0005617, z: 0.6930058}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -9408,7 +9408,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082849669}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -7.19, z: 3.362193}
+  m_LocalPosition: {x: -4.53, y: -7.19, z: 3.362193}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11934,7 +11934,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794754097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.741147, y: -7.07, z: 0}
+  m_LocalPosition: {x: 7.65, y: -7.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22644,32 +22644,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &183347473240426743
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 183347473240426744}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.14, y: 3.42}
-    newSize: {x: 1.14, y: 3.42}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.14, y: 3.42}
-  m_EdgeRadius: 0
 --- !u!1 &183347473240426744
 GameObject:
   m_ObjectHideFlags: 0
@@ -22680,7 +22654,6 @@ GameObject:
   m_Component:
   - component: {fileID: 183347473240426741}
   - component: {fileID: 183347473240426742}
-  - component: {fileID: 183347473240426743}
   m_Layer: 0
   m_Name: Stem 1_0 (2)
   m_TagString: Untagged
@@ -22954,6 +22927,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2726013001088534697, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2726013001297301090, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: rewindSound
       value: 
@@ -22962,9 +22939,13 @@ PrefabInstance:
       propertyPath: _wobbleEffect
       value: 
       objectReference: {fileID: 519420036}
+    - target: {fileID: 2726013002222207702, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999512
+      value: 11.999634
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

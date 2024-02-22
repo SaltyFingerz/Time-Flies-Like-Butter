@@ -385,6 +385,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
                 UpButton.SetActive(false);
                 DownButton.SetActive(false);
+                JumpButton.SetActive(true);
 
                 if (slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && rewind)
                 {
@@ -483,7 +484,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
 
             case LifeStage.dead:
-                print("ded");
+               
             
 
               

@@ -43814,6 +43814,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2726013001088534697, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2726013001297301090, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: rewindSound
       value: 
@@ -43822,9 +43826,17 @@ PrefabInstance:
       propertyPath: _wobbleEffect
       value: 
       objectReference: {fileID: 1697761284}
+    - target: {fileID: 2726013002222207702, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 11.999573
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795097870318833479, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 246
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -49403,8 +49415,8 @@ MonoBehaviour:
   KeyClock: {fileID: 1319847908}
   SliderRewind: {fileID: 1609293967}
   RewindButton: {fileID: 1344133775}
-  UpButton: {fileID: 1566766431}
-  DownButton: {fileID: 1181887764}
+  UpButton: {fileID: 1123271483}
+  DownButton: {fileID: 2099462920}
   JumpButton: {fileID: 1191483311}
   lifeStage: 0
   rewindMode: 1
@@ -50082,6 +50094,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1123271483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2725382219651208757, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 976467246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1125155883
 GameObject:
   m_ObjectHideFlags: 0
@@ -50246,7 +50263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7350643109793016828, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
       propertyPath: minValues.y
-      value: 0
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 7350643110737330930, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
       propertyPath: m_IsActive
@@ -50445,11 +50462,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153761257}
   m_CullTransparentMesh: 1
---- !u!1 &1181887764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1978529516887816, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
-  m_PrefabInstance: {fileID: 1932817751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1183491910
 GameObject:
   m_ObjectHideFlags: 0
@@ -52911,11 +52923,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2733059531830420343, guid: 2ad6492630f41264e9e4aa7a7833d765, type: 3}
   m_PrefabInstance: {fileID: 1559663676}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1566766431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1757920875146174, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
-  m_PrefabInstance: {fileID: 1932817751}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1572830215
 GameObject:
@@ -80457,6 +80464,11 @@ Transform:
   m_Father: {fileID: 1064716944}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2099462920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2725725712005702275, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 976467246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2104912075
 GameObject:
   m_ObjectHideFlags: 0

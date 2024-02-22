@@ -9,33 +9,45 @@ EditorBuildSettings:
     path: Assets/Scenes/Onboarding.unity
     guid: a5eb7d96f67ff6e479acdd2b1542357a
   - enabled: 1
+    path: Assets/Scenes/SimpleTpLevel.unity
+    guid: 70c2225ec0642f74ea4e6338ca205d6f
+  - enabled: 0
     path: Assets/Scenes/LevelMenu.unity
     guid: 7251e37007d42354c98a8e43b92189a0
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/WeedingLevel.unity
+    guid: af840d8c14db95a449221860c9d46919
+  - enabled: 1
+    path: Assets/Scenes/GhostTraffickControl.unity
+    guid: a029d37bef5a9544eb6beb4aa208bfd7
+  - enabled: 1
+    path: Assets/Scenes/CardsLevel.unity
+    guid: dfa50580f069e384092e9631bc7a8d38
+  - enabled: 1
+    path: Assets/Scenes/SwanAndFireFlyLevel.unity
+    guid: 72c489e4966941d4eacd066c3c49324f
+  - enabled: 1
+    path: Assets/Scenes/AntiAgingLevel.unity
+    guid: c7b567c7aab6f7044ad356bdd9d354b4
+  - enabled: 1
+    path: Assets/Scenes/RamSeasaw.unity
+    guid: 9bc519e5e96035343885849589d4b808
+  - enabled: 1
+    path: Assets/Scenes/FanLevel.unity
+    guid: 19c1fafc78f87764cae700da3c0cd71c
   - enabled: 1
     path: Assets/Scenes/TeleportLevel.unity
     guid: 207809b2f1d363247b06603eb64f6cee
+  - enabled: 1
+    path: Assets/Scenes/RisingWaterLevel2.unity
+    guid: 4e42bd56bec2fc6429925320263443e6
   - enabled: 1
     path: Assets/Scenes/DemoScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/RisingWaterLevel.unity
     guid: b6e1a0e65c24ee443a4779b91b41a12f
-  - enabled: 1
-    path: Assets/Scenes/RisingWaterLevel2.unity
-    guid: 4e42bd56bec2fc6429925320263443e6
-  - enabled: 1
-    path: Assets/Scenes/FanLevel.unity
-    guid: 19c1fafc78f87764cae700da3c0cd71c
-  - enabled: 1
-    path: Assets/Scenes/SimpleTpLevel.unity
-    guid: 70c2225ec0642f74ea4e6338ca205d6f
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/RamSeasaw.unity
-    guid: 9bc519e5e96035343885849589d4b808
-  - enabled: 1
-    path: Assets/Scenes/CardsLevel.unity
-    guid: dfa50580f069e384092e9631bc7a8d38
   m_configObjects: {}
