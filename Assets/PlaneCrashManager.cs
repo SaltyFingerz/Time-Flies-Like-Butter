@@ -62,6 +62,18 @@ public class PlaneCrashManager : MonoBehaviour
       
     }
 
+    public void LoadNextScene()
+    {
+        StartCoroutine(WaitToLoadNextScene());
+    }
+
+    IEnumerator WaitToLoadNextScene()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+    }
+
 
 
     public void ReloadLevel()

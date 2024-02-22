@@ -31,7 +31,7 @@ public class SadElfScript : MonoBehaviour
         yield return new WaitForSeconds(1f);
         splash.SetActive(false);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("LevelMenu");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
 }

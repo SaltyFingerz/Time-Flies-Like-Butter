@@ -100,7 +100,7 @@ public void OpenPortalEvent()
                 }
             */
 
-            SceneManager.LoadScene("LevelMenu");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         }
 

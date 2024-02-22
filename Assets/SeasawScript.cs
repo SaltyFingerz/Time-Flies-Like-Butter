@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SeasawScript : MonoBehaviour
 {
@@ -64,22 +65,14 @@ public class SeasawScript : MonoBehaviour
             yield return null;
             }
         RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
 
-    private void Update()
-    {
-        if(LerpNow)
-        {
-            print("lerp");
-            elapsedTime += Time.deltaTime;
-            float percentageComplete = elapsedTime / lerpDuration;
-            RamHungry.transform.position = Vector3.Lerp(RightSide.position, hungryEndPos, percentageComplete);
-            RamThirsty.transform.position = Vector3.Lerp(LeftSide.position, thirstyEndPos, percentageComplete);
 
 
-        }
-    }
+
 
 
 }

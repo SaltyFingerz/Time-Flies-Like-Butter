@@ -65,7 +65,7 @@ public class FanLevelManager : MonoBehaviour
     IEnumerator waitToLoadLevel()
     {
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("LevelMenu");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void BlowLeaf()

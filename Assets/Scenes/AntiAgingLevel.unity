@@ -8110,7 +8110,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 329022163}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: e1c5622e8a72d4841987cd7737b08d49, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -43824,7 +43824,7 @@ PrefabInstance:
       objectReference: {fileID: 1697761284}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999634
+      value: 11.999573
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -59657,7 +59657,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1798891550}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: e1c5622e8a72d4841987cd7737b08d49, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

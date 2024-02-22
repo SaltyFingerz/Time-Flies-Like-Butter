@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HarvesterScript : MonoBehaviour
 {
@@ -9,6 +10,18 @@ public class HarvesterScript : MonoBehaviour
     public void TakeFruit()
     {
         Fruit.SetActive(false);
+    }
+
+    public void LoadNextScene()
+    {
+        StartCoroutine(WaitToLoadNextScene());
+    }
+
+    IEnumerator WaitToLoadNextScene()
+    {
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
     }
 
     private void Update()
