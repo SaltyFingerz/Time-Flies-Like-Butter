@@ -13,7 +13,7 @@ public class DelayTriggerActivation : MonoBehaviour
 
     private void Awake()
     {
-        col.enabled = false;
+       
         StartCoroutine(WaitToActivate());
     }
 

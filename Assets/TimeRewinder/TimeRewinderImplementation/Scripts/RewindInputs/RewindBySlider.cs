@@ -33,8 +33,8 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
         SetNormalSpeed();
     }
 
+   
 
-    
     #region Additional controls
     public void RestartTracking()
     {
@@ -104,6 +104,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
     }
     public void OnPointerUp(PointerEventData eventData)
     {
+        print("onpointerUp");
         howManyFingersTouching--;
         isRewindRunning = false;
         if (howManyFingersTouching == 0)
@@ -124,6 +125,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
             }
             _wobbleEffect.StopWobble();
             rewindSound.Stop();
+            print("onslider up");
         }
     }
     public void OnSliderDown()

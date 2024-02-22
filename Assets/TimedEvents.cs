@@ -96,5 +96,10 @@ public class TimedEvents : MonoBehaviour
            //     player.GetComponent<PlayerManager>().RedCatterpillar();
           //  }
         }
+
+        if(collision.CompareTag("Morph") && !RewindBySlider.isRewindRunning)
+        {
+            player.GetComponent<Animator>().SetBool("Morph", true);
+        }
     }
 }

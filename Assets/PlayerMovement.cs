@@ -487,7 +487,7 @@ public class PlayerMovement : MonoBehaviour
                
             
 
-              
+              if(!RewindBySlider.isRewindRunning)
                 rb.velocity = new Vector2(0, rb.velocity.y);
                 gameObject.layer = LayerMask.NameToLayer("Player");
 
