@@ -11,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
 
     private float horizontal;
     private float vertical;
+
+      
+
+
     private float speed = 8f;
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
@@ -64,9 +68,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject KeyClock;
     [SerializeField] private GameObject SliderRewind;
     [SerializeField] private GameObject RewindButton;
-    [SerializeField] private GameObject UpButton;
-    [SerializeField] private GameObject DownButton;
+
+    [SerializeField] private GameObject MovementButtons;
     [SerializeField] private GameObject JumpButton;
+    [SerializeField] private GameObject Joystick;
 
     public static bool rewind = false;
     bool canToggle;
@@ -103,7 +108,6 @@ public class PlayerMovement : MonoBehaviour
             RewindButton.SetActive(false);
         }
     }
-
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -111,6 +115,7 @@ public class PlayerMovement : MonoBehaviour
         input = GetComponent<PlayerInput>();
         inputActions = new PlayerInputActions();
         inputActions.Player.Enable();
+
         
         //inputActions.Player.Jump.performed += Jump;
         // inputActions.Player.Rewind.performed += Rewind;
@@ -383,8 +388,8 @@ public class PlayerMovement : MonoBehaviour
                 rb.gravityScale = 4f;
 
                 rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-                UpButton.SetActive(false);
-                DownButton.SetActive(false);
+                Joystick.SetActive(false);
+                MovementButtons.SetActive(true);
                 JumpButton.SetActive(true);
 
                 if (slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && rewind)
@@ -456,8 +461,8 @@ public class PlayerMovement : MonoBehaviour
 
                 rb.gravityScale = 0f;
                 rb.velocity = new Vector2(horizontal * speed, vertical * speed);
-                UpButton.SetActive(true);
-                DownButton.SetActive(true);
+                MovementButtons.SetActive(false);
+                Joystick.SetActive(true);
                 JumpButton.SetActive(false);
                 gameObject.layer = LayerMask.NameToLayer("Player");
 
@@ -476,8 +481,8 @@ public class PlayerMovement : MonoBehaviour
 
                 rb.gravityScale = 0f;
                 rb.velocity = new Vector2(horizontal * speed, vertical * speed);
-                UpButton.SetActive(true);
-                DownButton.SetActive(true);
+                MovementButtons.SetActive(false);
+                Joystick.SetActive(true);
                 JumpButton.SetActive(false);
                 gameObject.layer = LayerMask.NameToLayer("GhostButterfly");
 
@@ -504,10 +509,15 @@ public class PlayerMovement : MonoBehaviour
         if (lifeStage == LifeStage.caterpillar)
         {
             gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.56f, 1.61f);
+            horizontal = SimpleInput.GetAxis("Horizontal");
+            vertical = SimpleInput.GetAxis("Vertical");
         }
         if(lifeStage== LifeStage.butterfly)
         {
-            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
+           // gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
+            rb.velocity = new Vector2(horizontal * speed, vertical * speed);
+            horizontal = inputVector.x;
+            vertical = inputVector.y;
         }
         if(lifeStage == LifeStage.dead)
         {
@@ -516,8 +526,15 @@ public class PlayerMovement : MonoBehaviour
         }
 
         inputVector = inputActions.Player.Move.ReadValue<Vector2>();
-        horizontal = SimpleInput.GetAxis("Horizontal");
-        vertical = SimpleInput.GetAxis("Vertical");
+        
+
+
+
+        
+       
+
+       
+     
     }
 
     private bool isGrounded()
