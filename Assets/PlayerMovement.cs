@@ -689,9 +689,20 @@ public class PlayerMovement : MonoBehaviour
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             rewindable = true;
-            rewindMode = RewindMode.environment;
+            
             SliderRewind.SetActive(false);
-            RewindButton.SetActive(true);
+            if (collision.name.Contains("FirstEnviroRwPowerup"))
+            {
+                GameObject rewindAnim = GameObject.Find("RewindButtonAppearance");
+                rewindAnim.SetActive(true);
+                rewindAnim.GetComponent<Animator>().SetTrigger("Play");
+            }
+            else
+            {
+                RewindButton.SetActive(true);
+                rewindMode = RewindMode.environment;
+            }
+           
 
         }
 

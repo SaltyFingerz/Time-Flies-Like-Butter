@@ -11,7 +11,10 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController blueAC;
     [SerializeField] private RuntimeAnimatorController redButterflyAC;
     [SerializeField] private GameObject levelScript;
+    [SerializeField] private GameObject Pollen;
+    private ParticleSystem PollenPS;
     private Animator anim;
+    private Color PollenPScolor;
 
 
     public GameObject currentWeed = null;
@@ -36,6 +39,7 @@ public class PlayerManager : MonoBehaviour
         openRed = false;
         openBlue = false;
         anim = GetComponent<Animator>();
+        PollenPS = Pollen.GetComponent<ParticleSystem>();
     }
     
     private void PollenState()
@@ -44,7 +48,7 @@ public class PlayerManager : MonoBehaviour
         {
             case PollenColor.None:
 
-               
+            
 
                 break;
 
@@ -53,18 +57,22 @@ public class PlayerManager : MonoBehaviour
                 {
                     //gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
                     gameObject.GetComponent<Animator>().SetTrigger("RedCat");
+                    Pollen.SetActive(true);
+                    PollenPScolor = new Color(100, 0, 0, 100);
 
                 }
                 else if(gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly)
                 {
                     //  gameObject.GetComponent<Animator>().runtimeAnimatorController = redButterflyAC;
                     gameObject.GetComponent<Animator>().SetTrigger("RedFly");
+                    Pollen.SetActive(true);
 
                 }
                 break;
 
             case PollenColor.Blue:
-
+                Pollen.SetActive(true);
+                PollenPScolor = new Color(0, 127, 255, 255);
                 break;
         }
 
@@ -88,8 +96,10 @@ public class PlayerManager : MonoBehaviour
 
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
-           
-            if(collision.GetComponent<Animator>() != null)
+            Pollen.SetActive(true);
+            PollenPScolor = new Color(100, 0, 0, 100);
+
+            if (collision.GetComponent<Animator>() != null)
             {
                 print("wiggle"); 
                 collision.GetComponent<Animator>().SetTrigger("Jiggle");
@@ -114,6 +124,8 @@ public class PlayerManager : MonoBehaviour
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly)
 
         {
+            Pollen.SetActive(true);
+            PollenPScolor = new Color(100, 0, 0, 100);
             if (collision.GetComponent<Animator>() != null)
             {
                 collision.GetComponent<Animator>().SetTrigger("Jiggle");
@@ -124,6 +136,8 @@ public class PlayerManager : MonoBehaviour
         }
         else if (collision.gameObject.name.Contains("BlueGamet") && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
+            Pollen.SetActive(true);
+            PollenPScolor = new Color(0, 127, 255, 255);
             if (collision.GetComponent<Animator>() != null)
             {
                 collision.GetComponent<Animator>().SetTrigger("Jiggle");
@@ -286,6 +300,9 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
+        var main = PollenPS.main;
+        main.startColor = PollenPScolor;
+
         if (currentPortal != null)
         {
 
