@@ -26,10 +26,12 @@ public class FrogScript : MonoBehaviour
         var em = sleep.emission;
 
         em.enabled = false;
+        
     }
 
     public void StartSleep()
     {
+        
         var em = sleep.emission;
 
         em.enabled = true;
