@@ -14,7 +14,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Material initialMaterial;
     [SerializeField] private Material voidMat;
-   
+    [SerializeField] private Material bwMat;
+
 
 
     private float speed = 8f;
@@ -306,10 +307,16 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<SpriteRenderer>().material = voidMat;
 
         }
-        else
+        else if(rewindMode == RewindMode.enviroself && (rewind || RewindBySlider.isRewindRunning))
+        {
+            GetComponent<SpriteRenderer>().material = bwMat;
+        }
+        else if((!rewind && !RewindBySlider.isRewindRunning) || rewindMode == RewindMode.environment) 
         {
             GetComponent<SpriteRenderer>().material = initialMaterial;
         }
+
+
 
        if(!isGrounded())
         {
