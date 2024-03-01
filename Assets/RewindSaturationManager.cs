@@ -11,6 +11,8 @@ public class RewindSaturationManager : MonoBehaviour
     private bool desaturated = false;
     public bool rewindable = false;
     bool spriteYesTileNo = true;
+    bool isTilemap = false;
+    bool isParticleSystem = false;
     private Color startColor;
     public bool colorChange = false;
 
@@ -25,11 +27,19 @@ public class RewindSaturationManager : MonoBehaviour
         else if(GetComponent<TilemapRenderer>() != null)
         {
             InitialMat = GetComponent<TilemapRenderer>().material;
-            
             spriteYesTileNo = false;
+            isTilemap = true;
         }
+        else if (GetComponent<ParticleSystem>() != null)
+        {
+            InitialMat = GetComponent<ParticleSystemRenderer>().material;
+            var main = GetComponent<ParticleSystem>().main;
 
-        
+            startColor = main.startColor.color;
+            isParticleSystem = true;
+            spriteYesTileNo= false;
+            isTilemap= false;
+        }
     }
 
     public void BecomeBW()
@@ -37,12 +47,22 @@ public class RewindSaturationManager : MonoBehaviour
         if (spriteYesTileNo)
         {
             gameObject.GetComponent<SpriteRenderer>().material = BWMaterial;
-            if(colorChange)
-            gameObject.GetComponent<SpriteRenderer>().color = new Color (0.5f, 0.5f, 0.5f, 1);
+            if (colorChange)
+                gameObject.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f, 1);
         }
-        else
+        else if (isTilemap)
+        {
             gameObject.GetComponent<TilemapRenderer>().material = BWMaterial;
-
+        }
+        else if (isParticleSystem)
+        {
+            gameObject.GetComponent<ParticleSystemRenderer>().material = BWMaterial;
+            if (colorChange)
+            {
+                var main = gameObject.GetComponent<ParticleSystem>().main;
+                main.startColor = new Color(0.5f, 0.5f, 0.5f, 1);
+            }
+        }
         desaturated = true;
 
     }
@@ -52,25 +72,37 @@ public class RewindSaturationManager : MonoBehaviour
         if (spriteYesTileNo)
         {
             gameObject.GetComponent<SpriteRenderer>().material = InitialMat;
-            if(colorChange)
-            gameObject.GetComponent<SpriteRenderer>().color = startColor;
+            if (colorChange)
+                gameObject.GetComponent<SpriteRenderer>().color = startColor;
         }
-        else
+        else if (isTilemap)
+        {
             gameObject.GetComponent<TilemapRenderer>().material = InitialMat;
 
-           desaturated = false;
+           
+        }
+        else if (isParticleSystem)
+        {
+            gameObject.GetComponent<ParticleSystemRenderer>().material = InitialMat;
+            if (colorChange)
+            {
+                var main = gameObject.GetComponent<ParticleSystem>().main;
+                main.startColor = startColor;
+            }
+        }
+        desaturated = false;
     }
 
     private void Update()
     {
      
 
-        if(RewindBySlider.isRewindRunning && !desaturated)
+        if((RewindBySlider.isRewindRunning || PlayerMovement.rewind) && !desaturated)
         {
             BecomeBW();
         }
        
-        else if (!RewindBySlider.isRewindRunning & desaturated)
+        else if ((!RewindBySlider.isRewindRunning && !PlayerMovement.rewind) & desaturated)
         { 
                 GetColourful();
         }

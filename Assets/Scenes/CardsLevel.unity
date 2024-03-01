@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &40444428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2725021230922957179, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 587745215}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &44313767
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +579,7 @@ GameObject:
   - component: {fileID: 156582827}
   - component: {fileID: 156582826}
   - component: {fileID: 156582825}
+  - component: {fileID: 156582828}
   m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
@@ -674,6 +680,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &156582828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156582824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
 --- !u!1 &172887913
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,6 +1482,7 @@ GameObject:
   - component: {fileID: 308082174}
   - component: {fileID: 308082173}
   - component: {fileID: 308082172}
+  - component: {fileID: 308082175}
   m_Layer: 3
   m_Name: Square (7)
   m_TagString: Untagged
@@ -1561,6 +1583,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &308082175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 308082171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
 --- !u!1 &327639701
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +2164,7 @@ GameObject:
   - component: {fileID: 378417387}
   - component: {fileID: 378417386}
   - component: {fileID: 378417385}
+  - component: {fileID: 378417388}
   m_Layer: 3
   m_Name: Square (9)
   m_TagString: Untagged
@@ -2227,6 +2265,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &378417388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378417384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
 --- !u!1 &420051762
 GameObject:
   m_ObjectHideFlags: 0
@@ -8007,7 +8060,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12
+      value: 11.999939
       objectReference: {fileID: 0}
     - target: {fileID: 2795097870318833479, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -8542,6 +8595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 765051278}
   - component: {fileID: 765051277}
+  - component: {fileID: 765051279}
   m_Layer: 0
   m_Name: sky
   m_TagString: Untagged
@@ -8616,6 +8670,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &765051279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765051276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
 --- !u!1 &806108943
 GameObject:
   m_ObjectHideFlags: 0
@@ -8817,9 +8886,9 @@ MonoBehaviour:
   KeyClock: {fileID: 1319847908}
   SliderRewind: {fileID: 0}
   RewindButton: {fileID: 0}
-  UpButton: {fileID: 1566766431}
-  DownButton: {fileID: 1181887764}
+  MovementButtons: {fileID: 0}
   JumpButton: {fileID: 0}
+  Joystick: {fileID: 0}
   lifeStage: 0
   rewindMode: 0
 --- !u!50 &806108948
@@ -8963,6 +9032,7 @@ GameObject:
   - component: {fileID: 857360013}
   - component: {fileID: 857360015}
   - component: {fileID: 857360016}
+  - component: {fileID: 857360017}
   m_Layer: 0
   m_Name: ObsElf
   m_TagString: Untagged
@@ -9069,6 +9139,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec457893309d7704b97fc50e355669f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &857360017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857360012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
 --- !u!1 &909337556
 GameObject:
   m_ObjectHideFlags: 0
@@ -9378,6 +9463,7 @@ GameObject:
   - component: {fileID: 966579104}
   - component: {fileID: 966579106}
   - component: {fileID: 966579107}
+  - component: {fileID: 966579108}
   m_Layer: 0
   m_Name: Cards
   m_TagString: Untagged
@@ -9484,6 +9570,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ac11c84235a7cf498c42d6e4ee116e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &966579108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966579103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
 --- !u!1 &1013362129
 GameObject:
   m_ObjectHideFlags: 0
@@ -9965,9 +10066,9 @@ MonoBehaviour:
   KeyClock: {fileID: 1319847908}
   SliderRewind: {fileID: 2086116175}
   RewindButton: {fileID: 587745218}
-  UpButton: {fileID: 1566766431}
-  DownButton: {fileID: 1181887764}
+  MovementButtons: {fileID: 40444428}
   JumpButton: {fileID: 587745216}
+  Joystick: {fileID: 1737060067}
   lifeStage: 0
   rewindMode: 0
 --- !u!50 &1082849673
@@ -10458,11 +10559,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153761257}
   m_CullTransparentMesh: 1
---- !u!1 &1181887764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1978529516887816, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
-  m_PrefabInstance: {fileID: 1932817751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1203789683
 GameObject:
   m_ObjectHideFlags: 0
@@ -16833,11 +16929,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1566766431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1757920875146174, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
-  m_PrefabInstance: {fileID: 1932817751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1579653119
 GameObject:
   m_ObjectHideFlags: 0
@@ -17319,6 +17410,7 @@ GameObject:
   - component: {fileID: 1630829498}
   - component: {fileID: 1630829497}
   - component: {fileID: 1630829496}
+  - component: {fileID: 1630829499}
   m_Layer: 3
   m_Name: Square (8)
   m_TagString: Untagged
@@ -17419,6 +17511,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 61
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1630829499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630829495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
 --- !u!1 &1642564910
 GameObject:
   m_ObjectHideFlags: 0
@@ -22914,6 +23021,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1737060067 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7671344592358963024, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 587745215}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1738042700
 GameObject:
   m_ObjectHideFlags: 0
@@ -28140,7 +28252,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a3bc1f23b3b90a94c9a6160d6eea9187, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -28210,6 +28322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1907434869}
   - component: {fileID: 1907434868}
+  - component: {fileID: 1907434870}
   m_Layer: 0
   m_Name: windowframe
   m_TagString: Untagged
@@ -28284,6 +28397,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1907434870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907434867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
 --- !u!1001 &1932817751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28576,7 +28704,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a3bc1f23b3b90a94c9a6160d6eea9187, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -33879,6 +34007,7 @@ GameObject:
   - component: {fileID: 2098098405}
   - component: {fileID: 2098098404}
   - component: {fileID: 2098098403}
+  - component: {fileID: 2098098407}
   m_Layer: 0
   m_Name: Blinds
   m_TagString: Untagged
@@ -33985,6 +34114,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2098098407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098098402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
 --- !u!1 &2104912075
 GameObject:
   m_ObjectHideFlags: 0
@@ -34287,6 +34431,7 @@ GameObject:
   - component: {fileID: 2131339426}
   - component: {fileID: 2131339429}
   - component: {fileID: 2131339430}
+  - component: {fileID: 2131339431}
   m_Layer: 0
   m_Name: Fan
   m_TagString: Untagged
@@ -34430,6 +34575,21 @@ MonoBehaviour:
       particleTrackingLimit: 0
       particleRestartFrom: 0
       particleSystems: []
+--- !u!114 &2131339431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131339425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
 --- !u!1 &629415831881000196
 GameObject:
   m_ObjectHideFlags: 0

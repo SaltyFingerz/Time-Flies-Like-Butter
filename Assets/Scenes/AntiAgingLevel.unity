@@ -48699,6 +48699,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+--- !u!1 &976467247 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7671344592358963024, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 976467246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &976467248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2725021230922957179, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 976467246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1013362129
 GameObject:
   m_ObjectHideFlags: 0
@@ -54159,6 +54169,7 @@ GameObject:
   - component: {fileID: 1082849677}
   - component: {fileID: 1082849678}
   - component: {fileID: 1082849679}
+  - component: {fileID: 1082849680}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -54274,9 +54285,9 @@ MonoBehaviour:
   KeyClock: {fileID: 1319847908}
   SliderRewind: {fileID: 1609293967}
   RewindButton: {fileID: 1344133775}
-  UpButton: {fileID: 1123271483}
-  DownButton: {fileID: 2099462920}
+  MovementButtons: {fileID: 976467248}
   JumpButton: {fileID: 1191483311}
+  Joystick: {fileID: 976467247}
   lifeStage: 0
   rewindMode: 1
 --- !u!50 &1082849673
@@ -54485,6 +54496,21 @@ MonoBehaviour:
   currentWeed: {fileID: 0}
   flexiPollen: 1
   pollenColor: 0
+--- !u!114 &1082849680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082849669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
 --- !u!1 &1089814638
 GameObject:
   m_ObjectHideFlags: 0
@@ -54954,11 +54980,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1123271483 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2725382219651208757, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
-  m_PrefabInstance: {fileID: 976467246}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1125155883
 GameObject:
   m_ObjectHideFlags: 0
@@ -85324,11 +85345,6 @@ Transform:
   m_Father: {fileID: 1064716944}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2099462920 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2725725712005702275, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
-  m_PrefabInstance: {fileID: 976467246}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2104912075
 GameObject:
   m_ObjectHideFlags: 0

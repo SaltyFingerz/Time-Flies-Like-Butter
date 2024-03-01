@@ -12,7 +12,9 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     private float vertical;
 
-      
+    private Material initialMaterial;
+    [SerializeField] private Material voidMat;
+   
 
 
     private float speed = 8f;
@@ -115,13 +117,13 @@ public class PlayerMovement : MonoBehaviour
         input = GetComponent<PlayerInput>();
         inputActions = new PlayerInputActions();
         inputActions.Player.Enable();
+        initialMaterial = GetComponent<SpriteRenderer>().material;
 
-        
         //inputActions.Player.Jump.performed += Jump;
         // inputActions.Player.Rewind.performed += Rewind;
 
 
-        if(SceneManager.GetActiveScene().name == "RamSeasaw")
+        if (SceneManager.GetActiveScene().name == "RamSeasaw")
         {
 
             anim.SetTrigger("Butterfly");
@@ -297,6 +299,17 @@ public class PlayerMovement : MonoBehaviour
             sprite.flipX = false;
         }
         */
+
+
+        if(rewindMode == RewindMode.voidtime && rewind) 
+        {
+            GetComponent<SpriteRenderer>().material = voidMat;
+
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().material = initialMaterial;
+        }
 
        if(!isGrounded())
         {

@@ -40,6 +40,8 @@ public class PlayerManager : MonoBehaviour
         openBlue = false;
         anim = GetComponent<Animator>();
         PollenPS = Pollen.GetComponent<ParticleSystem>();
+      
+
     }
     
     private void PollenState()
@@ -302,6 +304,9 @@ public class PlayerManager : MonoBehaviour
     {
         var main = PollenPS.main;
         main.startColor = PollenPScolor;
+
+
+
 
         if (currentPortal != null)
         {
