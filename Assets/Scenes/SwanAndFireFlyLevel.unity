@@ -369,6 +369,7 @@ GameObject:
   - component: {fileID: 54433725}
   - component: {fileID: 54433724}
   - component: {fileID: 54433723}
+  - component: {fileID: 54433726}
   m_Layer: 4
   m_Name: waterBG
   m_TagString: Untagged
@@ -469,6 +470,22 @@ Transform:
   m_Father: {fileID: 2070329197}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &54433726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54433722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 1
 --- !u!1 &77310434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,6 +1345,7 @@ GameObject:
   - component: {fileID: 165799970}
   - component: {fileID: 165799969}
   - component: {fileID: 165799968}
+  - component: {fileID: 165799971}
   m_Layer: 3
   m_Name: lilly leaves pollen and stamen_15 (1)
   m_TagString: Untagged
@@ -1428,6 +1446,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 76
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &165799971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165799967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1001 &186762048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1502,6 +1536,7 @@ GameObject:
   - component: {fileID: 200888818}
   - component: {fileID: 200888817}
   - component: {fileID: 200888816}
+  - component: {fileID: 200888819}
   m_Layer: 3
   m_Name: lilly leaves pollen and stamen_5 (2)
   m_TagString: Untagged
@@ -1602,6 +1637,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 75
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &200888819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200888815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &226357895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7098,6 +7149,7 @@ GameObject:
   - component: {fileID: 291503645}
   - component: {fileID: 291503647}
   - component: {fileID: 291503646}
+  - component: {fileID: 291503648}
   m_Layer: 4
   m_Name: WaterRisingTrigger
   m_TagString: Untagged
@@ -7160,7 +7212,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.4117647, g: 0.8156863, b: 0.63529414, a: 0.3137255}
   m_FlipX: 0
@@ -7218,6 +7270,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &291503648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291503642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 1
 --- !u!1 &300104117
 GameObject:
   m_ObjectHideFlags: 0
@@ -7400,6 +7468,7 @@ GameObject:
   - component: {fileID: 320573655}
   - component: {fileID: 320573657}
   - component: {fileID: 320573656}
+  - component: {fileID: 320573658}
   m_Layer: 0
   m_Name: StamenBlue
   m_TagString: Goal
@@ -7535,6 +7604,22 @@ MonoBehaviour:
   destination: {fileID: 0}
   animDestStamen: {fileID: 0}
   portalState: 0
+--- !u!114 &320573658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320573652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &327639701
 GameObject:
   m_ObjectHideFlags: 0
@@ -25720,6 +25805,7 @@ GameObject:
   - component: {fileID: 577064265}
   - component: {fileID: 577064264}
   - component: {fileID: 577064263}
+  - component: {fileID: 577064266}
   m_Layer: 3
   m_Name: flower no stem open (6)
   m_TagString: Untagged
@@ -25820,6 +25906,22 @@ Transform:
   m_Father: {fileID: 792736585}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &577064266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577064262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 0
 --- !u!1 &585176256
 GameObject:
   m_ObjectHideFlags: 0
@@ -25878,6 +25980,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &588935711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2725021230922957179, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 976467246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &608081206
 GameObject:
   m_ObjectHideFlags: 0
@@ -26107,7 +26214,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.18
+  m_Intensity: 0.2
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -26194,6 +26301,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624742800}
   - component: {fileID: 624742801}
+  - component: {fileID: 624742802}
   m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
@@ -26268,6 +26376,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &624742802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624742799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 0
 --- !u!1 &627984672
 GameObject:
   m_ObjectHideFlags: 0
@@ -31204,6 +31328,7 @@ GameObject:
   - component: {fileID: 685797593}
   - component: {fileID: 685797592}
   - component: {fileID: 685797594}
+  - component: {fileID: 685797595}
   m_Layer: 3
   m_Name: lilly leaves pollen and stamen_10
   m_TagString: Untagged
@@ -31304,6 +31429,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 34.32, y: 0.74}
   m_EdgeRadius: 0
+--- !u!114 &685797595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 685797591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &690430720
 GameObject:
   m_ObjectHideFlags: 0
@@ -31572,6 +31713,7 @@ GameObject:
   - component: {fileID: 717831469}
   - component: {fileID: 717831468}
   - component: {fileID: 717831470}
+  - component: {fileID: 717831471}
   m_Layer: 0
   m_Name: StamenRed
   m_TagString: Goal
@@ -31707,6 +31849,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.85021603, y: 3.0500002}
   m_EdgeRadius: 0
+--- !u!114 &717831471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717831465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &722631317
 GameObject:
   m_ObjectHideFlags: 0
@@ -31718,6 +31876,7 @@ GameObject:
   - component: {fileID: 722631320}
   - component: {fileID: 722631319}
   - component: {fileID: 722631318}
+  - component: {fileID: 722631321}
   m_Layer: 3
   m_Name: lilly leaves pollen and stamen_5
   m_TagString: Untagged
@@ -31818,6 +31977,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 56
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &722631321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722631317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &728853678
 GameObject:
   m_ObjectHideFlags: 0
@@ -37009,6 +37184,7 @@ GameObject:
   - component: {fileID: 833352294}
   - component: {fileID: 833352293}
   - component: {fileID: 833352292}
+  - component: {fileID: 833352295}
   m_Layer: 3
   m_Name: lilly leaves pollen and stamen_15
   m_TagString: Untagged
@@ -37109,6 +37285,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 58
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &833352295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833352291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1001 &834984903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42344,6 +42536,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &911290151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7671344592358963024, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 976467246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &915723938 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8194404013162845158, guid: 3217a2edfcf20a64b9d8ada6d4577067, type: 3}
@@ -52231,6 +52428,7 @@ GameObject:
   - component: {fileID: 973633023}
   - component: {fileID: 973633024}
   - component: {fileID: 973633025}
+  - component: {fileID: 973633026}
   m_Layer: 0
   m_Name: black swan
   m_TagString: Untagged
@@ -52442,6 +52640,22 @@ MonoBehaviour:
       particleRestartFrom: 50
       particleSystems:
       - {fileID: 941192810}
+--- !u!114 &973633026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 973633020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1001 &976467246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58114,6 +58328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4197449c8e640fa4ca10e83daa5a629c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  voidMat: {fileID: 0}
+  bwMat: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   GraveStone: {fileID: 0}
   foodToSeeButterOnHud: 0
   ButterflyHUD: {fileID: 0}
@@ -58140,9 +58356,9 @@ MonoBehaviour:
   KeyClock: {fileID: 1319847908}
   SliderRewind: {fileID: 1609293967}
   RewindButton: {fileID: 1344133775}
-  UpButton: {fileID: 1566766431}
-  DownButton: {fileID: 1181887764}
+  MovementButtons: {fileID: 588935711}
   JumpButton: {fileID: 1191483311}
+  Joystick: {fileID: 911290151}
   lifeStage: 0
   rewindMode: 1
 --- !u!50 &1082849673
@@ -58949,11 +59165,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153761257}
   m_CullTransparentMesh: 1
---- !u!1 &1181887764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1978529516887816, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
-  m_PrefabInstance: {fileID: 1932817751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1191483311 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2726013002247260519, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
@@ -61112,6 +61323,7 @@ GameObject:
   - component: {fileID: 1555754687}
   - component: {fileID: 1555754693}
   - component: {fileID: 1555754692}
+  - component: {fileID: 1555754694}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Untagged
@@ -61292,6 +61504,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.9402885, y: 4.16}
   m_EdgeRadius: 0
+--- !u!114 &1555754694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555754686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1001 &1559663676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61415,11 +61643,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2733059531830420343, guid: 2ad6492630f41264e9e4aa7a7833d765, type: 3}
   m_PrefabInstance: {fileID: 1559663676}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1566766431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1757920875146174, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
-  m_PrefabInstance: {fileID: 1932817751}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1572830215
 GameObject:
@@ -61545,6 +61768,7 @@ GameObject:
   - component: {fileID: 1579322009}
   - component: {fileID: 1579322012}
   - component: {fileID: 1579322013}
+  - component: {fileID: 1579322014}
   m_Layer: 0
   m_Name: FireFly
   m_TagString: Untagged
@@ -61678,6 +61902,22 @@ MonoBehaviour:
       particleTrackingLimit: 0
       particleRestartFrom: 0
       particleSystems: []
+--- !u!114 &1579322014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579322008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &1579653119
 GameObject:
   m_ObjectHideFlags: 0
@@ -73231,6 +73471,7 @@ GameObject:
   - component: {fileID: 1904639823}
   - component: {fileID: 1904639822}
   - component: {fileID: 1904639821}
+  - component: {fileID: 1904639824}
   m_Layer: 0
   m_Name: Stem (1)
   m_TagString: Untagged
@@ -73331,6 +73572,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1904639824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904639820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &1928904896
 GameObject:
   m_ObjectHideFlags: 0
@@ -73341,6 +73598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1928904898}
   - component: {fileID: 1928904897}
+  - component: {fileID: 1928904899}
   m_Layer: 0
   m_Name: lilly leaves pollen and stamen_0 (1)
   m_TagString: Untagged
@@ -73415,6 +73673,22 @@ Transform:
   m_Father: {fileID: 1064716944}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1928904899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928904896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1001 &1932817751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83980,6 +84254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2080574723}
   - component: {fileID: 2080574722}
+  - component: {fileID: 2080574724}
   m_Layer: 0
   m_Name: lilly leaves pollen and stamen_0
   m_TagString: Untagged
@@ -84054,6 +84329,22 @@ Transform:
   m_Father: {fileID: 1064716944}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2080574724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080574721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &2104912075
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class RewindSaturationManager : MonoBehaviour
     bool isParticleSystem = false;
     private Color startColor;
     public bool colorChange = false;
+    public bool colorDark = false;
 
     private void Start()
     {
@@ -48,7 +49,13 @@ public class RewindSaturationManager : MonoBehaviour
         {
             gameObject.GetComponent<SpriteRenderer>().material = BWMaterial;
             if (colorChange)
+            {
+                if(!colorDark) 
                 gameObject.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f, 1);
+                else
+                    gameObject.GetComponent<SpriteRenderer>().color = new Color(0.3f, 0.3f, 0.3f, 1);
+
+            }
         }
         else if (isTilemap)
         {

@@ -24347,7 +24347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voidMat: {fileID: 0}
-  bwMat: {fileID: 0}
+  bwMat: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   GraveStone: {fileID: 998065643113076051, guid: 12cbeacbef720b1418dd261bd2ae6519, type: 3}
   foodToSeeButterOnHud: 1
   ButterflyHUD: {fileID: 1135005332}

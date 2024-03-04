@@ -560,6 +560,7 @@ GameObject:
   - component: {fileID: 54433725}
   - component: {fileID: 54433724}
   - component: {fileID: 54433723}
+  - component: {fileID: 54433726}
   m_Layer: 4
   m_Name: waterBG
   m_TagString: Untagged
@@ -660,6 +661,22 @@ Transform:
   m_Father: {fileID: 291503643}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &54433726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54433722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 1
 --- !u!1 &54810080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4065960115365519549, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
@@ -675,6 +692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 60326847}
   - component: {fileID: 60326846}
+  - component: {fileID: 60326848}
   m_Layer: 0
   m_Name: ladybug
   m_TagString: Untagged
@@ -749,6 +767,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 136.516}
+--- !u!114 &60326848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60326845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 0
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &105466957
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,6 +938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 108156589}
   - component: {fileID: 108156590}
+  - component: {fileID: 108156591}
   m_Layer: 0
   m_Name: lilly leaves pollen and stamen_0 (1)
   m_TagString: Untagged
@@ -978,6 +1013,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &108156591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108156588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 0
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &121354036
 GameObject:
   m_ObjectHideFlags: 0
@@ -2273,6 +2324,7 @@ GameObject:
   - component: {fileID: 254644841}
   - component: {fileID: 254644840}
   - component: {fileID: 254644842}
+  - component: {fileID: 254644843}
   m_Layer: 3
   m_Name: flower no stem open
   m_TagString: Untagged
@@ -2373,6 +2425,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.98, y: 0.87}
   m_EdgeRadius: 0
+--- !u!114 &254644843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254644839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 0
 --- !u!1 &278236421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2470,6 +2538,7 @@ GameObject:
   - component: {fileID: 291503647}
   - component: {fileID: 291503646}
   - component: {fileID: 291503648}
+  - component: {fileID: 291503649}
   m_Layer: 4
   m_Name: WaterRisingTrigger
   m_TagString: Untagged
@@ -2618,6 +2687,22 @@ MonoBehaviour:
       particleTrackingLimit: 0
       particleRestartFrom: 0
       particleSystems: []
+--- !u!114 &291503649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291503642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 1
 --- !u!1 &300104117
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,6 +2885,7 @@ GameObject:
   - component: {fileID: 320573655}
   - component: {fileID: 320573657}
   - component: {fileID: 320573656}
+  - component: {fileID: 320573658}
   m_Layer: 0
   m_Name: StamenBlue
   m_TagString: Goal
@@ -2935,6 +3021,22 @@ MonoBehaviour:
   destination: {fileID: 0}
   animDestStamen: {fileID: 0}
   portalState: 0
+--- !u!114 &320573658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320573652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &327639701
 GameObject:
   m_ObjectHideFlags: 0
@@ -21315,6 +21417,7 @@ GameObject:
   - component: {fileID: 584135304}
   - component: {fileID: 584135303}
   - component: {fileID: 584135302}
+  - component: {fileID: 584135305}
   m_Layer: 3
   m_Name: Square (3)
   m_TagString: Untagged
@@ -21415,6 +21518,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 62
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &584135305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584135301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 1
 --- !u!1 &585176256
 GameObject:
   m_ObjectHideFlags: 0
@@ -21547,6 +21666,7 @@ GameObject:
   - component: {fileID: 603839350}
   - component: {fileID: 603839349}
   - component: {fileID: 603839348}
+  - component: {fileID: 603839351}
   m_Layer: 3
   m_Name: tree
   m_TagString: Untagged
@@ -22086,7 +22206,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: d8b84462c9d94f742b6d58d8d664c026, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -22113,6 +22233,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 63
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &603839351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603839347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &608081206
 GameObject:
   m_ObjectHideFlags: 0
@@ -22429,6 +22565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 624742800}
   - component: {fileID: 624742801}
+  - component: {fileID: 624742802}
   m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
@@ -22503,6 +22640,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &624742802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624742799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 0
 --- !u!1 &627984672
 GameObject:
   m_ObjectHideFlags: 0
@@ -27655,6 +27808,7 @@ GameObject:
   - component: {fileID: 722631320}
   - component: {fileID: 722631319}
   - component: {fileID: 722631318}
+  - component: {fileID: 722631321}
   m_Layer: 3
   m_Name: lilly leaves pollen and stamen_5
   m_TagString: Untagged
@@ -27755,6 +27909,22 @@ Transform:
   m_Father: {fileID: 291503643}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &722631321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722631317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &728853678
 GameObject:
   m_ObjectHideFlags: 0
@@ -27987,6 +28157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 734704166}
   - component: {fileID: 734704167}
+  - component: {fileID: 734704168}
   m_Layer: 0
   m_Name: lilly leaves pollen and stamen_0
   m_TagString: Untagged
@@ -28061,6 +28232,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &734704168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734704165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 0
+  colorChange: 0
+  colorDark: 0
+--- !u!1 &738937960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2725021230922957179, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 1186122496}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &792736584
 GameObject:
   m_ObjectHideFlags: 0
@@ -28105,6 +28297,7 @@ GameObject:
   - component: {fileID: 813188442}
   - component: {fileID: 813188441}
   - component: {fileID: 813188440}
+  - component: {fileID: 813188443}
   m_Layer: 3
   m_Name: flower no stem open (4)
   m_TagString: Untagged
@@ -28205,6 +28398,22 @@ Transform:
   m_Father: {fileID: 940278722}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &813188443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813188439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 0
 --- !u!1 &840361708
 GameObject:
   m_ObjectHideFlags: 0
@@ -48700,6 +48909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4197449c8e640fa4ca10e83daa5a629c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  voidMat: {fileID: 0}
+  bwMat: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   GraveStone: {fileID: 0}
   foodToSeeButterOnHud: 0
   ButterflyHUD: {fileID: 0}
@@ -48726,9 +48937,9 @@ MonoBehaviour:
   KeyClock: {fileID: 1319847908}
   SliderRewind: {fileID: 54810080}
   RewindButton: {fileID: 1186122499}
-  UpButton: {fileID: 1566766431}
-  DownButton: {fileID: 1181887764}
+  MovementButtons: {fileID: 738937960}
   JumpButton: {fileID: 1186122497}
+  Joystick: {fileID: 1443275843}
   lifeStage: 0
   rewindMode: 1
 --- !u!50 &1082849673
@@ -49795,11 +50006,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153761257}
   m_CullTransparentMesh: 1
---- !u!1 &1181887764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1978529516887816, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
-  m_PrefabInstance: {fileID: 1932817751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1186122496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49918,7 +50124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999817
+      value: 11.999878
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
@@ -51394,6 +51600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1441683275}
   - component: {fileID: 1441683276}
+  - component: {fileID: 1441683277}
   m_Layer: 3
   m_Name: lilly leaves pollen and stamen_15
   m_TagString: Untagged
@@ -51468,6 +51675,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1441683277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441683274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
+--- !u!1 &1443275843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7671344592358963024, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 1186122496}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1452658320
 GameObject:
   m_ObjectHideFlags: 0
@@ -52381,11 +52609,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2733059531830420343, guid: 2ad6492630f41264e9e4aa7a7833d765, type: 3}
   m_PrefabInstance: {fileID: 1559663676}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1566766431 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1757920875146174, guid: 36300ad3f703b964fb4e8c42be9649ec, type: 3}
-  m_PrefabInstance: {fileID: 1932817751}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1572830215
 GameObject:
   m_ObjectHideFlags: 0
@@ -52813,6 +53036,7 @@ GameObject:
   - component: {fileID: 1617080590}
   - component: {fileID: 1617080589}
   - component: {fileID: 1617080588}
+  - component: {fileID: 1617080591}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -52892,7 +53116,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.90125, y: 0.9, z: 0}
   m_MaxChunkCount: 16
@@ -55877,6 +56101,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1617080591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617080586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &1629318807
 GameObject:
   m_ObjectHideFlags: 0
@@ -66684,6 +66924,7 @@ GameObject:
   - component: {fileID: 1904639823}
   - component: {fileID: 1904639822}
   - component: {fileID: 1904639821}
+  - component: {fileID: 1904639824}
   m_Layer: 0
   m_Name: Stem (1)
   m_TagString: Untagged
@@ -66784,6 +67025,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1904639824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904639820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 0
+  colorDark: 0
 --- !u!1 &1910657714 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2733059531830420342, guid: 2ad6492630f41264e9e4aa7a7833d765, type: 3}

@@ -21,7 +21,7 @@ public class WeedScript : MonoBehaviour
             StartCoroutine(ShrinkWeed());
         }
 
-        else
+        else if( !PlayerMovement.rewind)
         {
             StartCoroutine(GrowWeed());
 
