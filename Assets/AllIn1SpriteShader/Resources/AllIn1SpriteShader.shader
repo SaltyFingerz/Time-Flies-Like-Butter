@@ -933,6 +933,7 @@
 				#endif
 
 				#if HSV_ON
+				_HsvShift = _HsvShift * _CosTime * 500;
 				half3 resultHsv = half3(col.rgb);
 				half cosHsv = _HsvBright * _HsvSaturation * cos(_HsvShift * 3.14159265 / 180);
 				half sinHsv = _HsvBright * _HsvSaturation * sin(_HsvShift * 3.14159265 / 180);

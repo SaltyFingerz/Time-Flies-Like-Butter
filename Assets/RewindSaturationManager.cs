@@ -113,7 +113,13 @@ public class RewindSaturationManager : MonoBehaviour
         { 
                 GetColourful();
         }
+
+        if(BWMaterial.name.Contains("HueShift"))
+        {
+            print("hueshiftyasqueen");
+        }
     }
+
 
    
 
