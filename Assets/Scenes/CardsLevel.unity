@@ -9664,7 +9664,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30fa552109fdd4c4fabf01b2e9ec986e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 1082849672}
   increment: 0.3
   bigIncrement: 30
 --- !u!1 &1039884184 stripped
@@ -10137,7 +10136,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1082849669}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a081f785d315a2b43966f129ce852878, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

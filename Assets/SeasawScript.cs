@@ -17,6 +17,11 @@ public class SeasawScript : MonoBehaviour
     private Vector3 thirstyEndPos = new Vector3(-6.5f, -7.7f, 0.05f);
     private Vector3 hungryEndPos = new Vector3(50f, 21.3f, 0.05f);
     bool LerpNow = false;
+
+    private void Awake()
+    {
+        GetComponent<BoxCollider2D>().enabled = false;
+    }
     public void DownRight()
     {
         midRpoint.SetActive(false);
@@ -48,14 +53,14 @@ public class SeasawScript : MonoBehaviour
 
     IEnumerator LerpRamOntoSeasaw(GameObject ram, Vector3 endPos)
     {
-       
+        
         
             Vector3 startPos = ram.transform.position;
             float elapsedTime = 0;
             float lerpDuration = 0.5f;
             // float lerpPercentage = 0f;
 
-            while (ram.transform.position != endPos)
+            while (ram.transform.position.y < endPos.y -0.3f || ram.transform.position.y > endPos.y + 0.3f)
             {
 
                 elapsedTime += Time.deltaTime;
@@ -65,7 +70,7 @@ public class SeasawScript : MonoBehaviour
             yield return null;
             }
         RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }

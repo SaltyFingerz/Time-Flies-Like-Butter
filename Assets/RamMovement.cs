@@ -234,12 +234,13 @@ public class RamMovement : MonoBehaviour
     {
         if (!Goal && !RewindBySlider.isRewindRunning)
         {
+       
             Vector3 startPos = transform.position;
             float elapsedTime = 0;
             float lerpDuration = 0.5f;
             // float lerpPercentage = 0f;
 
-            while (transform.position != endPos.position)
+            while ((transform.position.y < endPos.position.y - 0.5f)|| (transform.position.y > endPos.position.y +0.5f))
             {
 
                 elapsedTime += Time.deltaTime;
@@ -248,6 +249,7 @@ public class RamMovement : MonoBehaviour
 
                 yield return null;
             }
+            transform.position = endPos.position;
         }
     }
 

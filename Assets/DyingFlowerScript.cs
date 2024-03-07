@@ -9,7 +9,7 @@ public class DyingFlowerScript : MonoBehaviour
     [SerializeField] private GameObject FruitingFlower;
     [SerializeField] private GameObject newLeaf;
 
-   private Vector3 startSize = Vector3.zero;
+   public Vector3 startSize = Vector3.zero;
     private Vector3 endSize = Vector3.one;
     private float duration = 1f;
     private float elapsedTime = 0f;
@@ -46,32 +46,38 @@ public class DyingFlowerScript : MonoBehaviour
             
             elapsedTime += Time.deltaTime;
             float percentageTime = elapsedTime / duration;
-            Stamen.transform.localScale = Vector3.Lerp(startSize, endSize, percentageTime);
+            Stamen.transform.localScale = Vector3.Lerp(Vector3.zero, endSize, percentageTime);
             yield return null;
         }
         if(redFruiting)
         {
             FruitingFlower.SetActive(true);
+
+            newLeaf.SetActive(true);
+            yield return new WaitForSeconds(0.2f);
             gameObject.SetActive(false);
-            newLeaf.SetActive(true) ;
-           
-           
+
+
         }
 
     }
+
+  
 
     IEnumerator Shrink()
     {
         elapsedTime = 0f;
         duration = 0.3f;
-        while (Stamen.transform.localScale != startSize)
+
+        while (Stamen.transform.localScale != Vector3.zero)
         {
 
             elapsedTime += Time.deltaTime;
             float percentageTime = elapsedTime / duration;
-            Stamen.transform.localScale = Vector3.Lerp(endSize, startSize, percentageTime);
+            Stamen.transform.localScale = Vector3.Lerp(endSize, Vector3.zero, percentageTime);
             yield return null;
         }
+    
         Stamen.SetActive(false);
 
     }

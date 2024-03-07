@@ -85,7 +85,10 @@ public class CameraFollow : MonoBehaviour
 
         offset = new Vector3(0f, 2f, -10f);
         smoothTime = 0.5f;
-        StartCoroutine(ZoomOut());
+        if (cam != null)
+        {
+            StartCoroutine(ZoomOut());
+        }
        
     }
 

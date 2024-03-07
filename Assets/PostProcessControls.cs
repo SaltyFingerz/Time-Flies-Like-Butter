@@ -11,7 +11,7 @@ public class PostProcessControls : MonoBehaviour
     private Bloom b;
     private Vignette vg;
     private ColorAdjustments ca;
-    public PlayerMovement playerMovement;
+    private PlayerMovement playerMovement;
     public float increment = 0.3f;
     public float bigIncrement = 30f;
     private float initialVignetteIntensity;
@@ -19,6 +19,7 @@ public class PostProcessControls : MonoBehaviour
 
     private void Start()
     {
+        playerMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();  
         v = GetComponent<Volume>();
         v.profile.TryGet(out b);
         v.profile.TryGet(out vg);

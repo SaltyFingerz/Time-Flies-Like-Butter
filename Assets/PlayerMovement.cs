@@ -143,7 +143,7 @@ public class PlayerMovement : MonoBehaviour
            
         }
 
-        if (SceneManager.GetActiveScene().name == "TeleportLevel" || SceneManager.GetActiveScene().name == "SwanAndFireFlyLevel")
+        if ( SceneManager.GetActiveScene().name == "SwanAndFireFlyLevel")
         {
             print("rewindenviroself");
             rewindMode = RewindMode.enviroself;
@@ -211,7 +211,7 @@ public class PlayerMovement : MonoBehaviour
             rewindManager.RestartTracking();
         }
 
-        else if (SceneManager.GetActiveScene().name == "RisingWaterLevel" || SceneManager.GetActiveScene().name == "RisingWaterLevel2")
+        else if (SceneManager.GetActiveScene().name == "RisingWaterLevel" || SceneManager.GetActiveScene().name == "RisingWaterLevel2" || SceneManager.GetActiveScene().name == "TeleportLevel")
         {
             rewindMode = RewindMode.enviroself;
 
@@ -227,7 +227,7 @@ public class PlayerMovement : MonoBehaviour
 
             RewindButton.SetActive(false);
         }
-        else if (SceneManager.GetActiveScene().name == "SimpleTpLevel" || SceneManager.GetActiveScene().name == "FanLevel" || SceneManager.GetActiveScene().name == "Onboarding")
+        else if (SceneManager.GetActiveScene().name == "SimpleTpLevel" || SceneManager.GetActiveScene().name == "FanLevel" || SceneManager.GetActiveScene().name == "Onboarding" )
         {
             rewindMode = RewindMode.none;
 
@@ -344,6 +344,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetToGhost()
     {
+        print("become ghostbutterfly");
+        print("lifestage" + lifeStage.ToString());
         lifeStage = LifeStage.ghostButterfly;
     }
 
@@ -532,9 +534,9 @@ public class PlayerMovement : MonoBehaviour
             horizontal = SimpleInput.GetAxis("Horizontal");
             vertical = SimpleInput.GetAxis("Vertical");
         }
-        if(lifeStage== LifeStage.butterfly)
+        if(lifeStage== LifeStage.butterfly || lifeStage == LifeStage.ghostButterfly)
         {
-           // gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
+            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
             rb.velocity = new Vector2(horizontal * speed, vertical * speed);
             horizontal = inputVector.x;
             vertical = inputVector.y;
@@ -706,6 +708,22 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void SetRewindPlayer()
+    {
+        rewind = false;
+        rewindMode = RewindMode.enviroself;
+
+        rewindable = true;
+
+        KeyClock.SetActive(true);
+        rewindScript.EnableRewind();
+
+        rewindManager.RestartTracking();
+
+        RewindButton.SetActive(false);
+        print("setRewindPlayer");
+
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name.Contains("TriggerLeaf1"))
@@ -768,28 +786,20 @@ public class PlayerMovement : MonoBehaviour
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            rewind = false;
-
-            rewindMode = RewindMode.enviroself;
-
-            rewindable = true;
-
-            KeyClock.SetActive(true);
-            rewindScript.EnableRewind();
-
-            /*  if (!gameObject.name.Contains("Rewindable"))
-              {
-                  cam.LookAtRewindablePlayer();
-                  sprite.enabled = false;
-                  collider.enabled = false;
-                  rewindChild.GetComponent<SpriteRenderer>().enabled = true;
-                  rewindChild.GetComponent<Collider2D>().enabled = true;
-
-              }*/
-
-            rewindManager.RestartTracking();
+            
             Debug.Log("enviroeself rewind modë");
 
+            if (collision.name.Contains("FirstPlayerRwPowerup"))
+            {
+                GameObject rewindAnim = GameObject.Find("RewindButtonAppearance");
+                rewindAnim.SetActive(true);
+                rewindAnim.GetComponent<Animator>().SetTrigger("Play2");
+            }
+            else
+            {
+                SetRewindPlayer();
+              
+            }
 
 
         }
