@@ -690,6 +690,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1 &171974448 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7671344592358963024, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
@@ -901,6 +902,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &228081735
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,6 +1424,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1 &278236421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,6 +1945,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &367444632
 GameObject:
   m_ObjectHideFlags: 0
@@ -8483,6 +8487,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &806108943
 GameObject:
   m_ObjectHideFlags: 0
@@ -9058,6 +9063,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1001 &964813500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9143,6 +9149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1013362131}
   - component: {fileID: 1013362130}
+  - component: {fileID: 1013362132}
   m_Layer: 0
   m_Name: Global Volume
   m_TagString: Untagged
@@ -9182,6 +9189,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1013362132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013362129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30fa552109fdd4c4fabf01b2e9ec986e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 1082849672}
+  increment: 0.3
+  bigIncrement: 30
 --- !u!1 &1039884184 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1544650614272011804, guid: 88097b566ad1fdd489d7ee77465b57aa, type: 3}
@@ -15366,6 +15388,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &1249015537
 GameObject:
   m_ObjectHideFlags: 0
@@ -16145,6 +16168,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &1471918664
 GameObject:
   m_ObjectHideFlags: 0
@@ -22912,6 +22936,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1001 &1932817751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28531,6 +28556,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &2104912075
 GameObject:
   m_ObjectHideFlags: 0
@@ -28992,6 +29018,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &629415831881000196
 GameObject:
   m_ObjectHideFlags: 0

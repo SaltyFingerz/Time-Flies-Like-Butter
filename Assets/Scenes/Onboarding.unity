@@ -469,6 +469,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &54433722
 GameObject:
   m_ObjectHideFlags: 0
@@ -5494,6 +5495,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1 &113116648 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 113116648, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
@@ -7016,6 +7018,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &278236421
 GameObject:
   m_ObjectHideFlags: 0
@@ -7514,6 +7517,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!114 &316502412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7529,6 +7533,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &350753807
 GameObject:
   m_ObjectHideFlags: 0
@@ -7626,6 +7631,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1 &381836737
 GameObject:
   m_ObjectHideFlags: 0
@@ -12991,6 +12997,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1 &478291849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2522277744899552888, guid: 4345c02d8c10a3446a86b9dc17d7a6b7, type: 3}
@@ -13011,6 +13018,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &490910257
 GameObject:
   m_ObjectHideFlags: 0
@@ -18494,6 +18502,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &547099541
 GameObject:
   m_ObjectHideFlags: 0
@@ -24191,6 +24200,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1 &724005614
 GameObject:
   m_ObjectHideFlags: 0
@@ -30600,6 +30610,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1 &960896959
 GameObject:
   m_ObjectHideFlags: 0
@@ -30779,6 +30790,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &973227020
 GameObject:
   m_ObjectHideFlags: 0
@@ -46918,6 +46930,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1 &1416372168
 GameObject:
   m_ObjectHideFlags: 0
@@ -47260,6 +47273,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1 &1475730597
 GameObject:
   m_ObjectHideFlags: 0
@@ -47286,7 +47300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475730597}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.27, y: 1.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64459,6 +64473,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 1
+  colorDark: 0
 --- !u!1001 &1984625431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64607,6 +64622,7 @@ MonoBehaviour:
   BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
+  colorDark: 0
 --- !u!1 &2046214841
 GameObject:
   m_ObjectHideFlags: 0

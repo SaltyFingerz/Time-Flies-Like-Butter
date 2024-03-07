@@ -11,6 +11,7 @@ public class PostProcessControls : MonoBehaviour
     private Bloom b;
     private Vignette vg;
     private ColorAdjustments ca;
+    public PlayerMovement playerMovement;
     public float increment = 0.3f;
     public float bigIncrement = 30f;
     private float initialVignetteIntensity;
@@ -35,7 +36,14 @@ public class PostProcessControls : MonoBehaviour
             ResetSaturation();
         }
         
-
+        if(playerMovement.rewindMode == PlayerMovement.RewindMode.voidtime && PlayerMovement.rewind)
+        {
+            HueShift();
+        }
+        else
+        {
+            StopHueShift();
+        }
     }
 
     public void DecreaseSaturation()
@@ -56,6 +64,19 @@ public class PostProcessControls : MonoBehaviour
     public void ResetSaturation()
     {
         ca.saturation.value = initialSaturation;
+    }
+
+    public void HueShift()
+    {
+        if (ca.hueShift.value < 180)
+            ca.hueShift.value += Mathf.Cos(Time.deltaTime);
+        else
+            ca.hueShift.value = -180;
+    }
+
+    public void StopHueShift()
+    {
+        ca.hueShift.value = 0;
     }
 
 

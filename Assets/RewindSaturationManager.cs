@@ -16,6 +16,7 @@ public class RewindSaturationManager : MonoBehaviour
     private Color startColor;
     public bool colorChange = false;
     public bool colorDark = false;
+    private PlayerMovement pMove;
 
     private void Start()
     {
@@ -41,6 +42,8 @@ public class RewindSaturationManager : MonoBehaviour
             spriteYesTileNo= false;
             isTilemap= false;
         }
+        pMove = GameObject.Find("Player").GetComponent<PlayerMovement>();
+
     }
 
     public void BecomeBW()
@@ -104,7 +107,7 @@ public class RewindSaturationManager : MonoBehaviour
     {
      
 
-        if((RewindBySlider.isRewindRunning || PlayerMovement.rewind) && !desaturated)
+        if((RewindBySlider.isRewindRunning || PlayerMovement.rewind) && !desaturated && pMove.rewindMode != PlayerMovement.RewindMode.voidtime)
         {
             BecomeBW();
         }
@@ -114,10 +117,7 @@ public class RewindSaturationManager : MonoBehaviour
                 GetColourful();
         }
 
-        if(BWMaterial.name.Contains("HueShift"))
-        {
-            print("hueshiftyasqueen");
-        }
+       
     }
 
 

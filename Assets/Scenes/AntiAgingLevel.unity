@@ -54514,7 +54514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BWMaterial: {fileID: 2100000, guid: edbd074293479434ebe3290bc3e3f258, type: 2}
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rewindable: 1
   colorChange: 0
   colorDark: 0
