@@ -11,7 +11,7 @@ public class updateRewindButton : MonoBehaviour
     public Sprite[] buttonSprites;
     private UnityEngine.UI.Button button;
     private int howManyFingersTouching = 0;
-
+    private Vector3 direction = new Vector3 (0,0,50);
     [SerializeField] AudioSource rewindSound;
 
     public WobbleEffectCam _wobbleEffect;
@@ -27,14 +27,16 @@ public class updateRewindButton : MonoBehaviour
     {
         if(PlayerMovement.rewind)
         {
-            button.GetComponent<UnityEngine.UI.Image>().sprite = buttonSprites[1];
+            // button.GetComponent<UnityEngine.UI.Image>().sprite = buttonSprites[1];
+            gameObject.transform.Rotate(5 * direction * Time.deltaTime);
             _wobbleEffect.StartWobble();
             rewindSound.Play();
 
         }
         else
         {
-            button.GetComponent<UnityEngine.UI.Image>().sprite = buttonSprites[0];
+          //  button.GetComponent<UnityEngine.UI.Image>().sprite = buttonSprites[0];
+          transform.rotation = Quaternion.identity;
             _wobbleEffect.StopWobble();
             rewindSound.Stop();
         }

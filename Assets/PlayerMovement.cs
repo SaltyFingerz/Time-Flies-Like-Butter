@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject MovementButtons;
     [SerializeField] private GameObject JumpButton;
     [SerializeField] private GameObject Joystick;
-
+    private GameObject shadow;
     public static bool rewind = false;
     bool canToggle;
 
@@ -119,7 +119,7 @@ public class PlayerMovement : MonoBehaviour
         inputActions = new PlayerInputActions();
         inputActions.Player.Enable();
         initialMaterial = GetComponent<SpriteRenderer>().material;
-
+        shadow = GameObject.Find("Platform Shadow");
         //inputActions.Player.Jump.performed += Jump;
         // inputActions.Player.Rewind.performed += Rewind;
 
@@ -664,6 +664,8 @@ public class PlayerMovement : MonoBehaviour
             Quaternion localRotation = transform.localRotation;
             localRotation.y = 180;
             transform.localRotation = localRotation;
+
+            shadow.transform.localRotation = localRotation;
         }
         else if (!isFacingRight && horizontal > 0f)
         {
@@ -673,6 +675,10 @@ public class PlayerMovement : MonoBehaviour
             Quaternion localRotation = transform.localRotation;
             localRotation.y = 0;
             transform.localRotation = localRotation;
+
+            Quaternion localRotation2 = transform.localRotation;
+            localRotation2.y = -180;
+            shadow.transform.localRotation = localRotation;
         }
     }
 
@@ -685,6 +691,8 @@ public class PlayerMovement : MonoBehaviour
             Quaternion localRotation = transform.localRotation;
             localRotation.y = 180;
             transform.localRotation = localRotation;
+
+            shadow.transform.localRotation = localRotation;
         }
         else if (!isFacingRight && horizontal > 0f)
         {
@@ -692,6 +700,9 @@ public class PlayerMovement : MonoBehaviour
             Quaternion localRotation = transform.localRotation;
             localRotation.y = 0;
             transform.localRotation = localRotation;
+            Quaternion localRotation2 = transform.localRotation;
+            localRotation2.y = 0;
+            shadow.transform.localRotation = localRotation2;
         }
     }
 
