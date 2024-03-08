@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: IdleFruit 1
+  m_Name: IdleFlower 2
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -20,7 +20,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 87.69, y: -7.3, z: 0}
+        value: {x: 87.69, y: -4.85, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -32,13 +32,41 @@ AnimationClip:
       m_RotationOrder: 4
     path: 
   m_ScaleCurves: []
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.083333336
+        value: 1
+        inSlope: -0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_SortingOrder
+    path: Stem 1_0 (2)
+    classID: 212
+    script: {fileID: 0}
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1073945892, guid: 556bd3423bfe51c4f9072febe644e127, type: 3}
+      value: {fileID: -565727700, guid: 556bd3423bfe51c4f9072febe644e127, type: 3}
     - time: 0.083333336
-      value: {fileID: -1073945892, guid: 556bd3423bfe51c4f9072febe644e127, type: 3}
+      value: {fileID: 21300000, guid: fe66b1229a4690540906e8e559a204e6, type: 2}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -66,9 +94,17 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
       isIntCurve: 0
+    - serializedVersion: 2
+      path: 1981578314
+      attribute: 3762991556
+      script: {fileID: 0}
+      typeID: 212
+      customType: 26
+      isPPtrCurve: 0
+      isIntCurve: 0
     pptrCurveMapping:
-    - {fileID: -1073945892, guid: 556bd3423bfe51c4f9072febe644e127, type: 3}
-    - {fileID: -1073945892, guid: 556bd3423bfe51c4f9072febe644e127, type: 3}
+    - {fileID: -565727700, guid: 556bd3423bfe51c4f9072febe644e127, type: 3}
+    - {fileID: 21300000, guid: fe66b1229a4690540906e8e559a204e6, type: 2}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -95,6 +131,34 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.083333336
+        value: 1
+        inSlope: -0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_SortingOrder
+    path: Stem 1_0 (2)
+    classID: 212
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
         value: 87.69
         inSlope: 0
         outSlope: 0
@@ -114,7 +178,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: -7.3
+        value: -4.85
         inSlope: 0
         outSlope: 0
         tangentMode: 136
