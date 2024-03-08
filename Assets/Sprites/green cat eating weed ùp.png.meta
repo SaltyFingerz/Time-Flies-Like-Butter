@@ -126,8 +126,8 @@ TextureImporter:
         y: 1857
         width: 479
         height: 514
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.50000006, y: 0.020991344}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -147,8 +147,8 @@ TextureImporter:
         y: 1857
         width: 582
         height: 428
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025209231}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,8 +168,8 @@ TextureImporter:
         y: 1857
         width: 664
         height: 340
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.49729183, y: 0.026444739}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -210,8 +210,8 @@ TextureImporter:
         y: 1284
         width: 699
         height: 378
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.50257266, y: 0.038058165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,8 +231,8 @@ TextureImporter:
         y: 1264
         width: 794
         height: 320
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.05057602}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -532,7 +532,6 @@ TextureImporter:
       "green cat eating weed \xF9p_12": 1759158449
       "green cat eating weed \xF9p_16": 1094387305
       "green cat eating weed \xF9p_2": -1467428317
-      "green cat eating weed \xF9p_18": -269244873
       "green cat eating weed \xF9p_8": 1699890237
       "green cat eating weed \xF9p_4": -2116240327
       "green cat eating weed \xF9p_11": 2143410703
@@ -544,6 +543,7 @@ TextureImporter:
       "green cat eating weed \xF9p_6": 2024597077
       "green cat eating weed \xF9p_5": -1177897361
       "green cat eating weed \xF9p_15": -312685422
+      "green cat eating weed \xF9p_18": -269244873
       "green cat eating weed \xF9p_13": 1645648071
       "green cat eating weed \xF9p_14": 1470961847
       "green cat eating weed \xF9p_1": -839322836

@@ -256,7 +256,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
             {
-                gameObject.transform.position = collision.gameObject.transform.position - new Vector3(2, 0, 0);
+                gameObject.transform.position = collision.gameObject.transform.position - new Vector3(2, 0.6f, 0);
                 gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
             }
 
@@ -265,7 +265,7 @@ public class PlayerManager : MonoBehaviour
 
             else if (collision.gameObject.CompareTag("WeedDown") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
             {
-                gameObject.transform.position = collision.gameObject.transform.position - new Vector3(2, 0, 0);
+                gameObject.transform.position = collision.gameObject.transform.position - new Vector3(2, 0.6f, 0);
                 gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
             }
 

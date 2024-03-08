@@ -79,6 +79,7 @@ public class DyingFlowerScript : MonoBehaviour
         }
     
         Stamen.SetActive(false);
+        Leaf.SetActive(false);
 
     }
 
