@@ -23,7 +23,18 @@ public class WeedingLevelManager : MonoBehaviour
 
     private void Update()
     {
-        if(weeds[0].GetComponent<WeedScript>().Eaten() && weeds[1].GetComponent<WeedScript>().Eaten() && flowers[0].GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleLivingFlower") && flowers[1].GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleLivingFlower") && !PlayerMovement.rewind)
+
+        if (PlayerMovement.rewind)
+        {
+            RewindFlowers();
+        }
+        else
+        {
+            ForwardFlowers();
+        }
+
+
+        if (weeds[0].GetComponent<WeedScript>().Eaten() && weeds[1].GetComponent<WeedScript>().Eaten() && flowers[0].GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleLivingFlower") && flowers[1].GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("IdleLivingFlower") && !PlayerMovement.rewind)
         StartCoroutine(WinState());
     }
 

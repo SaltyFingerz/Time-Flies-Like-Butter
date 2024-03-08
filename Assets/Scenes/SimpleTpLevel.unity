@@ -1652,7 +1652,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.6
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -17899,7 +17899,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 16.15625
+  orthographic size: 32.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -24133,7 +24133,7 @@ Transform:
   m_GameObject: {fileID: 624742799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.3475, y: 1.4423, z: 10}
-  m_LocalScale: {x: 56.06259, y: 39.624195, z: 1}
+  m_LocalScale: {x: 87.03295, y: 61.513577, z: 1.5524247}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519420032}

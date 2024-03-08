@@ -69,6 +69,7 @@ public class FrogScript : MonoBehaviour
             Player.SetActive(false);
             canEat = false;
             StartCoroutine(EatCooldown());
+            anim.ResetTrigger("Eat");
         }
     }
 

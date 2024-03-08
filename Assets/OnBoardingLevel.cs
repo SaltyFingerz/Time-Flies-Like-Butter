@@ -19,4 +19,12 @@ public class OnBoardingLevel : MonoBehaviour
         Branch.GetComponent<Animator>().SetBool("Fall", false);
 
     }
+
+    private void Update()
+    {
+        if (PlayerMovement.rewind)
+        {
+           RewindBranch();
+        }
+    }
 }

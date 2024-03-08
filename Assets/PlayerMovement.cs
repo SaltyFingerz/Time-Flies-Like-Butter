@@ -241,8 +241,8 @@ public class PlayerMovement : MonoBehaviour
 
           //  RewindButton.SetActive(false);
         }
+        RewindState();
 
-    
 
     }
 
@@ -282,26 +282,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*  if (!mobile)
-          {
-              horizontal = Input.GetAxisRaw("Horizontal");
-              vertical = Input.GetAxisRaw("Vertical");
-
-          }*/
-
-
-        /*
-        if (transform.localScale.x == 1.00001f)
-        {
-            sprite.flipX = true;
-        }
-        else
-        {
-            sprite.flipX = false;
-        }
-        */
-
-
+        //IS THE BELOW TAKING TOO MUCH MEMORY?
         if(rewindMode == RewindMode.voidtime && rewind) 
         {
             GetComponent<SpriteRenderer>().material = voidMat;
@@ -327,16 +308,16 @@ public class PlayerMovement : MonoBehaviour
         
         StateCheck();
 
-        RewindState();
+       
 
-        if (rewind)
+    /*    if (rewind)
         {
             ReverseFlip();
         }
         else
-        {
+        { */
             Flip();
-        }
+       // }
 
         AdjustCameraSmoothTime();
        
@@ -406,10 +387,11 @@ public class PlayerMovement : MonoBehaviour
         {
             case LifeStage.caterpillar:
                 gameObject.layer = LayerMask.NameToLayer("Player");
+                gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.56f, 1.61f);
 
-                rb.gravityScale = 4f;
+                horizontal = SimpleInput.GetAxis("Horizontal");
+                vertical = SimpleInput.GetAxis("Vertical");
 
-                rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
                 Joystick.SetActive(false);
                 MovementButtons.SetActive(true);
                 JumpButton.SetActive(true);
@@ -480,7 +462,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
 
             case LifeStage.butterfly:
-
+                gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
                 rb.gravityScale = 0f;
                 rb.velocity = new Vector2(horizontal * speed, vertical * speed);
                 MovementButtons.SetActive(false);
@@ -500,7 +482,7 @@ public class PlayerMovement : MonoBehaviour
                 break;
 
             case LifeStage.ghostButterfly:
-
+                gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
                 rb.gravityScale = 0f;
                 rb.velocity = new Vector2(horizontal * speed, vertical * speed);
                 MovementButtons.SetActive(false);
@@ -530,33 +512,22 @@ public class PlayerMovement : MonoBehaviour
     {
         if (lifeStage == LifeStage.caterpillar)
         {
-            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.56f, 1.61f);
-            horizontal = SimpleInput.GetAxis("Horizontal");
-            vertical = SimpleInput.GetAxis("Vertical");
+
+            rb.gravityScale = 4f;
+            rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+
+         
         }
         if(lifeStage== LifeStage.butterfly || lifeStage == LifeStage.ghostButterfly)
         {
-            gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
+           
             rb.velocity = new Vector2(horizontal * speed, vertical * speed);
             horizontal = inputVector.x;
             vertical = inputVector.y;
         }
-        if(lifeStage == LifeStage.dead)
-        {
-            
-
-        }
 
         inputVector = inputActions.Player.Move.ReadValue<Vector2>();
-        
 
-
-
-        
-       
-
-       
-     
     }
 
     private bool isGrounded()
@@ -721,7 +692,9 @@ public class PlayerMovement : MonoBehaviour
         rewindManager.RestartTracking();
 
         RewindButton.SetActive(false);
-        print("setRewindPlayer");
+
+        GameObject.Find("Main Camera").GetComponent<WobbleEffectCam>().StopWobble();
+      
 
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -746,7 +719,7 @@ public class PlayerMovement : MonoBehaviour
 
             // KeyClock.SetActive(false);
 
-
+            RewindState();
         }
 
         else if (collision.CompareTag("EnviroRwPowerUp"))
@@ -768,7 +741,7 @@ public class PlayerMovement : MonoBehaviour
                 RewindButton.SetActive(true);
                 rewindMode = RewindMode.environment;
             }
-           
+            RewindState();
 
         }
 
@@ -800,7 +773,7 @@ public class PlayerMovement : MonoBehaviour
                 SetRewindPlayer();
               
             }
-
+            RewindState();
 
         }
 
@@ -819,6 +792,7 @@ public class PlayerMovement : MonoBehaviour
             rewindScript.EnableRewindAntiAging();
 
             rewindManager.RestartTracking();
+            RewindState();
         }
 
         else if (collision.CompareTag("Food"))
@@ -966,6 +940,16 @@ public class PlayerMovement : MonoBehaviour
         if (collision.name.Contains("Hop2"))
         {
             hop2 = false;
+        }
+
+        if (collision.name.Contains("Hop3"))
+        {
+            hop3 = false;
+        }
+
+        if (collision.name.Contains("Hop4"))
+        {
+            hop4 = false;
         }
     }
 

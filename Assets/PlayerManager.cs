@@ -121,6 +121,11 @@ public class PlayerManager : MonoBehaviour
                 gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
 
             }
+
+            PollenState();
+
+            var main = PollenPS.main;
+            main.startColor = PollenPScolor;
         }
 
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly)
@@ -135,6 +140,11 @@ public class PlayerManager : MonoBehaviour
             // gameObject.GetComponent<Animator>().runtimeAnimatorController = redButterflyAC;
             gameObject.GetComponent<Animator>().SetTrigger("RedFly");
             pollenColor = PollenColor.Red;
+
+            PollenState();
+
+            var main = PollenPS.main;
+            main.startColor = PollenPScolor;
         }
         else if (collision.gameObject.name.Contains("BlueGamet") && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
@@ -157,6 +167,11 @@ public class PlayerManager : MonoBehaviour
                 gameObject.GetComponent<Animator>().runtimeAnimatorController = blueAC;
 
             }
+
+            PollenState();
+
+            var main = PollenPS.main;
+            main.startColor = PollenPScolor;
         }
 
         else if (collision.gameObject.name.Contains("RedFlower") && (gameObject.GetComponent<Animator>().runtimeAnimatorController == redAC || pollenColor == PollenColor.Red))
@@ -176,7 +191,21 @@ public class PlayerManager : MonoBehaviour
 
         if (collision.gameObject.name.Contains("StamenRed") || collision.gameObject.name.Contains("StamenBlue"))
         {
-            currentPortal = collision.gameObject;
+            
+
+                if (collision.gameObject.CompareTag("Goal"))
+                {
+                    collision.gameObject.GetComponent<StamenScript>().LoadNextLevel();
+
+                }
+
+                if (!collision.gameObject.CompareTag("Goal"))
+                {
+                    transform.position = collision.gameObject.GetComponent<StamenScript>().GetDestination().position;
+                    collision.gameObject.GetComponent<StamenScript>().OpenDestination();
+                }
+            
+
 
         }
 
@@ -300,57 +329,7 @@ public class PlayerManager : MonoBehaviour
         
     }
 
-    private void Update()
-    {
-        var main = PollenPS.main;
-        main.startColor = PollenPScolor;
-
-
-
-
-        if (currentPortal != null)
-        {
-
-            if(currentPortal.CompareTag("Goal") )
-            {
-                currentPortal.GetComponent<StamenScript>().LoadNextLevel();
-              
-            }
-            print("not null");
-            if (!currentPortal.CompareTag("Goal"))
-            {
-                transform.position = currentPortal.GetComponent<StamenScript>().GetDestination().position;
-                currentPortal.GetComponent<StamenScript>().OpenDestination();
-            }
-        }
-
-       
-
-        PollenState();
-
-        if(SceneManager.GetActiveScene().name == "WeedingLevel")
-        {
-           if(PlayerMovement.rewind)
-            {
-                levelScript.GetComponent<WeedingLevelManager>().RewindFlowers();
-            }
-           else
-            {
-                levelScript.GetComponent<WeedingLevelManager>().ForwardFlowers();
-            }
-
-
-        }
-
-        else if (SceneManager.GetActiveScene().name == "Onboarding")
-        {
-            if(PlayerMovement.rewind)
-            {
-                levelScript.GetComponent<OnBoardingLevel>().RewindBranch();
-            }
-            
-        }
-    }
+   
 
    
 

@@ -35,7 +35,7 @@ public class HopAnimScript : MonoBehaviour
 
         
         
-            Player.transform.localScale = gameObject.transform.localScale;
+           // Player.transform.localScale = gameObject.transform.localScale;
         
         sprite.enabled = false;
         Player.GetComponent<SpriteRenderer>().enabled = true;
