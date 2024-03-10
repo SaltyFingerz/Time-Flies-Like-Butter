@@ -25007,7 +25007,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 1535946936, guid: fc1b3983f99cd9b4eaba4da980a47d15, type: 3}
+  m_Sprite: {fileID: -244230811, guid: 7b08fb44bac938647a05023916b6f4f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -25121,7 +25121,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 2.5537453, y: 3.1133332}
+    oldSize: {x: 4.515019, y: 1.4300001}
     newSize: {x: 2.5438662, y: 3.1100001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -25140,7 +25140,7 @@ Animator:
   m_GameObject: {fileID: 1082849669}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f70e83857818cfd478e5b599635385ad, type: 2}
+  m_Controller: {fileID: 9100000, guid: 36391bdb1841de741bbac0d249cadfff, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 1
   m_ApplyRootMotion: 0
@@ -44806,6 +44806,10 @@ PrefabInstance:
       propertyPath: _wobbleEffect
       value: 
       objectReference: {fileID: 519420036}
+    - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 12.000244
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
