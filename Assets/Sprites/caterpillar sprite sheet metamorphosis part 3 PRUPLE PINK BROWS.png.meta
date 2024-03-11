@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: 90c877370c57b5346b54bf4797a97ab5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8263
+        width: 2800
+        height: 2915
+      alignment: 9
+      pivot: {x: 0.49999982, y: -0.07857057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a956519474656da4296b2cc43a8e3c50
+      internalID: -188598908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_2
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 6490
+        width: 4844
+        height: 3667
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329df7af1e679664b8932fc443d30366
+      internalID: -779966699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_4
+      rect:
+        serializedVersion: 2
+        x: 8409
+        y: 6490
+        width: 3667
+        height: 3642
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1add640512788e4a87b83cd3787cdfe
+      internalID: -1699238998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_11
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 2609
+        width: 3667
+        height: 3634
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5431e59a575ad3445905672db92399ed
+      internalID: -212432986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_12
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 771
+        width: 4479
+        height: 3404
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fcbdcda95469148b1ded50b0e4a992
+      internalID: -1300549049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_1: -550595314
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_7: 1126805580
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_9: -227153989
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_10: 705183829
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_4: -1699238998
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_5: 1503023114
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_11: -212432986
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_2: -779966699
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_12: -1300549049
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_8: -1598046309
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_6: 1391612927
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_0: -188598908
+      caterpillar sprite sheet metamorphosis part 3 PRUPLE PINK BROWS_3: -503332460
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

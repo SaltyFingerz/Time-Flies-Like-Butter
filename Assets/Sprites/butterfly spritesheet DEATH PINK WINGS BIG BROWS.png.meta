@@ -1,0 +1,508 @@
+fileFormatVersion: 2
+guid: 2cfa1d818f941774d820fa647b0e3ee6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_0
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1677
+        width: 672
+        height: 562
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9872ae755fe0a649be646300f458ffe
+      internalID: -925000612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_1
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1757
+        width: 610
+        height: 452
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 564dd3e1d1c52b648a202f43f356190b
+      internalID: -844929557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_2
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 1764
+        width: 603
+        height: 379
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9876985f515757458a8658ea139e6c2
+      internalID: 922075546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_3
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 1785
+        width: 490
+        height: 306
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7f5a3fddddebd41869682e1eb03f1f
+      internalID: -2132750876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_4
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1000
+        width: 472
+        height: 305
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65be6ee2ef641ce46889fd86b994d06c
+      internalID: -489448715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_5
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1038
+        width: 425
+        height: 259
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4333d6bdb5dcbd40979b0edf7cd046c
+      internalID: -298197695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_6
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 1038
+        width: 277
+        height: 185
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52f78bddabd88e41a5403d304aea05a
+      internalID: 10710561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_7
+      rect:
+        serializedVersion: 2
+        x: 2924
+        y: 1029
+        width: 180
+        height: 180
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80167d53674e3b344a690aa70e7c14d4
+      internalID: 1875179098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_8
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 355
+        width: 176
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e8656514b5dc242b6f02b50e01b73b
+      internalID: 1268401008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_9
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 334
+        width: 175
+        height: 180
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb351c40753e1c478e1916480f8cbbf
+      internalID: -871212985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_10
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 334
+        width: 176
+        height: 175
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02368c8c80e3c98488cc0b6914552d82
+      internalID: -1396583615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_16
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 334
+        width: 175
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9290951b47f32469f68c33cfeec401
+      internalID: 184885744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_35
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 334
+        width: 228
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5bb37d97ae00141a2b71e1c597ed40
+      internalID: 1829603916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_39
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 317
+        width: 218
+        height: 105
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7551e8cb2c345c34188deba56d4e6faf
+      internalID: -1270752558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH PINK WINGS BIG BROWS_53
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 319
+        width: 232
+        height: 104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b064ebe7359fc241aa0207d9f5e01de
+      internalID: -116935718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_39: -1270752558
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_49: 341412749
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_19: -676832146
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_29: 1863142698
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_53: -116935718
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_8: 1268401008
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_21: -845661019
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_42: 1103586646
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_46: -2032444399
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_56: -1881469719
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_24: -880153447
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_10: -1396583615
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_27: 1943579737
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_38: 1384338252
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_32: -1063877053
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_14: -1272118292
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_13: 1494981545
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_18: -434560851
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_52: -1024203251
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_4: -489448715
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_23: 246640644
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_35: 1829603916
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_11: 331980856
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_33: 2103680446
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_45: -9456132
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_54: 241562005
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_41: 431053087
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_3: -2132750876
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_48: 1918081326
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_51: 443441380
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_12: 628464316
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_44: 511240928
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_43: -444097129
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_40: -892008178
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_0: -925000612
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_6: 10710561
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_7: 1875179098
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_5: -298197695
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_1: -844929557
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_20: -1199529110
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_30: 404506953
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_50: -1579969655
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_16: 184885744
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_15: -623044937
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_28: 1692000957
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_25: -721497488
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_9: -871212985
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_17: -1668807917
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_31: 1370203095
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_26: -2053969707
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_36: 165512097
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_37: 796743930
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_2: 922075546
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_55: -1330162422
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_47: 592948638
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_22: -1295247639
+      butterfly spritesheet DEATH PINK WINGS BIG BROWS_34: -1953124187
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

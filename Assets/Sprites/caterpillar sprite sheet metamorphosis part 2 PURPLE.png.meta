@@ -1,0 +1,422 @@
+fileFormatVersion: 2
+guid: d5208abff8aa4f841a96396922dd85b4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 400
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_0
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 5527
+        width: 1117
+        height: 2086
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8044069b2e70d554cadbba4c66554ee0
+      internalID: -296256336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_1
+      rect:
+        serializedVersion: 2
+        x: 2046
+        y: 5527
+        width: 1117
+        height: 2086
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee1b2cb9e3248749ba9a9d5c89d30ab
+      internalID: -1674043653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_2
+      rect:
+        serializedVersion: 2
+        x: 3665
+        y: 5527
+        width: 1117
+        height: 2086
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fefed0dbd5847a40aefa2378af7bd5a
+      internalID: -1183100514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_3
+      rect:
+        serializedVersion: 2
+        x: 5226
+        y: 5527
+        width: 1114
+        height: 2086
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf46602db38e5a64990b64df5436ae93
+      internalID: -1414037492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_4
+      rect:
+        serializedVersion: 2
+        x: 6735
+        y: 5527
+        width: 1118
+        height: 2090
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961b0931a1971da40bca3bd55026c525
+      internalID: 1809653394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_5
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 2812
+        width: 1118
+        height: 2086
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb3cfe033fdd7546a11f919ba84cc9b
+      internalID: -238038956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_6
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 2847
+        width: 1118
+        height: 2081
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed8364cdecd6dc4c97b3fc3bbfd4305
+      internalID: 1449647183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_7
+      rect:
+        serializedVersion: 2
+        x: 3669
+        y: 2825
+        width: 1118
+        height: 2103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4956d78680c28054c8d272e8b5dc2a2d
+      internalID: -199626741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_8
+      rect:
+        serializedVersion: 2
+        x: 5226
+        y: 2825
+        width: 1180
+        height: 2103
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96f4ab46dcf6664fad0462b3a8397e1
+      internalID: -1006512641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_9
+      rect:
+        serializedVersion: 2
+        x: 5785
+        y: 123
+        width: 1984
+        height: 2728
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a0805df5c8349a449495c8878ee3947
+      internalID: 1307758002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_10
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 123
+        width: 1117
+        height: 2104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b742eec52b3a9d6419fbc03ed5435472
+      internalID: -2037856507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_11
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 123
+        width: 1319
+        height: 2104
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cf8ff9b97e25343b4af92a80eebdf7
+      internalID: 1400632973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 2 PURPLE_12
+      rect:
+        serializedVersion: 2
+        x: 3616
+        y: 123
+        width: 1514
+        height: 2240
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9762dbab4cb181c42a608944eaa18450
+      internalID: 973256109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_2: -1183100514
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_12: 973256109
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_6: 1449647183
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_3: -1414037492
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_1: -1674043653
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_7: -199626741
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_5: -238038956
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_0: -296256336
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_8: -1006512641
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_4: 1809653394
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_9: 1307758002
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_10: -2037856507
+      caterpillar sprite sheet metamorphosis part 2 PURPLE_11: 1400632973
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
