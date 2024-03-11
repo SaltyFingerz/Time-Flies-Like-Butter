@@ -10788,8 +10788,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.757, y: -47.34969}
-  m_SizeDelta: {x: 389.0476, y: 133.4571}
+  m_AnchoredPosition: {x: -26.793114, y: -47.34969}
+  m_SizeDelta: {x: 429.2888, y: 133.4571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1070776301
 MonoBehaviour:
@@ -10811,7 +10811,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Is the parasite of a parasite a symbiote?
+  m_text: '"I''ll do the gardening later"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}
   m_sharedMaterial: {fileID: 359490269132846117, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}
