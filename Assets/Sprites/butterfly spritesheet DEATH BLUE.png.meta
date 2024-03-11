@@ -1,0 +1,508 @@
+fileFormatVersion: 2
+guid: b8961b8339681d54ea7d0cb34540e62c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_0
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1677
+        width: 672
+        height: 539
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7967492c48f070a49ada8abfdcc39793
+      internalID: -1921038193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_1
+      rect:
+        serializedVersion: 2
+        x: 1240
+        y: 1757
+        width: 610
+        height: 440
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c517a1e1bfd2cb34790bc87903633921
+      internalID: 998523516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_2
+      rect:
+        serializedVersion: 2
+        x: 2033
+        y: 1764
+        width: 603
+        height: 379
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a54b7fba4062147b7e68a06ff2032f
+      internalID: -1767049819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_3
+      rect:
+        serializedVersion: 2
+        x: 2871
+        y: 1785
+        width: 469
+        height: 306
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caee932f72abf754ca97ea13eb8bb098
+      internalID: 1654902633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_4
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 1000
+        width: 472
+        height: 305
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa029dbcf173619498b4326fe9978952
+      internalID: -749063905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_5
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1038
+        width: 414
+        height: 259
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af0bf3caa195e1845adfd27c08a4f39a
+      internalID: -1836011959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_6
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 1038
+        width: 277
+        height: 185
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d37858ec48cefd4da35ae4a9571f236
+      internalID: 1685630343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_7
+      rect:
+        serializedVersion: 2
+        x: 2924
+        y: 1029
+        width: 175
+        height: 180
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a63997cef73fc4ea7398c10e42dc06
+      internalID: 1288948786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_8
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 355
+        width: 176
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03e271c8aaabf644b58d8c38df35d86
+      internalID: 802345051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_9
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 334
+        width: 175
+        height: 180
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31057d95696a4014d95625e83d67d500
+      internalID: -522676893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_10
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 335
+        width: 176
+        height: 179
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3c9fb490bbf844e8908af93941939a
+      internalID: 294063136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_16
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 334
+        width: 173
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd0989ec9ae1ac489b8cc9623abfa20
+      internalID: 1808736922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_35
+      rect:
+        serializedVersion: 2
+        x: 2583
+        y: 334
+        width: 216
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065880f86121ab545a11b1f3fa87437c
+      internalID: -227528656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_39
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 317
+        width: 220
+        height: 115
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f5064bdb9617646a2c41a71fbcf45b
+      internalID: 1903491706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: butterfly spritesheet DEATH BLUE_56
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 308
+        width: 217
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c67546f453c28e4ca9a70f1de93ff03
+      internalID: 385054994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      butterfly spritesheet DEATH BLUE_24: 136577426
+      butterfly spritesheet DEATH BLUE_28: 1141608439
+      butterfly spritesheet DEATH BLUE_29: -149112028
+      butterfly spritesheet DEATH BLUE_19: 1379887948
+      butterfly spritesheet DEATH BLUE_43: -443291504
+      butterfly spritesheet DEATH BLUE_39: 1903491706
+      butterfly spritesheet DEATH BLUE_11: -441282984
+      butterfly spritesheet DEATH BLUE_49: 193417420
+      butterfly spritesheet DEATH BLUE_13: 821270390
+      butterfly spritesheet DEATH BLUE_2: -1767049819
+      butterfly spritesheet DEATH BLUE_34: 1445480308
+      butterfly spritesheet DEATH BLUE_16: 1808736922
+      butterfly spritesheet DEATH BLUE_32: -1904396604
+      butterfly spritesheet DEATH BLUE_45: 1555621408
+      butterfly spritesheet DEATH BLUE_12: -508896031
+      butterfly spritesheet DEATH BLUE_0: -1921038193
+      butterfly spritesheet DEATH BLUE_9: -522676893
+      butterfly spritesheet DEATH BLUE_38: -633181600
+      butterfly spritesheet DEATH BLUE_30: -1728032005
+      butterfly spritesheet DEATH BLUE_25: -924120659
+      butterfly spritesheet DEATH BLUE_15: 1784096390
+      butterfly spritesheet DEATH BLUE_22: 882751520
+      butterfly spritesheet DEATH BLUE_14: -990939620
+      butterfly spritesheet DEATH BLUE_35: -227528656
+      butterfly spritesheet DEATH BLUE_31: 1936707717
+      butterfly spritesheet DEATH BLUE_53: -1877814058
+      butterfly spritesheet DEATH BLUE_1: 998523516
+      butterfly spritesheet DEATH BLUE_33: -720321942
+      butterfly spritesheet DEATH BLUE_55: 119951452
+      butterfly spritesheet DEATH BLUE_41: 1175530619
+      butterfly spritesheet DEATH BLUE_17: -1449996733
+      butterfly spritesheet DEATH BLUE_48: 1955076268
+      butterfly spritesheet DEATH BLUE_8: 802345051
+      butterfly spritesheet DEATH BLUE_7: 1288948786
+      butterfly spritesheet DEATH BLUE_27: -1578752217
+      butterfly spritesheet DEATH BLUE_44: -885086806
+      butterfly spritesheet DEATH BLUE_54: -1539933310
+      butterfly spritesheet DEATH BLUE_23: -1812946003
+      butterfly spritesheet DEATH BLUE_47: 586347271
+      butterfly spritesheet DEATH BLUE_6: 1685630343
+      butterfly spritesheet DEATH BLUE_5: -1836011959
+      butterfly spritesheet DEATH BLUE_18: -604116034
+      butterfly spritesheet DEATH BLUE_50: 248886652
+      butterfly spritesheet DEATH BLUE_51: 1662452232
+      butterfly spritesheet DEATH BLUE_56: 385054994
+      butterfly spritesheet DEATH BLUE_21: 2119542989
+      butterfly spritesheet DEATH BLUE_10: 294063136
+      butterfly spritesheet DEATH BLUE_3: 1654902633
+      butterfly spritesheet DEATH BLUE_42: -2134616097
+      butterfly spritesheet DEATH BLUE_37: 857482257
+      butterfly spritesheet DEATH BLUE_26: -145842371
+      butterfly spritesheet DEATH BLUE_46: 2023905014
+      butterfly spritesheet DEATH BLUE_52: 758099993
+      butterfly spritesheet DEATH BLUE_4: -749063905
+      butterfly spritesheet DEATH BLUE_36: 1950605208
+      butterfly spritesheet DEATH BLUE_40: -995965266
+      butterfly spritesheet DEATH BLUE_20: -949706313
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,490 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_0
+      rect:
+        serializedVersion: 2
+        x: 3791
+        y: 9444
+        width: 28
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a448bb50dbab4f647b8ae6b0d75e6683
+      internalID: 757023753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_1
+      rect:
+        serializedVersion: 2
+        x: 2203
+        y: 8507
+        width: 1709
+        height: 572
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6016bdac6055c41915ab60dbd4b575
+      internalID: -269429768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_2
+      rect:
+        serializedVersion: 2
+        x: 4466
+        y: 8571
+        width: 1773
+        height: 605
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44d2f894ff9e124283f4b5433e12651
+      internalID: -1655014678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_3
+      rect:
+        serializedVersion: 2
+        x: 7093
+        y: 8571
+        width: 1737
+        height: 753
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfb9950c761d9f40bb3d4d4f7f77d20
+      internalID: -577380689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_5
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 6918
+        width: 1593
+        height: 928
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa64e0d012e7d5b47a4389edffd9945c
+      internalID: -1221795457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_7
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 6918
+        width: 1400
+        height: 1062
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deabb5306a66d854dab9b304a42b463f
+      internalID: 1828774588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_8
+      rect:
+        serializedVersion: 2
+        x: 4729
+        y: 6918
+        width: 1178
+        height: 1224
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276d43d24b31e4d4a8f0ee50d61e98a3
+      internalID: 1706911121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_9
+      rect:
+        serializedVersion: 2
+        x: 6613
+        y: 6918
+        width: 1224
+        height: 1210
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621d816aeb73afd4d8eabf33d046a2b3
+      internalID: 538597748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_10
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 5246
+        width: 1205
+        height: 1215
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d53dc3550f27a142aa456d6854d00ed
+      internalID: 1514967946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_11
+      rect:
+        serializedVersion: 2
+        x: 2632
+        y: 5246
+        width: 1206
+        height: 1215
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8718ce80f9cdfed4992e319afa96e69e
+      internalID: 1219247989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_12
+      rect:
+        serializedVersion: 2
+        x: 4614
+        y: 5246
+        width: 1205
+        height: 1224
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b33d0f681fb21f489826c89226bea8a
+      internalID: -1549218328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_13
+      rect:
+        serializedVersion: 2
+        x: 6567
+        y: 5246
+        width: 1205
+        height: 1243
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac1211c2c1dd3b40abd53c710fced33
+      internalID: -316269809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_14
+      rect:
+        serializedVersion: 2
+        x: 7782
+        y: 3339
+        width: 1108
+        height: 2161
+      alignment: 9
+      pivot: {x: 0.5018923, y: 0.039812434}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8c1cf4995ce35489328a9b2f943af5
+      internalID: -2110688356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_15
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 3348
+        width: 1413
+        height: 1427
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa72c547a3e19c04e8db76c7b631381c
+      internalID: -48847147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_16
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 3336
+        width: 1417
+        height: 1735
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080489e68a2ebb045b75365ceaf05c8b
+      internalID: -112760393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_17
+      rect:
+        serializedVersion: 2
+        x: 4456
+        y: 3404
+        width: 1243
+        height: 1713
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e93beee43773034b946e675869894f0
+      internalID: -808201238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_19
+      rect:
+        serializedVersion: 2
+        x: 5990
+        y: 3210
+        width: 1131
+        height: 1953
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217789326f0b2d647be7940d566e0aa2
+      internalID: -2042136326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_26
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 208
+        width: 1113
+        height: 2193
+      alignment: 9
+      pivot: {x: 0.49760938, y: 0.048531745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27ba87f9444c5f41be08b48009b19ba
+      internalID: -878460474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_27
+      rect:
+        serializedVersion: 2
+        x: 2203
+        y: 208
+        width: 1113
+        height: 2193
+      alignment: 9
+      pivot: {x: 0.4904375, y: 0.047318444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872a9f3b31c270e449592e5ed653624f
+      internalID: -1495471822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_28
+      rect:
+        serializedVersion: 2
+        x: 3787
+        y: 208
+        width: 1113
+        height: 2193
+      alignment: 9
+      pivot: {x: 0.504781, y: 0.047318444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285cabce5e79903428a529b9d44f8ef0
+      internalID: -97526160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_29
+      rect:
+        serializedVersion: 2
+        x: 5158
+        y: 207
+        width: 1113
+        height: 2194
+      alignment: 9
+      pivot: {x: 0.4904375, y: 0.04729671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef73f126d484efc4cbee484703903095
+      internalID: -1351824441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_30
+      rect:
+        serializedVersion: 2
+        x: 6539
+        y: 208
+        width: 1118
+        height: 2193
+      alignment: 9
+      pivot: {x: 0.5046413, y: 0.049679082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7488efcd1ea796041b6a10aab19e967b
+      internalID: 495132860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar coccoon Blue_31
+      rect:
+        serializedVersion: 2
+        x: 7837
+        y: 208
+        width: 1113
+        height: 2193
+      alignment: 9
+      pivot: {x: 0.49844697, y: 0.048890524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76fb461c1e613a4490c75004687b0c1
+      internalID: 518297866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +611,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      caterpillar coccoon Blue_29: -1351824441
+      caterpillar coccoon Blue_7: 1828774588
+      caterpillar coccoon Blue_1: -269429768
+      caterpillar coccoon Blue_20: -1657440997
+      caterpillar coccoon Blue_0: 757023753
+      caterpillar coccoon Blue_2: -1655014678
+      caterpillar coccoon Blue_19: -2042136326
+      caterpillar coccoon Blue_23: -730616582
+      caterpillar coccoon Blue_16: -112760393
+      caterpillar coccoon Blue_4: 325190855
+      caterpillar coccoon Blue_11: 1219247989
+      caterpillar coccoon Blue_18: -564743143
+      caterpillar coccoon Blue_13: -316269809
+      caterpillar coccoon Blue_8: 1706911121
+      caterpillar coccoon Blue_3: -577380689
+      caterpillar coccoon Blue_31: 518297866
+      caterpillar coccoon Blue_28: -97526160
+      caterpillar coccoon Blue_15: -48847147
+      caterpillar coccoon Blue_21: 1365823383
+      caterpillar coccoon Blue_26: -878460474
+      caterpillar coccoon Blue_14: -2110688356
+      caterpillar coccoon Blue_17: -808201238
+      caterpillar coccoon Blue_25: -911735235
+      caterpillar coccoon Blue_22: 234201483
+      caterpillar coccoon Blue_5: -1221795457
+      caterpillar coccoon Blue_30: 495132860
+      caterpillar coccoon Blue_9: 538597748
+      caterpillar coccoon Blue_6: -1745970391
+      caterpillar coccoon Blue_27: -1495471822
+      caterpillar coccoon Blue_24: 2047962580
+      caterpillar coccoon Blue_10: 1514967946
+      caterpillar coccoon Blue_12: -1549218328
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 

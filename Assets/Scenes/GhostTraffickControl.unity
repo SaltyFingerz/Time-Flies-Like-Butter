@@ -25113,7 +25113,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1082849669}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a081f785d315a2b43966f129ce852878, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -25121,7 +25121,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 4.515019, y: 1.4300001}
+    oldSize: {x: 2.6804323, y: 2.7266667}
     newSize: {x: 2.5438662, y: 3.1100001}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

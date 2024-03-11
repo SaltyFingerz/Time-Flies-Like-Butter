@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 600
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,7 +117,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 Blue_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8263
+        width: 2800
+        height: 2924
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac964c18c9793f4e87cff6ed69aa96e
+      internalID: 1871803281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 Blue_2
+      rect:
+        serializedVersion: 2
+        x: 3515
+        y: 6487
+        width: 4257
+        height: 3665
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d6d87c7933eb742a4f1b2f00b6ed84
+      internalID: -942669249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 Blue_4
+      rect:
+        serializedVersion: 2
+        x: 8409
+        y: 6490
+        width: 3667
+        height: 3642
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401c91595a06f3b4cb8573a2ec652a9f
+      internalID: 1578282915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 Blue_11
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 2609
+        width: 3667
+        height: 3634
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3310a750ac6264380826bbd7c3c4d6
+      internalID: 1478693532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: caterpillar sprite sheet metamorphosis part 3 Blue_12
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 771
+        width: 4479
+        height: 3388
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71451b443a14ea14c892fe1bac0785d2
+      internalID: 1081665630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -128,7 +233,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      caterpillar sprite sheet metamorphosis part 3 Blue_12: 1081665630
+      caterpillar sprite sheet metamorphosis part 3 Blue_11: 1478693532
+      caterpillar sprite sheet metamorphosis part 3 Blue_4: 1578282915
+      caterpillar sprite sheet metamorphosis part 3 Blue_6: 872233435
+      caterpillar sprite sheet metamorphosis part 3 Blue_8: 977274931
+      caterpillar sprite sheet metamorphosis part 3 Blue_9: 1680561466
+      caterpillar sprite sheet metamorphosis part 3 Blue_5: -1094357173
+      caterpillar sprite sheet metamorphosis part 3 Blue_0: 1871803281
+      caterpillar sprite sheet metamorphosis part 3 Blue_1: 612060769
+      caterpillar sprite sheet metamorphosis part 3 Blue_3: -1069873290
+      caterpillar sprite sheet metamorphosis part 3 Blue_10: -1015060006
+      caterpillar sprite sheet metamorphosis part 3 Blue_2: -942669249
+      caterpillar sprite sheet metamorphosis part 3 Blue_7: 1881685650
   spritePackingTag: 
   pSDRemoveMatte: 0
   userData: 
