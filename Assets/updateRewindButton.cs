@@ -31,6 +31,7 @@ public class updateRewindButton : MonoBehaviour
             gameObject.transform.Rotate(5 * direction * Time.deltaTime);
             _wobbleEffect.StartWobble();
             rewindSound.Play();
+           
 
         }
         else
@@ -39,6 +40,7 @@ public class updateRewindButton : MonoBehaviour
           transform.rotation = Quaternion.identity;
             _wobbleEffect.StopWobble();
             rewindSound.Stop();
+          
         }
 
         
@@ -61,6 +63,7 @@ public class updateRewindButton : MonoBehaviour
            
             _wobbleEffect.StartWobble();
             rewindSound.Play();
+            GameObject.Find("Audio Manager").GetComponent<AudioSource>().Pause();
             print("wobble");
         }
     }
@@ -80,6 +83,7 @@ public class updateRewindButton : MonoBehaviour
            
             _wobbleEffect.StopWobble();
             rewindSound.Stop();
+            GameObject.Find("Audio Manager").GetComponent<AudioSource>().Play();
         }
     }
 

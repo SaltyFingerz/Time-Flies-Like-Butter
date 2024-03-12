@@ -12713,7 +12713,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 14.766666, y: 11.3}
+    oldSize: {x: 15.183952, y: 11.6}
     newSize: {x: 15.183952, y: 11.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -12739,7 +12739,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 14.766666, y: 11.3}
+    oldSize: {x: 15.183952, y: 11.6}
     newSize: {x: 15.183952, y: 11.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -12868,7 +12868,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 14.766666, y: 11.3}
+    oldSize: {x: 15.183952, y: 11.6}
     newSize: {x: 15.183952, y: 11.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -18110,7 +18110,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 30.5625
+  orthographic size: 17.59375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -24241,7 +24241,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.35
+  m_Intensity: 0.45
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -44721,6 +44721,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1714506454934709998, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 236.40002
+      objectReference: {fileID: 0}
     - target: {fileID: 2726013000778519043, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_Name
       value: Canvas For Buttons

@@ -45,6 +45,8 @@ public class RewindByKeyPress : MonoBehaviour
             {
                 RewindManager.Instance.StartRewindTimeBySeconds(rewindValue);
                 rewindSound.Play();
+                GameObject.Find("Audio Manager").GetComponent<AudioSource>().Pause();
+
             }
             else
             {
@@ -59,6 +61,7 @@ public class RewindByKeyPress : MonoBehaviour
             {
                 RewindManager.Instance.StopRewindTimeBySeconds();
                 rewindSound.Stop();
+                GameObject.Find("Audio Manager").GetComponent<AudioSource>().Play();
                 rewindValue = 0;
                 isRewinding = false;
             }

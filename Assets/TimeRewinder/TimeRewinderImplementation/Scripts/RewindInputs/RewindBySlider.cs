@@ -125,6 +125,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
             }
             _wobbleEffect.StopWobble();
             rewindSound.Stop();
+            GameObject.Find("Audio Manager").GetComponent<AudioSource>().Play();
             print("onslider up");
         }
     }
@@ -139,6 +140,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
             //
             _wobbleEffect.StartWobble();
             rewindSound.Play();
+            GameObject.Find("Audio Manager").GetComponent<AudioSource>().Pause();
         }
     }
     private void SetNormalSpeed()
