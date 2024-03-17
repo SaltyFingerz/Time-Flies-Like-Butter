@@ -8223,6 +8223,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1714506454934709998, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 236.39996
+      objectReference: {fileID: 0}
     - target: {fileID: 2726013000778519043, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_Name
       value: Canvas For Buttons
@@ -34726,8 +34730,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2098098406}
   - component: {fileID: 2098098405}
-  - component: {fileID: 2098098404}
-  - component: {fileID: 2098098403}
   - component: {fileID: 2098098407}
   m_Layer: 0
   m_Name: Blinds
@@ -34736,38 +34738,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2098098403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098098402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a616d13d525ec644ad50be90296f292, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &2098098404
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098098402}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 192342d49cd1d5741bd22ce89c1cd201, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &2098098405
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 56457bed2a137594aad4bfc7162c4cb9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: level selection map assets_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2201
+        width: 223
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423a9088a4a1e4b4280b898817f547ee
+      internalID: -1191809339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_1
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 2193
+        width: 235
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910e480b6b7b63143a89e685aea3c114
+      internalID: 271974286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_2
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2222
+        width: 58
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e556671194b22e44e8db06e665b4796e
+      internalID: 226214207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_3
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 2165
+        width: 229
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a5bcec1535f164695992e60782fb4b
+      internalID: 1467327007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1778
+        width: 120
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dec96f6ddaed5442ba40daa2fbfcaa1
+      internalID: 2111356515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_9
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 1744
+        width: 136
+        height: 351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e95b70b3add3b4dae98f8d616e2635
+      internalID: -1807173461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_10
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 1649
+        width: 210
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229638a70436eb84b8be40500719a6c7
+      internalID: -959078635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_12
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1816
+        width: 259
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3193d5df8e89034b8d7bfd69fcb4f2a
+      internalID: -2052522590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1543
+        width: 183
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3880653c2149cd04ebe35d6d2d5a41a7
+      internalID: -1702457071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_16
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 1240
+        width: 530
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36799906afecb724b818c926aa622fb7
+      internalID: 2024243072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_17
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1086
+        width: 359
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4fdce3dd501fb42a174bd5824a3d4b
+      internalID: 513474150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_18
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 1167
+        width: 96
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bf46a32a8b4bd45abbdeb2dbde1cd0
+      internalID: -1911302590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_19
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 831
+        width: 241
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227eda809862e9f41b62262152ed5c61
+      internalID: 1499325771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_23
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 852
+        width: 293
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e6977259a02474dbb8193f418b79ba
+      internalID: 1930985368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_28
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 446
+        width: 368
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b191511184552048b78a960be251df4
+      internalID: 1920096928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_30
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 569
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa817525088c10458d06b786b76a0e8
+      internalID: 10285629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_32
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 499
+        width: 196
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2048aaccfad96fb478740762e1b5d714
+      internalID: -541493344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_39
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 151
+        width: 213
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73dc0b95ac8f802428122f863353af17
+      internalID: -1739792912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_40
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 136
+        width: 281
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975d0915eb210764faa29e66b0b84ea7
+      internalID: 659973563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: level selection map assets_41
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 156
+        width: 265
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f04402dd5b08940aaa957b30a0c4cc
+      internalID: 850453137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      level selection map assets_4: 2111356515
+      level selection map assets_31: -499891345
+      level selection map assets_28: 1920096928
+      level selection map assets_40: 659973563
+      level selection map assets_30: 10285629
+      level selection map assets_8: -1665167166
+      level selection map assets_14: -2036697031
+      level selection map assets_37: -883519905
+      level selection map assets_7: 242013911
+      level selection map assets_15: -1702457071
+      level selection map assets_6: 604412352
+      level selection map assets_23: 1930985368
+      level selection map assets_19: 1499325771
+      level selection map assets_36: -1098175729
+      level selection map assets_33: 1284662321
+      level selection map assets_12: -2052522590
+      level selection map assets_10: -959078635
+      level selection map assets_11: -792944859
+      level selection map assets_13: 1312973984
+      level selection map assets_17: 513474150
+      level selection map assets_20: -1685364370
+      level selection map assets_27: 1177680045
+      level selection map assets_26: -742877853
+      level selection map assets_18: -1911302590
+      level selection map assets_1: 271974286
+      level selection map assets_9: -1807173461
+      level selection map assets_29: -573597291
+      level selection map assets_25: 649280589
+      level selection map assets_34: -138120185
+      level selection map assets_3: 1467327007
+      level selection map assets_21: -469557499
+      level selection map assets_22: -1530973587
+      level selection map assets_16: 2024243072
+      level selection map assets_38: 1511522517
+      level selection map assets_35: 1395737196
+      level selection map assets_2: 226214207
+      level selection map assets_0: -1191809339
+      level selection map assets_5: -497326230
+      level selection map assets_32: -541493344
+      level selection map assets_41: 850453137
+      level selection map assets_39: -1739792912
+      level selection map assets_24: -2028966355
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

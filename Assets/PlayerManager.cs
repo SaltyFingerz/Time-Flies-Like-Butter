@@ -229,7 +229,7 @@ public class PlayerManager : MonoBehaviour
             fanOn = false;
         }
 
-        if (collision.gameObject.name.Contains("Handle"))
+        if (collision.gameObject.name.Contains("BlindsHandle"))
         {
             closeBlind = true;
         }

@@ -11,12 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SimpleTpLevel.unity
     guid: 70c2225ec0642f74ea4e6338ca205d6f
-  - enabled: 0
-    path: Assets/Scenes/LevelMenu.unity
-    guid: 7251e37007d42354c98a8e43b92189a0
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/WeedingLevel.unity
     guid: af840d8c14db95a449221860c9d46919
@@ -50,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RamSeasaw.unity
     guid: 9bc519e5e96035343885849589d4b808
+  - enabled: 1
+    path: Assets/Scenes/LevelSelectMap.unity
+    guid: 195197938a212b04d8d0b2ee08ac8450
   m_configObjects: {}

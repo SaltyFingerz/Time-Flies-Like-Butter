@@ -23,6 +23,8 @@ public class SingingSwan : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        if (GameObject.Find("Audio Manager") != null)
+        GameObject.Find("Audio Manager").GetComponent<AudioSource>().Stop();
         audio = GetComponent<AudioSource>();
         // ac = GetComponent<AudioClip>(); 
         audio.Play();
