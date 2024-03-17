@@ -27,6 +27,7 @@ public class SadElfScript : MonoBehaviour
 
     IEnumerator StopTearsCoroutine()
     {
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex + 1);
         tears.Stop();
         yield return new WaitForSeconds(1f);
         splash.SetActive(false);

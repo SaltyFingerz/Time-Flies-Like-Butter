@@ -70,6 +70,7 @@ public class SeasawScript : MonoBehaviour
             yield return null;
             }
         RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex + 1);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 

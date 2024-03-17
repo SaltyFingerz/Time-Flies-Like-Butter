@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 public class HarvesterScript : MonoBehaviour
 {
     [SerializeField] private GameObject Fruit;
-  
+ 
+
+    private void Start()
+    {
+      
+    }
+
     public void TakeFruit()
     {
         Fruit.SetActive(false);
@@ -19,6 +25,7 @@ public class HarvesterScript : MonoBehaviour
 
     IEnumerator WaitToLoadNextScene()
     {
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex+1);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
