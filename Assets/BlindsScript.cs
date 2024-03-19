@@ -5,11 +5,13 @@ using UnityEngine;
 public class BlindsScript : MonoBehaviour
 {
     private Animator anim;
+    AudioSource aS;
     // Start is called before the first frame update
     void Start()
     {
      anim = GetComponent<Animator>();
         anim.SetBool("Close", false);
+        aS = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -17,5 +19,10 @@ public class BlindsScript : MonoBehaviour
     {
         if(PlayerManager.closeBlind)
         { anim.SetBool("Close", true); }
+    }
+
+    public void PlayCLosingSound()
+    {
+        aS.Play();
     }
 }

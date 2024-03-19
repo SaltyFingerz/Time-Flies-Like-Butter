@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class HarvesterScript : MonoBehaviour
 {
     [SerializeField] private GameObject Fruit;
+    private AudioSource aS;
  
 
     private void Start()
     {
-      
+      aS = GetComponent<AudioSource>();
     }
 
     public void TakeFruit()
@@ -41,7 +42,11 @@ public class HarvesterScript : MonoBehaviour
 
     IEnumerator AttractHarvester()
     {
+        print("NOW");
+        aS.Play();
         yield return new WaitForSeconds(1.5f);
         gameObject.GetComponent<Animator>().SetTrigger("Harvest");
+       
+
     }
 }

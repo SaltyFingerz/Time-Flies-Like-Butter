@@ -6,11 +6,13 @@ public class ExampleButterfly : MonoBehaviour
 {
     [SerializeField] private GameObject gamets;
     [SerializeField] private GameObject stamen;
+    private AudioSource aS;
     private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
      anim = GetComponent<Animator>();   
+        aS = GetComponent<AudioSource>();
     }
     public void StartPollination()
     {
@@ -19,6 +21,7 @@ public class ExampleButterfly : MonoBehaviour
 
     public void AcquirePollenEvent()
     {
+        aS.Play();
         gamets.GetComponent<Animator>().SetTrigger("Jiggle");
         anim.ResetTrigger("Pollinate");
     }

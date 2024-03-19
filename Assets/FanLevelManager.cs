@@ -10,11 +10,12 @@ public class FanLevelManager : MonoBehaviour
     [SerializeField] private GameObject Hopper;
     [SerializeField] private GameObject Love;
     [SerializeField] private GameObject Thoughts;
+    AudioSource aS;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        aS = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -64,6 +65,8 @@ public class FanLevelManager : MonoBehaviour
 
     IEnumerator waitToLoadLevel()
     {
+        if(!aS.isPlaying) 
+        aS.Play();
         PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex + 1);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

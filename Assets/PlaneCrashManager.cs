@@ -16,6 +16,12 @@ public class PlaneCrashManager : MonoBehaviour
     [SerializeField] private GameObject FireLeft;
     [SerializeField] private Camera cam;
 
+    [SerializeField] private AudioSource fireSFX;
+    [SerializeField] private AudioSource aS;
+
+    [SerializeField] private AudioClip MayDay;
+    [SerializeField] private AudioClip Evasion;
+
     public CustomCameraShaker camShake;
     // Start is called before the first frame update
 
@@ -37,6 +43,17 @@ public class PlaneCrashManager : MonoBehaviour
             FireLeft.SetActive(true);
         }
     }
+
+    public void PlayMayDay()
+    {
+        aS.PlayOneShot(MayDay);
+    }
+
+    public void PlayEvasion()
+    {
+        aS.PlayOneShot(Evasion);
+    }
+
     public void PlayImpactEffect()
     {
         StartCoroutine(camShake.Shake(0.15f,0.4f));
@@ -47,6 +64,7 @@ public class PlaneCrashManager : MonoBehaviour
 
         SmokeLeft.GetComponent<VisualEffect>().Play();
         FireLeft.GetComponent<VisualEffect>().Play();
+        fireSFX.Play();
       
     }
 

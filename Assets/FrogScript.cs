@@ -11,11 +11,13 @@ public class FrogScript : MonoBehaviour
     private Rigidbody2D rb;
     bool inLight = false;
     [SerializeField] private ParticleSystem sleep;
+    private AudioSource aS;
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         rb = gameObject.GetComponent<Rigidbody2D>();
+        aS = gameObject.GetComponent<AudioSource>();    
        
     }
 
@@ -65,7 +67,7 @@ public class FrogScript : MonoBehaviour
     public void EatingEvent()
     {
         if (canEat)
-        {
+        {aS.Play();
             Player.SetActive(false);
             canEat = false;
             StartCoroutine(EatCooldown());

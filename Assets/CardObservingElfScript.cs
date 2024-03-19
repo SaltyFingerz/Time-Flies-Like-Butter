@@ -5,6 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class CardObservingElfScript : MonoBehaviour
 {
+    AudioSource aS;
+
+    private void Start()
+    {
+        aS = GetComponent<AudioSource>();
+    }
+
+    public void PlaySound()
+    {
+        aS.Play();
+    }
     public void LoadNextScene()
     {
         StartCoroutine(WaitToLoadNextScene());

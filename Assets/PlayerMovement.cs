@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Material voidMat;
     [SerializeField] private Material bwMat;
 
-
+ 
 
     private float speed = 8f;
     private float jumpingPower = 16f;
@@ -55,10 +55,16 @@ public class PlayerMovement : MonoBehaviour
 
 
     [SerializeField] private AudioSource aS;
+
+    [SerializeField] private AudioSource aS2;
+    [SerializeField] private AudioSource aS3;
     [SerializeField] private AudioClip morphSound;
     [SerializeField] private AudioClip burstSound;
-
-
+    [SerializeField] private AudioClip[] acJump;
+    [SerializeField] private AudioClip acJump1;
+    [SerializeField] private AudioClip acWalk;
+    [SerializeField] private AudioClip acPickup;
+    private AudioClip currentClip;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator anim;
@@ -434,6 +440,15 @@ public class PlayerMovement : MonoBehaviour
                 {
                     rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
                     anim.SetTrigger("Stretch");
+
+                    int index = Random.Range(0, acJump.Length);
+                    acJump1 = acJump[index];
+
+
+                    aS2.PlayOneShot(acJump1);
+                    currentClip = acJump1;
+                        print("jumpsound");
+                    
                 }
 
                 if (inputActions.Player.Jump.ReadValue<float>() == 0 && rb.velocity.y > 0f)
@@ -453,10 +468,19 @@ public class PlayerMovement : MonoBehaviour
                 if (rb.velocity.x != 0 && isGrounded())
                 {
                     anim.SetBool("Walking", true);
+                    if(!aS.isPlaying)
+                    {
+                        aS.PlayOneShot(acWalk);
+                        currentClip = acWalk;
+                    }
                 }
                 else
                 {
                     anim.SetBool("Walking", false);
+                    if (currentClip == acWalk && aS.isPlaying)
+                    {
+                        aS.Stop();
+                    }
                 }
 
                 break;
@@ -626,7 +650,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
-
+    IEnumerator WaitToDestroy(GameObject collision)
+    {
+        yield return new WaitForSeconds(1);
+        collision.SetActive(false);
+    }
 
     private void Flip()
     {
@@ -708,6 +736,7 @@ public class PlayerMovement : MonoBehaviour
         {
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            aS3.PlayOneShot(acPickup);
 
             rewindMode = RewindMode.voidtime;
 
@@ -720,6 +749,8 @@ public class PlayerMovement : MonoBehaviour
             // KeyClock.SetActive(false);
 
             RewindState();
+
+            StartCoroutine(WaitToDestroy(collision.gameObject));
         }
 
         else if (collision.CompareTag("EnviroRwPowerUp"))
@@ -728,7 +759,8 @@ public class PlayerMovement : MonoBehaviour
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             rewindable = true;
-            
+            aS3.PlayOneShot(acPickup);
+
             SliderRewind.SetActive(false);
             if (collision.name.Contains("FirstEnviroRwPowerup"))
             {
@@ -751,15 +783,18 @@ public class PlayerMovement : MonoBehaviour
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             anim.SetBool("Ghost", true);
+            aS3.PlayOneShot(acPickup);
         }
 
 
         else if (collision.CompareTag("PlayerRwPowerUp"))
         {
+
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-            
+
+            aS3.PlayOneShot(acPickup);
             Debug.Log("enviroeself rewind modë");
 
             if (collision.name.Contains("FirstPlayerRwPowerup"))
@@ -785,6 +820,7 @@ public class PlayerMovement : MonoBehaviour
             rewind = false;
 
             rewindMode = RewindMode.antiaging;
+            aS3.PlayOneShot(acPickup);
 
             rewindable = true;
 
@@ -800,7 +836,7 @@ public class PlayerMovement : MonoBehaviour
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
-
+            aS3.PlayOneShot(acPickup);
             if (!foodToSeeButterOnHud)
             {
                 canMorph = true;

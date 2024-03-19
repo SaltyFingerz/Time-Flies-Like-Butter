@@ -16,6 +16,12 @@ public class PlayerManager : MonoBehaviour
     private Animator anim;
     private Color PollenPScolor;
 
+    [SerializeField] private AudioSource aS4;
+    [SerializeField] private AudioClip[] pollenSneezes;
+    private AudioClip pollenSneeze;
+
+    [SerializeField] private AudioClip splash;
+    [SerializeField] private AudioClip acEating; 
 
     public GameObject currentWeed = null;
     public static bool openRed = false;
@@ -84,11 +90,20 @@ public class PlayerManager : MonoBehaviour
     {
         gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
     }
+
+    IEnumerator splashThenReload()
+    {
+        aS4.PlayOneShot(splash);
+        yield return new WaitForSeconds(.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Water"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        StartCoroutine(splashThenReload()); 
+          
         }
 
         if(collision.gameObject.name.Contains("AirTraffickController"))
@@ -98,6 +113,12 @@ public class PlayerManager : MonoBehaviour
 
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
+            if (!aS4.isPlaying)
+            {
+                int index = Random.Range(0, pollenSneezes.Length);
+                pollenSneeze = pollenSneezes[index];
+                aS4.PlayOneShot(pollenSneeze);
+            }
             Pollen.SetActive(true);
             PollenPScolor = new Color(100, 0, 0, 100);
 
@@ -131,6 +152,13 @@ public class PlayerManager : MonoBehaviour
         else if (collision.gameObject.name.Contains("RedGamet") && gameObject.GetComponent<Animator>().runtimeAnimatorController != blueAC && gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly)
 
         {
+
+            if (!aS4.isPlaying)
+            {
+                int index = Random.Range(0, pollenSneezes.Length);
+                pollenSneeze = pollenSneezes[index];
+                aS4.PlayOneShot(pollenSneeze);
+            }
             Pollen.SetActive(true);
             PollenPScolor = new Color(100, 0, 0, 100);
             if (collision.GetComponent<Animator>() != null)
@@ -150,6 +178,15 @@ public class PlayerManager : MonoBehaviour
         {
             Pollen.SetActive(true);
             PollenPScolor = new Color(0, 127, 255, 255);
+
+            if (!aS4.isPlaying)
+            {
+                int index = Random.Range(0, pollenSneezes.Length);
+                pollenSneeze = pollenSneezes[index];
+                aS4.PlayOneShot(pollenSneeze);
+                print("SNEEZE");
+            }
+
             if (collision.GetComponent<Animator>() != null)
             {
                 collision.GetComponent<Animator>().SetTrigger("Jiggle");
@@ -243,7 +280,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
             {
-               
+                aS4.PlayOneShot(acEating);
                 gameObject.GetComponent<Animator>().SetTrigger("EatUp");
                 currentWeed = collision.gameObject;
                 eating = true;
@@ -251,7 +288,7 @@ public class PlayerManager : MonoBehaviour
 
             else if (collision.gameObject.CompareTag("WeedDown") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
             {
-
+                aS4.PlayOneShot(acEating);
                 gameObject.GetComponent<Animator>().SetTrigger("EatDown");
                 currentWeed = collision.gameObject;
                 eating = true;

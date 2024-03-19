@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 public class SadElfScript : MonoBehaviour
 {
     Animator anim;
+    AudioSource aS;
     [SerializeField] private ParticleSystem tears;
     [SerializeField] private GameObject splash;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();    
+        aS = GetComponent<AudioSource>();
+        aS.Play();
     }
 
 
@@ -27,6 +30,7 @@ public class SadElfScript : MonoBehaviour
 
     IEnumerator StopTearsCoroutine()
     {
+        aS.Stop();
         PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex + 1);
         tears.Stop();
         yield return new WaitForSeconds(1f);
