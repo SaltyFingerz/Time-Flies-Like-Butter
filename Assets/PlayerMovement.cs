@@ -149,6 +149,24 @@ public class PlayerMovement : MonoBehaviour
            
         }
 
+        if(SceneManager.GetActiveScene().name == "CakeOrDeath")
+        {
+            anim.SetTrigger("Butterfly");
+
+            SliderRewind.SetActive(true);
+            RewindButton.SetActive(false);
+            rewindMode = RewindMode.antiaging;
+
+            rewind = false;
+
+            rewindable = true;
+
+            rewindScript.EnableRewindAntiAging();
+
+            rewindManager.RestartTracking();
+
+        }
+
         if ( SceneManager.GetActiveScene().name == "SwanAndFireFlyLevel")
         {
             print("rewindenviroself");
@@ -401,7 +419,7 @@ public class PlayerMovement : MonoBehaviour
                 Joystick.SetActive(false);
                 MovementButtons.SetActive(true);
                 JumpButton.SetActive(true);
-
+                if(slerpyLerp != null)
                 if (slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && rewind)
                 {
                     sprite.enabled = false;

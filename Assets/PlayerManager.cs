@@ -276,6 +276,11 @@ public class PlayerManager : MonoBehaviour
             love = true;
         }
 
+        if(collision.gameObject.name.Contains("Fire"))
+        {
+            anim.SetTrigger("Die");
+        }
+
         if (SceneManager.GetActiveScene().name == "WeedingLevel")
         {
             if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
