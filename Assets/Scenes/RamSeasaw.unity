@@ -756,6 +756,7 @@ MonoBehaviour:
   SeaSaw: {fileID: 663635712}
   player: {fileID: 0}
   RamHungry: {fileID: 0}
+  walkingOnWood: {fileID: 0}
   ramState: 1
 --- !u!95 &170378949
 Animator:
@@ -11344,6 +11345,7 @@ GameObject:
   - component: {fileID: 663635717}
   - component: {fileID: 663635718}
   - component: {fileID: 663635719}
+  - component: {fileID: 663635720}
   m_Layer: 12
   m_Name: Seasaw
   m_TagString: Untagged
@@ -11530,6 +11532,102 @@ MonoBehaviour:
   rewindable: 1
   colorChange: 1
   colorDark: 0
+--- !u!82 &663635720
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 663635712}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f265e039f50437c4e8fdd21f77d41684, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.397
+  m_Pitch: 1.19
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &674159973
 GameObject:
   m_ObjectHideFlags: 0
@@ -11576,6 +11674,7 @@ MonoBehaviour:
   SeaSaw: {fileID: 663635712}
   player: {fileID: 1082849669}
   RamHungry: {fileID: 1258048246}
+  walkingOnWood: {fileID: 0}
   ramState: 2
 --- !u!95 &674159975
 Animator:
@@ -12125,8 +12224,14 @@ MonoBehaviour:
   frog: {fileID: 0}
   rewindChild: {fileID: 806108943}
   aS: {fileID: 806108945}
+  aS2: {fileID: 0}
+  aS3: {fileID: 0}
   morphSound: {fileID: 8300000, guid: 3d87cd2ad348b154fb0c8e76b35f93e3, type: 3}
   burstSound: {fileID: 8300000, guid: a25e31a419c91cb44b9cbcdceb967990, type: 3}
+  acJump: []
+  acJump1: {fileID: 0}
+  acWalk: {fileID: 0}
+  acPickup: {fileID: 0}
   rb: {fileID: 806108948}
   anim: {fileID: 806108946}
   groundCheck: {fileID: 509356984}
@@ -18640,8 +18745,14 @@ MonoBehaviour:
   frog: {fileID: 0}
   rewindChild: {fileID: 806108943}
   aS: {fileID: 1082849677}
+  aS2: {fileID: 0}
+  aS3: {fileID: 0}
   morphSound: {fileID: 8300000, guid: 3d87cd2ad348b154fb0c8e76b35f93e3, type: 3}
   burstSound: {fileID: 8300000, guid: a25e31a419c91cb44b9cbcdceb967990, type: 3}
+  acJump: []
+  acJump1: {fileID: 0}
+  acWalk: {fileID: 0}
+  acPickup: {fileID: 0}
   rb: {fileID: 1082849673}
   anim: {fileID: 1082849676}
   groundCheck: {fileID: 1629318808}
@@ -18863,6 +18974,10 @@ MonoBehaviour:
   redButterflyAC: {fileID: 0}
   levelScript: {fileID: 0}
   Pollen: {fileID: 974467455}
+  aS4: {fileID: 0}
+  pollenSneezes: []
+  splash: {fileID: 0}
+  acEating: {fileID: 0}
   currentWeed: {fileID: 0}
   flexiPollen: 0
   pollenColor: 0
@@ -19419,6 +19534,7 @@ GameObject:
   - component: {fileID: 1258048249}
   - component: {fileID: 1258048248}
   - component: {fileID: 1258048255}
+  - component: {fileID: 1258048256}
   m_Layer: 13
   m_Name: Ram Hungry
   m_TagString: Untagged
@@ -19449,6 +19565,7 @@ MonoBehaviour:
   SeaSaw: {fileID: 663635712}
   player: {fileID: 1082849669}
   RamHungry: {fileID: 0}
+  walkingOnWood: {fileID: 8300000, guid: f902bcd4579453248aaac10cb556e860, type: 3}
   ramState: 1
 --- !u!95 &1258048249
 Animator:
@@ -19623,6 +19740,102 @@ MonoBehaviour:
   rewindable: 1
   colorChange: 0
   colorDark: 0
+--- !u!82 &1258048256
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258048246}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.41
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1259892564
 GameObject:
   m_ObjectHideFlags: 0

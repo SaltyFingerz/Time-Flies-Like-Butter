@@ -27,6 +27,10 @@ public class RamMovement : MonoBehaviour
     public static bool Goal = false;
     public static bool HungryOnRight;
     public GameObject RamHungry;
+    public static bool onSeesaw;
+    AudioSource aS;
+    [SerializeField] private AudioClip walkingOnWood;
+ 
   
 
 
@@ -40,6 +44,7 @@ public class RamMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        aS = GetComponent<AudioSource>();
     }
 
   
@@ -143,6 +148,7 @@ public class RamMovement : MonoBehaviour
 
     public void ChaseFunc()
     {
+       
         chase = true;
         print("CHASE");
         speed = sprintSpeed;
@@ -180,6 +186,11 @@ public class RamMovement : MonoBehaviour
 
     public void ChaseRight()
     {
+        if (!aS.isPlaying && onSeesaw && ramState == RamState.hungry)
+        {
+            aS.PlayOneShot(walkingOnWood);
+        }
+
         chase = true;
         print("CHASE");
         speed = sprintSpeed;
@@ -202,6 +213,11 @@ public class RamMovement : MonoBehaviour
 
     public void ChaseLeft()
     {
+        if (!aS.isPlaying && onSeesaw && ramState == RamState.hungry)
+        {
+            aS.PlayOneShot(walkingOnWood);
+        }
+
         chase = true;
         print("CHASE");
         speed = sprintSpeed;
@@ -227,6 +243,10 @@ public class RamMovement : MonoBehaviour
         chase = false;
         movingLeft = false;
         movingRight = false;
+        if(aS.isPlaying && onSeesaw) 
+        {
+            aS.Stop();
+        }
 
     }
 
@@ -250,6 +270,7 @@ public class RamMovement : MonoBehaviour
                 yield return null;
             }
             transform.position = endPos.position;
+            onSeesaw = true;
         }
     }
 

@@ -11,13 +11,14 @@ public class FrogScript : MonoBehaviour
     private Rigidbody2D rb;
     bool inLight = false;
     [SerializeField] private ParticleSystem sleep;
-    private AudioSource aS;
+    [SerializeField] private AudioSource aSEat;
+    [SerializeField] private AudioSource aSSnore;
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         rb = gameObject.GetComponent<Rigidbody2D>();
-        aS = gameObject.GetComponent<AudioSource>();    
+  
        
     }
 
@@ -47,19 +48,32 @@ public class FrogScript : MonoBehaviour
             if (RewindBySlider.isRewindRunning)
             {
                 anim.SetBool("Awake", false);
+                if(!aSSnore.isPlaying)
+                {
+                    aSSnore.Play();
+                }
 
             }
 
             else if (!RewindBySlider.isRewindRunning && (SingingSwan.loud || inLight))
             {
                 anim.SetBool("Awake", true);
+                if(aSSnore.isPlaying)
+                {
+                    aSSnore.Stop();
+                }
             }
             else if(!RewindBySlider.isRewindRunning && !SingingSwan.loud && !inLight)
             { 
-                anim.SetBool("Awake", false); 
+                anim.SetBool("Awake", false);
+                if (!aSSnore.isPlaying)
+                {
+                    aSSnore.Play();
+                }
+
             }
 
-         
+
 
         }
     }
@@ -67,7 +81,8 @@ public class FrogScript : MonoBehaviour
     public void EatingEvent()
     {
         if (canEat)
-        {aS.Play();
+        {
+            aSEat.Play();
             Player.SetActive(false);
             canEat = false;
             StartCoroutine(EatCooldown());

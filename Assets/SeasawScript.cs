@@ -17,10 +17,12 @@ public class SeasawScript : MonoBehaviour
     private Vector3 thirstyEndPos = new Vector3(-6.5f, -7.7f, 0.05f);
     private Vector3 hungryEndPos = new Vector3(54f, 21.3f, 0.05f);
     bool LerpNow = false;
+    AudioSource aS;
 
     private void Awake()
     {
         GetComponent<BoxCollider2D>().enabled = false;
+        aS = GetComponent<AudioSource>();
     }
     public void DownRight()
     {
@@ -38,14 +40,15 @@ public class SeasawScript : MonoBehaviour
         if(RamMovement.Goal)
         {
             // LerpNow = true;
-
+            RamMovement.onSeesaw = false;
             StartCoroutine(LerpRamOntoSeasaw(RamHungry, hungryEndPos));
             StartCoroutine(LerpRamOntoSeasaw(RamThirsty, thirstyEndPos));
             GetComponent<BoxCollider2D>().enabled = false;
-           
+            aS.Play();
             RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
             RamHungry.GetComponent<Animator>().SetTrigger("Consume");
             RamThirsty.GetComponent<Animator>().SetTrigger("Consume");
+
          
         }
       
@@ -53,7 +56,7 @@ public class SeasawScript : MonoBehaviour
 
     IEnumerator LerpRamOntoSeasaw(GameObject ram, Vector3 endPos)
     {
-        
+       
         
             Vector3 startPos = ram.transform.position;
             float elapsedTime = 0;
@@ -69,6 +72,7 @@ public class SeasawScript : MonoBehaviour
             RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
             yield return null;
             }
+       
         RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
         PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex + 1);
         yield return new WaitForSeconds(3);
