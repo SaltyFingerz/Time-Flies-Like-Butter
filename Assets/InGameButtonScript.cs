@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class InGameButtonScript : MonoBehaviour
 {
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if(collision.name.Contains("Cube"))
+        {
+            anim.SetTrigger("Press");
+            CirclesFlashingScript.on = true;
+        }
     }
 }

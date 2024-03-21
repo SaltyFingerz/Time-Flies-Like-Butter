@@ -67,7 +67,7 @@ public class FanLevelManager : MonoBehaviour
     {
         if(!aS.isPlaying) 
         aS.Play();
-        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
