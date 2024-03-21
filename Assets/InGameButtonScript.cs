@@ -5,6 +5,7 @@ using UnityEngine;
 public class InGameButtonScript : MonoBehaviour
 {
     Animator anim;
+    [SerializeField] private GameObject oven;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,5 +19,10 @@ public class InGameButtonScript : MonoBehaviour
             anim.SetTrigger("Press");
             CirclesFlashingScript.on = true;
         }
+    }
+
+    public void CAKE()
+    {
+        oven.GetComponent<Animator>().SetTrigger("Open");
     }
 }
