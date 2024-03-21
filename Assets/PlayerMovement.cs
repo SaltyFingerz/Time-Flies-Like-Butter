@@ -215,6 +215,8 @@ public class PlayerMovement : MonoBehaviour
         if(SceneManager.GetActiveScene().name == "CardsLevel")
         {
             cam.GreaterDistanceWalk();
+            rewindMode = RewindMode.none;
+
         }
 
         else if (SceneManager.GetActiveScene().name == "AntiAgingLevel")

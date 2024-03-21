@@ -254,6 +254,7 @@ public class PlayerManager : MonoBehaviour
             else if (SceneManager.GetActiveScene().name == "CardsLevel")
                 levelScript.GetComponent<CardLevelScript>().FanOn();
             fanOn = true;
+            collision.GetComponent<FanScript>().PlayButtonSFX();
         }
 
         else if (collision.gameObject.name.Contains("Fan") && fanOn)
@@ -264,6 +265,7 @@ public class PlayerManager : MonoBehaviour
             if (SceneManager.GetActiveScene().name == "CardsLevel")
                 levelScript.GetComponent<CardLevelScript>().FanOff();
             fanOn = false;
+            collision.GetComponent<FanScript>().PlayButtonSFX();
         }
 
         if (collision.gameObject.name.Contains("BlindsHandle"))

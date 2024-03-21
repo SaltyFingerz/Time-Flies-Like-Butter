@@ -11,6 +11,8 @@ public class StamenScript : MonoBehaviour
     
     [SerializeField] private Transform destination;
     [SerializeField] private Animator animDestStamen;
+    [SerializeField] private AudioSource openSound;
+    [SerializeField] private AudioSource teleportSound;
     private Collider2D triggerPortal;
 
     public enum PortalState { closed = 0, open = 1};
@@ -61,20 +63,18 @@ public class StamenScript : MonoBehaviour
 
 public void OpenPortalEvent()
     {
-        
-
-            triggerPortal.enabled = true;
-       
-
-     
-        
+      triggerPortal.enabled = true;
+        if (!openSound.isPlaying)
+        {
+            openSound.Play();
+        }
 
     }
 
     public Transform GetDestination()
     {
-        print("destination yo");
-
+     
+        teleportSound.Play();
         return destination;
        
     }
