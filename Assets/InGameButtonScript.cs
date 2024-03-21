@@ -14,15 +14,26 @@ public class InGameButtonScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name.Contains("Cube"))
+        if(collision.name.Contains("Cube") || collision.name.Contains("Player"))
         {
-            anim.SetTrigger("Press");
+            anim.SetBool("Pressed", true);
             CirclesFlashingScript.on = true;
+            oven.GetComponent<Animator>().SetBool("Open", true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name.Contains("Cube") || collision.name.Contains("Player"))
+        {
+            oven.GetComponent<Animator>().SetBool("Open", false);
+            anim.SetBool("Pressed", false);
+            CirclesFlashingScript.on = false;
         }
     }
 
     public void CAKE()
     {
-        oven.GetComponent<Animator>().SetTrigger("Open");
+        oven.GetComponent<Animator>().SetBool("Bake", true);
     }
 }
