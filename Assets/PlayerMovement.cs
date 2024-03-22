@@ -182,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
             RewindButton.SetActive(false);
         }
 
-        else if (SceneManager.GetActiveScene().name == "DemoScene" || SceneManager.GetActiveScene().name == "CardsLevel" || SceneManager.GetActiveScene().name == "WeedingLevel")
+        else if (SceneManager.GetActiveScene().name == "DemoScene" || SceneManager.GetActiveScene().name == "CardsLevel" || SceneManager.GetActiveScene().name == "WeedingLevel" || SceneManager.GetActiveScene().name == "CloverSandwich")
         {
             rewindable = true;
             rewindMode = RewindMode.environment;
@@ -672,7 +672,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator WaitToDestroy(GameObject collision)
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
         collision.SetActive(false);
     }
 
@@ -853,6 +853,7 @@ public class PlayerMovement : MonoBehaviour
 
         else if (collision.CompareTag("Food"))
         {
+            print("FOOD");
             collision.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Stop();
             collision.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
@@ -866,6 +867,8 @@ public class PlayerMovement : MonoBehaviour
                 ButterflyHUD.SetActive(true);
                 ButterflyHUD.transform.position = Slider.transform.position + new Vector3(2, 0, 0);
             }
+
+            StartCoroutine(WaitToDestroy(collision.gameObject));
         }
 
 

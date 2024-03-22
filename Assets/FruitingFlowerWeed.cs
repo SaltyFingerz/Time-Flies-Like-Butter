@@ -6,8 +6,7 @@ public class FruitingFlowerWeed : MonoBehaviour
 {
     [SerializeField] private GameObject Weed;
     [SerializeField] private GameObject Flower;
-  
-
+    [SerializeField] private Animator foodAnim;
     // Update is called once per frame
     void Update()
     {
@@ -16,6 +15,13 @@ public class FruitingFlowerWeed : MonoBehaviour
             Flower.SetActive(true);
             gameObject.SetActive(false);
         }
-        
+    }
+
+    public void SpawnPowerup()
+    {
+        if (!PlayerMovement.rewind && Weed.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("EatenWeed"))
+        {
+            foodAnim.SetBool("Appear", true);
+        }
     }
 }

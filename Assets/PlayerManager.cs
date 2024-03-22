@@ -283,7 +283,7 @@ public class PlayerManager : MonoBehaviour
             anim.SetTrigger("Die");
         }
 
-        if (SceneManager.GetActiveScene().name == "WeedingLevel")
+        if ((SceneManager.GetActiveScene().name == "WeedingLevel" || SceneManager.GetActiveScene().name == "CloverSandwich") && GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
             if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
             {
@@ -325,7 +325,7 @@ public class PlayerManager : MonoBehaviour
             }
         }
 
-        if (SceneManager.GetActiveScene().name == "WeedingLevel")
+        if ((SceneManager.GetActiveScene().name == "WeedingLevel" || SceneManager.GetActiveScene().name == "CloverSandwich") && GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
         {
             if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
             {
@@ -342,7 +342,7 @@ public class PlayerManager : MonoBehaviour
                 gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
             }
 
-            else if (collision.gameObject.GetComponent<WeedScript>().Eaten())
+            else if (collision.gameObject.name.Contains("Weed") && collision.gameObject.GetComponent<WeedScript>().Eaten())
             {
                 currentWeed = null;
                 eating = false;
