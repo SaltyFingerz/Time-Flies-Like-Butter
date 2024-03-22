@@ -95,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
     public enum LifeStage {caterpillar = 0, butterfly = 1, dead = 2, ghostButterfly = 3};
     public LifeStage lifeStage = LifeStage.caterpillar;
 
-    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3, antiaging = 4, enviromentSlider = 5}
+    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3, antiaging = 4, enviromentSlider = 5, enviroantiaging = 6}
     public RewindMode rewindMode = RewindMode.environment;
     // Start is called before the first frame update
 
@@ -182,7 +182,7 @@ public class PlayerMovement : MonoBehaviour
             RewindButton.SetActive(false);
         }
 
-        else if (SceneManager.GetActiveScene().name == "DemoScene" || SceneManager.GetActiveScene().name == "CardsLevel" || SceneManager.GetActiveScene().name == "WeedingLevel" || SceneManager.GetActiveScene().name == "CloverSandwich")
+        else if (SceneManager.GetActiveScene().name == "DemoScene" || SceneManager.GetActiveScene().name == "CardsLevel" || SceneManager.GetActiveScene().name == "WeedingLevel")
         {
             rewindable = true;
             rewindMode = RewindMode.environment;
@@ -191,6 +191,17 @@ public class PlayerMovement : MonoBehaviour
             print("bo");
             print(rewindMode.ToString());
         }
+
+        else if (SceneManager.GetActiveScene().name == "CloverSandwich")
+        {
+            rewindable = true;
+            rewindMode = RewindMode.enviroantiaging;
+            SliderRewind.SetActive(false);
+            RewindButton.SetActive(true);
+         
+        }
+
+
 
         else if (SceneManager.GetActiveScene().name == "GhostTraffickControl")
         {
@@ -314,7 +325,7 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<SpriteRenderer>().material = voidMat;
 
         }
-        else if(rewindMode == RewindMode.enviroself && (rewind || RewindBySlider.isRewindRunning))
+        else if((rewindMode == RewindMode.enviroself || rewindMode == RewindMode.enviroantiaging) && (rewind || RewindBySlider.isRewindRunning))
         {
             GetComponent<SpriteRenderer>().material = bwMat;
         }
@@ -586,6 +597,16 @@ public class PlayerMovement : MonoBehaviour
         Metamorphosis();
     }
 
+    public void DisableMorphing()
+    {
+        canMorph = false;
+    }
+
+    public void EnableMorphing()
+    {
+        canMorph = true;
+    }
+
     public void Metamorphosis()
     {
         if (canMorph)
@@ -645,6 +666,11 @@ public class PlayerMovement : MonoBehaviour
     {
         lifeStage = LifeStage.dead;
        
+    }
+
+    public void UnMorphEvent()
+    {
+        lifeStage = LifeStage.caterpillar;
     }
 
     public void ReverseIntoCaterpillar()

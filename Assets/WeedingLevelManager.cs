@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WeedingLevelManager : MonoBehaviour
 {
@@ -27,10 +28,21 @@ public class WeedingLevelManager : MonoBehaviour
         if (PlayerMovement.rewind)
         {
             RewindFlowers();
+            if(SceneManager.GetActiveScene().name == "CloverSandwich")
+            {
+                GameObject.Find("Player").GetComponent<PlayerMovement>().DisableMorphing();
+                GameObject.Find("Player").GetComponent<Animator>().SetBool("Morph", false);
+                GameObject.Find("Player").GetComponent<Animator>().SetTrigger("UnMorph");
+
+            }
         }
         else
         {
             ForwardFlowers();
+            if (SceneManager.GetActiveScene().name == "CloverSandwich")
+            {
+                GameObject.Find("Player").GetComponent<Animator>().ResetTrigger("UnMorph");
+            }
         }
 
 
