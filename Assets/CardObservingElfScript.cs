@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class CardObservingElfScript : MonoBehaviour
 {
     AudioSource aS;
+    [SerializeField] private GameObject ClosingCanvas;
+    [SerializeField] private GameObject AudioManager;
 
     private void Start()
     {
@@ -25,7 +27,9 @@ public class CardObservingElfScript : MonoBehaviour
     {
         PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        AudioManager.GetComponent<AudioSource>().Stop();
+        ClosingCanvas.SetActive(true);
+      //  SceneManager.LoadScene("LevelSelectMap");
 
     }
 }

@@ -89,7 +89,7 @@ public class PlaneCrashManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("LevelSelectMap");
 
     }
 
