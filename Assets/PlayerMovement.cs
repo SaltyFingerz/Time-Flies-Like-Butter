@@ -149,7 +149,26 @@ public class PlayerMovement : MonoBehaviour
            
         }
 
-        if(SceneManager.GetActiveScene().name == "CakeOrDeath")
+        if (SceneManager.GetActiveScene().name == "ButterflyWind")
+        {
+
+            anim.SetTrigger("Butterfly");
+            rewindMode = RewindMode.none;
+
+
+            rewindable = false;
+
+            KeyClock.SetActive(false);
+
+
+            RewindButton.SetActive(false);
+
+            SliderRewind.SetActive(false);
+            RewindButton.SetActive(false);
+
+        }
+
+        if (SceneManager.GetActiveScene().name == "CakeOrDeath")
         {
             anim.SetTrigger("Butterfly");
 
