@@ -33,7 +33,13 @@ public class TimedEvents : MonoBehaviour
             player.GetComponent<Animator>().SetBool("Morph", true) ; 
         }
 
-        if(collision.CompareTag("Plane") && !RewindBySlider.isRewindRunning)
+        if (collision.CompareTag("Cloud") && !RewindBySlider.isRewindRunning)
+        {
+            GameObject.Find("Ram Hungry").GetComponent<Animator>().SetBool("Cloud", true);
+            GameObject.Find("Ram").GetComponent<Animator>().SetBool("Cloud", true);
+        }
+
+        if (collision.CompareTag("Plane") && !RewindBySlider.isRewindRunning)
         {
             if (!GameObject.Find("AirTraffickController").GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Alert"))
             {
@@ -71,6 +77,13 @@ public class TimedEvents : MonoBehaviour
             
            
         }
+        
+        if (collision.CompareTag("Cloud"))
+        {
+            GameObject.Find("Ram Hungry").GetComponent<Animator>().SetBool("Cloud", false);
+            GameObject.Find("Ram").GetComponent<Animator>().SetBool("Cloud", false);
+        }
+        
 
         if (collision.CompareTag("Plane"))
         {

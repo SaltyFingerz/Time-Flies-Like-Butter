@@ -11190,7 +11190,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"I''ll do the gardening later"'
+  m_text: Nectar of the Gods
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}
   m_sharedMaterial: {fileID: 359490269132846117, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}
@@ -12643,7 +12643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1431626681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30836,6 +30836,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1301805003537001434, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 84.099976
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714506454934709998, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 236.39996
+      objectReference: {fileID: 0}
     - target: {fileID: 2726013000778519043, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_Name
       value: Canvas For Buttons

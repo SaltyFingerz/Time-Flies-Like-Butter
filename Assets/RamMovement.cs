@@ -30,6 +30,8 @@ public class RamMovement : MonoBehaviour
     public static bool onSeesaw;
     AudioSource aS;
     [SerializeField] private AudioClip walkingOnWood;
+    [SerializeField] private GameObject cloudBig;
+    [SerializeField] private GameObject cloudSmall;
  
   
 
@@ -442,6 +444,18 @@ public class RamMovement : MonoBehaviour
         yield return null;
     }
 
+    public void InstantiateCloudBig()
+    {
+        Instantiate(cloudBig, transform.position + new Vector3(0, 3, 0), Quaternion.identity);
+        cloudBig.GetComponent<SpriteRenderer>().flipX = gameObject.GetComponent<SpriteRenderer>().flipX;
 
+    }
+
+    public void InstantiateCloudSmall()
+    {
+        Instantiate(cloudSmall, transform.position + new Vector3(0, 3, 0), Quaternion.identity);
+        cloudSmall.GetComponent<SpriteRenderer>().flipX = gameObject.GetComponent<SpriteRenderer>().flipX;
+
+    }
 
 }
