@@ -6877,7 +6877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"If a butterfly flaps its wings..."'
+  m_text: '"Does the flap of a butterfly''s wings...set off a tornado?"'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}
   m_sharedMaterial: {fileID: 359490269132846117, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}

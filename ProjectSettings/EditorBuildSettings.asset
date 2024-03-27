@@ -36,11 +36,14 @@ EditorBuildSettings:
     path: Assets/Scenes/DemoScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/FanLevel.unity
+    guid: 19c1fafc78f87764cae700da3c0cd71c
+  - enabled: 1
     path: Assets/Scenes/CardsLevel.unity
     guid: dfa50580f069e384092e9631bc7a8d38
   - enabled: 1
-    path: Assets/Scenes/FanLevel.unity
-    guid: 19c1fafc78f87764cae700da3c0cd71c
+    path: Assets/Scenes/CakeOrDeath.unity
+    guid: 632550acea208424784cff3feaef47b3
   - enabled: 1
     path: Assets/Scenes/GhostTraffickControl.unity
     guid: a029d37bef5a9544eb6beb4aa208bfd7
@@ -48,8 +51,8 @@ EditorBuildSettings:
     path: Assets/Scenes/RamSeasaw.unity
     guid: 9bc519e5e96035343885849589d4b808
   - enabled: 1
-    path: Assets/Scenes/CakeOrDeath.unity
-    guid: 632550acea208424784cff3feaef47b3
+    path: Assets/Scenes/ButterflyWind.unity
+    guid: 5d730ad5fcff97e41be909cbd8f2c532
   - enabled: 1
     path: Assets/Scenes/LevelSelectMap.unity
     guid: 195197938a212b04d8d0b2ee08ac8450

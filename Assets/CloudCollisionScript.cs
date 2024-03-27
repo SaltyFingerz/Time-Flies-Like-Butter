@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CloudCollisionScript : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class CloudCollisionScript : MonoBehaviour
             // Spawn an explosion at each point of contact
             Vector2 hitPoint = coll.contacts[0].point;
             Instantiate(explosion, new Vector3(hitPoint.x, hitPoint.y, 0), Quaternion.identity);
-
+            StartCoroutine(LevelEnd());
            /* foreach (ContactPoint2D missileHit in coll.contacts)
                 {
              
@@ -28,5 +29,14 @@ public class CloudCollisionScript : MonoBehaviour
            */
         }
       
+    }
+
+    IEnumerator LevelEnd()
+    {
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("LevelSelectMap");
+      
+
     }
 }
