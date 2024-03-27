@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     private Material initialMaterial;
     [SerializeField] private Material voidMat;
     [SerializeField] private Material bwMat;
-
+    [SerializeField] private GameObject rwSafeGuard;
  
 
     private float speed = 8f;
@@ -201,7 +201,7 @@ public class PlayerMovement : MonoBehaviour
             RewindButton.SetActive(false);
         }
 
-        else if (SceneManager.GetActiveScene().name == "DemoScene" || SceneManager.GetActiveScene().name == "CardsLevel" || SceneManager.GetActiveScene().name == "WeedingLevel")
+        else if (SceneManager.GetActiveScene().name == "DemoScene" || SceneManager.GetActiveScene().name == "CardsLevel" || SceneManager.GetActiveScene().name == "WeedingLevel" || SceneManager.GetActiveScene().name == "PlayerRwOnboarding")
         {
             rewindable = true;
             rewindMode = RewindMode.environment;
@@ -395,12 +395,20 @@ public class PlayerMovement : MonoBehaviour
     }
 
     
-    void RewindState()
+   public void RewindState()
     {
         switch (rewindMode)
         {
             case RewindMode.environment:
-                RewindButton.SetActive(true);
+                if (SceneManager.GetActiveScene().name != "PlayerRwOnboarding")
+                {
+                    RewindButton.SetActive(true);
+                }
+                else
+                {
+                    RewindButton.SetActive(false);
+                }
+
                 break;
 
             case RewindMode.enviromentSlider:
@@ -774,6 +782,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetRewindPlayer()
     {
+        print("rwPlayer");
         rewind = false;
         rewindMode = RewindMode.enviroself;
 
@@ -867,13 +876,16 @@ public class PlayerMovement : MonoBehaviour
                 GameObject rewindAnim = GameObject.Find("RewindButtonAppearance");
                 rewindAnim.SetActive(true);
                 rewindAnim.GetComponent<Animator>().SetTrigger("Play2");
+             /* rwSafeGuard.SetActive(true);
+              rwSafeGuard.transform.position = Slider.transform.position;*/
+
             }
             else
             {
                 SetRewindPlayer();
-              
+                RewindState();
             }
-            RewindState();
+            
 
         }
 

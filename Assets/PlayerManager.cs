@@ -232,7 +232,9 @@ public class PlayerManager : MonoBehaviour
 
                 if (collision.gameObject.CompareTag("Goal"))
                 {
-                    collision.gameObject.GetComponent<StamenScript>().LoadNextLevel();
+                gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                StartCoroutine(WaitToLoad());
+                   
 
                 }
 
@@ -244,6 +246,12 @@ public class PlayerManager : MonoBehaviour
             
 
 
+        }
+
+        IEnumerator WaitToLoad()
+        {
+            yield return new WaitForSeconds(1);
+            collision.gameObject.GetComponent<StamenScript>().LoadNextLevel();
         }
 
         if (collision.gameObject.name.Contains("Fan") && !fanOn)

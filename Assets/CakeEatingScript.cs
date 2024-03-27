@@ -9,7 +9,10 @@ public class CakeEatingScript : MonoBehaviour
     {
         if(collision.name.Contains("Player"))
         {
-            PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
+            if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
+            {
+                PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
+            }
             
             SceneManager.LoadScene("LevelSelectMap");
         }

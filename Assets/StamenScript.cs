@@ -99,7 +99,8 @@ public void OpenPortalEvent()
                     SceneManager.LoadScene("RisingWaterLevel2");
                 }
             */
-            PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
+            if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
+                PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadScene("LevelSelectMap");
 
         }

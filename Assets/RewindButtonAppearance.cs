@@ -8,7 +8,7 @@ public class RewindButtonAppearance : MonoBehaviour
     private PlayerMovement pMovement;
     // Start is called before the first frame update
 
-    private void Start()
+    private void Awake()
     {
        pMovement = GameObject.Find("Player").GetComponent<PlayerMovement>();
     }
@@ -20,10 +20,9 @@ public class RewindButtonAppearance : MonoBehaviour
 
     public void showSlider()
     {
-      
 
-        
         pMovement.SetRewindPlayer();
+        pMovement.RewindState();
 
     }
 }

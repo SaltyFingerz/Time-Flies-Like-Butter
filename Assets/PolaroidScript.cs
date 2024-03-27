@@ -7,7 +7,7 @@ public class PolaroidScript : MonoBehaviour
 {
     AudioSource aS;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         aS = GetComponent<AudioSource>();   
     }
@@ -19,6 +19,9 @@ public class PolaroidScript : MonoBehaviour
 
     public void ContinueButtonPressed()
     {
+        if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
+            PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("LevelSelectMap");
+
     }
 }

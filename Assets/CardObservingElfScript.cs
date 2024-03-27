@@ -25,7 +25,8 @@ public class CardObservingElfScript : MonoBehaviour
 
     IEnumerator WaitToLoadNextScene()
     {
-        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
+        if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
+            PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(2);
         AudioManager.GetComponent<AudioSource>().Stop();
         ClosingCanvas.SetActive(true);
