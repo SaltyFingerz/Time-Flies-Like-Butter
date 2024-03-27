@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class RamMovement : MonoBehaviour
@@ -455,7 +456,23 @@ public class RamMovement : MonoBehaviour
     {
         Instantiate(cloudSmall, transform.position + new Vector3(0, 3, 0), Quaternion.identity);
         cloudSmall.GetComponent<SpriteRenderer>().flipX = gameObject.GetComponent<SpriteRenderer>().flipX;
+        StartCoroutine(CloudEnd());
 
+    }
+
+    IEnumerator CloudEnd()
+    {
+        if(PlayerPrefs.GetInt("Balanced") == 2)
+        {
+            PlayerPrefs.SetInt("Balanced", 3);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Balanced", 1);
+        }
+
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("LevelSelectMap");
     }
 
 }

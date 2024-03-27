@@ -87,7 +87,17 @@ public class PlaneCrashManager : MonoBehaviour
 
     IEnumerator WaitToLoadNextScene()
     {
-        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
+       
+
+
+        if (PlayerPrefs.GetInt("Saved") == 1)
+        {
+            PlayerPrefs.SetInt("Saved", 3);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Saved", 2);
+        }
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("LevelSelectMap");
 
@@ -97,8 +107,15 @@ public class PlaneCrashManager : MonoBehaviour
 
     public void ReloadLevel()
     {
-       
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (PlayerPrefs.GetInt("Saved") == 2)
+        {
+            PlayerPrefs.SetInt("Saved", 3);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Saved", 1);
+        }
+        SceneManager.LoadScene("LevelSelectMap");
         
     }
 

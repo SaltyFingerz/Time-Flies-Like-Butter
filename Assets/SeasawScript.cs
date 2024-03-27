@@ -74,7 +74,15 @@ public class SeasawScript : MonoBehaviour
             }
        
         RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
-        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
+        if(PlayerPrefs.GetInt("Balanced") ==1)
+        {
+            PlayerPrefs.SetInt("Balanced", 3);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Balanced", 2);
+        }
+      //  PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene("LevelSelectMap");
 
