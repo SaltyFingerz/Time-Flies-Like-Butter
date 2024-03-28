@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WeedingLevel.unity
     guid: af840d8c14db95a449221860c9d46919
   - enabled: 1
+    path: Assets/Scenes/PlayerRwOnboarding.unity
+    guid: a80d232580804a749a774082538d9d4e
+  - enabled: 1
     path: Assets/Scenes/AntiAgingLevel.unity
     guid: c7b567c7aab6f7044ad356bdd9d354b4
   - enabled: 1

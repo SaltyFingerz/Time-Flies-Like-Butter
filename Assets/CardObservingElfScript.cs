@@ -28,6 +28,7 @@ public class CardObservingElfScript : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
             PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(2);
+        if(AudioManager != null)
         AudioManager.GetComponent<AudioSource>().Stop();
         ClosingCanvas.SetActive(true);
       //  SceneManager.LoadScene("LevelSelectMap");

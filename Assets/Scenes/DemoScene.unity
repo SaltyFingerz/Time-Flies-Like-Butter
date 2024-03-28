@@ -502,7 +502,7 @@ MonoBehaviour:
   Player: {fileID: 1082849669}
   sleepable: 0
   sleep: {fileID: 0}
-  aSEat: {fileID: 0}
+  aSEat: {fileID: 105466964}
   aSSnore: {fileID: 0}
 --- !u!95 &105466960
 Animator:
@@ -19184,6 +19184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voidMat: {fileID: 0}
   bwMat: {fileID: 0}
+  rwSafeGuard: {fileID: 0}
   GraveStone: {fileID: 0}
   foodToSeeButterOnHud: 0
   ButterflyHUD: {fileID: 0}
@@ -30872,6 +30873,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voidMat: {fileID: 2100000, guid: a4f31cb8c5e450f4fb6fcb014edaafdd, type: 2}
   bwMat: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rwSafeGuard: {fileID: 0}
   GraveStone: {fileID: 0}
   foodToSeeButterOnHud: 0
   ButterflyHUD: {fileID: 0}

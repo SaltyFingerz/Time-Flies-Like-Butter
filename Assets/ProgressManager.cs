@@ -9,7 +9,7 @@ public class ProgressManager : MonoBehaviour
 
     private void Awake()
     {
-        for (int i = 14; i >PlayerPrefs.GetInt("Level"); i--)
+        for (int i = 15; i >PlayerPrefs.GetInt("Level"); i--)
         {
             Level[i].SetActive(false);
         }
@@ -17,10 +17,12 @@ public class ProgressManager : MonoBehaviour
         if(PlayerPrefs.GetInt("Saved") == 1) //checks if tha planes crashed.
         {
             extras[0].SetActive(true);
+            extras[1].SetActive(false);
         }
         else if(PlayerPrefs.GetInt("Saved") == 2) //checks if plane crash prevented.
         {
             extras[1].SetActive(true);
+            extras[0].SetActive(false);
         }
         else if(PlayerPrefs.GetInt("Saved") == 3) // checks if plane has crashed and been saved previously. 
         {
@@ -37,10 +39,13 @@ public class ProgressManager : MonoBehaviour
         {
             extras[2].SetActive(true);
             extras[3].SetActive(true);
+            extras[4].SetActive(false);
         }
         else if (PlayerPrefs.GetInt("Balanced") == 2) // checks if rams have been saved
         {
             extras[4].SetActive(true);
+            extras[2].SetActive(false);
+            extras[3].SetActive(false);
         }
         else if(PlayerPrefs.GetInt("Balanced") == 3) // checks if rams have both died and been saved before
         {
