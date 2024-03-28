@@ -2442,7 +2442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 435041773}
   - component: {fileID: 435041774}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2775,7 +2775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 531712734}
   - component: {fileID: 531712735}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: cam bound bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2790,7 +2790,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531712733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.1, y: -19.4, z: 0}
+  m_LocalPosition: {x: 38.1, y: 16.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10756,6 +10756,7 @@ MonoBehaviour:
   smoothTime: 0.5
   target: {fileID: 2055627027}
   targetRew: {fileID: 806108951}
+  zoomedOut: 0
   InitialZoomDistance: 10
   minValues: {x: 2.1, y: -0.5, z: -10}
   maxValues: {x: 48.8, y: 23.2, z: -10}
@@ -11048,7 +11049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1050730464}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: cam bounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13143,7 +13144,7 @@ GameObject:
   - component: {fileID: 1592938434}
   - component: {fileID: 1592938432}
   - component: {fileID: 1592938433}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: cam bound left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13189,7 +13190,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.7, y: 16.64}
+  m_Size: {x: 2.7, y: 73.16}
   m_EdgeRadius: 0
 --- !u!50 &1592938433
 Rigidbody2D:
@@ -20082,7 +20083,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2005540010}
   - component: {fileID: 2005540011}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: cam bound right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20097,7 +20098,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005540009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.73, y: 1.69, z: 0}
+  m_LocalPosition: {x: 48.6, y: 1.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
