@@ -45,6 +45,7 @@ public class PlayerManager : MonoBehaviour
         openRed = false;
         openBlue = false;
         anim = GetComponent<Animator>();
+        if(Pollen != null)
         PollenPS = Pollen.GetComponent<ParticleSystem>();
       
 

@@ -13,6 +13,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private Transform targetRew;
     private Camera cam;
+    [SerializeField] private bool zoomedOut = false;
 
     [SerializeField] private float InitialZoomDistance = 10;
 
@@ -29,6 +30,15 @@ public class CameraFollow : MonoBehaviour
     {
         cam = GetComponent<Camera>();
        // cam.orthographicSize = InitialZoomDistance; 
+    }
+
+    private void Awake()
+    {
+        cam = GetComponent<Camera>();
+        if (zoomedOut)
+        {
+            cam.orthographicSize = 12f;
+        }
     }
     void Update()
     {

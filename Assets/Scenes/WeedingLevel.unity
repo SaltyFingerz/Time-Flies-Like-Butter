@@ -9019,6 +9019,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destination: {fileID: 0}
   animDestStamen: {fileID: 0}
+  openSound: {fileID: 0}
+  teleportSound: {fileID: 0}
   portalState: 0
 --- !u!95 &632579917
 Animator:
@@ -9519,6 +9521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voidMat: {fileID: 0}
   bwMat: {fileID: 0}
+  rwSafeGuard: {fileID: 0}
   GraveStone: {fileID: 0}
   foodToSeeButterOnHud: 0
   ButterflyHUD: {fileID: 0}
@@ -10382,6 +10385,7 @@ MonoBehaviour:
   smoothTime: 0.5
   target: {fileID: 2055627027}
   targetRew: {fileID: 806108951}
+  zoomedOut: 0
   InitialZoomDistance: 10
   minValues: {x: 2.1, y: -0.5, z: -10}
   maxValues: {x: 48.8, y: 23.2, z: -10}
@@ -10981,7 +10985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082849669}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.4, y: -7.19, z: 3.362193}
+  m_LocalPosition: {x: -6.2, y: -7.19, z: 3.362193}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11007,6 +11011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   voidMat: {fileID: 0}
   bwMat: {fileID: 0}
+  rwSafeGuard: {fileID: 0}
   GraveStone: {fileID: 0}
   foodToSeeButterOnHud: 0
   ButterflyHUD: {fileID: 0}
@@ -30297,6 +30302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Weed: {fileID: 1794754097}
   Flower: {fileID: 130496227}
+  Food: {fileID: 0}
 --- !u!82 &183347474279894078
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30557,6 +30563,50 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 11.999634
       objectReference: {fileID: 0}
+    - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795097870318833479, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 296
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795126520389855671, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795126520389855671, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795126520389855671, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795126520389855671, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -26
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795126520389855671, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 7.0000153
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
@@ -30717,6 +30767,10 @@ PrefabInstance:
       propertyPath: targetRew
       value: 
       objectReference: {fileID: 806108951}
+    - target: {fileID: 7350643109793016828, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
+      propertyPath: minValues.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7350643110737330924, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
       propertyPath: m_Color.b
       value: 1
