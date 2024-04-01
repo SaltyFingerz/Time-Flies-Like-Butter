@@ -115,6 +115,7 @@ public class PlaneCrashManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("Saved", 1);
         }
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         SceneManager.LoadScene("LevelSelectMap");
         
     }

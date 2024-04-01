@@ -470,7 +470,7 @@ public class RamMovement : MonoBehaviour
         {
             PlayerPrefs.SetInt("Balanced", 1);
         }
-
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("LevelSelectMap");
     }
