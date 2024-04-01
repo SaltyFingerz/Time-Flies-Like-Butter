@@ -28,6 +28,7 @@ public class FoodRewindScript : MonoBehaviour
     public void HasAppearedTrue()
     {
         GetComponent<Animator>().SetBool("HasAppeared", true);
+        gameObject.GetComponent<BoxCollider2D>().enabled = true;    
     }
 
 }

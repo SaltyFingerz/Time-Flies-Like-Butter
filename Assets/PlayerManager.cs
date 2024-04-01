@@ -292,8 +292,9 @@ public class PlayerManager : MonoBehaviour
             anim.SetTrigger("Die");
         }
 
-        if ((SceneManager.GetActiveScene().name == "WeedingLevel" || SceneManager.GetActiveScene().name == "CloverSandwich") && GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
+        if ((SceneManager.GetActiveScene().name == "WeedingLevel" || SceneManager.GetActiveScene().name == "CloverSandwich") && GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar && !PlayerMovement.rewind)
         {
+          
             if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
             {
                 aS4.PlayOneShot(acEating);
@@ -334,9 +335,10 @@ public class PlayerManager : MonoBehaviour
             }
         }
 
-        if ((SceneManager.GetActiveScene().name == "WeedingLevel" || SceneManager.GetActiveScene().name == "CloverSandwich") && GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
+        if ((SceneManager.GetActiveScene().name == "WeedingLevel" || SceneManager.GetActiveScene().name == "CloverSandwich") && GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar && !PlayerMovement.rewind)
         {
-            if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
+            print("weed collision");
+            if (collision.gameObject.CompareTag("WeedUp") && !collision.gameObject.GetComponent<WeedScript>().Eaten() && eating)
             {
                 gameObject.transform.position = collision.gameObject.transform.position - new Vector3(2, 0.6f, 0);
                 gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
@@ -345,7 +347,7 @@ public class PlayerManager : MonoBehaviour
            
 
 
-            else if (collision.gameObject.CompareTag("WeedDown") && !collision.gameObject.GetComponent<WeedScript>().Eaten())
+            else if (collision.gameObject.CompareTag("WeedDown") && !collision.gameObject.GetComponent<WeedScript>().Eaten() && eating )
             {
                 gameObject.transform.position = collision.gameObject.transform.position - new Vector3(2, 0.6f, 0);
                 gameObject.transform.rotation = new Quaternion(0, 0, 0, 0);
