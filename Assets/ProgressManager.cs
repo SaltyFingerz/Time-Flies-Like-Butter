@@ -9,7 +9,7 @@ public class ProgressManager : MonoBehaviour
 
     private void Awake()
     {
-        for (int i = 15; i >PlayerPrefs.GetInt("Level"); i--)
+        for (int i = 17; i >PlayerPrefs.GetInt("Level"); i--)
         {
             Level[i].SetActive(false);
         }
