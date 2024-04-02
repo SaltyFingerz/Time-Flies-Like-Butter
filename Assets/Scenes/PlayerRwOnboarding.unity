@@ -20739,7 +20739,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 5
+  m_Intensity: 3
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -34281,7 +34281,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: fba706bd6be82ad40a4d76b37691a72e, type: 3}
-  m_Color: {r: 0.3598541, g: 0.09291565, b: 0.6792453, a: 1}
+  m_Color: {r: 0.4563756, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -41109,7 +41109,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: fba706bd6be82ad40a4d76b37691a72e, type: 3}
-  m_Color: {r: 0.49056602, g: 0.023085462, b: 0, a: 1}
+  m_Color: {r: 0.7735849, g: 0.037132077, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -52639,7 +52639,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -20.757, y: -47.34969}
-  m_SizeDelta: {x: 389.0476, y: 133.4571}
+  m_SizeDelta: {x: 430.03, y: 133.4571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2141949096
 MonoBehaviour:
@@ -52661,7 +52661,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: LLAF
+  m_text: .llaf oT
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}
   m_sharedMaterial: {fileID: 359490269132846117, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}
@@ -52924,7 +52924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12.000183
+      value: 12.000122
       objectReference: {fileID: 0}
     - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_LocalScale.x
@@ -53121,15 +53121,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6842137875259719071, guid: b5f08632698fb6d48b412ab7736cb0de, type: 3}
       propertyPath: m_Color.b
-      value: 0.26041293
+      value: 0.3773585
       objectReference: {fileID: 0}
     - target: {fileID: 6842137875259719071, guid: b5f08632698fb6d48b412ab7736cb0de, type: 3}
       propertyPath: m_Color.g
-      value: 0.26415092
+      value: 0.3773585
       objectReference: {fileID: 0}
     - target: {fileID: 6842137875259719071, guid: b5f08632698fb6d48b412ab7736cb0de, type: 3}
       propertyPath: m_Color.r
-      value: 0.26403034
+      value: 0.3773585
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
