@@ -24627,6 +24627,7 @@ MonoBehaviour:
   target: {fileID: 2055627027}
   targetRew: {fileID: 806108951}
   zoomedOut: 0
+  extraZoomedOut: 0
   InitialZoomDistance: 10
   minValues: {x: 2.1, y: -0.5, z: -10}
   maxValues: {x: 48.8, y: 23.2, z: -10}
@@ -27062,6 +27063,7 @@ MonoBehaviour:
   target: {fileID: 2055627027}
   targetRew: {fileID: 806108951}
   zoomedOut: 0
+  extraZoomedOut: 0
   InitialZoomDistance: 10
   minValues: {x: 2.1, y: -0.5, z: -10}
   maxValues: {x: 48.8, y: 23.2, z: -10}
@@ -27747,6 +27749,7 @@ MonoBehaviour:
   target: {fileID: 2055627027}
   targetRew: {fileID: 806108951}
   zoomedOut: 0
+  extraZoomedOut: 0
   InitialZoomDistance: 10
   minValues: {x: 2.1, y: -0.5, z: -10}
   maxValues: {x: 48.8, y: 23.2, z: -10}
@@ -28891,6 +28894,7 @@ MonoBehaviour:
   target: {fileID: 2055627027}
   targetRew: {fileID: 806108951}
   zoomedOut: 0
+  extraZoomedOut: 0
   InitialZoomDistance: 10
   minValues: {x: 2.1, y: -0.5, z: -10}
   maxValues: {x: 48.8, y: 46, z: -10}
@@ -38734,6 +38738,7 @@ MonoBehaviour:
   target: {fileID: 2055627027}
   targetRew: {fileID: 806108951}
   zoomedOut: 0
+  extraZoomedOut: 0
   InitialZoomDistance: 10
   minValues: {x: 2.1, y: -0.5, z: -10}
   maxValues: {x: 48.8, y: 46, z: -10}
@@ -46075,6 +46080,10 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1301805003537001434, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 84.099976
+      objectReference: {fileID: 0}
     - target: {fileID: 1714506454934709998, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 236.39996
@@ -46177,7 +46186,7 @@ PrefabInstance:
       objectReference: {fileID: 519420036}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12.000458
+      value: 12.000427
       objectReference: {fileID: 0}
     - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_LocalScale.x
