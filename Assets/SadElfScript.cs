@@ -9,6 +9,7 @@ public class SadElfScript : MonoBehaviour
     AudioSource aS;
     [SerializeField] private ParticleSystem tears;
     [SerializeField] private GameObject splash;
+    [SerializeField] private GameObject Polaroids;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,9 @@ public class SadElfScript : MonoBehaviour
         yield return new WaitForSeconds(1f);
         splash.SetActive(false);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("LevelSelectMap");
+        Polaroids.SetActive(true);
+       // SceneManager.LoadScene("LevelSelectMap");
+
 
     }
 }
