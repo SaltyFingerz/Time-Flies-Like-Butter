@@ -28,6 +28,7 @@ public class HarvesterScript : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
             PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
+        GameObject.Find("Audio Manager").GetComponent<AudioManager>().PlayVictorySound();
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("LevelSelectMap");
 

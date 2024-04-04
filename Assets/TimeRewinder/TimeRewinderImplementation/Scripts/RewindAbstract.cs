@@ -231,14 +231,14 @@ public abstract class RewindAbstract : MonoBehaviour
             audioSource.time = readValues.time;
             audioSource.volume = 0;
 
-            if (!audioSource.isPlaying)
-            {  
-                audioSource.Play();
+            if (!AudioManager.inverse)
+            {
+                AudioManager.inverse = true;
             }
         }
-        else if(audioSource.isPlaying)
+        else if(AudioManager.inverse)
         {
-            audioSource.Stop();
+            AudioManager.inverse = false;
         }
     }
     #endregion

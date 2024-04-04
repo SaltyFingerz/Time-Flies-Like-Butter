@@ -31,6 +31,7 @@ public class SadElfScript : MonoBehaviour
 
     IEnumerator StopTearsCoroutine()
     {
+        GameObject.Find("Audio Manager").GetComponent<AudioManager>().PlayVictorySound();
         aS.Stop();
         if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
             PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);

@@ -124,8 +124,9 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
 
             }
             _wobbleEffect.StopWobble();
-            rewindSound.Stop();
-            GameObject.Find("Audio Manager").GetComponent<AudioSource>().Play();
+            //   rewindSound.Stop();
+            //  GameObject.Find("Audio Manager").GetComponent<AudioSource>().Play();
+            AudioManager.inverse = true;
             print("onslider up");
         }
     }
@@ -139,8 +140,9 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
             SliderAnimationPause();
             //
             _wobbleEffect.StartWobble();
-            rewindSound.Play();
-            GameObject.Find("Audio Manager").GetComponent<AudioSource>().Pause();
+            // rewindSound.Play();
+            //  GameObject.Find("Audio Manager").GetComponent<AudioSource>().Pause();
+            AudioManager.inverse = false;
         }
     }
     private void SetNormalSpeed()

@@ -31,6 +31,8 @@ public class RamMovement : MonoBehaviour
     public static bool onSeesaw;
     AudioSource aS;
     [SerializeField] private AudioClip walkingOnWood;
+    [SerializeField] private AudioClip walkingOnGrass;
+    [SerializeField] private AudioClip dyingSFX;
     [SerializeField] private GameObject cloudBig;
     [SerializeField] private GameObject cloudSmall;
  
@@ -54,6 +56,10 @@ public class RamMovement : MonoBehaviour
 
     void StateCheck()
     {
+        if(!anim.GetBool("Walking"))
+        {
+            aS.Stop();
+        }
         switch (ramState)
         {
             case RamState.healthy:
@@ -154,6 +160,11 @@ public class RamMovement : MonoBehaviour
        
         chase = true;
         print("CHASE");
+        if (!aS.isPlaying && !onSeesaw && ramState == RamState.hungry)
+        {
+            aS.PlayOneShot(walkingOnGrass);
+            print("walkingonGrass");
+        }
         speed = sprintSpeed;
         if (player.transform.position.x < (gameObject.transform.position.x - padding +2))
         {
@@ -189,10 +200,13 @@ public class RamMovement : MonoBehaviour
 
     public void ChaseRight()
     {
+        print("chaseRight");
         if (!aS.isPlaying && onSeesaw && ramState == RamState.hungry)
         {
             aS.PlayOneShot(walkingOnWood);
         }
+        
+
 
         chase = true;
         print("CHASE");
@@ -216,10 +230,13 @@ public class RamMovement : MonoBehaviour
 
     public void ChaseLeft()
     {
+        print("chase Left");
         if (!aS.isPlaying && onSeesaw && ramState == RamState.hungry)
         {
             aS.PlayOneShot(walkingOnWood);
         }
+     
+     
 
         chase = true;
         print("CHASE");
@@ -262,16 +279,17 @@ public class RamMovement : MonoBehaviour
             float elapsedTime = 0;
             float lerpDuration = 0.5f;
             // float lerpPercentage = 0f;
-
+            aS.PlayOneShot(walkingOnWood);
             while ((transform.position.y < endPos.position.y - 0.5f)|| (transform.position.y > endPos.position.y +0.5f))
             {
-
+               
                 elapsedTime += Time.deltaTime;
                 float lerpPercentage = (elapsedTime / lerpDuration);
                 transform.position = Vector3.Lerp(startPos, endPos.position, lerpPercentage);
 
                 yield return null;
             }
+            aS.Stop();
             transform.position = endPos.position;
             onSeesaw = true;
         }
@@ -387,7 +405,6 @@ public class RamMovement : MonoBehaviour
         if (collision.name.Contains("LeftSide") && ramState == RamState.hungry)
         {
             stand = false;
-
         }
 
         else if (collision.name.Contains("MidRightPoint") && ramState == RamState.hungry && !seasawReady)
@@ -401,14 +418,17 @@ public class RamMovement : MonoBehaviour
             HungryOnRight = false;
         }
 
-
-
     }
 
     public void WalkToRightSide()
     {
         chaseRight = true;
         movingRight = true;
+    }
+
+    public void PlayDeathSFX()
+    {
+        aS.PlayOneShot(dyingSFX);
     }
 
     public void Stand()
@@ -462,7 +482,8 @@ public class RamMovement : MonoBehaviour
 
     IEnumerator CloudEnd()
     {
-        if(PlayerPrefs.GetInt("Balanced") == 2)
+        GameObject.Find("Audio Manager").GetComponent<AudioManager>().PlayVictorySound();
+        if (PlayerPrefs.GetInt("Balanced") == 2)
         {
             PlayerPrefs.SetInt("Balanced", 3);
         }

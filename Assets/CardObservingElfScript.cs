@@ -25,6 +25,7 @@ public class CardObservingElfScript : MonoBehaviour
 
     IEnumerator WaitToLoadNextScene()
     {
+        GameObject.Find("Audio Manager").GetComponent<AudioManager>().PlayVictorySound();
         if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
             PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(2);

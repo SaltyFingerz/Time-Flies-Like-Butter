@@ -7,9 +7,31 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
     private AudioSource m_AudioSource;
+
+    [SerializeField] private AudioClip music;
+    [SerializeField] private AudioClip successSFX;
+
+    public static bool inverse;
+    bool won = false;
+
+    private void Update()
+    {
+        if(inverse)
+        {
+            m_AudioSource.pitch = -1;
+        }
+        else
+        {
+            m_AudioSource.pitch = 1;
+        }
+    }
     private void Awake()
     {
         m_AudioSource = GetComponent<AudioSource>();
+        m_AudioSource.volume = 0.1f;
+        won = false;
+    
+        m_AudioSource.clip = music;
         if (instance == null)
         {
             instance = this;
@@ -18,6 +40,18 @@ public class AudioManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    public void PlayVictorySound()
+    {
+        if (!won)
+        {
+            m_AudioSource = GetComponent<AudioSource>();
+            m_AudioSource.Stop();
+            m_AudioSource.volume = 1;
+            m_AudioSource.PlayOneShot(successSFX);
+            won = true;
         }
     }
 

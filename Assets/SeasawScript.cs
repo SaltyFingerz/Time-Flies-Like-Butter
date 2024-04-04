@@ -17,12 +17,14 @@ public class SeasawScript : MonoBehaviour
     private Vector3 thirstyEndPos = new Vector3(-6.5f, -7.7f, 0.05f);
     private Vector3 hungryEndPos = new Vector3(54f, 21.3f, 0.05f);
     bool LerpNow = false;
-    AudioSource aS;
+    [SerializeField] private AudioSource aS;
+    [SerializeField] private AudioSource aS2;
+    [SerializeField] private AudioSource aS3;
 
     private void Awake()
     {
         GetComponent<BoxCollider2D>().enabled = false;
-        aS = GetComponent<AudioSource>();
+      
     }
     public void DownRight()
     {
@@ -31,6 +33,11 @@ public class SeasawScript : MonoBehaviour
         ramMovementHungry.StopStanding();
         RamMovement.chaseRight = true;
        
+    }
+
+    public void PlaySeesawSound()
+    {
+        aS3.Play();
     }
 
     public void DownLeft()
@@ -45,6 +52,7 @@ public class SeasawScript : MonoBehaviour
             StartCoroutine(LerpRamOntoSeasaw(RamThirsty, thirstyEndPos));
             GetComponent<BoxCollider2D>().enabled = false;
             aS.Play();
+            aS2.Play();
             RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
             RamHungry.GetComponent<Animator>().SetTrigger("Consume");
             RamThirsty.GetComponent<Animator>().SetTrigger("Consume");
@@ -74,7 +82,8 @@ public class SeasawScript : MonoBehaviour
             }
        
         RamHungry.transform.rotation = new Quaternion(0, 0, 0, 0);
-        if(PlayerPrefs.GetInt("Balanced") ==1)
+        GameObject.Find("Audio Manager").GetComponent<AudioManager>().PlayVictorySound();
+        if (PlayerPrefs.GetInt("Balanced") ==1)
         {
             PlayerPrefs.SetInt("Balanced", 3);
         }

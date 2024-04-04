@@ -30,7 +30,8 @@ public class updateRewindButton : MonoBehaviour
             // button.GetComponent<UnityEngine.UI.Image>().sprite = buttonSprites[1];
             gameObject.transform.Rotate(5 * direction * Time.deltaTime);
             _wobbleEffect.StartWobble();
-            rewindSound.Play();
+            AudioManager.inverse = true;
+          //  rewindSound.Play();
            
 
         }
@@ -39,7 +40,8 @@ public class updateRewindButton : MonoBehaviour
           //  button.GetComponent<UnityEngine.UI.Image>().sprite = buttonSprites[0];
           transform.rotation = Quaternion.identity;
             _wobbleEffect.StopWobble();
-            rewindSound.Stop();
+            AudioManager.inverse = false;
+         //   rewindSound.Stop();
           
         }
 
@@ -62,8 +64,9 @@ public class updateRewindButton : MonoBehaviour
            
            
             _wobbleEffect.StartWobble();
-            rewindSound.Play();
-            GameObject.Find("Audio Manager").GetComponent<AudioSource>().Pause();
+            // rewindSound.Play();
+            //  GameObject.Find("Audio Manager").GetComponent<AudioSource>().Pause();
+            AudioManager.inverse = true;
             print("wobble");
         }
     }
@@ -82,8 +85,9 @@ public class updateRewindButton : MonoBehaviour
         {
            
             _wobbleEffect.StopWobble();
-            rewindSound.Stop();
-            GameObject.Find("Audio Manager").GetComponent<AudioSource>().Play();
+            //  rewindSound.Stop();
+            //  GameObject.Find("Audio Manager").GetComponent<AudioSource>().Play();
+            AudioManager.inverse = false;
         }
     }
 

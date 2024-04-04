@@ -17,9 +17,10 @@ public class PlaneCrashManager : MonoBehaviour
     [SerializeField] private Camera cam;
 
     [SerializeField] private AudioSource fireSFX;
+    [SerializeField] private AudioClip bangSFX;
     [SerializeField] private AudioSource aS;
 
-    [SerializeField] private AudioClip MayDay;
+
     [SerializeField] private AudioClip Evasion;
 
     public CustomCameraShaker camShake;
@@ -44,14 +45,16 @@ public class PlaneCrashManager : MonoBehaviour
         }
     }
 
-    public void PlayMayDay()
-    {
-        aS.PlayOneShot(MayDay);
-    }
+
 
     public void PlayEvasion()
     {
         aS.PlayOneShot(Evasion);
+    }
+
+    public void PlayCrash()
+    {
+        aS.PlayOneShot(bangSFX);
     }
 
     public void PlayImpactEffect()
@@ -87,8 +90,8 @@ public class PlaneCrashManager : MonoBehaviour
 
     IEnumerator WaitToLoadNextScene()
     {
-       
 
+        GameObject.Find("Audio Manager").GetComponent<AudioManager>().PlayVictorySound();
 
         if (PlayerPrefs.GetInt("Saved") == 1)
         {

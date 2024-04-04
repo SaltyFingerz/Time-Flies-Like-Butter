@@ -251,6 +251,7 @@ public class PlayerManager : MonoBehaviour
 
         IEnumerator WaitToLoad()
         {
+            GameObject.Find("Audio Manager").GetComponent<AudioManager>().PlayVictorySound();
             yield return new WaitForSeconds(1);
             collision.gameObject.GetComponent<StamenScript>().LoadNextLevel();
         }

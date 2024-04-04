@@ -58,12 +58,14 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private AudioSource aS2;
     [SerializeField] private AudioSource aS3;
+    [SerializeField] private AudioSource aS4;
     [SerializeField] private AudioClip morphSound;
     [SerializeField] private AudioClip burstSound;
     [SerializeField] private AudioClip[] acJump;
     [SerializeField] private AudioClip acJump1;
     [SerializeField] private AudioClip acWalk;
     [SerializeField] private AudioClip acPickup;
+    [SerializeField] private AudioClip deathSFX;
     private AudioClip currentClip;
 
     [SerializeField] private Rigidbody2D rb;
@@ -502,6 +504,8 @@ public class PlayerMovement : MonoBehaviour
                     int index = Random.Range(0, acJump.Length);
                     acJump1 = acJump[index];
 
+                    aS2.pitch = Random.Range(1.1f, 1.3f);
+                   
 
                     aS2.PlayOneShot(acJump1);
                     currentClip = acJump1;
@@ -528,6 +532,7 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("Walking", true);
                     if(!aS.isPlaying)
                     {
+                        aS.volume = 1f;
                         aS.PlayOneShot(acWalk);
                         currentClip = acWalk;
                     }
@@ -651,7 +656,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void MorphSoundEvent()
     {
-        aS.PlayOneShot(morphSound);
+        aS4.volume = 0.3f;
+        aS4.PlayOneShot(morphSound);
         cam.GreaterDistance();
 
         lifeStage = LifeStage.dead;
@@ -661,6 +667,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void DeathEvent()
     {
+        PlayDeathSFX();
         rb.gravityScale = 10f;
         lifeStage = LifeStage.dead;
        
@@ -707,7 +714,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void BurstEvent()
     {
-        aS.PlayOneShot(burstSound);
+        aS4.volume = 0.3f;
+        aS4.PlayOneShot(burstSound);
         
     }    
 
@@ -754,6 +762,11 @@ public class PlayerMovement : MonoBehaviour
             localRotation2.y = -180;
             shadow.transform.localRotation = localRotation;
         }
+    }
+
+    public void PlayDeathSFX()
+    {
+        aS4.PlayOneShot(deathSFX);
     }
 
     private void ReverseFlip()
