@@ -98,6 +98,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
     public void OnPointerDown(PointerEventData eventData)
     {
         howManyFingersTouching++;
+     
         isRewindRunning = true;
         if (howManyFingersTouching == 1)
             OnSliderDown();
@@ -105,6 +106,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
     public void OnPointerUp(PointerEventData eventData)
     {
         print("onpointerUp");
+     
         howManyFingersTouching--;
         isRewindRunning = false;
         if (howManyFingersTouching == 0)
@@ -126,7 +128,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
             _wobbleEffect.StopWobble();
             //   rewindSound.Stop();
             //  GameObject.Find("Audio Manager").GetComponent<AudioSource>().Play();
-            AudioManager.inverse = true;
+      
             print("onslider up");
         }
     }
@@ -142,7 +144,7 @@ public class RewindBySlider : MonoBehaviour,IPointerDownHandler, IPointerUpHandl
             _wobbleEffect.StartWobble();
             // rewindSound.Play();
             //  GameObject.Find("Audio Manager").GetComponent<AudioSource>().Pause();
-            AudioManager.inverse = false;
+            
         }
     }
     private void SetNormalSpeed()

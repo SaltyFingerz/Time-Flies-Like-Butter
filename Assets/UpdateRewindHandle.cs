@@ -9,10 +9,16 @@ public class UpdateRewindHandle : MonoBehaviour
 
     private void Update()
     {
-        if(RewindBySlider.isRewindRunning)
-            gameObject.transform.Rotate(5 * direction * Time.deltaTime); 
+        if (RewindBySlider.isRewindRunning)
+        {
+            gameObject.transform.Rotate(5 * direction * Time.deltaTime);
+            AudioManager.inverse = true;
+        }
         else
-        transform.rotation = Quaternion.identity;   
+        {
+            transform.rotation = Quaternion.identity;
+            AudioManager.inverse = false;
+        }
 
 
     }
