@@ -52,8 +52,18 @@ public class AudioManager : MonoBehaviour
             m_AudioSource.volume = 1;
             m_AudioSource.PlayOneShot(successSFX);
             won = true;
+            StartCoroutine(replayMusic());
         }
     }
 
+    IEnumerator replayMusic()
+    {
+        while (m_AudioSource.isPlaying)
+        {
+            yield return null;
+        }
+        m_AudioSource.Play();
+        
+    }
  
 }
