@@ -11360,6 +11360,7 @@ GameObject:
   - component: {fileID: 662423218}
   - component: {fileID: 662423217}
   - component: {fileID: 662423220}
+  - component: {fileID: 662423221}
   m_Layer: 3
   m_Name: cliffside1 (1)
   m_TagString: Untagged
@@ -11477,6 +11478,32 @@ MonoBehaviour:
   rewindable: 1
   colorChange: 1
   colorDark: 0
+--- !u!61 &662423221
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662423216}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.83, y: -4.5}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.87, y: 14.4}
+    newSize: {x: 12.43, y: 14.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.48, y: 5.55}
+  m_EdgeRadius: 0
 --- !u!1 &663635712
 GameObject:
   m_ObjectHideFlags: 0
@@ -19904,8 +19931,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: e7d20b639cac62e48ae395c6e0b2ecc1, type: 3}
-  m_Color: {r: 0.75711995, g: 0.87620693, b: 0.8867924, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 1bde2850b42274640a71b210c6ef339d, type: 3}
+  m_Color: {r: 0.6698113, g: 0.65822655, b: 0.635057, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -22253,7 +22280,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713247897}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.8, y: -14.8019, z: 0}
+  m_LocalPosition: {x: 66.8, y: -15.7, z: 0}
   m_LocalScale: {x: 42.151066, y: 15.101728, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33539,7 +33566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.9991455
+      value: 11.999084
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002247260512, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_LocalScale.x

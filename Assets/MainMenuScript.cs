@@ -10,7 +10,7 @@ public class MainMenuScript : MonoBehaviour
         PlayerPrefs.SetInt("Level", 0);
         PlayerPrefs.SetInt("Saved", 0);
         PlayerPrefs.SetInt("Balanced", 0);
-        SceneManager.LoadScene("LevelSelectMap");
+        SceneManager.LoadScene("Onboarding");
 
     }
 

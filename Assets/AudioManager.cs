@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         m_AudioSource = GetComponent<AudioSource>();
-        m_AudioSource.volume = 0.1f;
+        m_AudioSource.volume = 0.15f;
         won = false;
     
         m_AudioSource.clip = music;
