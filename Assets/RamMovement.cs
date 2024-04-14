@@ -429,6 +429,7 @@ public class RamMovement : MonoBehaviour
     public void PlayDeathSFX()
     {
         aS.PlayOneShot(dyingSFX);
+        print("deathsfx");
     }
 
     public void Stand()
@@ -482,7 +483,7 @@ public class RamMovement : MonoBehaviour
 
     IEnumerator CloudEnd()
     {
-        GameObject.Find("Audio Manager").GetComponent<AudioManager>().PlayVictorySound();
+        
         if (PlayerPrefs.GetInt("Balanced") == 2)
         {
             PlayerPrefs.SetInt("Balanced", 3);

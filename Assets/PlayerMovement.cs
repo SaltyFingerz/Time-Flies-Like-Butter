@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
     public enum LifeStage {caterpillar = 0, butterfly = 1, dead = 2, ghostButterfly = 3};
     public LifeStage lifeStage = LifeStage.caterpillar;
 
-    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3, antiaging = 4, enviromentSlider = 5, enviroantiaging = 6}
+    public enum RewindMode { environment = 0, enviroself = 1, voidtime = 2, none = 3, antiaging = 4, enviromentSlider = 5, enviroantiaging = 6, playposonly = 7}
     public RewindMode rewindMode = RewindMode.environment;
     // Start is called before the first frame update
 
@@ -269,7 +269,7 @@ public class PlayerMovement : MonoBehaviour
             rewindManager.RestartTracking();
         }
 
-        else if (SceneManager.GetActiveScene().name == "RisingWaterLevel" || SceneManager.GetActiveScene().name == "RisingWaterLevel2" || SceneManager.GetActiveScene().name == "TeleportLevel")
+        else if ( SceneManager.GetActiveScene().name == "RisingWaterLevel2" || SceneManager.GetActiveScene().name == "TeleportLevel")
         {
             rewindMode = RewindMode.enviroself;
 
@@ -285,6 +285,22 @@ public class PlayerMovement : MonoBehaviour
 
             RewindButton.SetActive(false);
         }
+        else if(SceneManager.GetActiveScene().name == "RisingWaterLevel")
+        {
+            rewindMode = RewindMode.playposonly;
+
+            rewindable = true;
+
+            KeyClock.SetActive(true);
+            rewindScript.EnableRewindPlayerPosOnly();
+
+
+
+            rewindManager.RestartTracking();
+
+            RewindButton.SetActive(false);
+        }
+
         else if (SceneManager.GetActiveScene().name == "SimpleTpLevel" || SceneManager.GetActiveScene().name == "FanLevel" || SceneManager.GetActiveScene().name == "Onboarding" )
         {
             rewindMode = RewindMode.none;
@@ -346,7 +362,7 @@ public class PlayerMovement : MonoBehaviour
             GetComponent<SpriteRenderer>().material = voidMat;
 
         }
-        else if((rewindMode == RewindMode.enviroself || rewindMode == RewindMode.enviroantiaging) && (rewind || RewindBySlider.isRewindRunning))
+        else if((rewindMode == RewindMode.enviroself || rewindMode == RewindMode.enviroantiaging || rewindMode == RewindMode.playposonly) && (rewind || RewindBySlider.isRewindRunning))
         {
             GetComponent<SpriteRenderer>().material = bwMat;
         }
@@ -425,6 +441,11 @@ public class PlayerMovement : MonoBehaviour
 
                 break;
 
+            case RewindMode.playposonly:
+                SliderRewind.SetActive(true);
+                RewindButton.SetActive(false);
+                break;
+
             case RewindMode.voidtime:
 
                 RewindButton.SetActive(true);
@@ -454,7 +475,7 @@ public class PlayerMovement : MonoBehaviour
             case LifeStage.caterpillar:
                 gameObject.layer = LayerMask.NameToLayer("Player");
                 gameObject.GetComponent<BoxCollider2D>().size = new Vector2(1.56f, 1.61f);
-
+                gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0, 1.13f);
                 horizontal = SimpleInput.GetAxis("Horizontal");
                 vertical = SimpleInput.GetAxis("Vertical");
 
@@ -549,7 +570,8 @@ public class PlayerMovement : MonoBehaviour
                 break;
 
             case LifeStage.butterfly:
-                gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
+                gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2.1f);
+                gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0, 1.76f);
                 rb.gravityScale = 0f;
                 rb.velocity = new Vector2(horizontal * speed, vertical * speed);
                 MovementButtons.SetActive(false);

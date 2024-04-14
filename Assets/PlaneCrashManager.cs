@@ -20,7 +20,7 @@ public class PlaneCrashManager : MonoBehaviour
     [SerializeField] private AudioClip bangSFX;
     [SerializeField] private AudioSource aS;
 
-
+    [SerializeField] private GameObject polaroids;
     [SerializeField] private AudioClip Evasion;
 
     public CustomCameraShaker camShake;
@@ -102,7 +102,7 @@ public class PlaneCrashManager : MonoBehaviour
             PlayerPrefs.SetInt("Saved", 2);
         }
         yield return new WaitForSeconds(2);
-        SceneManager.LoadScene("LevelSelectMap");
+        polaroids.SetActive(true);
 
     }
 

@@ -6,13 +6,12 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-    private AudioSource m_AudioSource;
+    [SerializeField] private AudioSource m_AudioSource;
+    [SerializeField] private AudioSource successSFX;
 
-    [SerializeField] private AudioClip music;
-    [SerializeField] private AudioClip successSFX;
 
     public static bool inverse;
-    bool won = false;
+
 
     private void Update()
     {
@@ -24,14 +23,24 @@ public class AudioManager : MonoBehaviour
         {
             m_AudioSource.pitch = 1;
         }
+
+        if(successSFX.isPlaying)
+        {
+            m_AudioSource.Stop();
+        }
+        else if(!m_AudioSource.isPlaying)
+        {
+            m_AudioSource.Play();
+        }
     }
+    
     private void Awake()
     {
         m_AudioSource = GetComponent<AudioSource>();
         m_AudioSource.volume = 0.3f;
-        won = false;
+     
     
-        m_AudioSource.clip = music;
+       
         if (instance == null)
         {
             instance = this;
@@ -45,26 +54,16 @@ public class AudioManager : MonoBehaviour
 
     public void PlayVictorySound()
     {
-        if (!won)
-        {
-            m_AudioSource = GetComponent<AudioSource>();
-            m_AudioSource.Stop();
-            m_AudioSource.volume = 1;
-            m_AudioSource.PlayOneShot(successSFX);
-            won = true;
-            StartCoroutine(replayMusic());
-        }
+      
+           
+           
+
+            successSFX.Play();
+        
+          
+       
     }
 
-    IEnumerator replayMusic()
-    {
-        while (m_AudioSource.isPlaying)
-        {
-            yield return null;
-        }
-        m_AudioSource.Play();
-        m_AudioSource.volume = 0.3f;
-        
-    }
+   
  
 }

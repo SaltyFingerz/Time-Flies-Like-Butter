@@ -65,7 +65,7 @@ public class PlayerManager : MonoBehaviour
                 if(gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.caterpillar)
                 {
                     //gameObject.GetComponent<Animator>().runtimeAnimatorController = redAC;
-                    gameObject.GetComponent<Animator>().SetTrigger("RedCat");
+                    gameObject.GetComponent<Animator>().SetBool("Red", true);
                     Pollen.SetActive(true);
                     PollenPScolor = new Color(100, 0, 0, 100);
 
@@ -73,7 +73,7 @@ public class PlayerManager : MonoBehaviour
                 else if(gameObject.GetComponent<PlayerMovement>().lifeStage == PlayerMovement.LifeStage.butterfly)
                 {
                     //  gameObject.GetComponent<Animator>().runtimeAnimatorController = redButterflyAC;
-                    gameObject.GetComponent<Animator>().SetTrigger("RedFly");
+                    gameObject.GetComponent<Animator>().SetBool("Red", true);
                     Pollen.SetActive(true);
 
                 }

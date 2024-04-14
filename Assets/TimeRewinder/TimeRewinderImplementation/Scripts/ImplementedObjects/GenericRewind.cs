@@ -52,6 +52,16 @@ public class GenericRewind : RewindAbstract
         trackAudio = true;
     }
 
+    public void EnableRewindPlayerPosOnly()
+    {
+        trackTransform = true;
+
+        trackObjectActiveState = false;
+        trackVelocity = true;
+        trackAnimator = false;
+        trackAudio = false;
+    }
+
     public override void Track()
     {
         if (trackObjectActiveState)
