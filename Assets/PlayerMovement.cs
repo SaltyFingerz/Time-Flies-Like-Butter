@@ -896,6 +896,10 @@ public class PlayerMovement : MonoBehaviour
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
             anim.SetBool("Ghost", true);
             aS3.PlayOneShot(acPickup);
+            if(GameObject.Find("DeathTime") != null)
+            {
+                GameObject.Find("DeathTime").GetComponent<GhostSymboliser>().SetGhostHUD();
+            }
         }
 
 
