@@ -691,7 +691,10 @@ public class PlayerMovement : MonoBehaviour
         print("dead Event");
         if (!anim.GetBool("Ghost"))
         {
+            rewind = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+          
             print("notGhost so reloading");
         }
     }

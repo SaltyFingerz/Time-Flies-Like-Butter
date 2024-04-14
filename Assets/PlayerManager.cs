@@ -103,7 +103,9 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Water"))
         {
-        StartCoroutine(splashThenReload()); 
+            PlayerMovement.rewind = false;
+            GameObject.Find("Main Camera").GetComponent<WobbleEffectCam>().StopWobble();
+            StartCoroutine(splashThenReload()); 
           
         }
 

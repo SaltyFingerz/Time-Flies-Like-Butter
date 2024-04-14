@@ -73964,7 +73964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999939
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchorMax.x
@@ -74111,6 +74111,10 @@ PrefabInstance:
       propertyPath: Fruit
       value: 
       objectReference: {fileID: 2037159316}
+    - target: {fileID: 4930257556178551088, guid: bbf912beda0a18e42a2070c9669ae27a, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8d9065255c3d27c47bf9aeff07d6fee4, type: 2}
     - target: {fileID: 4930257556178551090, guid: bbf912beda0a18e42a2070c9669ae27a, type: 3}
       propertyPath: m_RootOrder
       value: 74

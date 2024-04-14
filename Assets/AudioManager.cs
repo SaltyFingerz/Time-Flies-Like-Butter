@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         m_AudioSource = GetComponent<AudioSource>();
-        m_AudioSource.volume = 0.15f;
+        m_AudioSource.volume = 0.3f;
         won = false;
     
         m_AudioSource.clip = music;
@@ -63,6 +63,7 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
         m_AudioSource.Play();
+        m_AudioSource.volume = 0.3f;
         
     }
  
