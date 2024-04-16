@@ -17965,6 +17965,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &675790106 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2726013000778519043, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+  m_PrefabInstance: {fileID: 976467246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &687909374
 GameObject:
   m_ObjectHideFlags: 0
@@ -18971,6 +18976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas For Buttons
       objectReference: {fileID: 0}
+    - target: {fileID: 2726013000778519043, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2726013000778519102, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_Camera
       value: 
@@ -19283,6 +19292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 349654192}
+  HUD1: {fileID: 675790106}
+  HUD2: {fileID: 1609293967}
 --- !u!61 &1046261316
 BoxCollider2D:
   m_ObjectHideFlags: 0

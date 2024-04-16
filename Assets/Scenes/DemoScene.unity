@@ -31721,7 +31721,7 @@ MonoBehaviour:
   bwMat: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
   rwSafeGuard: {fileID: 0}
   GraveStone: {fileID: 0}
-  foodToSeeButterOnHud: 1
+  foodToSeeButterOnHud: 0
   ButterflyHUD: {fileID: 570558378}
   Slider: {fileID: 2081646424}
   leaf: {fileID: 1219934851}
@@ -51877,7 +51877,7 @@ PrefabInstance:
       objectReference: {fileID: 806108951}
     - target: {fileID: 7350643109793016828, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
       propertyPath: maxValues.x
-      value: 43
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7350643109793016828, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
       propertyPath: minValues.x

@@ -964,7 +964,7 @@ public class PlayerMovement : MonoBehaviour
             else
             {
                 ButterflyHUD.SetActive(true);
-                ButterflyHUD.transform.position = Slider.transform.position + new Vector3(2, 0, 0);
+                ButterflyHUD.transform.position = Slider.transform.position + new Vector3(1.5f, 0, 0);
             }
 
             StartCoroutine(WaitToDestroy(collision.gameObject));

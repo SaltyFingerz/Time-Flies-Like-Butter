@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class CakeEatingScript : MonoBehaviour
 {
     [SerializeField] private GameObject camera;
+    [SerializeField] private GameObject HUD1;
+    [SerializeField] private GameObject HUD2;
  
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.name.Contains("Player"))
         {
             camera.GetComponent<Animator>().SetTrigger("Move");
+            HUD1.SetActive(false); 
+            HUD2.SetActive(false);
             StartCoroutine(reduceVolume());
             if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
             {
