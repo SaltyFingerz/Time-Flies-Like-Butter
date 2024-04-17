@@ -40266,7 +40266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999573
+      value: 11.999512
       objectReference: {fileID: 0}
     - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_LocalScale.x
@@ -40491,6 +40491,10 @@ PrefabInstance:
     - target: {fileID: 7350643110737330924, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
       propertyPath: m_Color.r
       value: 0.5990566
+      objectReference: {fileID: 0}
+    - target: {fileID: 7350643110737330925, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 63.070415
       objectReference: {fileID: 0}
     - target: {fileID: 7350643110792916144, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
       propertyPath: target

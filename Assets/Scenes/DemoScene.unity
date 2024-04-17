@@ -51883,6 +51883,10 @@ PrefabInstance:
       propertyPath: minValues.x
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 7350643110737330925, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 79.88919
+      objectReference: {fileID: 0}
     - target: {fileID: 7350643110792916144, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
       propertyPath: target
       value: 

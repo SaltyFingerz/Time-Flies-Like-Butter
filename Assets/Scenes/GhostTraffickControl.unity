@@ -613,7 +613,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ghost: {fileID: 21300000, guid: 45620749c135c3f4d8964fd6f684bb12, type: 3}
-  player: {fileID: 1082849669}
 --- !u!1 &118241374
 GameObject:
   m_ObjectHideFlags: 0
@@ -23009,7 +23008,7 @@ Transform:
   m_GameObject: {fileID: 624742799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.3475, y: 1.4423, z: 10}
-  m_LocalScale: {x: 56.06259, y: 39.624195, z: 1}
+  m_LocalScale: {x: 59.04529, y: 39.624195, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519420032}
