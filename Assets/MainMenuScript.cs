@@ -18,4 +18,9 @@ public class MainMenuScript : MonoBehaviour
     {
         SceneManager.LoadScene("LevelSelectMap");
     }
+
+    public void CloseButtonPressed()
+    {
+        Application.Quit();
+    }
 }

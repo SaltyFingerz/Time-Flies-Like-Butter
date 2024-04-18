@@ -80,9 +80,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject SliderRewind;
     [SerializeField] private GameObject RewindButton;
 
-    [SerializeField] private GameObject MovementButtons;
-    [SerializeField] private GameObject JumpButton;
-    [SerializeField] private GameObject Joystick;
+
     private GameObject shadow;
     public static bool rewind = false;
     bool canToggle;
@@ -479,9 +477,8 @@ public class PlayerMovement : MonoBehaviour
                 horizontal = SimpleInput.GetAxis("Horizontal");
                 vertical = SimpleInput.GetAxis("Vertical");
 
-                Joystick.SetActive(false);
-                MovementButtons.SetActive(true);
-                JumpButton.SetActive(true);
+   
+              
                 if(slerpyLerp != null)
                 if (slerpyLerp.activeSelf && inputActions.Player.Jump.ReadValue<float>() > 0 && isGrounded() && rewind)
                 {
@@ -574,9 +571,8 @@ public class PlayerMovement : MonoBehaviour
                 gameObject.GetComponent<BoxCollider2D>().offset = new Vector2(0, 1.76f);
                 rb.gravityScale = 0f;
                 rb.velocity = new Vector2(horizontal * speed, vertical * speed);
-                MovementButtons.SetActive(false);
-                Joystick.SetActive(true);
-                JumpButton.SetActive(false);
+            
+             
                 gameObject.layer = LayerMask.NameToLayer("Player");
 
                 /*if (rb.velocity.x != 0 || rb.velocity.y != 0)
@@ -594,9 +590,7 @@ public class PlayerMovement : MonoBehaviour
                 gameObject.GetComponent<BoxCollider2D>().size = new Vector2(2f, 2f);
                 rb.gravityScale = 0f;
                 rb.velocity = new Vector2(horizontal * speed, vertical * speed);
-                MovementButtons.SetActive(false);
-                Joystick.SetActive(true);
-                JumpButton.SetActive(false);
+             
                 gameObject.layer = LayerMask.NameToLayer("GhostButterfly");
 
                 break;
