@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     [SerializeField] private AudioSource m_AudioSource;
     [SerializeField] private AudioSource successSFX;
-
+    [SerializeField] private bool noMusic = false;
 
     public static bool inverse;
 
@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
         {
             m_AudioSource.Stop();
         }
-        else if(!m_AudioSource.isPlaying)
+        else if(!m_AudioSource.isPlaying && !noMusic)
         {
             m_AudioSource.Play();
         }
