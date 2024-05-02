@@ -7,7 +7,7 @@ public class CardObservingElfScript : MonoBehaviour
 {
     AudioSource aS;
     [SerializeField] private GameObject ClosingCanvas;
-    [SerializeField] private GameObject AudioManager;
+
 
     private void Start()
     {
@@ -29,8 +29,8 @@ public class CardObservingElfScript : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex > PlayerPrefs.GetInt("Level"))
             PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex);
         yield return new WaitForSeconds(2);
-        if(AudioManager != null)
-        AudioManager.GetComponent<AudioSource>().Stop();
+        if(GameObject.Find("Audio Manager") != null)
+            GameObject.Find("Audio Manager").GetComponent<AudioSource>().Stop();
         ClosingCanvas.SetActive(true);
       //  SceneManager.LoadScene("LevelSelectMap");
 

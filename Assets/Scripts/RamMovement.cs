@@ -51,8 +51,12 @@ public class RamMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         aS = GetComponent<AudioSource>();
     }
+    private void Awake()
+    {
+        Goal = false;
+    }
 
-  
+
 
     void StateCheck()
     {
