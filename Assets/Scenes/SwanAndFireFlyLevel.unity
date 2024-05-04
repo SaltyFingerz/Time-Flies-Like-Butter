@@ -498,6 +498,7 @@ GameObject:
   - component: {fileID: 77310437}
   - component: {fileID: 77310436}
   - component: {fileID: 77310435}
+  - component: {fileID: 77310438}
   m_Layer: 3
   m_Name: flower no stem open (5)
   m_TagString: Untagged
@@ -598,6 +599,22 @@ Transform:
   m_Father: {fileID: 1936300359}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &77310438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77310434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 0
 --- !u!1 &105466957
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,6 +2286,7 @@ GameObject:
   - component: {fileID: 254644841}
   - component: {fileID: 254644840}
   - component: {fileID: 254644842}
+  - component: {fileID: 254644843}
   m_Layer: 3
   m_Name: flower no stem open
   m_TagString: Untagged
@@ -2369,6 +2387,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.98, y: 0.87}
   m_EdgeRadius: 0
+--- !u!114 &254644843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254644839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c136b4548c3d6a4791785e0f9d85712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BWMaterial: {fileID: 2100000, guid: 52f449b2a1abb0f40a26f73f7dd929d0, type: 2}
+  rewindable: 1
+  colorChange: 1
+  colorDark: 0
 --- !u!1 &278236421
 GameObject:
   m_ObjectHideFlags: 0
@@ -7329,7 +7363,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31593a527ccfbe241abb73f75035b973, type: 2}
+  - {fileID: 2100000, guid: 6801c5eff81352a4cbfbffef9e1b80b7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -58160,7 +58194,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999268
+      value: 11.999207
       objectReference: {fileID: 0}
     - target: {fileID: 2794495266445377261, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_LocalScale.x
@@ -63269,7 +63303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: To a frog, a swan and a firefly do the same
+  m_text: What does a swan and a firefly have in common?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}
   m_sharedMaterial: {fileID: 359490269132846117, guid: 64d41f09467fe0c4bbb1f79d14a11b56, type: 2}
@@ -70464,6 +70498,23 @@ MonoBehaviour:
       particleTrackingLimit: 0
       particleRestartFrom: 0
       particleSystems: []
+--- !u!1 &1223453116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4065960115090877153, guid: 0fb06aceffb6a294c8971e56e984b534, type: 3}
+  m_PrefabInstance: {fileID: 1757684368}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1223453118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223453116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1968aaf77210aa468f254d01388200a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1249015537
 GameObject:
   m_ObjectHideFlags: 0
@@ -70924,6 +70975,14 @@ PrefabInstance:
     - target: {fileID: 7755367412724844076, guid: bd8402d93f12cc946b0c7982c273d5ba, type: 3}
       propertyPath: m_Name
       value: Audio Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755367412724844077, guid: bd8402d93f12cc946b0c7982c273d5ba, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7755367412724844078, guid: bd8402d93f12cc946b0c7982c273d5ba, type: 3}
+      propertyPath: noMusic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7755367412724844079, guid: bd8402d93f12cc946b0c7982c273d5ba, type: 3}
       propertyPath: m_RootOrder
@@ -72570,7 +72629,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.9402885, y: 4.16}
+  m_Size: {x: 5.4, y: 4.16}
   m_EdgeRadius: 0
 --- !u!114 &1555754694
 MonoBehaviour:
@@ -78860,7 +78919,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.5, y: 1}
   m_EdgeRadius: 0
 --- !u!4 &1707346227
 Transform:

@@ -21,6 +21,6 @@ public class MainMenuScript : MonoBehaviour
 
     public void CloseButtonPressed()
     {
-        Application.Quit();
+        Application.Quit(); 
     }
 }

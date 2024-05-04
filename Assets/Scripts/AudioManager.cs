@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class AudioManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource m_AudioSource;
     [SerializeField] private AudioSource successSFX;
 
+  
 
     public static bool inverse;
 
@@ -24,7 +26,7 @@ public class AudioManager : MonoBehaviour
             m_AudioSource.pitch = 1;
         }
 
-        if(successSFX.isPlaying)
+        if(successSFX.isPlaying || SceneManager.GetActiveScene().name == "SwanAndFireFlyLevel")
         {
             m_AudioSource.Stop();
         }
