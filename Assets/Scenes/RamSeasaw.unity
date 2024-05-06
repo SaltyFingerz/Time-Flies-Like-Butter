@@ -10794,11 +10794,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &554205627 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2726013002247260519, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
-  m_PrefabInstance: {fileID: 2726013001726675164}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &585176256
 GameObject:
   m_ObjectHideFlags: 0
@@ -12636,9 +12631,6 @@ MonoBehaviour:
   KeyClock: {fileID: 1319847908}
   SliderRewind: {fileID: 0}
   RewindButton: {fileID: 0}
-  MovementButtons: {fileID: 0}
-  JumpButton: {fileID: 0}
-  Joystick: {fileID: 0}
   lifeStage: 0
   rewindMode: 0
 --- !u!50 &806108948
@@ -19169,9 +19161,6 @@ MonoBehaviour:
   KeyClock: {fileID: 1319847908}
   SliderRewind: {fileID: 2086116175}
   RewindButton: {fileID: 2121254584}
-  MovementButtons: {fileID: 2726013001726675166}
-  JumpButton: {fileID: 554205627}
-  Joystick: {fileID: 2726013001726675165}
   lifeStage: 1
   rewindMode: 0
 --- !u!50 &1082849673
@@ -33507,7 +33496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002222207703, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 11.999084
+      value: 11.9991455
       objectReference: {fileID: 0}
     - target: {fileID: 2726013002247260512, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
       propertyPath: m_LocalScale.x
@@ -33544,16 +33533,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
---- !u!1 &2726013001726675165 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7671344592358963024, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
-  m_PrefabInstance: {fileID: 2726013001726675164}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2726013001726675166 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2725021230922957179, guid: 98c5f6e0e1c75cf45bba3a301a021c85, type: 3}
-  m_PrefabInstance: {fileID: 2726013001726675164}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3842319828029367772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33715,6 +33694,10 @@ PrefabInstance:
       propertyPath: targetRew
       value: 
       objectReference: {fileID: 806108951}
+    - target: {fileID: 7350643109793016828, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
+      propertyPath: maxValues.x
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 7350643109793016828, guid: 0dbf286a52f96134490217e68e28344f, type: 3}
       propertyPath: minValues.y
       value: 11
